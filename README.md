@@ -12,14 +12,18 @@
 
 字段说明:
 - `range` / `updated` / `next`:数据窗口、更新日、下次刷新文案。
-- `highlights[]`:本期变化,`{tag, txt, src}`。`tag` ∈ `t-new`(NEW红) / `t-up`(趋势黄) / `t-info`(待核实蓝)。`src` 是该条的原始链接(尽量带)。把**本期新发现**放最上面。
-- `competitors[]`:逐家。`status` ∈ `live`(绿) / `soon`(黄) / `watch`(灰)。
+- `highlights[]`:本期变化,`{grp, tag, txt, src}`。`grp` ∈ `main`(主要竞争者动态) / `other`(其他竞争者/行业);**主要竞争者的动态放 main 组,突出展示**。`tag` ∈ `t-new`(NEW红) / `t-up`(趋势黄) / `t-info`(待核实蓝)。`src` 原始链接(尽量带)。新发现放各组最上面。
+- `competitors[]`:逐家。`tier` ∈ `1`(主要竞品,卡片打金标) / `2`(其他,默认)。`status` ∈ `live`(绿) / `soon`(黄) / `watch`(灰)。
   - `promo[]` 宣发手段、`activities[]` 在跑活动:每一项可以是 **字符串** 或 **`{t:"文本", src:"链接"}`**(有原始出处就用对象带 src)。
   - `xsig` X 信号(远程抓不到登录态的标 🔒)。
   - `sources[]`:卡片底部信源 chips `[{label, url}]`(官方活动页/关键新闻/官推)。
 - `techniques[]`:宣发手段矩阵,列要和 `competitors` 对齐(键名:bitget/binance/okx/gate/bybit/htx/kraken/coinbase…),每家取值 `1`(在用) / `0`(未用) / `"?"`(待抓取)。
 
 > 注:已移除 `align`(BIT 可对齐)和 `actions`(Playbook)——这些交给市场部,看板只客观呈现竞品动态。
+
+### 主要竞争者分级(重要)
+当前判定 **主要竞争者 = Bitget、Binance**(`tier:1`,highlights 用 `grp:"main"`)——理由:中文向 + 正面冲真券商/美股 + 拉新最凶 + 与 BIT 打法重叠最深。其余为 `tier:2` / `grp:"other"`。
+**每轮复核这个分级**:若某家(如 OKX/Bybit)动作升级到直接威胁 BIT 中文用户的程度,把它升为 tier:1 并把其动态归入 main 组;反之降级。判定标准:①是否中文向抢同一批用户 ②是否做真券商/美股且拉新激进 ③规模/势能威胁。
 
 ### 新入场者监控(重要)
 每轮顺带扫一下市场上**是否有新的交易所/平台加入美股/券商/代币化股票这条赛道**(如 KuCoin、MEXC、Crypto.com、Robinhood、Gemini 等)。一旦发现有实质动作,**在 `competitors[]` 新增一张卡片 + 在 `techniques[]` 每行补一个对应键**,并在 highlights 里报「新入场者」。
