@@ -36,7 +36,7 @@
     mask-image:radial-gradient(circle at 50% 30%, #000 30%, transparent 80%)}
   body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.35;
     background-image:repeating-linear-gradient(115deg,transparent 0 80px,rgba(77,141,255,.06) 80px 81px)}
-  .wrap{max-width:1220px;margin:0 auto;position:relative;z-index:1}
+  .wrap{max-width:1260px;margin:0 auto;position:relative;z-index:1}
 
   header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;
     padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:8px}
@@ -88,37 +88,25 @@
   .blk li::before{content:"";position:absolute;left:2px;top:7px;width:5px;height:5px;border-radius:1px;background:var(--blue);box-shadow:0 0 6px rgba(77,141,255,.7);transform:rotate(45deg)}
   .x-sig{background:rgba(77,141,255,.06);border:1px solid rgba(77,141,255,.16);border-radius:11px;padding:11px 13px;font-size:12.5px;color:#aebfd4}
   .x-sig .lbl{color:#93c0ff}
-  .align{background:linear-gradient(180deg,rgba(201,168,106,.1),rgba(201,168,106,.03));border:1px solid rgba(201,168,106,.28);border-radius:11px;padding:11px 13px;font-size:13px;color:#ecd9b6}
-  .align .lbl{color:var(--gold)}
   .pending{color:#5e708a;font-style:italic}
-  /* source links */
   .src-lnk{font-family:var(--mono);font-size:10px;color:var(--blue);text-decoration:none;margin-left:5px;
     border:1px solid rgba(77,141,255,.3);border-radius:5px;padding:0 4px;white-space:nowrap;vertical-align:1px;transition:background .15s}
   .src-lnk:hover{background:rgba(77,141,255,.18)}
-  .srcs{display:flex;flex-wrap:wrap;gap:7px;padding-top:4px;border-top:1px dashed var(--line2);margin-top:2px}
+  .srcs{display:flex;flex-wrap:wrap;gap:7px;padding-top:10px;border-top:1px dashed var(--line2);margin-top:auto}
   .srcs a{font-family:var(--mono);font-size:10px;color:var(--sub);text-decoration:none;background:rgba(255,255,255,.04);
     border:1px solid var(--line);border-radius:6px;padding:3px 8px;transition:color .15s,border-color .15s}
   .srcs a:hover{color:var(--blue);border-color:rgba(77,141,255,.4)}
 
-  .matrix-wrap{background:var(--glass);border:1px solid var(--line);border-radius:16px;overflow:hidden;backdrop-filter:blur(10px)}
-  table{width:100%;border-collapse:collapse;font-size:13px}
-  th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line2)}
-  th{font-family:var(--mono);background:rgba(255,255,255,.03);font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--sub);font-weight:500}
-  td:first-child{font-weight:600;color:#d4e0ee}
+  .matrix-wrap{background:var(--glass);border:1px solid var(--line);border-radius:16px;overflow-x:auto;backdrop-filter:blur(10px)}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+  th,td{padding:11px 12px;text-align:left;border-bottom:1px solid var(--line2);white-space:nowrap}
+  th{font-family:var(--mono);background:rgba(255,255,255,.03);font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--sub);font-weight:500}
+  td:first-child,th:first-child{font-weight:600;color:#d4e0ee;position:sticky;left:0;background:#08182e}
   tr:last-child td{border-bottom:none}
   tr:hover td{background:rgba(77,141,255,.04)}
   .yes{color:var(--good);font-size:15px;text-shadow:0 0 10px rgba(52,211,153,.6)}
   .no{color:#3a4a5e}.qq{color:var(--gold)}
   .legend{font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-top:9px;letter-spacing:.5px}
-
-  .actions{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
-  .act{background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:16px 18px;backdrop-filter:blur(10px);position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
-  .act::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
-  .act:hover{transform:translateY(-2px);border-color:rgba(201,168,106,.4)}
-  .act h4{font-family:var(--serif);font-size:15px;margin-bottom:7px;color:#fff}
-  .act p{font-size:13px;color:var(--sub);line-height:1.6}
-  .act .src{font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:10px;letter-spacing:.5px}
-  .act .src a{color:var(--blue);text-decoration:none}
 
   footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--dim);text-align:center;line-height:2;letter-spacing:.3px}
   a{color:var(--blue);text-decoration:none}
@@ -152,51 +140,46 @@
   <div class="matrix-wrap" id="matrix"></div>
   <div class="legend" id="legend"></div>
 
-  <div class="sec-title">BIT 可对齐 / 借鉴动作<span class="en">Playbook</span></div>
-  <div class="actions" id="actions"></div>
-
   <footer>
     自动生成 · 每小时刷新 · 每条尽量带 ↗ 原始信源 · 信源:官方活动页 + 新闻/KOL + X(📡本地实抓 / 🔒待补)<br>
-    BIT 美股运营情报台
+    BIT 美股运营情报台 · 监控对象会随新入场者增补
   </footer>
 </div>
 
 <script>
 // ===== DATA(每次刷新只改这块) =====
-// 约定:promo / activities 的每一项可以是 字符串 或 {t:"文本", src:"链接"};highlights 项可带 src;sources 是卡片底部信源 [{label,url}]。尽量给每条带 src。
+// promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "2026-05-22 → 2026-05-31",
   updated: "2026-05-31 · 含 X 实抓",
   next: "每小时整点(远程定时)",
   highlights: [
-    {tag:"t-new", txt:"Bitget IPO Prime 推 SpaceX preSPAX 认购(对标 SpaceX 拟 6/12 上市 SPCX):$100 起打新 pre-IPO 代币,总上限 $10亿;配 Launchpool 1412万 KAIO + VIP 空投季最高 $50万,把'打新'做成超级拉新活动。", src:"https://www.bitget.com/activity-hub/spacex-pre-ipo"},
-    {tag:"t-new", txt:"【X实抓 5/31】Bitget 官推力推 'UEX = Universal Exchange(通用交易所)' 一站式定位,拉新链接带渠道码(channelCode=regd / vipCode=wsvk),把渠道追踪做进每条推。", src:"https://x.com/bitget"},
-    {tag:"t-new", txt:"【X实抓 5/31 20:00】Binance Hey Stock 悬念进入'zoom in 放大看图'互动阶段(6.9k 浏览),评论区多为围观,典型零信息预热;6/1 揭晓临近。", src:"https://x.com/binance/status/2061055220000456904"},
-    {tag:"t-new", txt:"Bitget 5/26 上线 Reality:把'代币化美股'升级为'持牌金融平台'叙事(FINRA 注册 + SIPC 保护 + 美国持牌券商 1:1 托管真股),一次铺 100+ 标的。", src:"https://www.theblock.co/post/402518/bitget-launches-reality-rwa"},
-    {tag:"t-new", txt:"Binance 6/1 揭晓预告:发干草堆(haystack)图谐音 'Hey Stock' 做悬念营销,CZ 转发引爆,零信息把 BNB 24h 拉涨 8%+。", src:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"},
-    {tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管'——监管背书成为新一轮拉新的第一话术。"},
-    {tag:"t-info", txt:"OKX / Gate / Bybit / HTX 的对位券商动作待本期抓取确认(见下方卡片)。"}
+    {tag:"t-up", txt:"【监管 macro】SEC 5月底推迟代币化股票'创新豁免'(Nasdaq/NYSE/Cboe 闭门施压),整条赛道时间表生变;Coinbase/Robinhood/Ondo 等的上线路线图都按此豁免设计,受直接影响。", src:"https://cryptoslate.com/sec-may-let-crypto-exchanges-trade-tokenized-stocks-without-asking-wall-street-first/"},
+    {tag:"t-new", txt:"HTX 5/25 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字 + AI 大盘股;配 HTX Research 报告做'定价权'声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
+    {tag:"t-new", txt:"OKX 获 NYSE 母公司 ICE 入股($25B 估值 + 董事会席位),将向用户开放 NYSE 代币化股票(H2 2026);OKB 闻讯涨 38%。传统交易所背书成新打法。", src:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"},
+    {tag:"t-new", txt:"Kraken × Nasdaq 合作发行/交易代币化股票;其 xStocks 累计交易额破 $250亿,为最大代币化股票供应商(占 top25 多数)。", src:"https://blog.kraken.com/product/xstocks/25-billion-in-total-transaction-volume"},
+    {tag:"t-new", txt:"Bybit 推 'TradFi Stock Festival' 主题拉新活动,每周上新股票永续,把华尔街标的搬进币圈做节庆式运营。", src:"https://www.thestreet.com/crypto/press-releases/bybit-tradfi-stock-festival-brings-wall-street-to-crypto-traders-expanding-stock-cfds-in-2026"},
+    {tag:"t-new", txt:"【X实抓 5/31 20:00】Binance Hey Stock 悬念进入 'zoom in 放大看图' 互动阶段(6.9k 浏览),典型零信息预热;6/1 揭晓临近。", src:"https://x.com/binance/status/2061055220000456904"},
+    {tag:"t-new", txt:"【X实抓 5/31】Bitget 5/26 上线 Reality(持牌 RWA,FINRA/SIPC 1:1 托管真股);官推力推 'UEX 通用交易所' 一站式定位 + 拉新链接埋渠道码(regd/wsvk)。", src:"https://x.com/bitget"},
+    {tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新的第一话术。"}
   ],
   competitors: [
     {
       nm:"Bitget", color:"#00f0ff", ink:"#003", status:"live", statusTxt:"Reality 已上线",
-      sub:"5/26 · 持牌 RWA 平台 + IPO Prime",
+      sub:"5/26 · 持牌 RWA + UEX 定位",
       promo:[
         "合规叙事前置:FINRA/SIPC/持牌券商 1:1 托管做第一卖点",
-        "CEO 抛'10% 资产终将代币化'行业级宏大叙事",
-        "全品类货架:100+ 标的(股/ETF/商品/外汇/贵金属)一次压制",
+        "CEO 抛 '10% 资产终将代币化' 行业级宏大叙事",
+        "全品类货架:100+ 标的(股/ETF/商品/外汇/贵金属)",
         "平台币联动:发布即拉动 BGB 社交热度+涨幅",
         "社媒每条拉新链接埋渠道码追踪(regd/wsvk)"
       ],
       activities:[
-        {t:"IPO Prime · SpaceX preSPAX 认购:$100 起打新 pre-IPO 代币(总上限 $10亿,USDT/USDGO 申购),对标 SpaceX 拟 6/12 上市", src:"https://www.bitget.com/activity-hub/spacex-pre-ipo"},
-        {t:"配套 Launchpool:锁 BGB/USDGO/KAIO 分 1412万 KAIO + VIP 空投季最高 $50万", src:"https://www.bitget.com/blog/articles/bitget-ipo-prime-prespax-subscription-launch"},
-        {t:"PayFi Odyssey:$30万奖池,奖励绑真实使用(刷卡/扫码/P2P转账)非单纯注册", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
+        {t:"UEX 'Universal Exchange' 一站式活动专区(带渠道码拉新链接)", src:"https://www.bitget.com/asia/activity-hub/UEX"},
+        {t:"PayFi Odyssey:$30万奖池,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
       ],
-      xsig:"📡 X实抓(5/31):官推每日多条(约3-6h一条);当前主推 'UEX 通用交易所' 一站式定位 + activity-hub 带渠道码拉新链接(regd/wsvk);置顶为爆款视频(15.8M 浏览)做泛流量。",
-      align:"把'安全/合规'卖点换成硬背书话术(持牌+托管+保护);学它把渠道码埋进每条社媒拉新链接",
+      xsig:"📡 X实抓(5/31):官推每日多条(约3-6h一条);主推 'UEX 通用交易所' 定位 + 渠道码拉新链接;置顶为爆款视频(15.8M 浏览)引泛流量。",
       sources:[
-        {label:"官方·SpaceX认购", url:"https://www.bitget.com/activity-hub/spacex-pre-ipo"},
         {label:"官方·Reality", url:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
         {label:"X·@bitget", url:"https://x.com/bitget"}
       ]
@@ -211,59 +194,134 @@ const DATA = {
         "零信息造势,预告本身=一次免费全网拉新事件"
       ],
       activities:[
-        {t:"新用户促销:首笔合格交易得 $10 USDC 券(4/17–5/16)", src:"https://www.binance.com/en/activity/marketing-campaign"},
+        {t:"新用户促销:首笔合格交易得 $10 USDC 券", src:"https://www.binance.com/en/activity/marketing-campaign"},
         {t:"Referral Lite / Pro 双模式 + 终身手续费返佣", src:"https://www.binance.com/en/activity/referral"}
       ],
       xsig:"📡 X实抓(5/31 20:00):官推约每3h一条;Hey Stock 悬念进行中,最新发 'zoom in' 放大看图(6.9k 浏览),评论区多为围观;6/1 揭晓临近。",
-      align:"上线前做一轮谐音/解谜悬念预告,让 KOL+社区先猜先传,零成本霸屏一周",
       sources:[
         {label:"X·zoom in 原帖", url:"https://x.com/binance/status/2061055220000456904"},
-        {label:"X·@binance", url:"https://x.com/binance"},
         {label:"新闻·Hey Stock", url:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"}
       ]
     },
     {
-      nm:"OKX", color:"#0d0d0d", ink:"#fff", status:"watch", statusTxt:"待抓取",
-      sub:"对位动作核实中",
-      promo:["待本期抓取:是否跟进真股/券商产品及其宣发"],
-      activities:["待抓取:在跑的拉新活动 / 奖池 / 规则"],
-      xsig:"🔒 待抓取",
-      align:"—",
-      sources:[]
+      nm:"OKX", color:"#0d0d0d", ink:"#fff", status:"live", statusTxt:"股票永续在跑",
+      sub:"ICE/NYSE 入股 · 代币化股票 H2",
+      promo:[
+        "拉 NYSE 母公司 ICE 背书($25B 估值 + 董事会席位),机构信任叙事",
+        "'Kinetic Finance(动能金融)' 行业叙事包装 RWA 上链",
+        "OKB 平台币联动(ICE 消息后涨 38%)",
+        "把社交网络做进交易 App,增强留存"
+      ],
+      activities:[
+        {t:"20+ 股票永续(Mag7,最高 5x),24/7 交易", src:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"},
+        {t:"联合 Ondo 提供 263 个代币化股票,并入同一账户", src:"https://www.okx.com/en-us/learn/beyond-crypto"},
+        {t:"NYSE 代币化股票预计 H2 2026 上线(ICE 合作)", src:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"}
+      ],
+      xsig:"🔒 官推/评论区互动待本地登录 X 抓取",
+      sources:[
+        {label:"Fortune·ICE入股", url:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"},
+        {label:"TheBlock·股票永续", url:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"}
+      ]
     },
     {
-      nm:"Gate", color:"#2354e6", ink:"#fff", status:"watch", statusTxt:"待抓取",
-      sub:"对位动作核实中",
-      promo:["待本期抓取"], activities:["待抓取"], xsig:"🔒 待抓取", align:"—", sources:[]
+      nm:"Gate", color:"#2354e6", ink:"#fff", status:"live", statusTxt:"xStocks 在跑",
+      sub:"代币化股票专区",
+      promo:[
+        "'无需开户 / 24-7 USDT 直接买' 低门槛话术",
+        "板块化货架:AI / 消费 / 航天等主题代币",
+        "Alpha 模式给高阶用户更深工具,分层运营"
+      ],
+      activities:[
+        {t:"xStocks 专区:现货 + 永续(最高 10x),USDT 结算", src:"https://www.gate.com/tokenized-stocks"},
+        {t:"代币化股票/ETF/板块代币持续扩品(基于 xStocks + Ondo)", src:"https://coincentral.com/gate-io-launches-24-7-tokenized-stock-trading-with-xstocks-and-usdt/"}
+      ],
+      xsig:"🔒 官推/评论区互动待本地登录 X 抓取",
+      sources:[
+        {label:"官方·代币化股票", url:"https://www.gate.com/tokenized-stocks"}
+      ]
     },
     {
-      nm:"Bybit", color:"#f7a600", ink:"#1c1c1c", status:"watch", statusTxt:"待抓取",
-      sub:"对位动作核实中",
-      promo:["待本期抓取"], activities:["待抓取"], xsig:"🔒 待抓取", align:"—", sources:[]
+      nm:"Bybit", color:"#f7a600", ink:"#1c1c1c", status:"live", statusTxt:"TradFi 在跑",
+      sub:"TradFi 永续 + xStocks",
+      promo:[
+        "TradFi 全家桶叙事(永续/xStocks/RWA Earn 一体)",
+        "每周上新股票永续,持续制造新鲜感",
+        "节庆式运营把华尔街标的搬进币圈"
+      ],
+      activities:[
+        {t:"TradFi Stock Festival:主题拉新活动 + 扩 Stock CFD", src:"https://www.thestreet.com/crypto/press-releases/bybit-tradfi-stock-festival-brings-wall-street-to-crypto-traders-expanding-stock-cfds-in-2026"},
+        {t:"TradFi 永续:20 美股 + 3 商品 + 3 ETF(最高 10x)", src:"https://www.prnewswire.com/news-releases/bybit-introduces-247-tradfi-perpetual-contracts-trading-for-dozens-of-us-stocks-and-global-etfs-302766950.html"},
+        {t:"xStocks 现货:60+ 代币化美股/ETF(Backed 发行)", src:"https://learn.bybit.com/en/bybit-guide/trade-xstocks-on-bybit-spot"}
+      ],
+      xsig:"🔒 官推/评论区互动待本地登录 X 抓取",
+      sources:[
+        {label:"PRNewswire·TradFi", url:"https://www.prnewswire.com/news-releases/bybit-introduces-247-tradfi-perpetual-contracts-trading-for-dozens-of-us-stocks-and-global-etfs-302766950.html"},
+        {label:"新闻·Stock Festival", url:"https://www.thestreet.com/crypto/press-releases/bybit-tradfi-stock-festival-brings-wall-street-to-crypto-traders-expanding-stock-cfds-in-2026"}
+      ]
     },
     {
-      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"watch", statusTxt:"待抓取",
-      sub:"对位动作核实中",
-      promo:["待本期抓取"], activities:["待抓取"], xsig:"🔒 待抓取", align:"—", sources:[]
+      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"live", statusTxt:"5/25 上线",
+      sub:"TradFi Zone 美股期货",
+      promo:[
+        "'打破时间壁垒,把华尔街搬进币圈' 叙事",
+        "pre-IPO 噱头:含 SpaceX/OpenAI/Anthropic 名字吸睛",
+        "HTX Research 出研究报告做'定价权转移'声量"
+      ],
+      activities:[
+        {t:"TradFi Zone:66 个 USDT/USDC 永续(5/21),24/7 多空", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"}
+      ],
+      xsig:"🔒 官推/评论区互动待本地登录 X 抓取",
+      sources:[
+        {label:"CryptoTimes·上线", url:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
+        {label:"TheBlock·HTX", url:"https://www.theblock.co/post/402586/htx-is-bringing-wall-street-into-the-crypto-world-breaking-time-barriers-and-reshaping-global-finance"}
+      ]
+    },
+    {
+      nm:"Kraken", color:"#7132f5", ink:"#fff", status:"live", statusTxt:"新增监控",
+      sub:"× Nasdaq · xStocks 龙头",
+      promo:[
+        "拉 Nasdaq 背书(合作发行+交易代币化股票),机构信任叙事",
+        "用'最大代币化股票供应商'($250亿累计)做权威背书",
+        "面向非美/欧洲市场打差异化"
+      ],
+      activities:[
+        {t:"xStocks:代币化美股(Backed 发行,Solana),累计交易额破 $250亿", src:"https://blog.kraken.com/product/xstocks/25-billion-in-total-transaction-volume"},
+        {t:"代币化股票期货(面向非美用户)", src:"https://coinmarketcap.com/academy/article/kraken-debuts-tokenized-stock-futures-for-non-us-traders"}
+      ],
+      xsig:"🔒 官推/评论区互动待本地登录 X 抓取",
+      sources:[
+        {label:"Kraken·xStocks", url:"https://blog.kraken.com/product/xstocks/25-billion-in-total-transaction-volume"},
+        {label:"CMC·Nasdaq合作", url:"https://coinmarketcap.com/academy/article/kraken-debuts-tokenized-stock-futures-for-non-us-traders"}
+      ]
+    },
+    {
+      nm:"Coinbase", color:"#0052ff", ink:"#fff", status:"soon", statusTxt:"待 SEC 豁免",
+      sub:"代币化美股路线图",
+      promo:[
+        "被业界点名为代币化股票关键玩家",
+        "路线图按 SEC '创新豁免' 设计(豁免已被推迟,时间待定)"
+      ],
+      activities:[
+        {t:"代币化美股产品筹备中,待 SEC 监管框架落地", src:"https://www.coindesk.com/policy/2026/05/18/sec-to-propose-tokenized-stock-framework-as-wall-street-efforts-deepen-bloomberg"}
+      ],
+      xsig:"🔒 官推/评论区互动待本地登录 X 抓取",
+      sources:[
+        {label:"CoinDesk·SEC框架", url:"https://www.coindesk.com/policy/2026/05/18/sec-to-propose-tokenized-stock-framework-as-wall-street-efforts-deepen-bloomberg"}
+      ]
     }
   ],
   techniques:[
-    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"悬念/解谜预告", bitget:0, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"平台币联动炒作", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"全品类货架压制", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"新人首单返券", bitget:"?", binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"Pre-IPO 打新/认购拉新", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?"}
-  ],
-  actions:[
-    {h:"合规叙事前置", p:"把 BIT 的'安全/合规'卖点包装成硬背书(持牌+真股托管+投资者保护),做发布第一话术。", src:"对标 Bitget Reality", url:"https://www.theblock.co/post/402518/bitget-launches-reality-rwa"},
-    {h:"悬念式预热", p:"券商产品上线前做一轮谐音/解谜预告,KOL+社区先猜先传,把发布拉成一周话题,零成本拉新。", src:"对标 Binance Hey Stock", url:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"},
-    {h:"Pre-IPO 打新拉新", p:"借 SpaceX 等 IPO 热点做'打新认购'活动($X 起、限量、配 Launchpool/空投),把热点事件转成入金拉新。", src:"对标 Bitget IPO Prime", url:"https://www.bitget.com/activity-hub/spacex-pre-ipo"},
-    {h:"渠道码埋进每条链接", p:"所有社媒/投放拉新链接都带渠道码,精准归因(和你们 GA4/UTM 体系一致),知道每条内容拉来多少人。", src:"对标 Bitget UEX", url:"https://x.com/bitget"},
-    {h:"奖励绑真实使用", p:"抵扣券/红包触发点设在首笔交易/入金/转账,过滤羊毛党(契合你们 1.79% 券+审核通过率思路)。", src:"对标 Bitget PayFi", url:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:1},
+    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?"},
+    {name:"悬念/解谜预告", bitget:0, binance:1, okx:0, gate:0, bybit:0, htx:0, kraken:0, coinbase:0},
+    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?"},
+    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0},
+    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?"},
+    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:0, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:"?"},
+    {name:"主题活动节/节庆运营", bitget:1, binance:"?", okx:"?", gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?"},
+    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?"},
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?"},
+    {name:"新人首单返券", bitget:"?", binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?"}
   ]
 };
 
@@ -289,17 +347,14 @@ $("#grid").innerHTML=DATA.competitors.map(c=>`
     <div class="blk"><div class="lbl">宣发手段</div><ul>${liList(c.promo)}</ul></div>
     <div class="blk"><div class="lbl">在跑活动</div><ul>${liList(c.activities)}</ul></div>
     <div class="x-sig"><div class="lbl">X 信号</div><div>${c.xsig}</div></div>
-    <div class="align"><div class="lbl">BIT 可对齐</div><div>${c.align}</div></div>
     ${c.sources&&c.sources.length?`<div class="srcs">${c.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">↗ ${s.label}</a>`).join("")}</div>`:''}
   </div>`).join("");
 
-const cols=[["bitget","Bitget"],["binance","Binance"],["okx","OKX"],["gate","Gate"],["bybit","Bybit"],["htx","HTX"]];
+const cols=[["bitget","Bitget"],["binance","Binance"],["okx","OKX"],["gate","Gate"],["bybit","Bybit"],["htx","HTX"],["kraken","Kraken"],["coinbase","Coinbase"]];
 const cell=v=>v===1?'<span class="yes">●</span>':v===0?'<span class="no">○</span>':'<span class="qq">?</span>';
 $("#matrix").innerHTML=`<table><thead><tr><th>宣发手段</th>${cols.map(c=>`<th>${c[1]}</th>`).join("")}</tr></thead>
   <tbody>${DATA.techniques.map(t=>`<tr><td>${t.name}</td>${cols.map(c=>`<td>${cell(t[c[0]])}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
 $("#legend").innerHTML='● 在用　○ 未用　? 待抓取';
-
-$("#actions").innerHTML=DATA.actions.map(a=>`<div class="act"><h4>${a.h}</h4><p>${a.p}</p><div class="src">${a.url?`<a href="${a.url}" target="_blank" rel="noopener">${a.src} ↗</a>`:a.src}</div></div>`).join("");
 </script>
 </body>
 </html>
