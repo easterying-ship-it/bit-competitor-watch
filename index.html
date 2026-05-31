@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>券商竞品宣发监控 · BIT</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#fff; --ink:#16181c; --sub:#5b6470; --line:#e6e8eb;
+    --accent:#3b5bdb; --good:#1f9d6b; --warn:#d97706; --hot:#e03131;
+    --chip:#eef1f6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;padding:28px 20px 80px}
+  .wrap{max-width:1180px;margin:0 auto}
+  header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;margin-bottom:6px}
+  h1{font-size:24px;letter-spacing:-.3px}
+  h1 small{font-size:13px;color:var(--sub);font-weight:400;margin-left:8px}
+  .meta{font-size:12px;color:var(--sub);text-align:right}
+  .meta b{color:var(--ink)}
+  .sec-title{font-size:13px;font-weight:700;color:var(--sub);text-transform:uppercase;letter-spacing:.6px;margin:32px 0 12px;display:flex;align-items:center;gap:8px}
+  .sec-title::before{content:"";width:3px;height:14px;background:var(--accent);border-radius:2px}
+
+  /* highlights */
+  .hl{background:linear-gradient(180deg,#fff, #fafbfd);border:1px solid var(--line);border-left:3px solid var(--hot);border-radius:12px;padding:16px 18px;margin-bottom:6px}
+  .hl ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  .hl li{font-size:14px;display:flex;gap:10px;align-items:flex-start}
+  .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .t-new{background:#ffe3e3;color:#c92a2a}.t-up{background:#fff3bf;color:#a07b00}.t-info{background:#e7f5ff;color:#1864ab}
+
+  /* competitor grid */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
+  .card-h{display:flex;align-items:center;gap:10px}
+  .logo{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:15px;flex-shrink:0}
+  .card-h .nm{font-size:16px;font-weight:700}
+  .card-h .st{font-size:12px;color:var(--sub)}
+  .status-pill{margin-left:auto;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
+  .live{background:#d3f9d8;color:#2b8a3e}.soon{background:#fff3bf;color:#a07b00}.watch{background:var(--chip);color:var(--sub)}
+  .blk{font-size:13px}
+  .blk .lbl{font-size:11px;font-weight:700;color:var(--sub);text-transform:uppercase;letter-spacing:.4px;margin-bottom:5px}
+  .blk ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+  .blk li{padding-left:14px;position:relative;color:#2b2f36}
+  .blk li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:#c4c9d1}
+  .align{background:#f1f8f4;border:1px solid #d7ece0;border-radius:9px;padding:10px 12px}
+  .align .lbl{color:var(--good)}
+  .x-sig{background:#f7f9fc;border:1px dashed #cfd6e0;border-radius:9px;padding:10px 12px}
+  .x-sig .lbl{color:var(--accent)}
+  .pending{color:#9aa2ad;font-style:italic}
+
+  /* matrix */
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+  th{background:#fafbfc;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--sub);font-weight:700}
+  td:first-child{font-weight:600}
+  .yes{color:var(--good);font-weight:700}.no{color:#cdd2da}
+  tr:last-child td{border-bottom:none}
+
+  /* actions */
+  .actions{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+  .act{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;border-top:3px solid var(--accent)}
+  .act h4{font-size:14px;margin-bottom:6px}
+  .act p{font-size:13px;color:var(--sub)}
+  .act .src{font-size:11px;color:#aab1bb;margin-top:8px}
+  footer{margin-top:36px;font-size:11px;color:#aab1bb;text-align:center;line-height:1.8}
+  a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>券商竞品宣发监控 <small>头部交易所 · 美股/券商业务 · 中文向</small></h1>
+    </div>
+    <div class="meta">
+      数据窗口 <b id="range"></b><br>
+      最近更新 <b id="updated"></b> · 下次自动刷新 <b id="next"></b>
+    </div>
+  </header>
+
+  <div class="sec-title">本期高亮 / 变化</div>
+  <div class="hl"><ul id="highlights"></ul></div>
+
+  <div class="sec-title">竞品逐家拆解</div>
+  <div class="grid" id="grid"></div>
+
+  <div class="sec-title">宣发手段对照矩阵</div>
+  <div id="matrix"></div>
+
+  <div class="sec-title">BIT 可对齐 / 借鉴动作</div>
+  <div class="actions" id="actions"></div>
+
+  <footer>
+    自动生成 · 信源:官方活动页 + 网络新闻/KOL + X 流传内容(远程) / X 官推原帖+评论区互动(本地交互补充)<br>
+    远程 /schedule 跑不了 X 登录态,带 🔒 的字段需本地交互刷新 · BIT 美股运营
+  </footer>
+</div>
+
+<script>
+// ===== DATA(每次刷新只改这块) =====
+const DATA = {
+  range: "2026-05-22 → 2026-05-31",
+  updated: "2026-05-31",
+  next: "每日 09:00(远程定时)",
+  highlights: [
+    {tag:"t-new", txt:"Bitget 5/26 上线 Reality:把'代币化美股'升级为'持牌金融平台'叙事(FINRA 注册 + SIPC 保护 + 美国持牌券商 1:1 托管真股),一次铺 100+ 标的。"},
+    {tag:"t-new", txt:"Binance 6/1 揭晓预告:发干草堆(haystack)图谐音 'Hey Stock' 做悬念营销,CZ 转发引爆,零信息把 BNB 24h 拉涨 8%+。"},
+    {tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管'——监管背书成为新一轮拉新的第一话术。"},
+    {tag:"t-info", txt:"OKX / Gate / Bybit / HTX 的对位券商动作待本期抓取确认(见下方卡片)。"}
+  ],
+  competitors: [
+    {
+      nm:"Bitget", color:"#00f0ff", ink:"#003", status:"live", statusTxt:"Reality 已上线",
+      sub:"5/26 · 持牌 RWA 平台",
+      promo:[
+        "合规叙事前置:FINRA/SIPC/持牌券商 1:1 托管做第一卖点",
+        "CEO 抛'10% 资产终将代币化'行业级宏大叙事",
+        "全品类货架:100+ 标的(股/ETF/商品/外汇/贵金属)一次压制",
+        "平台币联动:发布即拉动 BGB 社交热度+涨幅"
+      ],
+      activities:[
+        "PayFi Odyssey:$30万奖池,7月起多阶段",
+        "奖励绑定真实使用(刷卡/扫码/P2P转账)而非单纯注册"
+      ],
+      xsig:"🔒 官推发布节奏 / 评论区互动待本地交互抓取",
+      align:"把'安全/合规'卖点换成硬背书话术(持牌+托管+保护),别只说'安全'"
+    },
+    {
+      nm:"Binance", color:"#f0b90b", ink:"#1c1c1c", status:"soon", statusTxt:"6/1 揭晓",
+      sub:"悬念预热期",
+      promo:[
+        "悬念营销:干草堆图谐音 Hey Stock,不说是什么让社区猜",
+        "CZ 亲自转发放大,大佬背书引爆讨论",
+        "节奏:神秘预告→社区解谜→大佬转发→币价异动→正式揭晓",
+        "零信息造势,预告本身=一次免费全网拉新事件"
+      ],
+      activities:[
+        "新用户促销:首笔合格交易得 $10 USDC 券(4/17–5/16)",
+        "Referral Lite / Pro 双模式 + 终身手续费返佣"
+      ],
+      xsig:"🔒 6/1 揭晓后第一时间抓官推原帖+评论区(本地)",
+      align:"上线前做一轮谐音/解谜悬念预告,让 KOL+社区先猜先传,零成本霸屏一周"
+    },
+    {
+      nm:"OKX", color:"#0d0d0d", ink:"#fff", status:"watch", statusTxt:"待抓取",
+      sub:"对位动作核实中",
+      promo:["待本期抓取:是否跟进真股/券商产品及其宣发"],
+      activities:["待抓取:在跑的拉新活动 / 奖池 / 规则"],
+      xsig:"🔒 待抓取",
+      align:"—"
+    },
+    {
+      nm:"Gate", color:"#2354e6", ink:"#fff", status:"watch", statusTxt:"待抓取",
+      sub:"对位动作核实中",
+      promo:["待本期抓取"],
+      activities:["待抓取"],
+      xsig:"🔒 待抓取",
+      align:"—"
+    },
+    {
+      nm:"Bybit", color:"#f7a600", ink:"#1c1c1c", status:"watch", statusTxt:"待抓取",
+      sub:"对位动作核实中",
+      promo:["待本期抓取"],
+      activities:["待抓取"],
+      xsig:"🔒 待抓取",
+      align:"—"
+    },
+    {
+      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"watch", statusTxt:"待抓取",
+      sub:"对位动作核实中",
+      promo:["待本期抓取"],
+      activities:["待抓取"],
+      xsig:"🔒 待抓取",
+      align:"—"
+    }
+  ],
+  techniques:[
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
+    {name:"悬念/解谜预告", bitget:0, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
+    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
+    {name:"平台币联动炒作", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
+    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?"},
+    {name:"全品类货架压制", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?"},
+    {name:"新人首单返券", bitget:"?", binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"}
+  ],
+  actions:[
+    {h:"合规叙事前置", p:"把 BIT 的'安全/合规'卖点包装成硬背书(持牌+真股托管+投资者保护),做发布第一话术。", src:"对标 Bitget Reality"},
+    {h:"悬念式预热", p:"券商产品上线前做一轮谐音/解谜预告,KOL+社区先猜先传,把发布拉成一周话题,零成本拉新。", src:"对标 Binance Hey Stock"},
+    {h:"奖励绑真实使用", p:"抵扣券/红包触发点设在首笔交易/入金/转账,过滤羊毛党(契合你们 1.79% 券+审核通过率思路)。", src:"对标 Bitget PayFi"},
+    {h:"发布=营销事件", p:"设计一个可自传播的钩子(空投预期/限量名额/榜单),让产品发布本身拉动声量。", src:"对标 Bitget BGB 联动"}
+  ]
+};
+
+// ===== RENDER =====
+const $=s=>document.querySelector(s);
+$("#range").textContent=DATA.range; $("#updated").textContent=DATA.updated; $("#next").textContent=DATA.next;
+$("#highlights").innerHTML=DATA.highlights.map(h=>`<li><span class="tag ${h.tag}">${h.tag=='t-new'?'NEW':h.tag=='t-up'?'趋势':'待核实'}</span><span>${h.txt}</span></li>`).join("");
+
+$("#grid").innerHTML=DATA.competitors.map(c=>`
+  <div class="card">
+    <div class="card-h">
+      <div class="logo" style="background:${c.color};color:${c.ink}">${c.nm[0]}</div>
+      <div><div class="nm">${c.nm}</div><div class="st">${c.sub}</div></div>
+      <span class="status-pill ${c.status}">${c.statusTxt}</span>
+    </div>
+    <div class="blk"><div class="lbl">宣发手段</div><ul>${c.promo.map(p=>`<li class="${/待抓取|待本期/.test(p)?'pending':''}">${p}</li>`).join("")}</ul></div>
+    <div class="blk"><div class="lbl">在跑活动</div><ul>${c.activities.map(a=>`<li class="${/待抓取/.test(a)?'pending':''}">${a}</li>`).join("")}</ul></div>
+    <div class="x-sig"><div class="lbl">X 信号</div><div>${c.xsig}</div></div>
+    <div class="align"><div class="lbl">BIT 可对齐</div><div>${c.align}</div></div>
+  </div>`).join("");
+
+const cols=[["bitget","Bitget"],["binance","Binance"],["okx","OKX"],["gate","Gate"],["bybit","Bybit"],["htx","HTX"]];
+const cell=v=>v===1?'<span class="yes">●</span>':v===0?'<span class="no">○</span>':'<span style="color:#c4870a">?</span>';
+$("#matrix").innerHTML=`<table><thead><tr><th>宣发手段</th>${cols.map(c=>`<th>${c[1]}</th>`).join("")}</tr></thead>
+  <tbody>${DATA.techniques.map(t=>`<tr><td>${t.name}</td>${cols.map(c=>`<td>${cell(t[c[0]])}</td>`).join("")}</tr>`).join("")}</tbody></table>
+  <div style="font-size:11px;color:#aab1bb;margin-top:6px">● 在用　○ 未用　? 待抓取</div>`;
+
+$("#actions").innerHTML=DATA.actions.map(a=>`<div class="act"><h4>${a.h}</h4><p>${a.p}</p><div class="src">${a.src}</div></div>`).join("");
+</script>
+</body>
+</html>
