@@ -67,12 +67,24 @@
   .t-new{background:rgba(248,113,113,.15);color:#fca5a5;border:1px solid rgba(248,113,113,.3)}
   .t-up{background:rgba(251,191,36,.13);color:#fcd34d;border:1px solid rgba(251,191,36,.28)}
   .t-info{background:rgba(77,141,255,.14);color:#93c0ff;border:1px solid rgba(77,141,255,.3)}
+  /* signal groups */
+  .hl-grp{margin-bottom:16px}
+  .hl-gt{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-size:14px;font-weight:600;margin:0 0 8px 2px}
+  .hl-gt span{font-family:var(--mono);font-size:10px;color:var(--dim);font-weight:400;letter-spacing:.5px}
+  .grp-main .hl-gt{color:var(--gold)}
+  .grp-main .hl-gt::before{content:"🎯";font-size:13px}
+  .grp-main .hl{border-color:rgba(201,168,106,.32);background:linear-gradient(180deg,rgba(201,168,106,.07),rgba(255,255,255,.02));box-shadow:0 0 24px rgba(201,168,106,.08),inset 0 1px 0 rgba(255,255,255,.04)}
+  .grp-other .hl-gt{color:var(--sub)}
+  .grp-other .hl-gt::before{content:"▫";color:var(--dim)}
+  .primary-badge{font-family:var(--mono);font-size:9px;font-weight:600;color:#0a1626;background:var(--gold);border-radius:5px;padding:2px 6px;letter-spacing:.5px;margin-left:7px;vertical-align:2px}
 
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(372px,1fr));gap:18px}
   .card{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:20px;
     display:flex;flex-direction:column;gap:14px;backdrop-filter:blur(10px);position:relative;overflow:hidden;
     box-shadow:0 8px 30px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.05);transition:transform .25s,border-color .25s,box-shadow .25s}
   .card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(77,141,255,.5),transparent)}
+  .card.tier1{border-color:rgba(201,168,106,.3)}
+  .card.tier1::before{height:2px;background:linear-gradient(90deg,transparent,rgba(201,168,106,.7),transparent)}
   .card:hover{transform:translateY(-3px);border-color:rgba(77,141,255,.35);box-shadow:0 14px 40px rgba(0,0,0,.4),0 0 0 1px rgba(77,141,255,.15)}
   .card-h{display:flex;align-items:center;gap:12px}
   .logo{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex-shrink:0;font-family:var(--serif);box-shadow:0 4px 14px rgba(0,0,0,.4)}
@@ -131,7 +143,7 @@
   </header>
 
   <div class="sec-title">本期高亮 / 变化<span class="en">Signals</span></div>
-  <div class="hl"><ul id="highlights"></ul></div>
+  <div id="signals"></div>
 
   <div class="sec-title">竞品逐家拆解<span class="en">Competitors</span></div>
   <div class="grid" id="grid"></div>
@@ -153,19 +165,20 @@ const DATA = {
   range: "2026-05-22 → 2026-05-31",
   updated: "2026-05-31 · 含 X 实抓",
   next: "每小时整点(远程定时)",
+  // grp: 'main'(主要竞争者 Bitget/Binance) | 'other'(其他竞争者/行业)
   highlights: [
-    {tag:"t-up", txt:"【监管 macro】SEC 5月底推迟代币化股票'创新豁免'(Nasdaq/NYSE/Cboe 闭门施压),整条赛道时间表生变;Coinbase/Robinhood/Ondo 等的上线路线图都按此豁免设计,受直接影响。", src:"https://cryptoslate.com/sec-may-let-crypto-exchanges-trade-tokenized-stocks-without-asking-wall-street-first/"},
-    {tag:"t-new", txt:"HTX 5/25 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字 + AI 大盘股;配 HTX Research 报告做'定价权'声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
-    {tag:"t-new", txt:"OKX 获 NYSE 母公司 ICE 入股($25B 估值 + 董事会席位),将向用户开放 NYSE 代币化股票(H2 2026);OKB 闻讯涨 38%。传统交易所背书成新打法。", src:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"},
-    {tag:"t-new", txt:"Kraken × Nasdaq 合作发行/交易代币化股票;其 xStocks 累计交易额破 $250亿,为最大代币化股票供应商(占 top25 多数)。", src:"https://blog.kraken.com/product/xstocks/25-billion-in-total-transaction-volume"},
-    {tag:"t-new", txt:"Bybit 推 'TradFi Stock Festival' 主题拉新活动,每周上新股票永续,把华尔街标的搬进币圈做节庆式运营。", src:"https://www.thestreet.com/crypto/press-releases/bybit-tradfi-stock-festival-brings-wall-street-to-crypto-traders-expanding-stock-cfds-in-2026"},
-    {tag:"t-new", txt:"【X实抓 5/31 20:00】Binance Hey Stock 悬念进入 'zoom in 放大看图' 互动阶段(6.9k 浏览),典型零信息预热;6/1 揭晓临近。", src:"https://x.com/binance/status/2061055220000456904"},
-    {tag:"t-new", txt:"【X实抓 5/31】Bitget 5/26 上线 Reality(持牌 RWA,FINRA/SIPC 1:1 托管真股);官推力推 'UEX 通用交易所' 一站式定位 + 拉新链接埋渠道码(regd/wsvk)。", src:"https://x.com/bitget"},
-    {tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新的第一话术。"}
+    {grp:"main", tag:"t-new", txt:"【X实抓 5/31】Bitget 5/26 上线 Reality(持牌 RWA,FINRA/SIPC 1:1 托管真股);官推力推 'UEX 通用交易所' 一站式定位 + 拉新链接埋渠道码(regd/wsvk)。打法与 BIT 高度贴脸。", src:"https://x.com/bitget"},
+    {grp:"main", tag:"t-new", txt:"【X实抓 5/31 20:00】Binance Hey Stock 悬念进入 'zoom in 放大看图' 互动阶段(6.9k 浏览),典型零信息预热;6/1 揭晓临近,大概率真股产品。", src:"https://x.com/binance/status/2061055220000456904"},
+    {grp:"other", tag:"t-up", txt:"【监管 macro】SEC 5月底推迟代币化股票'创新豁免'(Nasdaq/NYSE/Cboe 闭门施压),整条赛道时间表生变;Coinbase/Robinhood/Ondo 等的上线路线图都按此豁免设计,受直接影响。", src:"https://cryptoslate.com/sec-may-let-crypto-exchanges-trade-tokenized-stocks-without-asking-wall-street-first/"},
+    {grp:"other", tag:"t-new", txt:"OKX 获 NYSE 母公司 ICE 入股($25B 估值 + 董事会席位),将向用户开放 NYSE 代币化股票(H2 2026);OKB 闻讯涨 38%。传统交易所背书成新打法。", src:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"},
+    {grp:"other", tag:"t-new", txt:"HTX 5/25 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字 + AI 大盘股;配 HTX Research 报告做'定价权'声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
+    {grp:"other", tag:"t-new", txt:"Kraken × Nasdaq 合作发行/交易代币化股票;其 xStocks 累计交易额破 $250亿,为最大代币化股票供应商(占 top25 多数)。", src:"https://blog.kraken.com/product/xstocks/25-billion-in-total-transaction-volume"},
+    {grp:"other", tag:"t-new", txt:"Bybit 推 'TradFi Stock Festival' 主题拉新活动,每周上新股票永续,把华尔街标的搬进币圈做节庆式运营。", src:"https://www.thestreet.com/crypto/press-releases/bybit-tradfi-stock-festival-brings-wall-street-to-crypto-traders-expanding-stock-cfds-in-2026"},
+    {grp:"other", tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新的第一话术。"}
   ],
   competitors: [
     {
-      nm:"Bitget", color:"#00f0ff", ink:"#003", status:"live", statusTxt:"Reality 已上线",
+      nm:"Bitget", tier:1, color:"#00f0ff", ink:"#003", status:"live", statusTxt:"Reality 已上线",
       sub:"5/26 · 持牌 RWA + UEX 定位",
       promo:[
         "合规叙事前置:FINRA/SIPC/持牌券商 1:1 托管做第一卖点",
@@ -185,7 +198,7 @@ const DATA = {
       ]
     },
     {
-      nm:"Binance", color:"#f0b90b", ink:"#1c1c1c", status:"soon", statusTxt:"6/1 揭晓",
+      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"soon", statusTxt:"6/1 揭晓",
       sub:"悬念预热期",
       promo:[
         "悬念营销:干草堆图谐音 Hey Stock,不说是什么让社区猜",
@@ -333,15 +346,24 @@ const lnk=u=>u?` <a class="src-lnk" href="${u}" target="_blank" rel="noopener">�
 $("#range").textContent=DATA.range; $("#updated").textContent=DATA.updated; $("#next").textContent=DATA.next;
 
 const tagLabel={'t-new':'NEW','t-up':'趋势','t-info':'待核实'};
-$("#highlights").innerHTML=DATA.highlights.map(h=>`<li><span class="tag ${h.tag}">${tagLabel[h.tag]||''}</span><span>${h.txt}${lnk(h.src)}</span></li>`).join("");
+const sigGroups=[
+  {key:'main', cls:'grp-main', title:'主要竞争者动态', sub:'Bitget · Binance'},
+  {key:'other', cls:'grp-other', title:'其他竞争者 / 行业', sub:'OKX · Gate · Bybit · HTX · Kraken · Coinbase'}
+];
+const hlItem=h=>`<li><span class="tag ${h.tag}">${tagLabel[h.tag]||''}</span><span>${h.txt}${lnk(h.src)}</span></li>`;
+$("#signals").innerHTML=sigGroups.map(g=>{
+  const items=DATA.highlights.filter(h=>(h.grp||'other')===g.key);
+  if(!items.length) return '';
+  return `<div class="hl-grp ${g.cls}"><div class="hl-gt">${g.title}<span>${g.sub}</span></div><div class="hl"><ul>${items.map(hlItem).join('')}</ul></div></div>`;
+}).join('');
 
 const stMap={live:'live-s',soon:'soon-s',watch:'watch-s'};
 const liList=arr=>arr.map(it=>`<li class="${/待抓取|待本期/.test(itemText(it))?'pending':''}">${itemText(it)}${lnk(itemSrc(it))}</li>`).join("");
 $("#grid").innerHTML=DATA.competitors.map(c=>`
-  <div class="card">
+  <div class="card ${c.tier===1?'tier1':''}">
     <div class="card-h">
       <div class="logo" style="background:${c.color};color:${c.ink}">${c.nm[0]}</div>
-      <div><div class="nm">${c.nm}</div><div class="st">${c.sub}</div></div>
+      <div><div class="nm">${c.nm}${c.tier===1?'<span class="primary-badge">主要竞品</span>':''}</div><div class="st">${c.sub}</div></div>
       <span class="status-pill ${stMap[c.status]||'watch-s'}">${c.statusTxt}</span>
     </div>
     <div class="blk"><div class="lbl">宣发手段</div><ul>${liList(c.promo)}</ul></div>
