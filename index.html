@@ -162,9 +162,11 @@
 // ===== DATA(每次刷新只改这块) =====
 const DATA = {
   range: "2026-05-22 → 2026-05-31",
-  updated: "2026-05-31",
+  updated: "2026-05-31 · 含 X 实抓",
   next: "每小时整点(远程定时)",
   highlights: [
+    {tag:"t-new", txt:"【X实抓 5/31】Bitget 官推力推 'UEX = Universal Exchange(通用交易所)' 一站式定位,'啥都在这' 话术 + activity-hub 拉新链接带渠道码(channelCode=regd / vipCode=wsvk),把渠道追踪做进每条推。"},
+    {tag:"t-new", txt:"【X实抓 5/31 20:00】Binance Hey Stock 悬念进入'zoom in 放大看图'互动阶段(6.9k 浏览),评论区多为围观('zoom in lol'),典型零信息预热;置顶仍是 Yi 上榜 Fortune(非股票)。"},
     {tag:"t-new", txt:"Bitget 5/26 上线 Reality:把'代币化美股'升级为'持牌金融平台'叙事(FINRA 注册 + SIPC 保护 + 美国持牌券商 1:1 托管真股),一次铺 100+ 标的。"},
     {tag:"t-new", txt:"Binance 6/1 揭晓预告:发干草堆(haystack)图谐音 'Hey Stock' 做悬念营销,CZ 转发引爆,零信息把 BNB 24h 拉涨 8%+。"},
     {tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管'——监管背书成为新一轮拉新的第一话术。"},
@@ -184,8 +186,8 @@ const DATA = {
         "PayFi Odyssey:$30万奖池,7月起多阶段",
         "奖励绑定真实使用(刷卡/扫码/P2P转账)而非单纯注册"
       ],
-      xsig:"🔒 官推发布节奏 / 评论区互动待本地交互抓取",
-      align:"把'安全/合规'卖点换成硬背书话术(持牌+托管+保护),别只说'安全'"
+      xsig:"📡 X实抓(5/31):官推每日多条(约3-6h一条);当前主推 'UEX 通用交易所' 一站式定位 + activity-hub 带渠道码拉新链接(regd/wsvk);置顶为爆款视频(15.8M 浏览)做泛流量。",
+      align:"把'安全/合规'卖点换成硬背书话术(持牌+托管+保护),别只说'安全';学它把渠道码埋进每条社媒拉新链接"
     },
     {
       nm:"Binance", color:"#f0b90b", ink:"#1c1c1c", status:"soon", statusTxt:"6/1 揭晓",
@@ -200,7 +202,7 @@ const DATA = {
         "新用户促销:首笔合格交易得 $10 USDC 券(4/17–5/16)",
         "Referral Lite / Pro 双模式 + 终身手续费返佣"
       ],
-      xsig:"🔒 6/1 揭晓后第一时间抓官推原帖+评论区(本地)",
+      xsig:"📡 X实抓(5/31 20:00):官推约每3h一条;Hey Stock 悬念进行中,最新发 'zoom in' 放大看图(6.9k 浏览),评论区多为围观'zoom in lol';6/1 揭晓临近。",
       align:"上线前做一轮谐音/解谜悬念预告,让 KOL+社区先猜先传,零成本霸屏一周"
     },
     {
@@ -243,7 +245,8 @@ const DATA = {
     {name:"平台币联动炒作", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
     {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?"},
     {name:"全品类货架压制", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"新人首单返券", bitget:"?", binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"}
+    {name:"新人首单返券", bitget:"?", binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?"}
   ],
   actions:[
     {h:"合规叙事前置", p:"把 BIT 的'安全/合规'卖点包装成硬背书(持牌+真股托管+投资者保护),做发布第一话术。", src:"对标 Bitget Reality"},
