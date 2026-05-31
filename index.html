@@ -28,7 +28,6 @@
       linear-gradient(180deg,#03101e 0%, #061a33 45%, #03101e 100%);
     background-attachment:fixed;
     padding:34px 22px 90px;position:relative;overflow-x:hidden}
-  /* tech grid + data streaks */
   body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
     background-image:
       linear-gradient(rgba(120,160,220,.05) 1px,transparent 1px),
@@ -39,7 +38,6 @@
     background-image:repeating-linear-gradient(115deg,transparent 0 80px,rgba(77,141,255,.06) 80px 81px)}
   .wrap{max-width:1220px;margin:0 auto;position:relative;z-index:1}
 
-  /* header */
   header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;
     padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:8px}
   .brand{display:flex;align-items:center;gap:14px}
@@ -60,7 +58,6 @@
   .sec-title::before{content:"";width:4px;height:18px;background:linear-gradient(var(--gold),var(--blue));border-radius:3px;box-shadow:0 0 12px rgba(77,141,255,.5)}
   .sec-title .en{font-family:var(--mono);font-size:10.5px;color:var(--dim);font-weight:400;text-transform:uppercase;letter-spacing:2px;margin-left:auto}
 
-  /* highlights */
   .hl{background:var(--glass);border:1px solid var(--line);border-radius:16px;padding:6px 20px;
     backdrop-filter:blur(8px);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
   .hl ul{list-style:none}
@@ -71,7 +68,6 @@
   .t-up{background:rgba(251,191,36,.13);color:#fcd34d;border:1px solid rgba(251,191,36,.28)}
   .t-info{background:rgba(77,141,255,.14);color:#93c0ff;border:1px solid rgba(77,141,255,.3)}
 
-  /* competitor grid */
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(372px,1fr));gap:18px}
   .card{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:20px;
     display:flex;flex-direction:column;gap:14px;backdrop-filter:blur(10px);position:relative;overflow:hidden;
@@ -95,8 +91,15 @@
   .align{background:linear-gradient(180deg,rgba(201,168,106,.1),rgba(201,168,106,.03));border:1px solid rgba(201,168,106,.28);border-radius:11px;padding:11px 13px;font-size:13px;color:#ecd9b6}
   .align .lbl{color:var(--gold)}
   .pending{color:#5e708a;font-style:italic}
+  /* source links */
+  .src-lnk{font-family:var(--mono);font-size:10px;color:var(--blue);text-decoration:none;margin-left:5px;
+    border:1px solid rgba(77,141,255,.3);border-radius:5px;padding:0 4px;white-space:nowrap;vertical-align:1px;transition:background .15s}
+  .src-lnk:hover{background:rgba(77,141,255,.18)}
+  .srcs{display:flex;flex-wrap:wrap;gap:7px;padding-top:4px;border-top:1px dashed var(--line2);margin-top:2px}
+  .srcs a{font-family:var(--mono);font-size:10px;color:var(--sub);text-decoration:none;background:rgba(255,255,255,.04);
+    border:1px solid var(--line);border-radius:6px;padding:3px 8px;transition:color .15s,border-color .15s}
+  .srcs a:hover{color:var(--blue);border-color:rgba(77,141,255,.4)}
 
-  /* matrix */
   .matrix-wrap{background:var(--glass);border:1px solid var(--line);border-radius:16px;overflow:hidden;backdrop-filter:blur(10px)}
   table{width:100%;border-collapse:collapse;font-size:13px}
   th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line2)}
@@ -108,7 +111,6 @@
   .no{color:#3a4a5e}.qq{color:var(--gold)}
   .legend{font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-top:9px;letter-spacing:.5px}
 
-  /* actions */
   .actions{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
   .act{background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:16px 18px;backdrop-filter:blur(10px);position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
   .act::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
@@ -116,6 +118,7 @@
   .act h4{font-family:var(--serif);font-size:15px;margin-bottom:7px;color:#fff}
   .act p{font-size:13px;color:var(--sub);line-height:1.6}
   .act .src{font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:10px;letter-spacing:.5px}
+  .act .src a{color:var(--blue);text-decoration:none}
 
   footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--dim);text-align:center;line-height:2;letter-spacing:.3px}
   a{color:var(--blue);text-decoration:none}
@@ -153,41 +156,50 @@
   <div class="actions" id="actions"></div>
 
   <footer>
-    自动生成 · 每小时刷新 · 信源:官方活动页 + 新闻/KOL + X 流传内容(远程) / X 官推原帖+评论区互动(本地交互补充)<br>
-    🔒 字段需本地登录 X 后刷新 · BIT 美股运营情报台
+    自动生成 · 每小时刷新 · 每条尽量带 ↗ 原始信源 · 信源:官方活动页 + 新闻/KOL + X(📡本地实抓 / 🔒待补)<br>
+    BIT 美股运营情报台
   </footer>
 </div>
 
 <script>
 // ===== DATA(每次刷新只改这块) =====
+// 约定:promo / activities 的每一项可以是 字符串 或 {t:"文本", src:"链接"};highlights 项可带 src;sources 是卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "2026-05-22 → 2026-05-31",
   updated: "2026-05-31 · 含 X 实抓",
   next: "每小时整点(远程定时)",
   highlights: [
-    {tag:"t-new", txt:"【X实抓 5/31】Bitget 官推力推 'UEX = Universal Exchange(通用交易所)' 一站式定位,'啥都在这' 话术 + activity-hub 拉新链接带渠道码(channelCode=regd / vipCode=wsvk),把渠道追踪做进每条推。"},
-    {tag:"t-new", txt:"【X实抓 5/31 20:00】Binance Hey Stock 悬念进入'zoom in 放大看图'互动阶段(6.9k 浏览),评论区多为围观('zoom in lol'),典型零信息预热;置顶仍是 Yi 上榜 Fortune(非股票)。"},
-    {tag:"t-new", txt:"Bitget 5/26 上线 Reality:把'代币化美股'升级为'持牌金融平台'叙事(FINRA 注册 + SIPC 保护 + 美国持牌券商 1:1 托管真股),一次铺 100+ 标的。"},
-    {tag:"t-new", txt:"Binance 6/1 揭晓预告:发干草堆(haystack)图谐音 'Hey Stock' 做悬念营销,CZ 转发引爆,零信息把 BNB 24h 拉涨 8%+。"},
+    {tag:"t-new", txt:"Bitget IPO Prime 推 SpaceX preSPAX 认购(对标 SpaceX 拟 6/12 上市 SPCX):$100 起打新 pre-IPO 代币,总上限 $10亿;配 Launchpool 1412万 KAIO + VIP 空投季最高 $50万,把'打新'做成超级拉新活动。", src:"https://www.bitget.com/activity-hub/spacex-pre-ipo"},
+    {tag:"t-new", txt:"【X实抓 5/31】Bitget 官推力推 'UEX = Universal Exchange(通用交易所)' 一站式定位,拉新链接带渠道码(channelCode=regd / vipCode=wsvk),把渠道追踪做进每条推。", src:"https://x.com/bitget"},
+    {tag:"t-new", txt:"【X实抓 5/31 20:00】Binance Hey Stock 悬念进入'zoom in 放大看图'互动阶段(6.9k 浏览),评论区多为围观,典型零信息预热;6/1 揭晓临近。", src:"https://x.com/binance/status/2061055220000456904"},
+    {tag:"t-new", txt:"Bitget 5/26 上线 Reality:把'代币化美股'升级为'持牌金融平台'叙事(FINRA 注册 + SIPC 保护 + 美国持牌券商 1:1 托管真股),一次铺 100+ 标的。", src:"https://www.theblock.co/post/402518/bitget-launches-reality-rwa"},
+    {tag:"t-new", txt:"Binance 6/1 揭晓预告:发干草堆(haystack)图谐音 'Hey Stock' 做悬念营销,CZ 转发引爆,零信息把 BNB 24h 拉涨 8%+。", src:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"},
     {tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管'——监管背书成为新一轮拉新的第一话术。"},
     {tag:"t-info", txt:"OKX / Gate / Bybit / HTX 的对位券商动作待本期抓取确认(见下方卡片)。"}
   ],
   competitors: [
     {
       nm:"Bitget", color:"#00f0ff", ink:"#003", status:"live", statusTxt:"Reality 已上线",
-      sub:"5/26 · 持牌 RWA 平台",
+      sub:"5/26 · 持牌 RWA 平台 + IPO Prime",
       promo:[
         "合规叙事前置:FINRA/SIPC/持牌券商 1:1 托管做第一卖点",
         "CEO 抛'10% 资产终将代币化'行业级宏大叙事",
         "全品类货架:100+ 标的(股/ETF/商品/外汇/贵金属)一次压制",
-        "平台币联动:发布即拉动 BGB 社交热度+涨幅"
+        "平台币联动:发布即拉动 BGB 社交热度+涨幅",
+        "社媒每条拉新链接埋渠道码追踪(regd/wsvk)"
       ],
       activities:[
-        "PayFi Odyssey:$30万奖池,7月起多阶段",
-        "奖励绑定真实使用(刷卡/扫码/P2P转账)而非单纯注册"
+        {t:"IPO Prime · SpaceX preSPAX 认购:$100 起打新 pre-IPO 代币(总上限 $10亿,USDT/USDGO 申购),对标 SpaceX 拟 6/12 上市", src:"https://www.bitget.com/activity-hub/spacex-pre-ipo"},
+        {t:"配套 Launchpool:锁 BGB/USDGO/KAIO 分 1412万 KAIO + VIP 空投季最高 $50万", src:"https://www.bitget.com/blog/articles/bitget-ipo-prime-prespax-subscription-launch"},
+        {t:"PayFi Odyssey:$30万奖池,奖励绑真实使用(刷卡/扫码/P2P转账)非单纯注册", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
       ],
       xsig:"📡 X实抓(5/31):官推每日多条(约3-6h一条);当前主推 'UEX 通用交易所' 一站式定位 + activity-hub 带渠道码拉新链接(regd/wsvk);置顶为爆款视频(15.8M 浏览)做泛流量。",
-      align:"把'安全/合规'卖点换成硬背书话术(持牌+托管+保护),别只说'安全';学它把渠道码埋进每条社媒拉新链接"
+      align:"把'安全/合规'卖点换成硬背书话术(持牌+托管+保护);学它把渠道码埋进每条社媒拉新链接",
+      sources:[
+        {label:"官方·SpaceX认购", url:"https://www.bitget.com/activity-hub/spacex-pre-ipo"},
+        {label:"官方·Reality", url:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
+        {label:"X·@bitget", url:"https://x.com/bitget"}
+      ]
     },
     {
       nm:"Binance", color:"#f0b90b", ink:"#1c1c1c", status:"soon", statusTxt:"6/1 揭晓",
@@ -199,11 +211,16 @@ const DATA = {
         "零信息造势,预告本身=一次免费全网拉新事件"
       ],
       activities:[
-        "新用户促销:首笔合格交易得 $10 USDC 券(4/17–5/16)",
-        "Referral Lite / Pro 双模式 + 终身手续费返佣"
+        {t:"新用户促销:首笔合格交易得 $10 USDC 券(4/17–5/16)", src:"https://www.binance.com/en/activity/marketing-campaign"},
+        {t:"Referral Lite / Pro 双模式 + 终身手续费返佣", src:"https://www.binance.com/en/activity/referral"}
       ],
-      xsig:"📡 X实抓(5/31 20:00):官推约每3h一条;Hey Stock 悬念进行中,最新发 'zoom in' 放大看图(6.9k 浏览),评论区多为围观'zoom in lol';6/1 揭晓临近。",
-      align:"上线前做一轮谐音/解谜悬念预告,让 KOL+社区先猜先传,零成本霸屏一周"
+      xsig:"📡 X实抓(5/31 20:00):官推约每3h一条;Hey Stock 悬念进行中,最新发 'zoom in' 放大看图(6.9k 浏览),评论区多为围观;6/1 揭晓临近。",
+      align:"上线前做一轮谐音/解谜悬念预告,让 KOL+社区先猜先传,零成本霸屏一周",
+      sources:[
+        {label:"X·zoom in 原帖", url:"https://x.com/binance/status/2061055220000456904"},
+        {label:"X·@binance", url:"https://x.com/binance"},
+        {label:"新闻·Hey Stock", url:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"}
+      ]
     },
     {
       nm:"OKX", color:"#0d0d0d", ink:"#fff", status:"watch", statusTxt:"待抓取",
@@ -211,31 +228,23 @@ const DATA = {
       promo:["待本期抓取:是否跟进真股/券商产品及其宣发"],
       activities:["待抓取:在跑的拉新活动 / 奖池 / 规则"],
       xsig:"🔒 待抓取",
-      align:"—"
+      align:"—",
+      sources:[]
     },
     {
       nm:"Gate", color:"#2354e6", ink:"#fff", status:"watch", statusTxt:"待抓取",
       sub:"对位动作核实中",
-      promo:["待本期抓取"],
-      activities:["待抓取"],
-      xsig:"🔒 待抓取",
-      align:"—"
+      promo:["待本期抓取"], activities:["待抓取"], xsig:"🔒 待抓取", align:"—", sources:[]
     },
     {
       nm:"Bybit", color:"#f7a600", ink:"#1c1c1c", status:"watch", statusTxt:"待抓取",
       sub:"对位动作核实中",
-      promo:["待本期抓取"],
-      activities:["待抓取"],
-      xsig:"🔒 待抓取",
-      align:"—"
+      promo:["待本期抓取"], activities:["待抓取"], xsig:"🔒 待抓取", align:"—", sources:[]
     },
     {
       nm:"HTX", color:"#1a4cff", ink:"#fff", status:"watch", statusTxt:"待抓取",
       sub:"对位动作核实中",
-      promo:["待本期抓取"],
-      activities:["待抓取"],
-      xsig:"🔒 待抓取",
-      align:"—"
+      promo:["待本期抓取"], activities:["待抓取"], xsig:"🔒 待抓取", align:"—", sources:[]
     }
   ],
   techniques:[
@@ -246,23 +255,30 @@ const DATA = {
     {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?"},
     {name:"全品类货架压制", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?"},
     {name:"新人首单返券", bitget:"?", binance:1, okx:"?", gate:"?", bybit:"?", htx:"?"},
-    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?"}
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?"},
+    {name:"Pre-IPO 打新/认购拉新", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?"}
   ],
   actions:[
-    {h:"合规叙事前置", p:"把 BIT 的'安全/合规'卖点包装成硬背书(持牌+真股托管+投资者保护),做发布第一话术。", src:"对标 Bitget Reality"},
-    {h:"悬念式预热", p:"券商产品上线前做一轮谐音/解谜预告,KOL+社区先猜先传,把发布拉成一周话题,零成本拉新。", src:"对标 Binance Hey Stock"},
-    {h:"奖励绑真实使用", p:"抵扣券/红包触发点设在首笔交易/入金/转账,过滤羊毛党(契合你们 1.79% 券+审核通过率思路)。", src:"对标 Bitget PayFi"},
-    {h:"发布=营销事件", p:"设计一个可自传播的钩子(空投预期/限量名额/榜单),让产品发布本身拉动声量。", src:"对标 Bitget BGB 联动"}
+    {h:"合规叙事前置", p:"把 BIT 的'安全/合规'卖点包装成硬背书(持牌+真股托管+投资者保护),做发布第一话术。", src:"对标 Bitget Reality", url:"https://www.theblock.co/post/402518/bitget-launches-reality-rwa"},
+    {h:"悬念式预热", p:"券商产品上线前做一轮谐音/解谜预告,KOL+社区先猜先传,把发布拉成一周话题,零成本拉新。", src:"对标 Binance Hey Stock", url:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"},
+    {h:"Pre-IPO 打新拉新", p:"借 SpaceX 等 IPO 热点做'打新认购'活动($X 起、限量、配 Launchpool/空投),把热点事件转成入金拉新。", src:"对标 Bitget IPO Prime", url:"https://www.bitget.com/activity-hub/spacex-pre-ipo"},
+    {h:"渠道码埋进每条链接", p:"所有社媒/投放拉新链接都带渠道码,精准归因(和你们 GA4/UTM 体系一致),知道每条内容拉来多少人。", src:"对标 Bitget UEX", url:"https://x.com/bitget"},
+    {h:"奖励绑真实使用", p:"抵扣券/红包触发点设在首笔交易/入金/转账,过滤羊毛党(契合你们 1.79% 券+审核通过率思路)。", src:"对标 Bitget PayFi", url:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
   ]
 };
 
 // ===== RENDER =====
 const $=s=>document.querySelector(s);
+const itemText=it=>typeof it==='string'?it:it.t;
+const itemSrc =it=>typeof it==='string'?null:it.src;
+const lnk=u=>u?` <a class="src-lnk" href="${u}" target="_blank" rel="noopener">↗ 源</a>`:'';
 $("#range").textContent=DATA.range; $("#updated").textContent=DATA.updated; $("#next").textContent=DATA.next;
+
 const tagLabel={'t-new':'NEW','t-up':'趋势','t-info':'待核实'};
-$("#highlights").innerHTML=DATA.highlights.map(h=>`<li><span class="tag ${h.tag}">${tagLabel[h.tag]||''}</span><span>${h.txt}</span></li>`).join("");
+$("#highlights").innerHTML=DATA.highlights.map(h=>`<li><span class="tag ${h.tag}">${tagLabel[h.tag]||''}</span><span>${h.txt}${lnk(h.src)}</span></li>`).join("");
 
 const stMap={live:'live-s',soon:'soon-s',watch:'watch-s'};
+const liList=arr=>arr.map(it=>`<li class="${/待抓取|待本期/.test(itemText(it))?'pending':''}">${itemText(it)}${lnk(itemSrc(it))}</li>`).join("");
 $("#grid").innerHTML=DATA.competitors.map(c=>`
   <div class="card">
     <div class="card-h">
@@ -270,10 +286,11 @@ $("#grid").innerHTML=DATA.competitors.map(c=>`
       <div><div class="nm">${c.nm}</div><div class="st">${c.sub}</div></div>
       <span class="status-pill ${stMap[c.status]||'watch-s'}">${c.statusTxt}</span>
     </div>
-    <div class="blk"><div class="lbl">宣发手段</div><ul>${c.promo.map(p=>`<li class="${/待抓取|待本期/.test(p)?'pending':''}">${p}</li>`).join("")}</ul></div>
-    <div class="blk"><div class="lbl">在跑活动</div><ul>${c.activities.map(a=>`<li class="${/待抓取/.test(a)?'pending':''}">${a}</li>`).join("")}</ul></div>
+    <div class="blk"><div class="lbl">宣发手段</div><ul>${liList(c.promo)}</ul></div>
+    <div class="blk"><div class="lbl">在跑活动</div><ul>${liList(c.activities)}</ul></div>
     <div class="x-sig"><div class="lbl">X 信号</div><div>${c.xsig}</div></div>
     <div class="align"><div class="lbl">BIT 可对齐</div><div>${c.align}</div></div>
+    ${c.sources&&c.sources.length?`<div class="srcs">${c.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">↗ ${s.label}</a>`).join("")}</div>`:''}
   </div>`).join("");
 
 const cols=[["bitget","Bitget"],["binance","Binance"],["okx","OKX"],["gate","Gate"],["bybit","Bybit"],["htx","HTX"]];
@@ -282,7 +299,7 @@ $("#matrix").innerHTML=`<table><thead><tr><th>宣发手段</th>${cols.map(c=>`<t
   <tbody>${DATA.techniques.map(t=>`<tr><td>${t.name}</td>${cols.map(c=>`<td>${cell(t[c[0]])}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
 $("#legend").innerHTML='● 在用　○ 未用　? 待抓取';
 
-$("#actions").innerHTML=DATA.actions.map(a=>`<div class="act"><h4>${a.h}</h4><p>${a.p}</p><div class="src">${a.src}</div></div>`).join("");
+$("#actions").innerHTML=DATA.actions.map(a=>`<div class="act"><h4>${a.h}</h4><p>${a.p}</p><div class="src">${a.url?`<a href="${a.url}" target="_blank" rel="noopener">${a.src} ↗</a>`:a.src}</div></div>`).join("");
 </script>
 </body>
 </html>

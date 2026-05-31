@@ -12,11 +12,16 @@
 
 字段说明:
 - `range` / `updated` / `next`:数据窗口、更新日、下次刷新文案。
-- `highlights[]`:本期变化,`tag` ∈ `t-new`(NEW红) / `t-up`(趋势黄) / `t-info`(待核实蓝)。把**本期新发现**放最上面。
+- `highlights[]`:本期变化,`{tag, txt, src}`。`tag` ∈ `t-new`(NEW红) / `t-up`(趋势黄) / `t-info`(待核实蓝)。`src` 是该条的原始链接(尽量带)。把**本期新发现**放最上面。
 - `competitors[]`:逐家。`status` ∈ `live`(绿) / `soon`(黄) / `watch`(灰)。
-  - `promo[]` 宣发手段、`activities[]` 在跑活动、`xsig` X 信号(远程抓不到登录态的标 🔒)、`align` BIT 可对齐。
+  - `promo[]` 宣发手段、`activities[]` 在跑活动:每一项可以是 **字符串** 或 **`{t:"文本", src:"链接"}`**(有原始出处就用对象带 src)。
+  - `xsig` X 信号(远程抓不到登录态的标 🔒)、`align` BIT 可对齐。
+  - `sources[]`:卡片底部信源 chips `[{label, url}]`(官方活动页/关键新闻/官推)。
 - `techniques[]`:宣发手段矩阵,每家取值 `1`(在用) / `0`(未用) / `"?"`(待抓取)。
-- `actions[]`:给 BIT 的借鉴动作。
+- `actions[]`:给 BIT 的借鉴动作,`{h, p, src, url}`,`url` 是对标对象的链接。
+
+### 链接纪律(重要)
+**每条写进来的内容尽量带原始信源链接**(highlights.src / activities 项的 src / competitors.sources / actions.url),方便人工点开核对原文。官方活动页 > 官推原帖 > 权威新闻 > KOL。拿不到可靠链接就先不带 src,但别编链接。
 
 ### 信源(远程可达)
 1. 官方活动页:`binance.com/activity`、`bitget.com` promotions、OKX/Gate/Bybit/HTX 活动中心
