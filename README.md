@@ -1,10 +1,10 @@
 # 券商竞品宣发监控 · BIT
 
-头部交易所(Bitget / Binance / OKX / Gate / Bybit / HTX)美股/券商业务的**宣发手段 + 在跑活动**动态监控看板,供 BIT 美股运营对齐借鉴。
+头部交易所(Bitget / Binance / OKX / Gate / Bybit / HTX / Kraken / Coinbase,**会随新入场者增补**)美股/券商业务的**宣发手段 + 在跑活动**动态监控看板,供 BIT 美股运营参考。BIT 自己的对齐/目标由市场部讨论,看板不再写「BIT 可对齐」建议。
 
 - **看板**:`index.html`(单文件,数据驱动,打开即用)
-- **在线地址**:Cloudflare Pages 自动部署(每次 push 触发)
-- **刷新**:`/schedule` 远程 agent 每日跑,改 `index.html` 里的 `DATA` 块后 `git push`
+- **在线地址**:GitHub Pages 自动部署(每次 push 触发)
+- **刷新**:`/schedule` 远程 agent 每小时跑,改 `index.html` 里的 `DATA` 块后 `git push`(无变化不提交)
 
 ## 远程 agent 每日更新协议
 
@@ -15,10 +15,14 @@
 - `highlights[]`:本期变化,`{tag, txt, src}`。`tag` ∈ `t-new`(NEW红) / `t-up`(趋势黄) / `t-info`(待核实蓝)。`src` 是该条的原始链接(尽量带)。把**本期新发现**放最上面。
 - `competitors[]`:逐家。`status` ∈ `live`(绿) / `soon`(黄) / `watch`(灰)。
   - `promo[]` 宣发手段、`activities[]` 在跑活动:每一项可以是 **字符串** 或 **`{t:"文本", src:"链接"}`**(有原始出处就用对象带 src)。
-  - `xsig` X 信号(远程抓不到登录态的标 🔒)、`align` BIT 可对齐。
+  - `xsig` X 信号(远程抓不到登录态的标 🔒)。
   - `sources[]`:卡片底部信源 chips `[{label, url}]`(官方活动页/关键新闻/官推)。
-- `techniques[]`:宣发手段矩阵,每家取值 `1`(在用) / `0`(未用) / `"?"`(待抓取)。
-- `actions[]`:给 BIT 的借鉴动作,`{h, p, src, url}`,`url` 是对标对象的链接。
+- `techniques[]`:宣发手段矩阵,列要和 `competitors` 对齐(键名:bitget/binance/okx/gate/bybit/htx/kraken/coinbase…),每家取值 `1`(在用) / `0`(未用) / `"?"`(待抓取)。
+
+> 注:已移除 `align`(BIT 可对齐)和 `actions`(Playbook)——这些交给市场部,看板只客观呈现竞品动态。
+
+### 新入场者监控(重要)
+每轮顺带扫一下市场上**是否有新的交易所/平台加入美股/券商/代币化股票这条赛道**(如 KuCoin、MEXC、Crypto.com、Robinhood、Gemini 等)。一旦发现有实质动作,**在 `competitors[]` 新增一张卡片 + 在 `techniques[]` 每行补一个对应键**,并在 highlights 里报「新入场者」。
 
 ### 链接纪律(重要)
 **每条写进来的内容尽量带原始信源链接**(highlights.src / activities 项的 src / competitors.sources / actions.url),方便人工点开核对原文。官方活动页 > 官推原帖 > 权威新闻 > KOL。拿不到可靠链接就先不带 src,但别编链接。
