@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-05-19 → 06-02",
-  updated: "2026-06-02 05:00 (自动刷新)",
+  range: "滚动近 2 周 · 2026-05-20 → 06-02",
+  updated: "2026-06-02 07:00 (自动刷新)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -192,6 +192,7 @@ const DATA = {
     {grp:"other", date:"5月底", tag:"t-up", txt:"【监管 macro】SEC 推迟代币化股票'创新豁免'(Nasdaq/NYSE/Cboe 施压),DTCC 已设 7/10 月上线时间表;Coinbase/Robinhood/Ondo 路线图受直接影响。", src:"https://www.blockhead.co/2026/05/05/dtcc-sets-july-pilot-october-launch-for-tokenized-securities-platform/"},
     {grp:"other", date:"5/29", tag:"t-new", txt:"【X实抓】Bybit 挂出 '$100M 全球资产 Giveaway·免费送 xStock' 拉新,并连发 #NewFinancialPlatform 悬念预热——继 Binance 后第二家玩悬念营销,值得盯。", src:"https://x.com/Bybit_Official"},
     {grp:"other", date:"5/27", tag:"t-new", txt:"Robinhood 上线 AI 代理交易 beta(股票先行):用户可设 AI agent 在独立账户自主下单执行策略,通过 MCP 协议接入组合分析/下单/研报;后续扩至加密/期权/事件合约/期货;平台 AUM 已达 $3500亿——传统券商带头进入 'agentic finance',对加密交易所 AI 工具叙事构成压力。", src:"https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/"},
+    {grp:"other", date:"5/26", tag:"t-new", txt:"【风险事件·HTX】UK 制裁 HTX 母体 Huobi Global SA(Panama),涉嫌为俄罗斯 A7 网络转移 $15亿规避国际制裁;Binance/OKX/Bybit/Bitget 同步对涉 HTX 转账提升合规审查。HTX 否认线上交易所受直接影响,但合规形象受损,TradFi 扩张节奏面临额外阻力。", src:"https://beincrypto.com/uk-sanctions-justin-suns-htx-russia-ties/"},
     {grp:"other", date:"5/22", tag:"t-new", txt:"OKX + ICE 宣布合推 ICE Brent/WTI 原油永续:ICE 3月战略入股 OKX($25B估值)后首只具体落地联名品种,向 OKX 1.2亿用户开放——ICE 合作从'股权背书'延伸至'实际产品定价',OKX 大宗商品赛道提速。", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
     {grp:"other", date:"趋势", tag:"t-info", txt:"【新入场者补录】KuCoin(Jul/25 xStocks，4100万用户 200+地区)+ Gemini(EU 37+ via Dinari)+ Robinhood(EU 近 2000 代币化股票 MiCA 持牌,Robinhood Chain testnet 2月上线 400万笔,mainnet Q3/Q4 2026)——本轮共三张新卡片。", src:"https://robinhood.com/us/en/newsroom/robinhood-launches-stock-tokens-reveals-layer-2-blockchain-and-expands-crypto-suite-in-eu-and-us-with-perpetual-futures-and-staking/"},
@@ -263,7 +264,7 @@ const DATA = {
       activities:[
         {t:"20+ 股票永续(Mag7,最高 5x),24/7 交易", src:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"},
         {t:"联合 Ondo 提供 263 个代币化股票,并入同一账户", src:"https://www.okx.com/en-us/learn/beyond-crypto"},
-        {t:"NYSE 代币化股票预计 H2 2026 上线(ICE 合作)", src:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"},
+        {t:"NYSE 代币化股票预计 H2 2026 上线(ICE 合作);3/24 NYSE 与 Securitize 签 MOU 共建代币化平台(24/7+即时结算+碎股),ICE(NYSE 母公司)持股 OKX 形成背书链条", src:"https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx"},
         {t:"ICE Brent & WTI 原油永续(5/22 宣布):首只 ICE 联名商品品种,OKX 1.2亿用户可用;ICE 实际价格支撑", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
         {t:"Event Contracts 上线(6/1):猜涨跌·无杠杆·无爆仓,拓宽零售品类", src:"https://x.com/okx"},
         {t:"'Race to a Million' 交易竞赛(6/8–7/6):100万 USDT 奖池,前排奖 F1 Azerbaijan GP 票 + McLaren 周边", src:"https://incrypted.com/en/okx-announces-trading-competition-with-prize-pool-of-up-to-1-million-usdt/"}
@@ -317,12 +318,13 @@ const DATA = {
       ]
     },
     {
-      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"live", statusTxt:"5/25 上线",
-      sub:"TradFi Zone 美股期货",
+      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"watch", statusTxt:"⚠ UK制裁风险 · TradFi运行",
+      sub:"TradFi Zone 美股期货 · ⚠ 5/26 UK 制裁",
       promo:[
         "'打破时间壁垒,把华尔街搬进币圈' 叙事",
         "pre-IPO 噱头:含 SpaceX/OpenAI/Anthropic 名字吸睛",
-        "HTX Research 出研究报告做'定价权转移'声量"
+        "HTX Research 出研究报告做'定价权转移'声量",
+        "⚠ [5/26 风险] UK 制裁母体 Huobi Global SA(涉俄罗斯制裁规避 $15亿):HTX 否认线上交易所受直接影响,但 Binance/OKX/Bybit/Bitget 已提升对 HTX 转账合规审查——赴用户转账/入金路径收窄,TradFi 扩张面临额外合规阻力"
       ],
       activities:[
         {t:"TradFi Zone:66 个 USDT/USDC 永续(5/21),24/7 多空", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
@@ -331,7 +333,9 @@ const DATA = {
       xsig:"📡 X实抓(6/1 12:12):上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000、新人送 $3 拉新——pre-IPO 名字做期货标的;仍 meme/零售调性。",
       sources:[
         {label:"CryptoTimes·上线", url:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
-        {label:"TheBlock·HTX", url:"https://www.theblock.co/post/402586/htx-is-bringing-wall-street-into-the-crypto-world-breaking-time-barriers-and-reshaping-global-finance"}
+        {label:"TheBlock·HTX", url:"https://www.theblock.co/post/402586/htx-is-bringing-wall-street-into-the-crypto-world-breaking-time-barriers-and-reshaping-global-finance"},
+        {label:"Bloomberg·UK制裁", url:"https://www.bloomberg.com/news/articles/2026-05-26/crypto-firm-htx-sanctioned-by-uk-for-helping-kremlin-move-money"},
+        {label:"CoinDesk·各所提高审查", url:"https://www.coindesk.com/business/2026/05/27/major-crypto-exchanges-increase-transfer-scrutiny-with-htx-over-uk-sanctions"}
       ]
     },
     {
