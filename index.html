@@ -163,18 +163,23 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-05-18 → 05-31",
-  updated: "2026-05-31 · 含 X 实抓",
+  range: "滚动近 2 周 · 2026-05-19 → 06-01",
+  updated: "2026-06-01 12:30 · 含 X 实抓",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
-    {grp:"main", date:"6/1", tag:"t-new", txt:"Binance 'Hey Stock' 正式揭晓(预告):大概率真股/美股产品上线,这是本周期最大看点。", src:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"},
+    {grp:"main", date:"6/1", tag:"t-new", txt:"【X实抓 11:29】Bitget 官推发新悬念 'Traders, what could TS stand for? T＿＿＿＿ S＿＿＿＿＿'(引 @Pixar),按字母位疑似 'Trade Stocks'——继 Binance 后又一家用猜词悬念,疑似股票交易产品起势。", src:"https://x.com/bitget"},
+    {grp:"main", date:"6/1", tag:"t-info", txt:"【X实抓 12:00】Binance Hey Stock 悬念降温:6/1 官推主页未见正式揭晓帖,最新转为玩梗('touching grass')+ 区块链科普,热度回落——揭晓或延期/转子账号·活动页发布,待确认。", src:"https://x.com/binance"},
     {grp:"main", date:"5/31", tag:"t-new", txt:"【X实抓 20:00】Binance 官推发 'zoom in 放大看图',Hey Stock 悬念进入互动阶段(6.9k 浏览),典型零信息预热。", src:"https://x.com/binance/status/2061055220000456904"},
     {grp:"main", date:"5/31", tag:"t-new", txt:"【X实抓】Bitget 官推力推 'UEX 通用交易所' 一站式定位,拉新链接埋渠道码(regd/wsvk),把渠道追踪做进每条推。打法与 BIT 高度贴脸。", src:"https://x.com/bitget"},
     {grp:"main", date:"5/30", tag:"t-new", txt:"Binance Hey Stock 悬念发酵,BNB 24h 涨 8%+ 站上 $688——零信息预告本身=一次免费全网拉新事件。", src:"https://startupfortune.com/binances-june-1-reveal-puts-its-next-growth-test-in-focus/"},
     {grp:"main", date:"5/26", tag:"t-new", txt:"Bitget 上线 Reality(持牌 RWA 平台):FINRA 注册 + SIPC 保护 + 美国持牌券商 1:1 托管真股,一次铺 100+ 标的。", src:"https://www.theblock.co/post/402518/bitget-launches-reality-rwa"},
     {grp:"main", date:"5/26", tag:"t-new", txt:"Bitget CEO Gracy 抛 '10% 资产终将代币化' 行业级宏大叙事,给 Reality 装上趋势故事。", src:"https://beincrypto.com/bitget-launches-reality-aligned-with-ceos-10-tokenization-vision/"},
     {grp:"main", date:"7月起", tag:"t-info", txt:"Bitget PayFi Odyssey:$30万奖池多阶段,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册——待开跑,后续关注规则。", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 12:12】HTX 官推上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000 HTX、新人送 $3——把 SpaceX 概念直接做成期货标的拉新。", src:"https://x.com/HTX_Global"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 08:31】OKX 官推 'Event Contracts now live'(事件合约:猜涨跌·无杠杆·无爆仓),拓宽零售拉新品类。", src:"https://x.com/okx"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓】Bybit 联合 @xStocksFi 推 'xStocks Puzzle Hunt'(20万 USDT 奖池)拉新,延续 xStock 免费送主题。", src:"https://x.com/Bybit_Official"},
+    {grp:"other", date:"6/1", tag:"t-up", txt:"【趋势】SpaceX/SPCX 概念在交易所端升温:HTX 上 SPCX 期货、Bitget 蹭 'Polymarket:SpaceX 6/30 前估值摸 $2.5T ~50%'——pre-IPO 名字成拉新流量入口。", src:"https://x.com/bitget"},
     {grp:"other", date:"5月底", tag:"t-up", txt:"【监管 macro】SEC 推迟代币化股票'创新豁免'(Nasdaq/NYSE/Cboe 施压),整条赛道时间表生变;Coinbase/Robinhood/Ondo 路线图受直接影响。", src:"https://cryptoslate.com/sec-may-let-crypto-exchanges-trade-tokenized-stocks-without-asking-wall-street-first/"},
     {grp:"other", date:"5/29", tag:"t-new", txt:"【X实抓】Bybit 挂出 '$100M 全球资产 Giveaway·免费送 xStock' 拉新,并连发 #NewFinancialPlatform 悬念预热——继 Binance 后第二家玩悬念营销,值得盯。", src:"https://x.com/Bybit_Official"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
@@ -195,15 +200,15 @@ const DATA = {
         {t:"UEX 'Universal Exchange' 一站式活动专区(带渠道码拉新链接)", src:"https://www.bitget.com/asia/activity-hub/UEX"},
         {t:"PayFi Odyssey:$30万奖池,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
       ],
-      xsig:"📡 X实抓(5/31):官推每日多条(约3-6h一条);主推 'UEX 通用交易所' 定位 + 渠道码拉新链接;置顶为爆款视频(15.8M 浏览)引泛流量。",
+      xsig:"📡 X实抓(6/1 11:29):官推发新悬念 'TS = T＿＿＿＿ S＿＿＿＿＿'(引 @Pixar),按字母位疑似 'Trade Stocks'——疑似股票交易产品起势;另蹭 'Polymarket:SpaceX 6/30 前估值摸 $2.5T'。仍每日多条 + 渠道码拉新链接。",
       sources:[
         {label:"官方·Reality", url:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
         {label:"X·@bitget", url:"https://x.com/bitget"}
       ]
     },
     {
-      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"soon", statusTxt:"6/1 揭晓",
-      sub:"悬念预热期",
+      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"soon", statusTxt:"悬念降温·待揭晓",
+      sub:"Hey Stock 悬念期",
       promo:[
         "悬念营销:干草堆图谐音 Hey Stock,不说是什么让社区猜",
         "CZ 亲自转发放大,大佬背书引爆讨论",
@@ -214,7 +219,7 @@ const DATA = {
         {t:"新用户促销:首笔合格交易得 $10 USDC 券", src:"https://www.binance.com/en/activity/marketing-campaign"},
         {t:"Referral Lite / Pro 双模式 + 终身手续费返佣", src:"https://www.binance.com/en/activity/referral"}
       ],
-      xsig:"📡 X实抓(5/31 20:00):官推约每3h一条;Hey Stock 悬念进行中,最新发 'zoom in' 放大看图(6.9k 浏览),评论区多为围观;6/1 揭晓临近。",
+      xsig:"📡 X实抓(6/1 12:00):Hey Stock 悬念降温——主页未见正式揭晓帖,最新转为玩梗('touching grass')+ 区块链科普(Academy),热度回落;置顶仍为 5/27 女高管入选 Fortune。揭晓或延期/转活动页,待确认。",
       sources:[
         {label:"X·zoom in 原帖", url:"https://x.com/binance/status/2061055220000456904"},
         {label:"新闻·Hey Stock", url:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"}
@@ -232,9 +237,10 @@ const DATA = {
       activities:[
         {t:"20+ 股票永续(Mag7,最高 5x),24/7 交易", src:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"},
         {t:"联合 Ondo 提供 263 个代币化股票,并入同一账户", src:"https://www.okx.com/en-us/learn/beyond-crypto"},
-        {t:"NYSE 代币化股票预计 H2 2026 上线(ICE 合作)", src:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"}
+        {t:"NYSE 代币化股票预计 H2 2026 上线(ICE 合作)", src:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"},
+        {t:"Event Contracts 上线(6/1):猜涨跌·无杠杆·无爆仓,拓宽零售品类", src:"https://x.com/okx"}
       ],
-      xsig:"📡 X实抓(5/31):约每3h一条;置顶硬打监管牌——'MiCA 7/1 生效,无牌所将被执法,OKX 全合规,趁早 Switch'(143k 浏览)直接拉竞品用户;并推 tokenization 叙事。",
+      xsig:"📡 X实抓(6/1 08:31):上线 'Event Contracts'(事件合约·猜涨跌·无杠杆无爆仓);置顶仍硬打监管牌——'MiCA 7/1 生效,无牌所将被执法,OKX 全合规,趁早 Switch' 直接拉竞品用户。",
       sources:[
         {label:"Fortune·ICE入股", url:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"},
         {label:"TheBlock·股票永续", url:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"}
@@ -252,9 +258,10 @@ const DATA = {
         {t:"xStocks 专区:现货 + 永续(最高 10x),USDT 结算", src:"https://www.gate.com/tokenized-stocks"},
         {t:"代币化股票/ETF/板块代币持续扩品(基于 xStocks + Ondo)", src:"https://coincentral.com/gate-io-launches-24-7-tokenized-stock-trading-with-xstocks-and-usdt/"}
       ],
-      xsig:"📡 X实抓(5/31):约每6h一条;置顶主推 GateAI(AI 交易助手),X 上未重点推美股(靠产品页 xStocks);调性偏品牌/AI。",
+      xsig:"📡 X实抓(6/1):官号已迁至 @Gate(原 @Gate_io 仅留迁移公告);仍主推 GateAI(AI 交易助手),X 上未重点推美股(靠产品页 xStocks);调性偏品牌/AI。",
       sources:[
-        {label:"官方·代币化股票", url:"https://www.gate.com/tokenized-stocks"}
+        {label:"官方·代币化股票", url:"https://www.gate.com/tokenized-stocks"},
+        {label:"X·@Gate", url:"https://x.com/Gate"}
       ]
     },
     {
@@ -270,9 +277,10 @@ const DATA = {
         {t:"Global Assets $100M Giveaway:注册参与,免费送 xStock(美股代币)", src:"https://x.com/Bybit_Official"},
         {t:"TradFi Stock Festival:主题拉新活动 + 扩 Stock CFD", src:"https://www.thestreet.com/crypto/press-releases/bybit-tradfi-stock-festival-brings-wall-street-to-crypto-traders-expanding-stock-cfds-in-2026"},
         {t:"TradFi 永续:20 美股 + 3 商品 + 3 ETF(最高 10x)", src:"https://www.prnewswire.com/news-releases/bybit-introduces-247-tradfi-perpetual-contracts-trading-for-dozens-of-us-stocks-and-global-etfs-302766950.html"},
-        {t:"xStocks 现货:60+ 代币化美股/ETF(Backed 发行)", src:"https://learn.bybit.com/en/bybit-guide/trade-xstocks-on-bybit-spot"}
+        {t:"xStocks 现货:60+ 代币化美股/ETF(Backed 发行)", src:"https://learn.bybit.com/en/bybit-guide/trade-xstocks-on-bybit-spot"},
+        {t:"xStocks Puzzle Hunt(联合 @xStocksFi):20万 USDT 奖池解谜拉新", src:"https://x.com/Bybit_Official"}
       ],
-      xsig:"📡 X实抓(5/31):多条/日;置顶挂 '$100M 全球资产 Giveaway·免费送 xStock' 拉新;连发 #NewFinancialPlatform 悬念('universal financial remote control'/'棋盘有新棋子')预热新金融平台——继 Binance 后第二家玩悬念。",
+      xsig:"📡 X实抓(6/1):置顶仍挂 '$100M 全球资产 Giveaway·免费送 xStock';新增 'xStocks Puzzle Hunt'(联合 @xStocksFi,20万 USDT 奖池)解谜拉新;#NewFinancialPlatform 悬念延续。",
       sources:[
         {label:"PRNewswire·TradFi", url:"https://www.prnewswire.com/news-releases/bybit-introduces-247-tradfi-perpetual-contracts-trading-for-dozens-of-us-stocks-and-global-etfs-302766950.html"},
         {label:"新闻·Stock Festival", url:"https://www.thestreet.com/crypto/press-releases/bybit-tradfi-stock-festival-brings-wall-street-to-crypto-traders-expanding-stock-cfds-in-2026"}
@@ -287,9 +295,10 @@ const DATA = {
         "HTX Research 出研究报告做'定价权转移'声量"
       ],
       activities:[
-        {t:"TradFi Zone:66 个 USDT/USDC 永续(5/21),24/7 多空", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"}
+        {t:"TradFi Zone:66 个 USDT/USDC 永续(5/21),24/7 多空", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
+        {t:"SPCX Futures 上线(6/1):SpaceX 期货 + 瓜分 $20,000 HTX、新人送 $3", src:"https://x.com/HTX_Global"}
       ],
-      xsig:"📡 X实抓(5/31):约每2h一条,meme/零售调性(置顶 BabyDoge MEME Festival);美股侧打 'TradFi perps 24/7,不用像1999年等收盘' 话术。",
+      xsig:"📡 X实抓(6/1 12:12):上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000、新人送 $3 拉新——pre-IPO 名字做期货标的;仍 meme/零售调性。",
       sources:[
         {label:"CryptoTimes·上线", url:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
         {label:"TheBlock·HTX", url:"https://www.theblock.co/post/402586/htx-is-bringing-wall-street-into-the-crypto-world-breaking-time-barriers-and-reshaping-global-finance"}
@@ -323,7 +332,7 @@ const DATA = {
       activities:[
         {t:"代币化美股产品筹备中,待 SEC 监管框架落地", src:"https://www.coindesk.com/policy/2026/05/18/sec-to-propose-tokenized-stock-framework-as-wall-street-efforts-deepen-bloomberg"}
       ],
-      xsig:"📡 X实抓(5/31):置顶主推 One Card(消费返最高 4% BTC + $50 奖励,4/27–5/31);代币化股票仍在路线图,未在 X 推。",
+      xsig:"📡 X实抓(6/1):置顶 One Card(消费返最高 4% BTC + $50);另推 '$100万 BTC 连胜池 + 3% 转入奖励 + 40% staking boost + Coinbase One 首年8折'(5/31 截止)——纯 BTC 向;代币化股票仍在路线图,未在 X 推。",
       sources:[
         {label:"CoinDesk·SEC框架", url:"https://www.coindesk.com/policy/2026/05/18/sec-to-propose-tokenized-stock-framework-as-wall-street-efforts-deepen-bloomberg"}
       ]
