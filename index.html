@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-19 → 06-01",
-  updated: "2026-06-01 14:00 BJ",
+  updated: "2026-06-01 15:00 北京时间",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -185,6 +185,7 @@ const DATA = {
     {grp:"other", date:"5月底", tag:"t-up", txt:"【监管 macro】SEC 推进代币化股票'创新豁免'框架;DTCC 已设 7 月试点、10 月商用计划,涵盖 Russell 1000/ETF/美债;50+ 机构参与——整条赛道时间表趋明朗。", src:"https://www.blockhead.co/2026/05/05/dtcc-sets-july-pilot-october-launch-for-tokenized-securities-platform/"},
     {grp:"other", date:"5/29", tag:"t-new", txt:"【X实抓】Bybit 挂出 '$100M 全球资产 Giveaway·免费送 xStock' 拉新,并连发 #NewFinancialPlatform 悬念预热——继 Binance 后第二家玩悬念营销,值得盯。", src:"https://x.com/Bybit_Official"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
+    {grp:"other", date:"趋势", tag:"t-info", txt:"【新入场者补录】KuCoin(Jul/25 上线 xStocks，4100万用户覆盖 200+地区)+ Gemini(EU 37+ 代币化股票 via Dinari)已实质入场赛道——本轮新增两张卡片。", src:"https://www.financemagnates.com/cryptocurrency/after-kraken-bybit-and-robinhood-kucoin-launches-tokenized-stocks/"},
     {grp:"other", date:"趋势", tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新第一话术。"}
   ],
   competitors: [
@@ -370,20 +371,55 @@ const DATA = {
         {label:"Chainwire·RealStocks", url:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
         {label:"FinanceMagnates", url:"https://www.financemagnates.com/cryptocurrency/mexc-launches-real-us-stock-trading-moving-beyond-tokenized-equities/"}
       ]
+    },
+    {
+      nm:"KuCoin", color:"#23af91", ink:"#fff", status:"live", statusTxt:"xStocks 在跑",
+      sub:"新入场者 · Jul/25 上线 · 4100万用户",
+      promo:[
+        "全球覆盖宣言：4100万用户覆盖 200+ 地区，打'最广用户基底'差异化",
+        "xStocks 1:1 Solana 链上，USDT 入金，已登陆 TON 钱包生态(Tonkeeper/MyTONWallet)",
+        "发布 SEC 豁免研报/教育内容，抢占合规话语权"
+      ],
+      activities:[
+        {t:"xStocks 现货(SPYx/TSLAx/NVDAx/MSTRx/CRCLx 等)，全球 200+ 地区，USDT 结算", src:"https://www.kucoin.com/campaigns/xstocksspotspp"},
+        {t:"xStocks 已登陆 TON 网络，支持 Tonkeeper/MyTONWallet 内直接交易", src:"https://www.kucoin.com/news/flash/xstocks-launches-on-ton-enabling-in-wallet-trading-of-tokenized-us-stocks"}
+      ],
+      xsig:"🔒 待补(本地 X 登录后填写)",
+      sources:[
+        {label:"TheBlock·KuCoin xStocks", url:"https://www.theblock.co/press-releases/363345/kucoin-launches-xstocks-delivering-a-one-stop-access-point-to-top-global-tokenized-equities"},
+        {label:"KuCoin·活动页", url:"https://www.kucoin.com/campaigns/xstocksspotspp"}
+      ]
+    },
+    {
+      nm:"Gemini", color:"#00dcfa", ink:"#001a2e", status:"live", statusTxt:"EU 已上线",
+      sub:"新入场者 · EU 专供 · 37+ 代币化股票 via Dinari",
+      promo:[
+        "EU MiCA 合规背书，面向欧洲市场打监管差异化",
+        "Dinari 合作发行，1.49% 交易费，24/7 碎股交易",
+        "持续扩品批次：Apple/Tesla/NVIDIA/MSTR + TradFi/加密概念股(COIN/MARA)"
+      ],
+      activities:[
+        {t:"37+ 代币化美股/ETF(EU 用户)，持续扩品批次上线", src:"https://www.gemini.com/tokenizedstocks"}
+      ],
+      xsig:"🔒 待补(本地 X 登录后填写)",
+      sources:[
+        {label:"Gemini·代币化股票", url:"https://www.gemini.com/tokenizedstocks"},
+        {label:"FinTechWeekly·EU上线", url:"https://www.fintechweekly.com/magazine/articles/gemini-tokenized-stock-trading-microstrategy-eu-launch"}
+      ]
     }
   ],
   techniques:[
-    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1},
-    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0},
-    {name:"悬念/解谜预告", bitget:0, binance:1, okx:0, gate:0, bybit:0, htx:0, kraken:0, coinbase:0, mexc:0},
-    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?"},
-    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0},
-    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:0},
-    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:"?", mexc:0},
-    {name:"主题活动节/节庆运营", bitget:1, binance:"?", okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:0},
-    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?"},
-    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?"},
-    {name:"新人首单返券", bitget:"?", binance:1, okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:0}
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:"?", gemini:1},
+    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0},
+    {name:"悬念/解谜预告", bitget:0, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0},
+    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?"},
+    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0},
+    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:0},
+    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:"?", mexc:0, kucoin:1, gemini:1},
+    {name:"主题活动节/节庆运营", bitget:1, binance:"?", okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:0},
+    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0},
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?"},
+    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:"?"}
   ]
 };
 
