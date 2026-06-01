@@ -164,11 +164,11 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-19 → 06-01",
-  updated: "2026-06-01 15:00 北京时间",
+  updated: "2026-06-01 15:00 · 含 X 实抓",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
-    {grp:"main", date:"6/1", tag:"t-new", txt:"【Binance Hey Stock 正式揭晓】上线 7,000+ 美股/ETF 真实交易(非代币化),面向非美用户:零佣金、碎股 $5 起、USDT/USDC/BNB 入金、24/5;Nest Trading(Binance 关联方)挂单、Alpaca Securities 执行/持仓/清算/分红。另预告 bStocks:持股转 BNB Chain 代币,数周内上线——超级 App 路线图落地。", src:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
+    {grp:"main", date:"6/1", tag:"t-new", txt:"【Binance Hey Stock 正式揭晓】上线 7000+ 美股/ETF 真实交易(面向非美用户):零佣金、碎股 $5 起、USDT/USDC/BNB 入金、24/5;Nest Trading(阿布扎比持牌)做 broker dealer、Alpaca Securities 执行/托管/清算/分红。另预告 bStocks:持股转 BNB Chain 代币,数周内上线——'super app' 战略落地。", src:"https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"},
     {grp:"main", date:"6/1", tag:"t-info", txt:"【X实抓 11:29】Bitget 官推发新悬念 'Traders, what could TS stand for? T＿＿＿＿ S＿＿＿＿＿'(引 @Pixar),按字母位疑似 'Trade Stocks'——继 Binance 后又一家用猜词悬念,疑似股票交易产品起势。", src:"https://x.com/bitget"},
     {grp:"main", date:"5/31", tag:"t-new", txt:"【X实抓 20:00】Binance 官推发 'zoom in 放大看图',Hey Stock 悬念进入互动阶段(6.9k 浏览),典型零信息预热。", src:"https://x.com/binance/status/2061055220000456904"},
     {grp:"main", date:"5/31", tag:"t-new", txt:"【X实抓】Bitget 官推力推 'UEX 通用交易所' 一站式定位,拉新链接埋渠道码(regd/wsvk),把渠道追踪做进每条推。打法与 BIT 高度贴脸。", src:"https://x.com/bitget"},
@@ -177,12 +177,13 @@ const DATA = {
     {grp:"main", date:"5/26", tag:"t-new", txt:"Bitget CEO Gracy 抛 '10% 资产终将代币化' 行业级宏大叙事,给 Reality 装上趋势故事。", src:"https://beincrypto.com/bitget-launches-reality-aligned-with-ceos-10-tokenization-vision/"},
     {grp:"main", date:"7月起", tag:"t-info", txt:"Bitget PayFi Odyssey:$30万奖池多阶段,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册——待开跑,后续关注规则。", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【新入场者】MEXC 上线 'RealStocks':真实美股所有权(含分红)、0 平台手续费、USDT 入金、Nasdaq 交易时段;经持牌券商通道,测试期已 20,000+ 用户——与 Binance 同日冲赛道。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
-    {grp:"other", date:"6/1", tag:"t-new", txt:"Coinbase 美股交易正式对美国用户上线(24/5、USD/USDC 入金、Yahoo Finance 一键跳转);另宣布 6/8 上线合规权益指数期货(AI/中国/国防/纳指主题,Coinbase Derivatives 挂牌)——券商业务全面激活。", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"Coinbase 美股交易正式对美国用户上线(24/5、USD/USDC 入金、Yahoo Finance 一键跳转);6/8 上线合规权益指数期货(AI/中国/国防/纳指主题,Coinbase Derivatives 挂牌)——券商业务全面激活。", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro】DTCC 宣布 7 月试点·10 月全面上线代币化证券清算(Russell 1000/ETF/美债),50+ 机构参与(BlackRock/GS/JPM/Circle/Ondo)——美股代币化进入清算基础设施层,赛道验证加速。", src:"https://finance.yahoo.com/markets/crypto/articles/wall-street-tokenization-push-gets-120215316.html"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 12:12】HTX 上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000 HTX、新人送 $3——pre-IPO 名字做期货标的拉新。", src:"https://x.com/HTX_Global"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 08:31】OKX 上线 'Event Contracts'(事件合约:猜涨跌·无杠杆·无爆仓),拓宽零售拉新品类。", src:"https://x.com/okx"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓】Bybit 联合 @xStocksFi 推 'xStocks Puzzle Hunt'(20万 USDT 奖池)拉新,延续 xStock 免费送主题。", src:"https://x.com/Bybit_Official"},
     {grp:"other", date:"6/1", tag:"t-up", txt:"【趋势】SpaceX/SPCX 概念在交易所端升温:HTX 上 SPCX 期货、Bitget 蹭 'Polymarket:SpaceX 6/30 前估值摸 $2.5T ~50%'——pre-IPO 名字成拉新流量入口。", src:"https://x.com/bitget"},
-    {grp:"other", date:"5月底", tag:"t-up", txt:"【监管 macro】SEC 推进代币化股票'创新豁免'框架;DTCC 已设 7 月试点、10 月商用计划,涵盖 Russell 1000/ETF/美债;50+ 机构参与——整条赛道时间表趋明朗。", src:"https://www.blockhead.co/2026/05/05/dtcc-sets-july-pilot-october-launch-for-tokenized-securities-platform/"},
+    {grp:"other", date:"5月底", tag:"t-up", txt:"【监管 macro】SEC 推迟代币化股票'创新豁免'(Nasdaq/NYSE/Cboe 施压),DTCC 已设 7/10 月上线时间表;Coinbase/Robinhood/Ondo 路线图受直接影响。", src:"https://www.blockhead.co/2026/05/05/dtcc-sets-july-pilot-october-launch-for-tokenized-securities-platform/"},
     {grp:"other", date:"5/29", tag:"t-new", txt:"【X实抓】Bybit 挂出 '$100M 全球资产 Giveaway·免费送 xStock' 拉新,并连发 #NewFinancialPlatform 悬念预热——继 Binance 后第二家玩悬念营销,值得盯。", src:"https://x.com/Bybit_Official"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
     {grp:"other", date:"趋势", tag:"t-info", txt:"【新入场者补录】KuCoin(Jul/25 上线 xStocks，4100万用户覆盖 200+地区)+ Gemini(EU 37+ 代币化股票 via Dinari)已实质入场赛道——本轮新增两张卡片。", src:"https://www.financemagnates.com/cryptocurrency/after-kraken-bybit-and-robinhood-kucoin-launches-tokenized-stocks/"},
@@ -211,28 +212,26 @@ const DATA = {
     },
     {
       nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"7000+ 美股已上线",
-      sub:"6/1 揭晓 · 真实股票 + bStocks 代币化",
+      sub:"6/1 揭晓 · 真实股票 + bStocks 代币化 · super app",
       promo:[
-        "悬念营销:干草堆图谐音 Hey Stock,不说是什么让社区猜——BNB +8% 造势",
-        "CZ 亲自转发放大,大佬背书引爆讨论",
-        "节奏:神秘预告→社区解谜→大佬转发→币价异动→正式揭晓",
-        "零信息造势,预告本身=一次免费全网拉新事件",
+        "悬念营销兑现:Hey Stock → bStocks,解谜→揭晓节奏完整,BNB 同步涨 8%",
+        "Richard Teng (co-CEO) 主导 'multi-asset financial super app' 战略定位",
         "Super App 路线图:Crypto + 真股 + bStocks 代币化三合一",
-        "零佣金 + 碎股 $5 起,低门槛覆盖全球非美散户",
+        "零佣金 + 碎股 $5 起投:极低门槛面向非美零售拉新",
         "USDT/USDC/BNB 多路入金,加密原生用户无摩擦转化"
       ],
       activities:[
-        {t:"7,000+ 美股/ETF 真实交易上线(面向非美用户):Nest Trading(关联方)挂单 + Alpaca Securities 持仓/清算/分红", src:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
-        {t:"bStocks 预告:持股转 BNB Chain 代币,数周内上线", src:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
+        {t:"7000+ 美股/ETF 真实交易(6/1 上线,面向非美用户):零佣金,$5 起,USDC/USDT/BNB 入金;Nest Trading(阿布扎比持牌)做 broker dealer,Alpaca Securities 持仓/清算/分红", src:"https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"},
+        {t:"bStocks 代币化(数周内上线):用户可自主在 BNB Chain 链上化持仓,秒级结算", src:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
         {t:"新用户促销:首笔合格交易得 $10 USDC 券", src:"https://www.binance.com/en/activity/marketing-campaign"},
         {t:"Referral Lite / Pro 双模式 + 终身手续费返佣", src:"https://www.binance.com/en/activity/referral"}
       ],
-      xsig:"📡 X实抓(6/1 12:00):Hey Stock 悬念降温——主页未见正式揭晓帖,最新转为玩梗('touching grass')+ 区块链科普(Academy),热度回落;置顶仍为 5/27 女高管入选 Fortune。揭晓或延期/转活动页,待确认。",
+      xsig:"📡 X实抓(6/1 12:00):Hey Stock 悬念降温——主页未见正式揭晓帖,最新转为玩梗('touching grass')+ 区块链科普(Academy),热度回落;置顶仍为 5/27 女高管入选 Fortune。揭晓或延期/转活动页,待确认。※ [公开新闻后续] bStocks 已通过官方新闻稿正式发布(Fortune/TheBlock 等均确认上线),非 X 主页推文首发。",
       sources:[
+        {label:"TheBlock·bStocks", url:"https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"},
         {label:"Fortune·美股上线", url:"https://fortune.com/2026/06/01/binance-adds-u-s-stocks-in-super-app-push-plans-to-launch-tokenized-shares/"},
         {label:"CryptoTimes·7000 stocks", url:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
-        {label:"X·zoom in 原帖", url:"https://x.com/binance/status/2061055220000456904"},
-        {label:"新闻·Hey Stock", url:"https://www.panewslab.com/en/articles/019e7b78-510f-773e-90d5-9b1502d8ee99"}
+        {label:"X·zoom in 原帖", url:"https://x.com/binance/status/2061055220000456904"}
       ]
     },
     {
@@ -409,9 +408,9 @@ const DATA = {
     }
   ],
   techniques:[
-    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:"?", gemini:1},
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1},
     {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0},
-    {name:"悬念/解谜预告", bitget:0, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0},
+    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0},
     {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?"},
     {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0},
     {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:0},
