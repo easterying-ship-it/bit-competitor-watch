@@ -4,7 +4,9 @@
 
 - **看板**:`index.html`(单文件,数据驱动,打开即用)
 - **在线地址**:GitHub Pages 自动部署(每次 push 触发)
-- **刷新**:`/schedule` 远程 agent 每小时跑,改 `index.html` 里的 `DATA` 块后 `git push`(无变化不提交)
+- **刷新**:claude.ai 远程 routine `trig_018u4hghswByy4Tvhm2uEsF3` 每小时跑(cron `0 * * * *`,sonnet-4-6),改 `index.html` 的 `DATA` 块后 `git push`(无变化不提交)。用 `RemoteTrigger` 工具管它。
+
+> **⚠️ push 通道(2026-06-01 踩坑修复)**:远程 routine 能 push 的前提是 **Claude 的 GitHub App 已"安装"到本仓库**(github.com/apps/claude → Install,选本 repo + write code 权限;`installation_id=137201342`)。**仅在 claude.ai Connectors 里"连接"GitHub(OAuth)不够**——那只够读/附文件,routine 推不上去会静默失败、把更新烂在运行结果里(2026-05-31~06-01 期间 30+ 次自动运行零提交即此因)。若哪天又不推了,先查这个 App 安装是否还在。
 
 ## 远程 agent 每日更新协议
 
@@ -52,3 +54,4 @@
 - 只写**核实到的**;没核实的留 `待抓取` / `"?"`,**不要编**。
 - 每条尽量可溯源(报道链接 / 官推 / 活动页)。
 - 比上次有变化的,进 `highlights`。
+- **分清美股产品形态,别只看 X 顶部几条就下结论**:每家「美股」常是多产品 hub,要翻官站「美股」下拉/产品页核对。四分类:① 真股 CFD(如 Gate TradFi,MT5 接真实价格)② 代币化(xStocks / Ondo,1:1 真股托管)③ 盘前交易 ④ 事件合约/预测市场。例:Gate = TradFi 真股CFD + Ondo 代币化 + 盘前 + Polymarket Live,**不是只有 xStocks**。
