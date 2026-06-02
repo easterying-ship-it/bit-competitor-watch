@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-20 → 06-02",
-  updated: "2026-06-02 09:00 (北京时间)",
+  updated: "2026-06-02 17:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -183,6 +183,7 @@ const DATA = {
     {grp:"other", date:"6/1", tag:"t-new", txt:"【新入场者】MEXC 上线 'RealStocks':真实美股所有权(含分红)、0 平台手续费、USDT 入金、Nasdaq 交易时段;经持牌券商通道,测试期已 20,000+ 用户——与 Binance 同日冲赛道。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"Coinbase 美股交易正式对美国用户上线(24/5、USD/USDC 入金、Yahoo Finance 一键跳转);6/8 上线合规权益指数期货(AI/中国/国防/纳指主题,Coinbase Derivatives 挂牌)——券商业务全面激活。", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro】DTCC 宣布 7 月试点·10 月全面上线代币化证券清算(Russell 1000/ETF/美债),50+ 机构参与(BlackRock/GS/JPM/Circle/Ondo)——美股代币化进入清算基础设施层,赛道验证加速。", src:"https://finance.yahoo.com/markets/crypto/articles/wall-street-tokenization-push-gets-120215316.html"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"【HTX 制裁升级·OFSI 直接制裁确认】OFSI(英国财政部金融制裁办公室)通过 FAQ 186 官方确认:因 Huobi Global SA 持 HTX 逾 50% 股权,HTX 交易所本身直接受英国金融制裁约束——此前 HTX 声明线上交易所不受直接影响,现已被监管机构正式驳回。资产冻结 + 通汇银行/支付处理双重制裁生效,用户入金/出金路径实质受阻范围进一步扩大;是西方政府首次将 Regulation 17A 适用于加密交易所。", src:"https://crystalintelligence.com/news/uk-sanctions-htx-what-your-screening-list-needs-today/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 12:12】HTX 上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000 HTX、新人送 $3——pre-IPO 名字做期货标的拉新。", src:"https://x.com/HTX_Global"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 08:31】OKX 上线 'Event Contracts'(事件合约:猜涨跌·无杠杆·无爆仓),拓宽零售拉新品类。", src:"https://x.com/okx"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓】Bybit 联合 @xStocksFi 推 'xStocks Puzzle Hunt'(20万 USDT 奖池)拉新,延续 xStock 免费送主题。", src:"https://x.com/Bybit_Official"},
@@ -320,13 +321,13 @@ const DATA = {
       ]
     },
     {
-      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"watch", statusTxt:"⚠ UK制裁风险 · TradFi运行",
-      sub:"TradFi Zone 美股期货 · ⚠ 5/26 UK 制裁",
+      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"watch", statusTxt:"⚠ OFSI 直接制裁确认 · TradFi运行",
+      sub:"TradFi Zone 美股期货 · ⚠ OFSI 直接制裁(6/1 确认)",
       promo:[
         "'打破时间壁垒,把华尔街搬进币圈' 叙事",
         "pre-IPO 噱头:含 SpaceX/OpenAI/Anthropic 名字吸睛",
         "HTX Research 出研究报告做'定价权转移'声量",
-        "⚠ [5/26 风险] UK 制裁母体 Huobi Global SA(涉俄罗斯制裁规避 $15亿):HTX 否认线上交易所受直接影响,但 Binance/OKX/Bybit/Bitget 已提升对 HTX 转账合规审查——赴用户转账/入金路径收窄,TradFi 扩张面临额外合规阻力"
+        "⚠ [5/26 制裁 → 6/1 升级] UK 制裁母体 Huobi Global SA(涉俄罗斯制裁规避 $15亿);6/1 OFSI 通过 FAQ 186 官方确认 HTX 交易所本体直接受英国金融制裁约束(Huobi 持股 >50%),此前 HTX 否认被驳回;资产冻结 + 通汇银行/支付处理双重制裁生效,首次将 Regulation 17A 适用于加密交易所;Binance/OKX/Bybit/Bitget 已提升对 HTX 转账审查——TradFi 扩张路径受阻程度从'风险'升级为'实质制裁'"
       ],
       activities:[
         {t:"TradFi Zone:66 个 USDT/USDC 永续(5/21),24/7 多空", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
@@ -337,7 +338,9 @@ const DATA = {
         {label:"CryptoTimes·上线", url:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
         {label:"TheBlock·HTX", url:"https://www.theblock.co/post/402586/htx-is-bringing-wall-street-into-the-crypto-world-breaking-time-barriers-and-reshaping-global-finance"},
         {label:"Bloomberg·UK制裁", url:"https://www.bloomberg.com/news/articles/2026-05-26/crypto-firm-htx-sanctioned-by-uk-for-helping-kremlin-move-money"},
-        {label:"CoinDesk·各所提高审查", url:"https://www.coindesk.com/business/2026/05/27/major-crypto-exchanges-increase-transfer-scrutiny-with-htx-over-uk-sanctions"}
+        {label:"CoinDesk·各所提高审查", url:"https://www.coindesk.com/business/2026/05/27/major-crypto-exchanges-increase-transfer-scrutiny-with-htx-over-uk-sanctions"},
+        {label:"Crystal·OFSI直接制裁确认", url:"https://crystalintelligence.com/news/uk-sanctions-htx-what-your-screening-list-needs-today/"},
+        {label:"Steptoe·制裁周报6/1", url:"https://www.steptoe.com/en/news-publications/international-compliance-blog/weekly-sanctions-update-june-1-2026.html"}
       ]
     },
     {
