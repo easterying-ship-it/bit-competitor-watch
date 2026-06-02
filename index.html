@@ -164,11 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-20 → 06-03",
-  updated: "2026-06-03 02:00 (北京时间)",
+  updated: "2026-06-03 03:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
-    {grp:"main", date:"6/4", tag:"t-new", txt:"Binance FPSL(持仓借股生息)6/4 正式上线:用户出借全额持仓的美股/ETF 可赚被动收益——把传统券商「借股增收」引入加密交易所,进一步完善 super app 闭环;与 7000+ 美股交易及 bStocks 代币化组成三层产品矩阵。", src:"https://www.banklesstimes.com/articles/2026/06/01/binance-launches-bstocks-as-it-moves-into-u-s-stock-trading-and-tokenized-equities/"},
+    {grp:"main", date:"6/4", tag:"t-new", txt:"Binance FPSL(持仓借股生息)6/4 正式上线:用户出借全额持仓的美股/ETF 可赚被动收益——把传统券商「借股增收」引入加密交易所,进一步完善 super app 闭环;与 7000+ 美股交易及 bStocks 代币化组成三层产品矩阵。", src:"https://x.com/binance/status/2061388584217878939"},
+    {grp:"main", date:"6/2", tag:"t-new", txt:"【Binance 扩品 · 韩股三件套 6/2 上线】SKHYNIXUSDT(SK 海力士)/SAMSUNGUSDT(三星)/HYUNDAIUSDT(现代)12:00–12:20 KST 分批上线:20x 杠杆、USDT 结算、24/7——Hey Stock 发布次日即延伸韩国蓝筹,non-US 用户多市场覆盖提速,super app 跨市场品类扩张节奏仍强。", src:"https://www.panewslab.com/en/articles/019e8390-d620-76b8-9fcd-022754daac93"},
     {grp:"main", date:"6/1", tag:"t-new", txt:"【Binance Hey Stock 正式揭晓】上线 7000+ 美股/ETF 真实交易(面向非美用户):零佣金、碎股 $5 起、USDT/USDC/BNB 入金、24/5;Nest Trading(阿布扎比持牌)做 broker dealer、Alpaca Securities 执行/托管/清算/分红。另预告 bStocks:由 BTECH Holdings Ltd(ADGM 注册 SPV)发行,用户自主铸造 BNB Chain 代币,数周内上线——'super app' 战略落地。", src:"https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"},
     {grp:"main", date:"6/1", tag:"t-new", txt:"Binance 同步上线 WOTD '专题:Trade Stock'(6/1–6/7):每日猜股票词汇(STOCK/EQUITY/FUTURES 等),猜对≥3次瓜分 15 BNB 奖池——游戏化教育拉新,7天持续激活 Hey Stock 揭晓热度。", src:"https://www.binance.com/en/support/announcement/detail/562eda74c3594ba5aa0b2845059c3f0f"},
     {grp:"main", date:"6/1", tag:"t-info", txt:"【X实抓 11:29】Bitget 官推发新悬念 'Traders, what could TS stand for? T＿＿＿＿ S＿＿＿＿＿'(引 @Pixar),按字母位疑似 'Trade Stocks'——继 Binance 后又一家用猜词悬念,疑似股票交易产品起势。", src:"https://x.com/bitget"},
@@ -195,7 +196,8 @@ const DATA = {
     {grp:"other", date:"6月", tag:"t-new", txt:"【行业 macro·TradFi→Crypto 反向入场】Charles Schwab 推出 Schwab Crypto™(BTC+ETH 现货,6月起分阶段零售发布):$12T AUM 传统券商首次涉足现货加密,0.75% 费率,Thinkorswim+schwab.com+Mobile 三端同步——与 Robinhood/Coinbase 争零售加密用户。赛道从两侧夹击:crypto→美股 + TradFi→crypto 同时加速;若 Schwab 后续入代币化股票赛道,势能不可忽视。", src:"https://www.cnbc.com/2026/04/16/charles-schwab-to-launch-direct-bitcoin-ethereum-trading-to-compete-with-robinhood.html"},
     {grp:"other", date:"5月底", tag:"t-up", txt:"【监管 macro】SEC 推迟代币化股票'创新豁免'(Nasdaq/NYSE/Cboe 施压),DTCC 已设 7/10 月上线时间表;Coinbase/Robinhood/Ondo 路线图受直接影响。", src:"https://www.blockhead.co/2026/05/05/dtcc-sets-july-pilot-october-launch-for-tokenized-securities-platform/"},
     {grp:"other", date:"5/29", tag:"t-new", txt:"【X实抓】Bybit 挂出 '$100M 全球资产 Giveaway·免费送 xStock' 拉新,并连发 #NewFinancialPlatform 悬念预热——继 Binance 后第二家玩悬念营销,值得盯。", src:"https://x.com/Bybit_Official"},
-    {grp:"other", date:"5/28", tag:"t-new", txt:"KuCoin 持续批量扩充股票指数永续合约(5/28批:IBM/NOK/INFQ + OPENAI/RGTI 等共9只,5/22批含 BABA/AVGO/NFLX;4月起累计 20+ 品种,已含 pre-IPO 名字 OPENAI/RGTI):全部 USDT 结算,24/7,最高 20x 杠杆——xStocks 现货(Jul/25)之外再开永续维度,实际产品矩阵远比卡片呈现的宽;悄然成隐形多品类玩家。", src:"https://www.kucoin.com/announcement/en-kucoin-futures-will-list-ibmusdt-nokusdt-infqusdt-stock-index-perpetual-contracts-2026-05-28"},
+    {grp:"other", date:"5/28", tag:"t-new", txt:"KuCoin 持续批量扩充股票指数永续合约(5/28批:IBM/NOK/INFQ + OPENAI/RGTI 等共9只,5/22批含 BABA/AVGO/NFLX;4月起累计 20+ 品种,已含 pre-IPO 名字 OPENAI/RGTI;5/27 额外上线 SPCXUSDT pre-IPO 永续 5x):全部 USDT 结算,24/7,最高 20x 杠杆——xStocks 现货(Jul/25)之外再开永续维度,实际产品矩阵远比卡片呈现的宽;悄然成隐形多品类玩家。", src:"https://www.kucoin.com/announcement/en-kucoin-futures-will-list-ibmusdt-nokusdt-infqusdt-stock-index-perpetual-contracts-2026-05-28"},
+    {grp:"other", date:"5/28", tag:"t-new", txt:"【风险事件 · SpaceX pre-IPO 闪崩 5/28】Hyperliquid SPACEX-USDH 永续因 Notice.co 预言机错误处理 5:1 拆股事件,30分钟暴跌 45%($2,277→$1,254),405 用户/1393 仓位/$150万名义值被强平;Ventuals 承诺 48h 赔付。同日 Bitget preSPAX→preSPCX 执行 1:5 代币拆分(价格降至 1/5 但持仓总值不变,非实际损失)——两者剧情截然不同。链上 pre-IPO oracle 脆弱性首次大规模曝光,对 Hyperliquid DEX 叙事构成信任损耗。", src:"https://www.coindesk.com/markets/2026/05/28/hyperliquid-s-pre-ipo-spacex-contracts-suffers-45-flash-crash-liquidating-usd1-5-million"},
     {grp:"other", date:"5/27", tag:"t-new", txt:"Robinhood 上线 AI 代理交易 beta(股票先行):用户可设 AI agent 在独立账户自主下单执行策略,通过 MCP 协议接入组合分析/下单/研报;后续扩至加密/期权/事件合约/期货;平台 AUM 已达 $3500亿——传统券商带头进入 'agentic finance',对加密交易所 AI 工具叙事构成压力。", src:"https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/"},
     {grp:"other", date:"5/26", tag:"t-new", txt:"【风险事件·HTX】UK 制裁 HTX 母体 Huobi Global SA(Panama),涉嫌为俄罗斯 A7 网络转移 $15亿规避国际制裁;Binance/OKX/Bybit/Bitget 同步对涉 HTX 转账提升合规审查。HTX 否认线上交易所受直接影响,但合规形象受损,TradFi 扩张节奏面临额外阻力。", src:"https://beincrypto.com/uk-sanctions-justin-suns-htx-russia-ties/"},
     {grp:"other", date:"5/22", tag:"t-new", txt:"OKX + ICE 宣布合推 ICE Brent/WTI 原油永续:ICE 3月战略入股 OKX($25B估值)后首只具体落地联名品种,向 OKX 1.2亿用户开放——ICE 合作从'股权背书'延伸至'实际产品定价',OKX 大宗商品赛道提速。", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
@@ -223,7 +225,7 @@ const DATA = {
       activities:[
         {t:"UEX 'Universal Exchange' 一站式活动专区(带渠道码拉新链接)", src:"https://www.bitget.com/asia/activity-hub/UEX"},
         {t:"UEX Jumpstart Program(5/19 上线,进行中):$430K USDT 奖池,分 Stock Weekly Jackpot(10万USDT)+ CFD May Carnival(10万)+ Metals & Commodities(6万)三赛道,绑定新用户首笔 TradFi 交易动作", src:"https://www.globenewswire.com/news-release/2026/05/19/3297241/0/en/bitget-launches-uex-jumpstart-program-with-430k-usdt-rewards.html"},
-        {t:"IPO Prime · preSPAX(SpaceX,4/21 上线):94,000 枚 @ $650,总规模 $6110万;Solana 链,Republic 合规发行;代币化 SpaceX 经济收益(非直接股权),认购后即开现货", src:"https://www.coindesk.com/business/2026/04/21/bitget-exchange-brings-pre-ipo-tokens-to-masses-starting-with-spacex-on-solana"},
+        {t:"IPO Prime · preSPCX(原 preSPAX,5/28 执行 1:5 代币拆分 & 重命名,4/21 上线):原 94,000 枚 @ $650 → 拆分后 470,000 枚 @ $130/枚;总规模 $6110万不变;Solana 链,Republic 合规发行;代币化 SpaceX 经济收益(非直接股权)", src:"https://www.coindesk.com/business/2026/04/21/bitget-exchange-brings-pre-ipo-tokens-to-masses-starting-with-spacex-on-solana"},
         {t:"IPO Prime · preOPAI(OpenAI,5/15 上线):29,082 枚 @ $725(最低 $100 起);主打 '$4T AI 机会' 叙事;Solana 链,散户 pre-IPO 低门槛入口", src:"https://www.globenewswire.com/news-release/2026/05/18/3296466/0/en/bitget-ipo-prime-taps-into-4t-ai-opportunity-with-openai.html"},
         {t:"PayFi Odyssey:$30万奖池,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
       ],
@@ -247,6 +249,7 @@ const DATA = {
       ],
       activities:[
         {t:"7000+ 美股/ETF 真实交易(6/1 上线,面向非美用户):零佣金,$5 起,USDC/USDT/BNB/USD1/$U 多币种入金;Nest Trading(阿布扎比持牌)做 broker dealer,Alpaca Securities 持仓/清算/分红", src:"https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"},
+        {t:"韩国蓝筹股永续三件套(6/2 上线):SKHYNIXUSDT(SK海力士)/SAMSUNGUSDT(三星)/HYUNDAIUSDT(现代),20x 杠杆,USDT 结算,24/7——Hey Stock 发布次日即延伸韩股,non-US 多市场覆盖提速", src:"https://www.panewslab.com/en/articles/019e8390-d620-76b8-9fcd-022754daac93"},
         {t:"SpaceX pre-IPO 永续 SPCXUSDT(5/21上线):首周 $2.8亿成交量,USDT 结算最高 20x;IPO 后自动切换实时行情追踪", src:"https://www.coindesk.com/markets/2026/05/21/binance-launches-spacex-pre-ipo-perps"},
         {t:"OpenAI pre-IPO 永续 OPENAIUSDT(5/26上线,08:30 UTC):20x 杠杆,USDT 结算;SPCX 版首周 $2.8亿成交后延伸品类扩张", src:"https://www.prnewswire.com/news-releases/binance-expands-pre-ipo-perpetuals-with-openai-listing-following-strong-early-market-response-302781593.html"},
         {t:"bStocks 代币化(数周内上线):用户自主铸造 BNB Chain 链上代币;由 BTECH Holdings Ltd(Abu Dhabi ADGM 注册 SPV)发行;可用于 DeFi 借贷/流动性池;注:bStocks 非直接持股权利", src:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
@@ -260,7 +263,8 @@ const DATA = {
         {label:"TheBlock·bStocks", url:"https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"},
         {label:"Fortune·美股上线", url:"https://fortune.com/2026/06/01/binance-adds-u-s-stocks-in-super-app-push-plans-to-launch-tokenized-shares/"},
         {label:"CryptoTimes·7000 stocks", url:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
-        {label:"X·zoom in 原帖", url:"https://x.com/binance/status/2061055220000456904"}
+        {label:"X·zoom in 原帖", url:"https://x.com/binance/status/2061055220000456904"},
+        {label:"PANews·韩股三件套", url:"https://www.panewslab.com/en/articles/019e8390-d620-76b8-9fcd-022754daac93"}
       ]
     },
     {
@@ -504,7 +508,8 @@ const DATA = {
         "机构媒体叙事背书:Motley Fool '影子证券交易所'、FalconX '传统交易所+预测市场的链上挑战者'、Seeking Alpha/BanklessTimes 等多家跟进——免费媒体覆盖面广"
       ],
       activities:[
-        {t:"HIP-3 SPCX-USDC 永续(5/18 上线):$60M+ 未平仓量,引领 SpaceX IPO 链上价格发现,与 Bitget preSPAX 直接竞争叙事", src:"https://unchainedcrypto.com/spacex-pre-ipo-perpetuals-go-live-on-hyperliquid-as-price-discovery-moves-onchain/"},
+        {t:"⚠ 5/28 SPACEX-USDH 永续闪崩 45%(Notice.co oracle 错误处理 5:1 拆股):405 用户/1393 仓位/$150万名义值被强平;Ventuals 承诺48h 赔付——oracle 脆弱性首次大规模曝光,DEX pre-IPO 合约风险管理短板暴露", src:"https://www.coindesk.com/markets/2026/05/28/hyperliquid-s-pre-ipo-spacex-contracts-suffers-45-flash-crash-liquidating-usd1-5-million"},
+        {t:"HIP-3 SPCX-USDC 永续(5/18 上线):$60M+ 未平仓量,引领 SpaceX IPO 链上价格发现,与 Bitget preSPCX 直接竞争叙事", src:"https://unchainedcrypto.com/spacex-pre-ipo-perpetuals-go-live-on-hyperliquid-as-price-discovery-moves-onchain/"},
         {t:"Anthropic/Cerebras 等 pre-IPO 永续:多个未上市公司链上定价,形成独特 pre-IPO 流量矩阵", src:"https://beincrypto.com/crypto-traders-betting-spacex-ipo-before-shares-list/"},
         {t:"Mag7/ETF 类/大宗商品永续:24/7 USDC 结算,与 Binance/Bitget/Bybit/OKX 股票永续直接竞争", src:"https://app.hyperliquid.xyz/"}
       ],
@@ -513,7 +518,8 @@ const DATA = {
         {label:"Unchained·SPCX上线", url:"https://unchainedcrypto.com/spacex-pre-ipo-perpetuals-go-live-on-hyperliquid-as-price-discovery-moves-onchain/"},
         {label:"Motley Fool·影子证券交易所", url:"https://www.fool.com/investing/2026/05/22/hyperliquid-is-building-a-shadow-stock-exchange-th/"},
         {label:"CoinDesk·FalconX分析", url:"https://www.coindesk.com/markets/2026/05/25/hyperliquid-is-emerging-as-a-challenger-to-traditional-exchanges-and-prediction-markets-says-falconx"},
-        {label:"BanklessTimes·HYPE+IPO叙事", url:"https://www.banklesstimes.com/articles/2026/05/30/hyperliquid-token-jumps-ahead-of-spacex-openai-ipos-chart-signals-hype-may-hit-100/"}
+        {label:"BanklessTimes·HYPE+IPO叙事", url:"https://www.banklesstimes.com/articles/2026/05/30/hyperliquid-token-jumps-ahead-of-spacex-openai-ipos-chart-signals-hype-may-hit-100/"},
+        {label:"CoinDesk·5/28 闪崩事件", url:"https://www.coindesk.com/markets/2026/05/28/hyperliquid-s-pre-ipo-spacex-contracts-suffers-45-flash-crash-liquidating-usd1-5-million"}
       ]
     },
     {
