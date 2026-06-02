@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-20 → 06-02",
-  updated: "2026-06-02 22:00 (北京时间)",
+  updated: "2026-06-02 23:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -173,10 +173,12 @@ const DATA = {
     {grp:"main", date:"6/2", tag:"t-new", txt:"【Binance+Bitget+KuCoin 三家竞发 ANTHROPICUSDT pre-IPO 永续(6/2)】Binance Futures 正式宣布上线 ANTHROPICUSDT USDT 永续 pre-IPO 合约;Bitget 同步上线 ANTHROPICUSDT pre-IPO 永续;KuCoin 上线 ANTHROPICUSDT Pre-IPO 永续(最高 20x)——继 SPCX 三方同日抢位后,Anthropic S-1 6/1 递交($9650亿估值、营收年化 $470亿)催生新一轮 pre-IPO 永续浪潮,Binance/Bitget/KuCoin+OKX(已于 5/7 布局)四家争夺 Anthropic 叙事流量;pre-IPO 合约已成各所的标准化拉新工具。", src:"https://www.binance.com/en/support/announcement/2b9ff1e1acf8433793bc40c59a0cb852"},
     {grp:"main", date:"6/2", tag:"t-new", txt:"【Binance 扩品 · 韩股三件套 6/2 上线】SKHYNIXUSDT(SK 海力士)/SAMSUNGUSDT(三星)/HYUNDAIUSDT(现代)12:00–12:20 KST 分批上线:20x 杠杆、USDT 结算、24/7——Hey Stock 发布次日即延伸韩国蓝筹,non-US 用户多市场覆盖提速,super app 跨市场品类扩张节奏仍强。", src:"https://www.panewslab.com/en/articles/019e8390-d620-76b8-9fcd-022754daac93"},
     {grp:"main", date:"6/2", tag:"t-info", txt:"【Binance 美股费率实测·非真零佣金】Odaily 实测:买入 100 USDT 美股实际收 Platform Fee 0.35 USDC(= 0.10% 费率,最低 $0.35/笔);BNB/USDT 入金有额外换汇损失;非美用户股息预扣税 30%;BNB 费率折扣暂不支持——vs Bitget 明示 0.1%/持 BGB 0.05%,'零佣金' 标语存在名实落差;中文媒体已开始比价报道,将影响中文用户对 Binance 美股的预期管理。", src:"https://www.odaily.news/en/post/5211117"},
+    {grp:"main", date:"6/2", tag:"t-up", txt:"【BNB 延续走高至 ~$780】Hey Stock 正式揭晓 + bStocks 代币化公告 + 韩股三件套连续上线,BNB 从 5/30 $688 进一步走高至约 $780(两日内 +13%);Binance BNB 入金通道设计将平台币与美股业务深度绑定,股票扩张持续反哺 BNB 二级价格——相比之下 Bitget BGB 联动叙事面临直接估值压力。", src:"https://www.tradingview.com/news/tradingview:025457b0d4842:0-key-facts-bnb-780-binance-lets-bnb-buy-us-token-stocks-via-bstocks/"},
     {grp:"main", date:"6/1", tag:"t-new", txt:"【Binance Hey Stock 正式揭晓】上线逾 8,000 美股/ETF 真实交易(面向非美用户;官方 PR 称 '7,000+',BeinCrypto/Pulse2/Hokanews 等多家报道为 8,000):零佣金、碎股 $5 起、USDT/USDC/BNB 入金、24/5;Nest Trading(阿布扎比持牌)做 broker dealer、Alpaca Securities 执行/托管/清算/分红。另预告 bStocks:由 BTECH Holdings Ltd(ADGM 注册 SPV)发行,用户自主铸造 BNB Chain 代币,数周内上线——'super app' 战略落地。", src:"https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"},
     {grp:"main", date:"6/1", tag:"t-new", txt:"Binance 同步上线 WOTD '专题:Trade Stock'(6/1–6/7):每日猜股票词汇(STOCK/EQUITY/FUTURES 等),猜对≥3次瓜分 15 BNB 奖池——游戏化教育拉新,7天持续激活 Hey Stock 揭晓热度。", src:"https://www.binance.com/en/support/announcement/detail/562eda74c3594ba5aa0b2845059c3f0f"},
     {grp:"main", date:"6/1", tag:"t-new", txt:"【Bitget 防务+无人机+科技 13 只永续批量上线(6/1 UTC+8)】LMTUSDT(洛克希德·马丁)/RTXSTOCKUSDT(RTX Corp)/NOCUSDT(诺斯罗普·格鲁曼)/DFENUSDT(3x 防务 ETF) + IBMUSDT/NTAPUSDT/NOWUSDT/AXONUSDT + EHUSDT/EVEXUSDT/AVAVUSDT/KTOSUSDT/RCATUSDT——防务/无人机/航空航天/企业软件 13 只,USDT 结算;先于 Coinbase 6/8 上线 DEF10 防务指数期货,Bitget 已批量布局防务叙事;股票永续品类拓展已覆盖 Mag7+防务+航天+科技多条主线。", src:"https://www.bitget.com/support/articles/12560603884781"},
     {grp:"main", date:"6/1", tag:"t-info", txt:"【X实抓 11:29】Bitget 官推发新悬念 'Traders, what could TS stand for? T＿＿＿＿ S＿＿＿＿＿'(引 @Pixar),按字母位疑似 'Trade Stocks'——继 Binance 后又一家用猜词悬念,疑似股票交易产品起势。", src:"https://x.com/bitget"},
+    {grp:"main", date:"6/1", tag:"t-new", txt:"【Bitget Reality 官宣 Alpaca 为唯一 broker-dealer】Reality rTokens 正式宣布以 Alpaca(FINRA注册/SIPC保护/自清算经纪商)为独家持牌基础设施——clearing/custody/execution 三层全委 Alpaca;关键竞争信号:Binance 美股同样选用 Alpaca 做持仓/清算/分红通道——赛道两大 Tier-1 平台共用同一 broker-dealer,Alpaca 事实上成为美股代币化赛道的清算垄断节点;对后发平台(Gate/MEXC/KuCoin 等)形成一定的合规基础设施议价壁垒。", src:"https://www.bitget.com/blog/articles/reality-alpaca-tokenized-equities-partnership"},
     {grp:"main", date:"5/31", tag:"t-new", txt:"【X实抓 20:00】Binance 官推发 'zoom in 放大看图',Hey Stock 悬念进入互动阶段(6.9k 浏览),典型零信息预热。", src:"https://x.com/binance/status/2061055220000456904"},
     {grp:"main", date:"5/31", tag:"t-new", txt:"【X实抓】Bitget 官推力推 'UEX 通用交易所' 一站式定位,拉新链接埋渠道码(regd/wsvk),把渠道追踪做进每条推。打法与 BIT 高度贴脸。", src:"https://x.com/bitget"},
     {grp:"main", date:"5/30", tag:"t-new", txt:"Binance Hey Stock 悬念发酵,BNB 24h 涨 8%+ 站上 $688——零信息预告本身=一次免费全网拉新事件。", src:"https://startupfortune.com/binances-june-1-reveal-puts-its-next-growth-test-in-focus/"},
@@ -194,7 +196,7 @@ const DATA = {
     {grp:"other", date:"6/1", tag:"t-new", txt:"【新入场者】MEXC 上线 'RealStocks':真实美股所有权(含分红)、0 平台手续费、USDT 入金、Nasdaq 交易时段;经持牌券商通道,测试期已 20,000+ 用户——与 Binance 同日冲赛道。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"Coinbase 美股交易正式对美国用户上线(24/5、USD/USDC 入金、Yahoo Finance 一键跳转);6/8 上线合规权益指数期货(AI/中国/国防/纳指主题,Coinbase Derivatives 挂牌)——券商业务全面激活。", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro】DTCC 宣布 7 月试点·10 月全面上线代币化证券清算(Russell 1000/ETF/美债),50+ 机构参与(BlackRock/GS/JPM/Circle/Ondo)——美股代币化进入清算基础设施层,赛道验证加速。", src:"https://finance.yahoo.com/markets/crypto/articles/wall-street-tokenization-push-gets-120215316.html"},
-    {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro·Anthropic 秘密 IPO·6/1 递交 S-1】Anthropic(Claude 母公司)向 SEC 秘密提交 S-1 招股书;最新融资估值 $9650亿,营收年化约 $470亿(同比约 5倍);若以 $1T+ 估值上市将是史上第二大 IPO(仅次 SpaceX $750亿融资)——OKX(5/7 上线 Anthropic 永续)/HTX TradFi Zone/Crypto.com(5/12)/BingX 均已布有 Anthropic pre-IPO 合约;IPO 档期锚定后 ANTH 链上合约将随 SPCX 余势接力升温;OpenAI 也正筹备秘密递交 S-1。", src:"https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro·Anthropic 秘密 IPO·6/1 递交 S-1】Anthropic(Claude 母公司)向 SEC 秘密提交 S-1 招股书;最新融资估值 $9650亿,营收年化约 $470亿(同比约 5倍),目标最早 2026年10月上市;若以 $1T+ 估值上市将是史上第二大 IPO(仅次 SpaceX $750亿融资)——OKX(5/7 上线 Anthropic 永续)/HTX TradFi Zone/Crypto.com(5/12)/BingX 均已布有 Anthropic pre-IPO 合约;IPO 档期锚定后 ANTH 链上合约将随 SPCX 余势接力升温;OpenAI 也正筹备秘密递交 S-1。", src:"https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【HTX 制裁升级·OFSI 直接制裁确认】OFSI(英国财政部金融制裁办公室)通过 FAQ 186 官方确认:因 Huobi Global SA 持 HTX 逾 50% 股权,HTX 交易所本身直接受英国金融制裁约束——此前 HTX 声明线上交易所不受直接影响,现已被监管机构正式驳回。资产冻结 + 通汇银行/支付处理双重制裁生效,用户入金/出金路径实质受阻范围进一步扩大;是西方政府首次将 Regulation 17A 适用于加密交易所。", src:"https://crystalintelligence.com/news/uk-sanctions-htx-what-your-screening-list-needs-today/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 12:12】HTX 上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000 HTX、新人送 $3——pre-IPO 名字做期货标的拉新。", src:"https://x.com/HTX_Global"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 08:31】OKX 上线 'Event Contracts'(事件合约:猜涨跌·无杠杆·无爆仓),拓宽零售拉新品类。", src:"https://x.com/okx"},
@@ -221,7 +223,7 @@ const DATA = {
       nm:"Bitget", tier:1, color:"#00f0ff", ink:"#003", status:"live", statusTxt:"Stocks 2.0 首批已上线",
       sub:"5/26+6/3 · Reality Stocks 2.0 · 36 rToken首批 · UEX + IPO Prime",
       promo:[
-        "合规叙事前置:FINRA/SIPC/持牌券商 1:1 托管做第一卖点",
+        "合规叙事前置:FINRA/SIPC/持牌券商 1:1 托管做第一卖点;6/1 官宣 Alpaca 为 Reality rTokens 独家 broker-dealer(clearing/custody/execution)——与 Binance 同用同一持牌通道,Alpaca 成两家主要竞品共享基础设施节点",
         "CEO 抛 '10% 资产终将代币化' 行业级宏大叙事;另立目标:2030 年抢占全球代币化股票 40% 市场份额(内部估算对应 $15–30T 成交量)",
         "全品类货架:100+ 标的(股/ETF/商品/外汇/贵金属)",
         "rTokens 可作统一账户保证金:持仓代币化股票可直接抵押开仓,并兼容网格交易/社交跟单——打通 RWA 持仓与衍生品打法",
