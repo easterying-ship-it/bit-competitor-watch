@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-20 → 06-02",
-  updated: "2026-06-02 21:00 (北京时间)",
+  updated: "2026-06-02 23:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -182,8 +182,8 @@ const DATA = {
     {grp:"main", date:"5/19", tag:"t-new", txt:"Bitget Wallet 集成 130+ Kraken xStocks(5/19):面向 9000万自托管用户,零手续费+无 gas;RWA 货架扩至 300+ 品种(股/ETF/商品/贵金属)——在 Reality 交易所(5/26)之外,从钱包侧再建一条代币化股票分发渠道。", src:"https://coinmarketcap.com/academy/article/bitget-wallet-xstocks-tokenized-equities"},
     {grp:"main", date:"7月起", tag:"t-info", txt:"Bitget PayFi Odyssey:$30万奖池多阶段,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册——待开跑,后续关注规则。", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
     {grp:"other", date:"6/2", tag:"t-new", txt:"MEXC RealStocks 上线庆典活动(6/2–6/16):$100万 USDT 等值股票奖池——交易任务瓜分;另设新人入金实时行情补贴(首月),进一步拉低入场门槛。0 费用 + 大奖池双管齐下拉新。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
-    {grp:"other", date:"6/1", tag:"t-new", txt:"【Gate Stock 新品上线】Gate 6/1 正式上线真实美股/ETF 现货交易:10,000+ 标的(NYSE/Nasdaq/NYSE Arca/NYSE American/BATS 全覆盖);Alpaca 持牌经纪商清算(SIPC保护),USDT 直接入金,零持仓费,标准美国市场时段。与 Binance 同日上线真实美股,但标的数远超(Binance 7,000 vs Gate 10,000+)。Gate 四层产品矩阵成型:① TradFi CFD(MT5,300 标的,美股 5x) ② xStocks 代币化(24/7 永续/现货) ③ Gate Stock 真实美股现货(新) ④ Polymarket Live——产品广度值得重新审视。", src:"https://www.panewslab.com/en/articles/019e8128-7997-724b-b2a6-969e7bcc58e2"},
-    {grp:"other", date:"6/12", tag:"t-new", txt:"【行业 macro·SpaceX IPO 路演已启动·倒计时】路演 6/4 正式启动(已开跑,此前预告有误) → 定价 6/11 → 6/12 纳斯达克挂牌(目标估值 $1.75T,融资 $75B,史上最大 IPO;Goldman/MS/BofA/Citi/JPM 承销):Bitget preSPAX(4/21,$6110万)、Binance/OKX/HTX SPCX 合约高活跃——路演已开,6/11 真实定价锚定后各所合成品套利窗口进入最终冲刺;Polymarket '6/30 前估值摸 $2.5T ~50%' 预测维持;IPO 拉新高峰已至。", src:"https://purepowerpicks.com/spacex-ipo-spcx-everything-you-need-to-know/"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"【Gate Stock 上线+扩品】Gate 6/1 正式上线真实美股/ETF 现货:10,000+ 标的(NYSE/Nasdaq/BATS 全覆盖),Alpaca 持牌清算(SIPC保护),USDT 入金,零持仓费;同步新增 6 只股票永续(NVO/NOK/ASTS/AAOI/INFQ/CRWD,USDT-M 20x)+TradFi 成交量纳入 VIP 等级计算(10% 权重)。Gate 五层矩阵:① Gate Stock 真实美股(新) ② TradFi CFD(MT5,300标的) ③ xStocks 代币化 ④ pre-IPO SPCX Mirror Note(已筹 $3.95亿) ⑤ Polymarket Live——产品广度头部最宽,与 Binance 同日但标的数远超(10,000+ vs 7,000)。", src:"https://www.panewslab.com/en/articles/019e8128-7997-724b-b2a6-969e7bcc58e2"},
+    {grp:"other", date:"6/12", tag:"t-new", txt:"【行业 macro·SpaceX IPO 倒计时·路演明日启动】路演确认 6/4 启动(明日) → 定价 6/11 → 6/12 纳斯达克挂牌;估值从早先 $2T+ 目标下调至 $1.8T 底线(Bloomberg:Q1净亏 $42.8亿/xAI合并AI成本拖累),融资 $75B 不变(史上最大 IPO;23家承销行,Goldman/MS/BofA/Citi/JPM 领衔);Bitget preSPAX(4/21,$6110万)+ Gate SPCX Mirror Note(已筹 $3.95亿)、Binance/OKX/HTX SPCX 合约高活跃——6/11 真实定价锚定后各所合成品套利窗口进入最终冲刺,IPO 拉新高峰至。", src:"https://en.cryptonomist.ch/2026/05/29/spacex-ipo-valuation-1-8-trillion/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【新入场者】MEXC 上线 'RealStocks':真实美股所有权(含分红)、0 平台手续费、USDT 入金、Nasdaq 交易时段;经持牌券商通道,测试期已 20,000+ 用户——与 Binance 同日冲赛道。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"Coinbase 美股交易正式对美国用户上线(24/5、USD/USDC 入金、Yahoo Finance 一键跳转);6/8 上线合规权益指数期货(AI/中国/国防/纳指主题,Coinbase Derivatives 挂牌)——券商业务全面激活。", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro】DTCC 宣布 7 月试点·10 月全面上线代币化证券清算(Russell 1000/ETF/美债),50+ 机构参与(BlackRock/GS/JPM/Circle/Ondo)——美股代币化进入清算基础设施层,赛道验证加速。", src:"https://finance.yahoo.com/markets/crypto/articles/wall-street-tokenization-push-gets-120215316.html"},
@@ -202,7 +202,6 @@ const DATA = {
     {grp:"other", date:"5/22", tag:"t-new", txt:"OKX + ICE 宣布合推 ICE Brent/WTI 原油永续:ICE 3月战略入股 OKX($25B估值)后首只具体落地联名品种,向 OKX 1.2亿用户开放——ICE 合作从'股权背书'延伸至'实际产品定价',OKX 大宗商品赛道提速。", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
     {grp:"other", date:"5/22", tag:"t-new", txt:"【新入场者·Hyperliquid DEX】Hyperliquid 通过 HIP-3 市场托管 SPCX pre-IPO 永续合约(5/18 上线,$60M+ USDC 未平仓);平台 23/30 最高 OI 资产为权益/商品,非加密——Motley Fool 称其'建造链上影子证券交易所',FalconX 称其'传统交易所和预测市场的去中心化挑战者';以 DEX 方式切入 CEX 尚未完全覆盖的 pre-IPO 叙事(与 Bitget preSPAX 直接竞争叙事),占去中心化永续全网 OI 70%+。若 SEC 创新豁免落地将从监管灰色区转合规,需持续盯。", src:"https://www.fool.com/investing/2026/05/22/hyperliquid-is-building-a-shadow-stock-exchange-th/"},
     {grp:"other", date:"5/21", tag:"t-new", txt:"Kraken xStocks 升级 Kraken Pro 24/7 无间断(5/21):首批 10 只主力品种(TSLAx/QQQx/SPYx/NVDAx/CRCLx/AAPLx/HOODx/MSTRx/GLDx/GOOGLx)从 24/5 扩至 24/7,可周末全天交易;总量已达 131 只(100 股+27 ETF+4 专类),目标年底 500。Nasdaq-Kraken 合作(3/9宣布)将于 2027 年 H1 上线面向欧洲等国际市场的 1:1 代币化股票(含投票权+分红)——xStocks 龙头基础设施护城河持续加宽。", src:"https://fxnewsgroup.com/forex-news/cryptocurrency/xstocks-goes-live-with-24-7-trading-on-kraken-pro/"},
-    {grp:"other", date:"5/12", tag:"t-new", txt:"【新入场者·Crypto.com】pre-IPO 永续合约上线(5/12):OpenAI/SpaceX/Anthropic,USDT 结算,面向合格机构——叠加已有美股现货(2025/2)+ Crypto.com IRA(3/3,美国首个加密+股票混合退休账户),完整产品矩阵浮出水面;纳入竞品监控。", src:"https://crypto.com/sg/product-news/exchange-pre-ipo-perpetuals"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
     {grp:"other", date:"趋势", tag:"t-info", txt:"【新入场者补录】KuCoin(Jul/25 xStocks，4100万用户 200+地区)+ Gemini(EU 37+ via Dinari)+ Robinhood(EU 近 2000 代币化股票 MiCA 持牌,Robinhood Chain testnet 2月上线 400万笔,mainnet Q3/Q4 2026)——本轮共三张新卡片。", src:"https://robinhood.com/us/en/newsroom/robinhood-launches-stock-tokens-reveals-layer-2-blockchain-and-expands-crypto-suite-in-eu-and-us-with-perpetual-futures-and-staking/"},
     {grp:"other", date:"趋势", tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新第一话术。"}
@@ -290,17 +289,20 @@ const DATA = {
       ]
     },
     {
-      nm:"Gate", color:"#2354e6", ink:"#fff", status:"live", statusTxt:"Gate Stock 真实美股 6/1 上线",
-      sub:"Gate Stock(6/1) · 真实美股 10,000+ · TradFi CFD + xStocks 代币化",
+      nm:"Gate", color:"#2354e6", ink:"#fff", status:"live", statusTxt:"Gate Stock 6/1上线 · 5层矩阵",
+      sub:"Gate Stock(6/1) · 真实美股 10,000+ · TradFi CFD + xStocks + pre-IPO(SPCX $3.95亿)",
       promo:[
-        "【四层产品矩阵】① Gate Stock 真实美股现货(6/1新) ② TradFi CFD(MT5,300标的) ③ xStocks 代币化 ④ Polymarket Live——产品广度头部最宽",
+        "【五层产品矩阵】① Gate Stock 真实美股现货(6/1新) ② TradFi CFD(MT5,300标的) ③ xStocks 代币化 ④ pre-IPO SPCX Mirror Note(已筹 $3.95亿) ⑤ Polymarket Live——产品广度头部最宽",
         "Gate Stock 真实持仓话术:Alpaca SIPC 保护、零持仓费、USDT 直接入金、10,000+ NYSE/Nasdaq 全覆盖",
         "'无需开户 / 24-7 USDT 直接买' 低门槛话术(xStocks 专区)",
         "Gate TradFi(MT5 集成):300 标的(外汇/商品/指数/美股 CFD),外汇最高 500x、美股 CFD 最高 5x 杠杆,USDx(1:1 锚定 USDT)结算",
-        "板块化货架:AI / 消费 / 航天等主题代币;Alpha 模式给高阶用户更深工具"
+        "板块化货架:AI / 消费 / 航天等主题代币;Alpha 模式给高阶用户更深工具",
+        "TradFi 成交量计入 VIP 等级(10% 权重):给股票用户与加密用户同等平台权益激励"
       ],
       activities:[
         {t:"Gate Stock(6/1 新上线):10,000+ 真实美股/ETF 现货,NYSE/Nasdaq/NYSE Arca/BATS 全覆盖;Alpaca 持牌经纪商清算(SIPC保护),USDT 入金,零持仓费;标准美国市场时段日内交易", src:"https://www.panewslab.com/en/articles/019e8128-7997-724b-b2a6-969e7bcc58e2"},
+        {t:"Gate Stock 新增 6 只股票永续(6/1,USDT-M,20x):NVO(诺和诺德)/NOK(诺基亚)/ASTS(AST SpaceMobile)/AAOI/INFQ/CRWD(CrowdStrike)", src:"https://tradersunion.com/news/brokers-news/show/2186898-gate-io-launches-spot-stock-trading/"},
+        {t:"Gate pre-IPO SPCX(首发 Mirror Note):锚定 SpaceX IPO 价值,4/20–4/22 订阅($590/枚,USDT/GUSD),100% 解锁即发行,已筹 $3.95亿——Gate 首个 pre-IPO 产品即成爆款", src:"https://beincrypto.com/gate-pre-ipo-spacex-spcx-live/"},
         {t:"Gate TradFi CFD:300 标的(外汇/商品/指数/美股),MT5 集成,外汇 500x/美股 5x 杠杆,USDx 结算;1月透明报告累计成交 $200亿+", src:"https://www.gate.com/tradfi"},
         {t:"xStocks 专区:现货 + 永续(最高 10x),USDT 结算,24/7", src:"https://www.gate.com/tokenized-stocks"},
         {t:"代币化股票/ETF/板块代币持续扩品(基于 xStocks + Ondo)", src:"https://coincentral.com/gate-io-launches-24-7-tokenized-stock-trading-with-xstocks-and-usdt/"}
@@ -310,6 +312,8 @@ const DATA = {
         {label:"PANews·Gate Stock上线", url:"https://www.panewslab.com/en/articles/019e8128-7997-724b-b2a6-969e7bcc58e2"},
         {label:"官方·代币化股票", url:"https://www.gate.com/tokenized-stocks"},
         {label:"官方·TradFi", url:"https://www.gate.com/tradfi"},
+        {label:"BeinCrypto·SPCX首发", url:"https://beincrypto.com/gate-pre-ipo-spacex-spcx-live/"},
+        {label:"RootData·SPCX $3.95亿", url:"https://www.rootdata.com/news/619851"},
         {label:"X·@Gate", url:"https://x.com/Gate"}
       ]
     },
