@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-05-20 → 06-02",
-  updated: "2026-06-02 23:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-05-20 → 06-03",
+  updated: "2026-06-03 01:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -190,6 +190,7 @@ const DATA = {
 {grp:"main", date:"7月起", tag:"t-info", txt:"Bitget PayFi Odyssey:$30万奖池多阶段,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册——待开跑,后续关注规则。", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
     {grp:"other", date:"6/2", tag:"t-new", txt:"【新入场者·Backpack Securities 6/2】Backpack(Solana 原生交易所/钱包)宣布推出 Backpack Securities:真实美股/ETF 经 FINRA 持牌经纪商买卖 + 与 Superstate(SEC注册代币化机构)合作,将持仓自铸为 Solana 链上代币可进 DeFi 流通;UCC Article 8 合规所有权;ACATS/DTCC 转账通道+24/5 交易+USD/稳定币入金;另提供链上 IPO 申购通道(SpaceX SPCX 为首个对接)——SEC注册级代币化股票首例,Solana 生态最大交易所切入真实美股赛道;与 Binance bStocks(用户自铸 BNB Chain)思路同源但合规层级更高。", src:"https://www.cryptotimes.io/2026/06/02/stocks-meet-solana-backpack-unveils-new-trading-bridge/"},
     {grp:"other", date:"6/2", tag:"t-new", txt:"MEXC RealStocks 上线庆典活动(6/2–6/16):$100万 USDT 等值股票奖池——交易任务瓜分;另设新人入金实时行情补贴(首月),进一步拉低入场门槛。0 费用 + 大奖池双管齐下拉新。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
+    {grp:"other", date:"6/2", tag:"t-new", txt:"【Crypto.com × TradingView 官方经纪商(6/2)】Crypto.com Exchange 正式接入 TradingView 成为官方经纪商:用户可直接在 TradingView 图表界面下单执行(无需跳转),支持加密/股票/RWA/pre-IPO 永续全品类——TradingView 月活 6000 万+ 图表用户成为 Crypto.com 新分发渠道;头部交易所中率先通过 TradingView 原生分发全资产品类的选手,可借助图表平台用户习惯加速 TradFi 多资产触达非加密原生用户群体。", src:"https://financefeeds.com/crypto-com-exchange-joins-tradingview-as-official-broker/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【Gate Stock 上线+扩品】Gate 6/1 正式上线真实美股/ETF 现货:10,000+ 标的(NYSE/Nasdaq/BATS 全覆盖),Alpaca 持牌清算(SIPC保护),USDT 入金,零持仓费;同步新增 6 只股票永续(NVO/NOK/ASTS/AAOI/INFQ/CRWD,USDT-M 20x)+TradFi 成交量纳入 VIP 等级计算(10% 权重)。Gate 五层矩阵:① Gate Stock 真实美股(新) ② TradFi CFD(MT5,300标的) ③ xStocks 代币化 ④ pre-IPO SPCX Mirror Note(已筹 $3.95亿) ⑤ Polymarket Live——产品广度头部最宽,与 Binance 同日但标的数仍领先(10,000+ vs ~8,000)。", src:"https://www.panewslab.com/en/articles/019e8128-7997-724b-b2a6-969e7bcc58e2"},
     {grp:"other", date:"6/12", tag:"t-new", txt:"【行业 macro·SpaceX IPO 倒计时·路演 6/4 启动】路演 6/4 启动 → 定价 6/11 → 6/12 纳斯达克挂牌;估值从早先 $2T+ 目标下调至 $1.8T 底线(Bloomberg:Q1净亏 $42.8亿/xAI合并AI成本拖累),融资 $75B 不变(史上最大 IPO;23家承销行,Goldman/MS/BofA/Citi/JPM 领衔);Bitget preSPAX(4/21,$6110万)+ Gate SPCX Mirror Note(已筹 $3.95亿)、Binance/OKX/HTX SPCX 合约高活跃——6/11 真实定价锚定后各所合成品套利窗口进入最终冲刺,IPO 拉新高峰至。", src:"https://en.cryptonomist.ch/2026/05/29/spacex-ipo-valuation-1-8-trillion/"},
     {grp:"other", date:"6/12", tag:"t-new", txt:"【行业 macro·IPO日代币化级联·6/12 生效】Ondo Finance/Backed Finance/Dinari 三家 RWA 发行商已公开确认:将在 SPCX 6/12 纳斯达克挂牌当日数小时内上线链上代币版本(Solana/Base/Ethereum)——直接影响:① Kraken xSPCX(Backed Finance 自有基础设施,率先落地) ② OKX/Gate Ondo SPCX(Ondo Global Listing 模型,挂牌当日同步上架) ③ Robinhood EU/Gemini EU Dinari SPCX(MiCA 持牌渠道);pre-IPO 合约估值($~200 区间)→ 真实链上代币化价格套利窗口在 6/12 开盘数小时内开放;各平台拉新第二轮从代币化层即时展开。", src:"https://beincrypto.com/crypto-traders-betting-spacex-ipo-before-shares-list/"},
@@ -555,6 +556,7 @@ const DATA = {
         "Recurring Buy 自动定投美股:按周期买股票或股票篮子,对标 Robinhood 定投打法"
       ],
       activities:[
+        {t:"TradingView 官方经纪商(6/2 接入):用户可在 TradingView 图表内直接下单执行,支持加密/股票/RWA/pre-IPO 永续全品类;TradingView 月活 6000 万+ 用户成为新分发渠道", src:"https://financefeeds.com/crypto-com-exchange-joins-tradingview-as-official-broker/"},
         {t:"pre-IPO 永续合约(5/12 上线):OpenAI/SpaceX/Anthropic,合格机构,USDT 结算,无到期日,追踪估值", src:"https://crypto.com/sg/product-news/exchange-pre-ipo-perpetuals"},
         {t:"美股+ETF 现货(2025/2 上线):同账户管 Crypto + 股票,USDC入金", src:"https://crypto.com/us/stocks"},
         {t:"Crypto.com IRA(3/3 上线):首个加密+股票混合 IRA,税优账户(美国用户)", src:"https://www.theblock.co/post/392024/crypto-com-launches-ira-product-combining-stocks-and-crypto"},
