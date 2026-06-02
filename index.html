@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-20 → 06-02",
-  updated: "2026-06-02 20:00 (北京时间)",
+  updated: "2026-06-02 21:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -177,10 +177,13 @@ const DATA = {
     {grp:"main", date:"5/30", tag:"t-new", txt:"Binance Hey Stock 悬念发酵,BNB 24h 涨 8%+ 站上 $688——零信息预告本身=一次免费全网拉新事件。", src:"https://startupfortune.com/binances-june-1-reveal-puts-its-next-growth-test-in-focus/"},
     {grp:"main", date:"5/26", tag:"t-new", txt:"Bitget 上线 Reality(持牌 RWA 平台):FINRA 注册 + SIPC 保护 + 美国持牌券商 1:1 托管真股,一次铺 100+ 标的。", src:"https://www.theblock.co/post/402518/bitget-launches-reality-rwa"},
     {grp:"main", date:"5/26", tag:"t-new", txt:"Bitget CEO Gracy 抛 '10% 资产终将代币化' 行业级宏大叙事,给 Reality 装上趋势故事。", src:"https://beincrypto.com/bitget-launches-reality-aligned-with-ceos-10-tokenization-vision/"},
+    {grp:"main", date:"5/26", tag:"t-new", txt:"Binance 上线 OpenAI pre-IPO 永续合约 OPENAIUSDT(5/26 08:30 UTC):20x 杠杆,USDT 结算;紧跟 SpaceX 版(5/21)首周 $2.8亿成交量——Binance pre-IPO 永续在真股+bStocks 之外再开第四层,与 Bitget IPO Prime / OKX 同赛道争叙事。", src:"https://www.prnewswire.com/news-releases/binance-expands-pre-ipo-perpetuals-with-openai-listing-following-strong-early-market-response-302781593.html"},
+    {grp:"main", date:"5/21", tag:"t-new", txt:"Binance 首发 SpaceX pre-IPO 永续合约 SPCXUSDT(5/21):首周 $2.8亿成交量,USDT 结算最高 20x——pre-IPO 叙事正式进入 Binance 产品矩阵(此前仅真股+代币化),拓展 super app 第四层。", src:"https://www.coindesk.com/markets/2026/05/21/binance-launches-spacex-pre-ipo-perps"},
+    {grp:"main", date:"5/19", tag:"t-new", txt:"Bitget Wallet 集成 130+ Kraken xStocks(5/19):面向 9000万自托管用户,零手续费+无 gas;RWA 货架扩至 300+ 品种(股/ETF/商品/贵金属)——在 Reality 交易所(5/26)之外,从钱包侧再建一条代币化股票分发渠道。", src:"https://coinmarketcap.com/academy/article/bitget-wallet-xstocks-tokenized-equities"},
     {grp:"main", date:"7月起", tag:"t-info", txt:"Bitget PayFi Odyssey:$30万奖池多阶段,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册——待开跑,后续关注规则。", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
     {grp:"other", date:"6/2", tag:"t-new", txt:"MEXC RealStocks 上线庆典活动(6/2–6/16):$100万 USDT 等值股票奖池——交易任务瓜分;另设新人入金实时行情补贴(首月),进一步拉低入场门槛。0 费用 + 大奖池双管齐下拉新。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【Gate Stock 新品上线】Gate 6/1 正式上线真实美股/ETF 现货交易:10,000+ 标的(NYSE/Nasdaq/NYSE Arca/NYSE American/BATS 全覆盖);Alpaca 持牌经纪商清算(SIPC保护),USDT 直接入金,零持仓费,标准美国市场时段。与 Binance 同日上线真实美股,但标的数远超(Binance 7,000 vs Gate 10,000+)。Gate 四层产品矩阵成型:① TradFi CFD(MT5,300 标的,美股 5x) ② xStocks 代币化(24/7 永续/现货) ③ Gate Stock 真实美股现货(新) ④ Polymarket Live——产品广度值得重新审视。", src:"https://www.panewslab.com/en/articles/019e8128-7997-724b-b2a6-969e7bcc58e2"},
-    {grp:"other", date:"6/12", tag:"t-info", txt:"【行业 macro·SpaceX IPO 路演开跑·倒计时】路演 6/8 正式启动 → 定价 6/11 → 6/12 纳斯达克挂牌(目标估值 $1.75T,融资 $75B,超历史最大 IPO):Bitget preSPAX(4/21,$6110万)、HTX SPCX 期货(6/1)、Binance/OKX/Hyperliquid SPCX 合约高活跃——6/8 路演后真实定价参考明确,各所合成品套利窗口逼近;Polymarket '6/30 前估值摸 $2.5T ~50%' 预测维持;IPO 拉新最后冲刺,重点盯各所 SPCX 产品折溢价 + 新用户注册峰值。", src:"https://purepowerpicks.com/spacex-ipo-spcx-everything-you-need-to-know/"},
+    {grp:"other", date:"6/12", tag:"t-new", txt:"【行业 macro·SpaceX IPO 路演已启动·倒计时】路演 6/4 正式启动(已开跑,此前预告有误) → 定价 6/11 → 6/12 纳斯达克挂牌(目标估值 $1.75T,融资 $75B,史上最大 IPO;Goldman/MS/BofA/Citi/JPM 承销):Bitget preSPAX(4/21,$6110万)、Binance/OKX/HTX SPCX 合约高活跃——路演已开,6/11 真实定价锚定后各所合成品套利窗口进入最终冲刺;Polymarket '6/30 前估值摸 $2.5T ~50%' 预测维持;IPO 拉新高峰已至。", src:"https://purepowerpicks.com/spacex-ipo-spcx-everything-you-need-to-know/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【新入场者】MEXC 上线 'RealStocks':真实美股所有权(含分红)、0 平台手续费、USDT 入金、Nasdaq 交易时段;经持牌券商通道,测试期已 20,000+ 用户——与 Binance 同日冲赛道。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"Coinbase 美股交易正式对美国用户上线(24/5、USD/USDC 入金、Yahoo Finance 一键跳转);6/8 上线合规权益指数期货(AI/中国/国防/纳指主题,Coinbase Derivatives 挂牌)——券商业务全面激活。", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro】DTCC 宣布 7 月试点·10 月全面上线代币化证券清算(Russell 1000/ETF/美债),50+ 机构参与(BlackRock/GS/JPM/Circle/Ondo)——美股代币化进入清算基础设施层,赛道验证加速。", src:"https://finance.yahoo.com/markets/crypto/articles/wall-street-tokenization-push-gets-120215316.html"},
@@ -199,6 +202,7 @@ const DATA = {
     {grp:"other", date:"5/22", tag:"t-new", txt:"OKX + ICE 宣布合推 ICE Brent/WTI 原油永续:ICE 3月战略入股 OKX($25B估值)后首只具体落地联名品种,向 OKX 1.2亿用户开放——ICE 合作从'股权背书'延伸至'实际产品定价',OKX 大宗商品赛道提速。", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
     {grp:"other", date:"5/22", tag:"t-new", txt:"【新入场者·Hyperliquid DEX】Hyperliquid 通过 HIP-3 市场托管 SPCX pre-IPO 永续合约(5/18 上线,$60M+ USDC 未平仓);平台 23/30 最高 OI 资产为权益/商品,非加密——Motley Fool 称其'建造链上影子证券交易所',FalconX 称其'传统交易所和预测市场的去中心化挑战者';以 DEX 方式切入 CEX 尚未完全覆盖的 pre-IPO 叙事(与 Bitget preSPAX 直接竞争叙事),占去中心化永续全网 OI 70%+。若 SEC 创新豁免落地将从监管灰色区转合规,需持续盯。", src:"https://www.fool.com/investing/2026/05/22/hyperliquid-is-building-a-shadow-stock-exchange-th/"},
     {grp:"other", date:"5/21", tag:"t-new", txt:"Kraken xStocks 升级 Kraken Pro 24/7 无间断(5/21):首批 10 只主力品种(TSLAx/QQQx/SPYx/NVDAx/CRCLx/AAPLx/HOODx/MSTRx/GLDx/GOOGLx)从 24/5 扩至 24/7,可周末全天交易;总量已达 131 只(100 股+27 ETF+4 专类),目标年底 500。Nasdaq-Kraken 合作(3/9宣布)将于 2027 年 H1 上线面向欧洲等国际市场的 1:1 代币化股票(含投票权+分红)——xStocks 龙头基础设施护城河持续加宽。", src:"https://fxnewsgroup.com/forex-news/cryptocurrency/xstocks-goes-live-with-24-7-trading-on-kraken-pro/"},
+    {grp:"other", date:"5/12", tag:"t-new", txt:"【新入场者·Crypto.com】pre-IPO 永续合约上线(5/12):OpenAI/SpaceX/Anthropic,USDT 结算,面向合格机构——叠加已有美股现货(2025/2)+ Crypto.com IRA(3/3,美国首个加密+股票混合退休账户),完整产品矩阵浮出水面;纳入竞品监控。", src:"https://crypto.com/sg/product-news/exchange-pre-ipo-perpetuals"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
     {grp:"other", date:"趋势", tag:"t-info", txt:"【新入场者补录】KuCoin(Jul/25 xStocks，4100万用户 200+地区)+ Gemini(EU 37+ via Dinari)+ Robinhood(EU 近 2000 代币化股票 MiCA 持牌,Robinhood Chain testnet 2月上线 400万笔,mainnet Q3/Q4 2026)——本轮共三张新卡片。", src:"https://robinhood.com/us/en/newsroom/robinhood-launches-stock-tokens-reveals-layer-2-blockchain-and-expands-crypto-suite-in-eu-and-us-with-perpetual-futures-and-staking/"},
     {grp:"other", date:"趋势", tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新第一话术。"}
@@ -213,6 +217,7 @@ const DATA = {
         "全品类货架:100+ 标的(股/ETF/商品/外汇/贵金属)",
         "rTokens 可作统一账户保证金:持仓代币化股票可直接抵押开仓,并兼容网格交易/社交跟单——打通 RWA 持仓与衍生品打法",
         "IPO Prime:把 pre-IPO 市场带进散户交易所,preSPAX(SpaceX,4/21) + preOPAI(OpenAI,5/15),用热门私募公司名字持续制造入场事件",
+        "Bitget Wallet(9000万自托管用户)5/19 集成 130+ Kraken xStocks:零手续费+无 gas,RWA 货架扩至 300+ 品种——钱包端补全交易所 Reality 未覆盖的自托管分发场景",
         "平台币联动:发布即拉动 BGB 社交热度+涨幅",
         "社媒每条拉新链接埋渠道码追踪(regd/wsvk)"
       ],
@@ -236,12 +241,15 @@ const DATA = {
       promo:[
         "悬念营销兑现:Hey Stock → bStocks,解谜→揭晓节奏完整,BNB 同步涨 8%",
         "Richard Teng (co-CEO) 主导 'multi-asset financial super app' 战略定位",
-        "Super App 路线图:Crypto + 真股 + bStocks 代币化三合一",
+        "Super App 四层产品矩阵:Crypto + 真股交易 + bStocks 代币化 + pre-IPO 永续——每层独立拉新",
+        "Pre-IPO 永续(5/21起):SPCX(5/21)+ OPENAI(5/26),首周合计 $2.8亿成交;与 Bitget IPO Prime / OKX 三家争 pre-IPO 叙事",
         "零佣金 + 碎股 $5 起投:极低门槛面向非美零售拉新",
         "USDT/USDC/BNB 多路入金,加密原生用户无摩擦转化"
       ],
       activities:[
         {t:"7000+ 美股/ETF 真实交易(6/1 上线,面向非美用户):零佣金,$5 起,USDC/USDT/BNB/USD1/$U 多币种入金;Nest Trading(阿布扎比持牌)做 broker dealer,Alpaca Securities 持仓/清算/分红", src:"https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"},
+        {t:"SpaceX pre-IPO 永续 SPCXUSDT(5/21上线):首周 $2.8亿成交量,USDT 结算最高 20x;IPO 后自动切换实时行情追踪", src:"https://www.coindesk.com/markets/2026/05/21/binance-launches-spacex-pre-ipo-perps"},
+        {t:"OpenAI pre-IPO 永续 OPENAIUSDT(5/26上线,08:30 UTC):20x 杠杆,USDT 结算;SPCX 版首周 $2.8亿成交后延伸品类扩张", src:"https://www.prnewswire.com/news-releases/binance-expands-pre-ipo-perpetuals-with-openai-listing-following-strong-early-market-response-302781593.html"},
         {t:"bStocks 代币化(数周内上线):用户自主铸造 BNB Chain 链上代币;由 BTECH Holdings Ltd(Abu Dhabi ADGM 注册 SPV)发行;可用于 DeFi 借贷/流动性池;注:bStocks 非直接持股权利", src:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
         {t:"FPSL 借股生息(6/4 上线):用户出借全额持仓美股/ETF 赚被动收益——券商级借股增收进加密平台", src:"https://www.banklesstimes.com/articles/2026/06/01/binance-launches-bstocks-as-it-moves-into-u-s-stock-trading-and-tokenized-equities/"},
         {t:"新用户促销:首笔合格交易得 $10 USDC 券", src:"https://www.binance.com/en/activity/marketing-campaign"},
@@ -271,6 +279,7 @@ const DATA = {
         {t:"联合 Ondo 提供 263 个代币化股票,并入同一账户", src:"https://www.okx.com/en-us/learn/beyond-crypto"},
         {t:"NYSE 代币化股票预计 H2 2026 上线(ICE 合作);3/24 NYSE 与 Securitize 签 MOU 共建代币化平台(24/7+即时结算+碎股),ICE(NYSE 母公司)持股 OKX 形成背书链条", src:"https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx"},
         {t:"ICE Brent & WTI 原油永续(5/22 宣布):首只 ICE 联名商品品种,OKX 1.2亿用户可用;ICE 实际价格支撑", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
+        {t:"SpaceX/OpenAI/Anthropic pre-IPO 永续合约(5/7上线):USDT 结算,追踪二级市场估值,无实际股权;与 Bitget IPO Prime / Binance SPCX / Hyperliquid HIP-3 同赛道", src:"https://www.coindesk.com/markets/2026/05/06/okx-joins-crypto-s-pre-ipo-frenzy-with-openai-spacex-perpetual-futures"},
         {t:"Event Contracts 上线(6/1):猜涨跌·无杠杆·无爆仓,拓宽零售品类", src:"https://x.com/okx"},
         {t:"'Race to a Million' 交易竞赛(6/8–7/6):100万 USDT 奖池,前排奖 F1 Azerbaijan GP 票 + McLaren 周边", src:"https://incrypted.com/en/okx-announces-trading-competition-with-prize-pool-of-up-to-1-million-usdt/"}
       ],
@@ -407,6 +416,7 @@ const DATA = {
       ],
       activities:[
         {t:"RealStocks 正式上线:真实美股所有权 + 实际分红 + 0 费用 + USDT 入金 + Nasdaq 交易时段", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
+        {t:"SpaceX(PRE) Airdrop 拉新活动(5/28–6/5):20万 USDT 等值奖池,借 IPO 热点做 RealStocks 冷启动引流", src:"https://blog.mexc.com/press-release/mexc-realstocks-0-fee-uss-equity-trading-and-real-dividends/"},
         {t:"上线庆典活动(6/2–6/16):$100万 USDT 等值股票奖池——完成交易任务瓜分;新人入金获实时行情数据补贴(首月)", src:"https://www.prnewswire.co.uk/news-releases/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-us-equity-trading-and-real-dividends-302786625.html"}
       ],
       xsig:"🔒 X 信号待抓取",
@@ -498,20 +508,42 @@ const DATA = {
         {label:"CoinDesk·FalconX分析", url:"https://www.coindesk.com/markets/2026/05/25/hyperliquid-is-emerging-as-a-challenger-to-traditional-exchanges-and-prediction-markets-says-falconx"},
         {label:"BanklessTimes·HYPE+IPO叙事", url:"https://www.banklesstimes.com/articles/2026/05/30/hyperliquid-token-jumps-ahead-of-spacex-openai-ipos-chart-signals-hype-may-hit-100/"}
       ]
+    },
+    {
+      nm:"Crypto.com", color:"#1199fa", ink:"#fff", status:"live", statusTxt:"美股 + pre-IPO 永续",
+      sub:"新入场者 · 美股现货(2025/2) + pre-IPO 永续(5/12) + IRA",
+      promo:[
+        "pre-IPO 永续三件套(5/12):OpenAI/SpaceX/Anthropic,合格机构专供,USDT 结算——与 Bitget IPO Prime / Binance SPCX 叙事直接重叠",
+        "Crypto.com IRA(3/3 上线):美国首个加密+股票混合退休账户(税优,同账户持 BTC/ETH/股票/ETF)",
+        "美股现货(2025/2 上线):NYSE+Nasdaq,USDC入金,同账户管加密+股票",
+        "Recurring Buy 自动定投美股:按周期买股票或股票篮子,对标 Robinhood 定投打法"
+      ],
+      activities:[
+        {t:"pre-IPO 永续合约(5/12 上线):OpenAI/SpaceX/Anthropic,合格机构,USDT 结算,无到期日,追踪估值", src:"https://crypto.com/sg/product-news/exchange-pre-ipo-perpetuals"},
+        {t:"美股+ETF 现货(2025/2 上线):同账户管 Crypto + 股票,USDC入金", src:"https://crypto.com/us/stocks"},
+        {t:"Crypto.com IRA(3/3 上线):首个加密+股票混合 IRA,税优账户(美国用户)", src:"https://www.theblock.co/post/392024/crypto-com-launches-ira-product-combining-stocks-and-crypto"},
+        {t:"Recurring Buy 美股定投:自动按周期买股票/股票篮子", src:"https://crypto.com/us/product-news/us-equities-recurring-buy"}
+      ],
+      xsig:"🔒 X 信号待抓取",
+      sources:[
+        {label:"Crypto.com·pre-IPO永续", url:"https://crypto.com/sg/product-news/exchange-pre-ipo-perpetuals"},
+        {label:"TheBlock·IRA", url:"https://www.theblock.co/post/392024/crypto-com-launches-ira-product-combining-stocks-and-crypto"},
+        {label:"Crypto.com·美股", url:"https://crypto.com/us/stocks"}
+      ]
     }
   ],
   techniques:[
-    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0},
-    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0},
-    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0},
-    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0},
-    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1},
-    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0},
-    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:"?", mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1},
-    {name:"主题活动节/节庆运营", bitget:1, binance:"?", okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0},
-    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0},
-    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0},
-    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0}
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1},
+    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
+    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
+    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?"},
+    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0},
+    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
+    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:"?", mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1},
+    {name:"主题活动节/节庆运营", bitget:1, binance:"?", okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
+    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?"},
+    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?"}
   ]
 };
 
