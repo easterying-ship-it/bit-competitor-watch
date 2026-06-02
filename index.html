@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-20 → 06-03",
-  updated: "2026-06-03 00:00 (北京时间)",
+  updated: "2026-06-03 02:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -202,6 +202,7 @@ const DATA = {
     {grp:"other", date:"5/22", tag:"t-new", txt:"【新入场者·Hyperliquid DEX】Hyperliquid 通过 HIP-3 市场托管 SPCX pre-IPO 永续合约(5/18 上线,$60M+ USDC 未平仓);平台 23/30 最高 OI 资产为权益/商品,非加密——Motley Fool 称其'建造链上影子证券交易所',FalconX 称其'传统交易所和预测市场的去中心化挑战者';以 DEX 方式切入 CEX 尚未完全覆盖的 pre-IPO 叙事(与 Bitget preSPAX 直接竞争叙事),占去中心化永续全网 OI 70%+。若 SEC 创新豁免落地将从监管灰色区转合规,需持续盯。", src:"https://www.fool.com/investing/2026/05/22/hyperliquid-is-building-a-shadow-stock-exchange-th/"},
     {grp:"other", date:"5/21", tag:"t-new", txt:"Kraken xStocks 升级 Kraken Pro 24/7 无间断(5/21):首批 10 只主力品种(TSLAx/QQQx/SPYx/NVDAx/CRCLx/AAPLx/HOODx/MSTRx/GLDx/GOOGLx)从 24/5 扩至 24/7,可周末全天交易;总量已达 131 只(100 股+27 ETF+4 专类),目标年底 500。Nasdaq-Kraken 合作(3/9宣布)将于 2027 年 H1 上线面向欧洲等国际市场的 1:1 代币化股票(含投票权+分红)——xStocks 龙头基础设施护城河持续加宽。", src:"https://fxnewsgroup.com/forex-news/cryptocurrency/xstocks-goes-live-with-24-7-trading-on-kraken-pro/"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
+    {grp:"other", date:"5/下旬", tag:"t-new", txt:"【新入场者·BingX】SPCX pre-IPO VNTL RWA 代币(4/10上线)+美股永续(100x杠杆,100+传统资产)+35代币化股票(Ondo/xStocks 发行);'Global Capital Gala' TradFi 专题活动+50万USDT奖池 'Earnings Hunt' 挑战赛;CoinGecko 2026年报永续上新量全球第二(66% YoY)——与 Binance/OKX/Bitget/Hyperliquid 并列 SPCX pre-IPO 赛道，实质入场美股/TradFi，补入新入场者扫描名单。", src:"https://financefeeds.com/5-ways-crypto-markets-front-running-spacex-1-75t-ipo/"},
     {grp:"other", date:"趋势", tag:"t-info", txt:"【新入场者补录】KuCoin(Jul/25 xStocks，4100万用户 200+地区)+ Gemini(EU 37+ via Dinari)+ Robinhood(EU 近 2000 代币化股票 MiCA 持牌,Robinhood Chain testnet 2月上线 400万笔,mainnet Q3/Q4 2026)——本轮共三张新卡片。", src:"https://robinhood.com/us/en/newsroom/robinhood-launches-stock-tokens-reveals-layer-2-blockchain-and-expands-crypto-suite-in-eu-and-us-with-perpetual-futures-and-staking/"},
     {grp:"other", date:"趋势", tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新第一话术。"}
   ],
@@ -330,7 +331,9 @@ const DATA = {
         {t:"TradFi Stock Festival:主题拉新活动 + 扩 Stock CFD", src:"https://www.thestreet.com/crypto/press-releases/bybit-tradfi-stock-festival-brings-wall-street-to-crypto-traders-expanding-stock-cfds-in-2026"},
         {t:"TradFi 永续:20 美股 + 3 商品 + 3 ETF(最高 10x)", src:"https://www.prnewswire.com/news-releases/bybit-introduces-247-tradfi-perpetual-contracts-trading-for-dozens-of-us-stocks-and-global-etfs-302766950.html"},
         {t:"xStocks 现货:60+ 代币化美股/ETF(Backed 发行)", src:"https://learn.bybit.com/en/bybit-guide/trade-xstocks-on-bybit-spot"},
-        {t:"xStocks Puzzle Hunt(联合 @xStocksFi):20万 USDT 奖池解谜拉新", src:"https://x.com/Bybit_Official"}
+        {t:"xStocks Puzzle Hunt(联合 @xStocksFi):20万 USDT 奖池解谜拉新", src:"https://x.com/Bybit_Official"},
+        {t:"5th Stock Carnival 扩品(5月末):新增 44 只美股/ETF(IBIT/贝莱德 BTC ETF·ASTS·PSX·MANU·XLE·LIT·URA 等),累计 45 个 Stock CFD 品种上线;$5 首单奖励延续", src:"https://www.coingabbar.com/en/crypto-currency-news/bybit-latest-listing-news-44-new-us-stocks-etf-join-tradefi"},
+        {t:"xStocks 接入 Bybit Grid Bot(5月下旬):代币化美股/ETF 现可用网格策略自动化交易,TradFi 品类延伸至量化工具层", src:"https://www.prnewswire.com/news-releases/xstocks-now-live-on-bybit-trading-bots-expanding-automated-trading-to-tokenized-equities-302723171.html"}
       ],
       xsig:"📡 X实抓(6/1):置顶仍挂 '$100M 全球资产 Giveaway·免费送 xStock';新增 'xStocks Puzzle Hunt'(联合 @xStocksFi,20万 USDT 奖池)解谜拉新;#NewFinancialPlatform 悬念延续。",
       sources:[
@@ -420,7 +423,8 @@ const DATA = {
       activities:[
         {t:"RealStocks 正式上线:真实美股所有权 + 实际分红 + 0 费用 + USDT 入金 + Nasdaq 交易时段", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
         {t:"SpaceX(PRE) Airdrop 拉新活动(5/28–6/5):20万 USDT 等值奖池,借 IPO 热点做 RealStocks 冷启动引流", src:"https://blog.mexc.com/press-release/mexc-realstocks-0-fee-uss-equity-trading-and-real-dividends/"},
-        {t:"上线庆典活动(6/2–6/16):$100万 USDT 等值股票奖池——完成交易任务瓜分;新人入金获实时行情数据补贴(首月)", src:"https://www.prnewswire.co.uk/news-releases/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-us-equity-trading-and-real-dividends-302786625.html"}
+        {t:"上线庆典活动(6/2–6/16):$100万 USDT 等值股票奖池——完成交易任务瓜分;新人入金获实时行情数据补贴(首月)", src:"https://www.prnewswire.co.uk/news-releases/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-us-equity-trading-and-real-dividends-302786625.html"},
+        {t:"新用户 $10 即得:注册完成 KYC 免费领 $10,解锁后续奖励——最低摩擦新人钩子", src:"https://blog.mexc.com/press-release/mexc-realstocks-0-fee-uss-equity-trading-and-real-dividends/"}
       ],
       xsig:"🔒 X 信号待抓取",
       sources:[
@@ -533,20 +537,43 @@ const DATA = {
         {label:"TheBlock·IRA", url:"https://www.theblock.co/post/392024/crypto-com-launches-ira-product-combining-stocks-and-crypto"},
         {label:"Crypto.com·美股", url:"https://crypto.com/us/stocks"}
       ]
+    },
+    {
+      nm:"BingX", tier:2, color:"#2366dc", ink:"#fff", status:"live", statusTxt:"TradFi + pre-IPO VNTL",
+      sub:"新入场者 · 4/10 SpaceX VNTL · 100+传统资产 · 35代币化股票",
+      promo:[
+        "SpaceX VNTL pre-IPO RWA 代币:Xpool 质押 USDT 免费获取 + 期货双路;低至 10 USDT 入场——与 Binance/OKX/Bitget/Hyperliquid 同列 SPCX pre-IPO 赛道,散户门槛最低",
+        "BingX TradFi:100+ 传统资产(美股/商品/外汇/指数),24/7;美股永续最高 100x 杠杆",
+        "'Global Capital Gala' TradFi 主题拉新活动 + 'US Stocks Earnings Hunt' 50万 USDT 奖池挑战赛",
+        "35 代币化股票现货(Ondo/xStocks 发行):NVDA/AAPL/MSFT/AMZN/SPY 等",
+        "CoinGecko 2026 年报:永续合约上新数量全球第二(66% YoY 增速)"
+      ],
+      activities:[
+        {t:"SpaceX VNTL pre-IPO RWA 代币(4/10上线):Xpool 质押模型 + 期货双路;$VNTL 镜像 SpaceX 股价经济暴露,非直接股权;10 USDT 起", src:"https://bingx.com/en/support/articles/15802997358735"},
+        {t:"Global Capital Gala:TradFi 专题活动,聚焦美股/商品/外汇/指数 24/7 交易机会拉新", src:"https://crypto.news/bingx-kicks-off-global-capital-gala-spotlighting-tradfi-trading-opportunities/"},
+        {t:"US Stocks Earnings Hunt Challenge:50万 USDT 奖池,Spot+Futures 双赛道竞技,KYC 即参与", src:"https://bingx.com/en/events"}
+      ],
+      xsig:"🔒 X 信号待抓取",
+      sources:[
+        {label:"BingX·pre-IPO VNTL", url:"https://bingx.com/en/support/articles/15802997358735"},
+        {label:"crypto.news·Global Capital Gala", url:"https://crypto.news/bingx-kicks-off-global-capital-gala-spotlighting-tradfi-trading-opportunities/"},
+        {label:"Invezz·CoinGecko报告", url:"https://invezz.com/news/2026/05/21/bingx-shows-robust-66-growth-yoy-in-coingecko-perpetuals-report/"},
+        {label:"FinanceFeeds·SPCX pre-IPO 5家", url:"https://financefeeds.com/5-ways-crypto-markets-front-running-spacex-1-75t-ipo/"}
+      ]
     }
   ],
   techniques:[
-    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1},
-    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
-    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
-    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?"},
-    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0},
-    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
-    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:"?", mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1},
-    {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
-    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0},
-    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?"},
-    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:0, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?"}
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1, bingx:0},
+    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0},
+    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0},
+    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?", bingx:"?"},
+    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0, bingx:0},
+    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0},
+    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:"?", mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1},
+    {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:1},
+    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0},
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?", bingx:"?"},
+    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?", bingx:1}
   ]
 };
 
