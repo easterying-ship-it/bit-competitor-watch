@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-21 → 06-04",
-  updated: "2026-06-04 02:00 (北京时间)",
+  updated: "2026-06-04 03:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -191,6 +191,7 @@ const DATA = {
     {grp:"other", date:"6/3", tag:"t-new", txt:"【行业 macro · SpaceX IPO 固定价 $135/股(Reuters/Bloomberg 6/3 独家)】Reuters/Bloomberg 6/3 报道:SpaceX 拟以固定价 $135/股(5/4 执行 5:1拆股后)发行 5.556亿股,融资 $750亿,估值 $1.75T;打破传统 IPO 路演定价惯例——直接公布固定价格而非价格区间(史上首例大型 IPO 固定价发行)。★关键影响:$135 固定价远低于链上 pre-IPO 合约当前隐含价格($200+ 区间),Binance SPCXUSDT / Bitget preSPCX / Gate SPCX Mirror Note($3.95亿) / OKX / Bybit / HTX 等各所合约进入定价重新锚定阶段;6/4 路演启动 → 6/11 定价日 → 6/12 挂牌首小时合约 vs 真实 IPO 价套利窗口高度敏感,链上价格若高于 $135 将触发即时下行套利压力。", src:"https://www.bloomberg.com/news/articles/2026-06-03/spacex-seeks-75-billion-in-ipo-at-135-per-share-reuters-says"},
     {grp:"other", date:"6/3", tag:"t-info", txt:"【行业 macro·Morningstar SpaceX 独立估值·6/3】Morningstar 首次覆盖 SpaceX 给出公允价值 $780B(约 $7,800亿),仅为 IPO 目标 $1.75T 的 45%($970B 缺口);DCF 拆分:核心发射+Starlink $611B + AI 概率加权 $170B;以 $1.75T 上市意味约 94× 2025 年营收($186.7亿),分析师称'需完美执行'——路演启动前夕最权威独立研究机构给出空头估值锚,形成强反叙事;链上 pre-IPO 合约(Binance SPCXUSDT / Bitget preSPCX / Hyperliquid SPCX-USDC 等)隐含价格 ~$200+/股远超 IPO 固定价 $135 和 Morningstar 公允价;Morningstar 预计上市初期或因小流通盘+纳指入选效应短期支撑,但认为长期将出现更佳买点——套利做空压力将在 6/12 挂牌首小时集中释放,各所 pre-IPO 合约持有者面临重新定价风险。", src:"https://www.cnbc.com/2026/06/03/morningstar-spacex-ipo-target-price-nasdaq.html"},
     {grp:"other", date:"6/3", tag:"t-new", txt:"【Kraken xStocks 代币化 IPO 申购通道(6/3 宣布)】Payward(Kraken 母公司)官宣全球零售投资者可通过 xStocks 以 IPO 发行价申购新股、挂牌当日获得代币化股票份额;首批品种'数周内'上线,SPCX 6/12 纳斯达克挂牌为核心对齐节点;xStocks 累计成交量升至 $300亿+(此前 $250亿+),链上结算 $60亿,全球 125,000 持有者;覆盖 Kraken + xStocks Alliance 成员,不适用于美/英/加/澳用户——是 pre-IPO 合约(Binance/Bitget 路线)的合规替代入口:用真实 IPO 价而非链上溢价参与初始定价;xStocks Alliance 赛道宽度进一步领先 Bitget/Binance bStocks 合成品路线。", src:"https://blog.kraken.com/product/xstocks/tokenized-ipo-access"},
+    {grp:"other", date:"6/3", tag:"t-new", txt:"【HTX TradFi 大赛(6/1–6/11)·$5万 USDT 奖池】HTX 发布 U.S. Stock Futures TradFi Trading Contest:成交量≥10,000 USDT 分享 47,000 USDT 主奖池,前三名固定奖 10,000/8,000/5,000 USDT;新人专属 3,000 USDT 池(交易量≥500 USDT + 持仓≥100 USDT 满 2 天即参与);品种覆盖 NVDA/TSLA/GOOGL/SPX500/USOIL/XAU/MSTRX/INTCX 等 TradFi 品类——OFSI 制裁压力下仍大手笔投拉新(高于此前 SPCX $2万池),活动 6/11 12:00 UTC 截止。", src:"https://www.prnewswire.com/news-releases/breaking-traditional-financial-barriers-htx-launches-us-stock-futures-tradfi-contest-with-a-massive-50-000-usdt-prize-pool-302789463.html"},
     {grp:"other", date:"6/2", tag:"t-new", txt:"【新入场者·Backpack Securities 6/2】Backpack(Solana 原生交易所/钱包)宣布推出 Backpack Securities:真实美股/ETF 经 FINRA 持牌经纪商买卖 + 与 Superstate(SEC注册代币化机构)合作,将持仓自铸为 Solana 链上代币可进 DeFi 流通;UCC Article 8 合规所有权;ACATS/DTCC 转账通道+24/5 交易+USD/稳定币入金;另提供链上 IPO 申购通道(SpaceX SPCX 为首个对接)——SEC注册级代币化股票首例,Solana 生态最大交易所切入真实美股赛道;与 Binance bStocks(用户自铸 BNB Chain)思路同源但合规层级更高。", src:"https://www.cryptotimes.io/2026/06/02/stocks-meet-solana-backpack-unveils-new-trading-bridge/"},
     {grp:"other", date:"6/2", tag:"t-new", txt:"MEXC RealStocks 上线庆典活动(6/2–6/16):$100万 USDT 等值股票奖池——交易任务瓜分;另设新人入金实时行情补贴(首月),进一步拉低入场门槛。0 费用 + 大奖池双管齐下拉新。", src:"https://chainwire.org/2026/06/01/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-u-s-equity-trading-and-real-dividends/"},
     {grp:"other", date:"6/2", tag:"t-new", txt:"【Crypto.com × TradingView 官方经纪商(6/2)】Crypto.com Exchange 正式接入 TradingView 成为官方经纪商:用户可直接在 TradingView 图表界面下单执行(无需跳转),支持加密/股票/RWA/pre-IPO 永续全品类——TradingView 月活 6000 万+ 图表用户成为 Crypto.com 新分发渠道;头部交易所中率先通过 TradingView 原生分发全资产品类的选手,可借助图表平台用户习惯加速 TradFi 多资产触达非加密原生用户群体。", src:"https://financefeeds.com/crypto-com-exchange-joins-tradingview-as-official-broker/"},
@@ -387,7 +388,8 @@ const DATA = {
       ],
       activities:[
         {t:"TradFi Zone:66 个 USDT/USDC 永续(5/21),24/7 多空", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
-        {t:"SPCX Futures 上线(6/1):SpaceX 期货 + 瓜分 $20,000 HTX、新人送 $3", src:"https://x.com/HTX_Global"}
+        {t:"SPCX Futures 上线(6/1):SpaceX 期货 + 瓜分 $20,000 HTX、新人送 $3", src:"https://x.com/HTX_Global"},
+        {t:"TradFi Trading Contest(6/1–6/11,进行中):$50,000 USDT 总奖池——主池 47,000 USDT(成交量≥10,000 USDT 参与排名,前三 10,000/8,000/5,000 USDT 固定奖)+新人专属池 3,000 USDT(交易量≥500 USDT+持仓≥100 USDT 满2天);品种:NVDA/TSLA/GOOGL/SPX500/USOIL/XAU/MSTRX/INTCX——制裁压力下逆势大手笔拉新,与 Binance/Bitget/OKX 同期激战 TradFi 流量", src:"https://www.prnewswire.com/news-releases/breaking-traditional-financial-barriers-htx-launches-us-stock-futures-tradfi-contest-with-a-massive-50-000-usdt-prize-pool-302789463.html"}
       ],
       xsig:"📡 X实抓(6/1 12:12):上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000、新人送 $3 拉新——pre-IPO 名字做期货标的;仍 meme/零售调性。",
       sources:[
