@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-20 → 06-03",
-  updated: "2026-06-03 01:00 (北京时间)",
+  updated: "2026-06-03 10:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -200,6 +200,7 @@ const DATA = {
     {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro·Anthropic 秘密 IPO·6/1 递交 S-1】Anthropic(Claude 母公司)向 SEC 秘密提交 S-1 招股书;最新融资估值 $9650亿,营收年化约 $470亿(同比约 5倍),目标最早 2026年10月上市;若以 $1T+ 估值上市将是史上第二大 IPO(仅次 SpaceX $750亿融资)——OKX(5/7 上线 Anthropic 永续)/HTX TradFi Zone/Crypto.com(5/12)/BingX 均已布有 Anthropic pre-IPO 合约;IPO 档期锚定后 ANTH 链上合约将随 SPCX 余势接力升温;OpenAI 也正筹备秘密递交 S-1。", src:"https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【HTX 制裁升级·OFSI 直接制裁确认】OFSI(英国财政部金融制裁办公室)通过 FAQ 186 官方确认:因 Huobi Global SA 持 HTX 逾 50% 股权,HTX 交易所本身直接受英国金融制裁约束——此前 HTX 声明线上交易所不受直接影响,现已被监管机构正式驳回。资产冻结 + 通汇银行/支付处理双重制裁生效,用户入金/出金路径实质受阻范围进一步扩大;是西方政府首次将 Regulation 17A 适用于加密交易所。", src:"https://crystalintelligence.com/news/uk-sanctions-htx-what-your-screening-list-needs-today/"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 12:12】HTX 上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000 HTX、新人送 $3——pre-IPO 名字做期货标的拉新。", src:"https://x.com/HTX_Global"},
+    {grp:"other", date:"6/1", tag:"t-new", txt:"【KuCoin Web3 Wallet HIP-3 升级(6/1)】KuCoin Web3 Wallet 集成 Hyperliquid HIP-3(通过 XYZ 协议),在自托管钱包内直接开放 Crypto+TradFi 永续合约交易(股票/商品/外汇/指数全品类);同步通过 Ondo 合作新增 260+ 代币化美股——从 CEX 股票永续延伸至 DEX/自托管层,用户无需独立 CEX 账户即可交易美股永续;与 Bybit xStocks+Mantle RFQ 路线并行,KuCoin TradFi 战略从单一 CEX 拓展至 Web3 钱包分发层。", src:"https://www.prnewswire.com/news-releases/kucoin-web3-wallet-expands-into-crypto--tradfi-perpetuals-with-hip-3-upgrade-302786922.html"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓 08:31】OKX 上线 'Event Contracts'(事件合约:猜涨跌·无杠杆·无爆仓),拓宽零售拉新品类。", src:"https://x.com/okx"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【X实抓】Bybit 联合 @xStocksFi 推 'xStocks Puzzle Hunt'(20万 USDT 奖池)拉新,延续 xStock 免费送主题。", src:"https://x.com/Bybit_Official"},
     {grp:"other", date:"6/1", tag:"t-new", txt:"【行业 macro】Citi 发布《Tokenization 2030: Wall Street On-Chain》:预测 2030 年代币化证券市场基准 $5.5T(区间 $2.7T–$8.2T),其中代币化股票需求 $2.6T + 美债 $1T;假设美国公开股市的 3% 代币化——华尔街级研报首次为赛道锚定量级,将加速机构入场和交易所布局叙事。", src:"https://www.coindesk.com/markets/2026/06/01/citi-predicts-the-tokenized-securities-market-will-grow-to-usd5-5-trillion-by-2030"},
@@ -466,17 +467,21 @@ const DATA = {
         "xStocks 1:1 Solana 链上，USDT 入金，已登陆 TON 钱包生态(Tonkeeper/MyTONWallet)",
         "发布 SEC 豁免研报/教育内容，抢占合规话语权",
         "持续批量上线股票指数永续合约(4月起):QQQ/SPY/AAPL/TSLA/BABA/AVGO/NFLX/IBM 等 10+ 品种,最高 20x 杠杆,USDT 结算——xStocks 现货之外再开永续层",
-        "Q1 2026 TokenInsight: 全球现货第3(6.69%市占率,仅次 Binance/MEXC);股票类永续日均 $2287万、市场份额5.40%,CEX 中排第4(Binance/Bitget/Hyperliquid 之后)——美股赛道流量基本面悄然成型"
+        "Q1 2026 TokenInsight: 全球现货第3(6.69%市占率,仅次 Binance/MEXC);股票类永续日均 $2287万、市场份额5.40%,CEX 中排第4(Binance/Bitget/Hyperliquid 之后)——美股赛道流量基本面悄然成型",
+        "Web3 Wallet HIP-3(6/1):集成 Hyperliquid HIP-3 via XYZ 协议,将 TradFi 永续(股票/商品/外汇)推进自托管 Web3 钱包层;同步 Ondo 合作覆盖 260+ 代币化美股——CEX+自托管双轨分发,赛道覆盖纵深最宽之一"
       ],
       activities:[
         {t:"xStocks 现货(SPYx/TSLAx/NVDAx/MSTRx/CRCLx 等)，全球 200+ 地区，USDT 结算", src:"https://www.kucoin.com/campaigns/xstocksspotspp"},
         {t:"xStocks 已登陆 TON 网络，支持 Tonkeeper/MyTONWallet 内直接交易", src:"https://www.kucoin.com/news/flash/xstocks-launches-on-ton-enabling-in-wallet-trading-of-tokenized-us-stocks"},
         {t:"股票指数永续合约(4月起持续扩品,最新 5/28 批:IBM/NOK/INFQ/OPENAI 等9只,含 pre-IPO 名字):USDT 结算,24/7,最高 20x;累计 20+ 品种(QQQ/SPY/AAPL/TSLA/BABA/AVGO/NFLX/IBM/OPENAI 等)", src:"https://www.prnewswire.com/news-releases/kucoin-launches-stock-index-perpetual-contracts-expanding-247-cross-asset-access-302713288.html"},
-        {t:"ANTHROPICUSDT Pre-IPO 永续(6/2 上线):最高 20x,USDT 结算;与 Binance/Bitget/OKX 同日角逐 Anthropic pre-IPO($9650亿估值)叙事流量", src:"https://www.kucoin.com/announcement/en-kucoin-futures-new-listing-anthropicusdt-pre-ipo-stock-index-perpetual-contract-pre-market-trading"}
+        {t:"ANTHROPICUSDT Pre-IPO 永续(6/2 上线):最高 20x,USDT 结算;与 Binance/Bitget/OKX 同日角逐 Anthropic pre-IPO($9650亿估值)叙事流量", src:"https://www.kucoin.com/announcement/en-kucoin-futures-new-listing-anthropicusdt-pre-ipo-stock-index-perpetual-contract-pre-market-trading"},
+        {t:"Web3 Wallet HIP-3 TradFi 永续升级(6/1):集成 Hyperliquid HIP-3 via XYZ 协议,自托管钱包内可直接交易股票/商品/外汇/指数永续合约,无需独立 CEX 账户——将 TradFi 永续推进 self-custody 层", src:"https://www.prnewswire.com/news-releases/kucoin-web3-wallet-expands-into-crypto--tradfi-perpetuals-with-hip-3-upgrade-302786922.html"},
+        {t:"Ondo 合作新增 260+ 代币化美股(Web3 Wallet):KuCoin Web3 Wallet 直接集成 Ondo 代币化股票,覆盖 260+ 标的,与 CEX 股票永续形成双层分发", src:"https://blockster.com/kucoin-web3-wallet-adds-260-tokenized-stocks-through-ondo-integration"}
       ],
       xsig:"🔒 待补(本地 X 登录后填写)",
       sources:[
         {label:"TheBlock·KuCoin xStocks", url:"https://www.theblock.co/press-releases/363345/kucoin-launches-xstocks-delivering-a-one-stop-access-point-to-top-global-tokenized-equities"},
+        {label:"PRNewswire·HIP-3升级", url:"https://www.prnewswire.com/news-releases/kucoin-web3-wallet-expands-into-crypto--tradfi-perpetuals-with-hip-3-upgrade-302786922.html"},
         {label:"KuCoin·活动页", url:"https://www.kucoin.com/campaigns/xstocksspotspp"}
       ]
     },
