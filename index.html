@@ -164,12 +164,13 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-21 → 06-04",
-  updated: "2026-06-04 05:00 (北京时间)",
+  updated: "2026-06-04 06:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
     {grp:"main", date:"6/4", tag:"t-new", txt:"Binance FPSL(持仓借股生息)6/4 正式上线:用户出借全额持仓的美股/ETF 可赚被动收益——把传统券商「借股增收」引入加密交易所,进一步完善 super app 闭环;与逾 8,000 美股交易及 bStocks 代币化组成三层产品矩阵。", src:"https://x.com/binance/status/2061388584217878939"},
     {grp:"main", date:"6/3", tag:"t-new", txt:"【Bitget Stocks 2.0 首批上线】Reality 平台正式上线首批 36 只 rToken：Apple/Amazon/Meta/Tesla/Alphabet/NVIDIA/MSFT/QQQ 等主力股票/ETF；USDT 实时结算股息；基础费率 0.1%/持 BGB 降至 0.05%；rToken 支持统一账户保证金+网格/跟单/Staking 全链路——Reality 基础设施(5/26)→ Stocks 2.0 实盘首批(6/3)两步走完成，正式与 Binance 逾 8,000 股、Gate 10,000+ 股争代币化货架深度。庆典费率：至 8/31 全用户做市/吃单均 0.05%（50% 折扣，无需持 BGB，低门槛冷启动）。", src:"https://www.coinreporter.io/2026/06/bitget-launches-stocks-2-0-upgraded-tokenized-stock-trading-with-reality-rwa-platform/"},
+    {grp:"main", date:"6/3", tag:"t-new", txt:"【Binance-Alpaca 财务结构披露·'零佣金'背后】Binance 持有 Alpaca 少数股权；协议条款：Binance 分得 Alpaca 50% PFOF(订单流付款)费收入 + 用户出借利息支付后剩余利润的 65%(即 FPSL 核心收益层，6/4已上线)；Alpaca ~94% 代币化美股托管市场份额——客户端'零佣金'为获客叙事，PFOF+FPSL 才是真实盈利引擎；Bitget Reality 同用 Alpaca 但官方未披露是否持股，Binance 投资绑定更深；赛道基础设施议价权高度集中于单一 broker-dealer。", src:"https://crypto.news/binance-discloses-alpaca-stake-as-stock-trading-deal-expands/"},
     {grp:"main", date:"6/2", tag:"t-new", txt:"【Binance+Bitget+KuCoin 三家竞发 ANTHROPICUSDT pre-IPO 永续(6/2)】Binance Futures 正式宣布上线 ANTHROPICUSDT USDT 永续 pre-IPO 合约;Bitget 同步上线 ANTHROPICUSDT pre-IPO 永续;KuCoin 上线 ANTHROPICUSDT Pre-IPO 永续(最高 20x)——继 SPCX 三方同日抢位后,Anthropic S-1 6/1 递交($9650亿估值、营收年化 $470亿)催生新一轮 pre-IPO 永续浪潮,Binance/Bitget/KuCoin+OKX(已于 5/7 布局)四家争夺 Anthropic 叙事流量;pre-IPO 合约已成各所的标准化拉新工具。", src:"https://www.binance.com/en/support/announcement/2b9ff1e1acf8433793bc40c59a0cb852"},
     {grp:"main", date:"6/2", tag:"t-new", txt:"【Binance 扩品 · 韩股三件套 6/2 上线】SKHYNIXUSDT(SK 海力士)/SAMSUNGUSDT(三星)/HYUNDAIUSDT(现代)12:00–12:20 KST 分批上线:20x 杠杆、USDT 结算、24/7——Hey Stock 发布次日即延伸韩国蓝筹,non-US 用户多市场覆盖提速,super app 跨市场品类扩张节奏仍强。", src:"https://www.panewslab.com/en/articles/019e8390-d620-76b8-9fcd-022754daac93"},
     {grp:"main", date:"6/2", tag:"t-info", txt:"【Binance 美股费率实测·非真零佣金】Odaily 实测:买入 100 USDT 美股实际收 Platform Fee 0.35 USDC(= 0.10% 费率,最低 $0.35/笔);BNB/USDT 入金有额外换汇损失;非美用户股息预扣税 30%;BNB 费率折扣暂不支持——vs Bitget 明示 0.1%/持 BGB 0.05%,'零佣金' 标语存在名实落差;中文媒体已开始比价报道,将影响中文用户对 Binance 美股的预期管理。", src:"https://www.odaily.news/en/post/5211117"},
@@ -274,7 +275,8 @@ const DATA = {
         "Super App 四层产品矩阵:Crypto + 真股交易 + bStocks 代币化 + pre-IPO 永续——每层独立拉新",
         "Pre-IPO 永续(5/21起):SPCX(5/21)+ OPENAI(5/26)+ ANTHROPIC(6/2宣布),首周合计 $2.8亿成交;与 Bitget IPO Prime / OKX / KuCoin 四家争 pre-IPO 叙事",
         "零佣金 + 碎股 $5 起投:极低门槛面向非美零售拉新",
-        "USDT/USDC/BNB 多路入金,加密原生用户无摩擦转化"
+        "USDT/USDC/BNB 多路入金,加密原生用户无摩擦转化",
+        "Alpaca 持股+利润分成(6/3 披露):Binance 持 Alpaca 少数股权；获 Alpaca 50% PFOF 费用 + 出借利息后剩余利润 65%；Alpaca ~94% 代币化美股托管市场份额——'零佣金' 是获客叙事,PFOF+FPSL 是盈利引擎"
       ],
       activities:[
         {t:"逾 8,000 美股/ETF 真实交易(6/1 上线,面向非美用户;官方 PR 称 '7,000+',多家媒体报道为 8,000):零佣金,$5 起,USDC/USDT/BNB/USD1/$U 多币种入金;Nest Trading(阿布扎比持牌)做 broker dealer,Alpaca Securities 持仓/清算/分红", src:"https://beincrypto.com/binance-adds-8000-us-stocks-tradfi/"},
@@ -283,7 +285,7 @@ const DATA = {
         {t:"OpenAI pre-IPO 永续 OPENAIUSDT(5/26上线,08:30 UTC):20x 杠杆,USDT 结算;SPCX 版首周 $2.8亿成交后延伸品类扩张", src:"https://www.prnewswire.com/news-releases/binance-expands-pre-ipo-perpetuals-with-openai-listing-following-strong-early-market-response-302781593.html"},
         {t:"Anthropic pre-IPO 永续 ANTHROPICUSDT(6/2 宣布):继 SPCX(5/21)/OPENAI(5/26)后第三只 pre-IPO 品种,USDT 结算——与 Bitget/KuCoin/OKX 同日角逐 Anthropic($9650亿估值)叙事流量", src:"https://www.binance.com/en/support/announcement/2b9ff1e1acf8433793bc40c59a0cb852"},
         {t:"bStocks 代币化(数周内上线):用户自主铸造 BNB Chain 链上代币;由 BTECH Holdings Ltd(Abu Dhabi ADGM 注册 SPV)发行;可用于 DeFi 借贷/流动性池;注:bStocks 非直接持股权利", src:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
-        {t:"FPSL 借股生息(6/4 上线):用户出借全额持仓美股/ETF 赚被动收益——券商级借股增收进加密平台", src:"https://www.banklesstimes.com/articles/2026/06/01/binance-launches-bstocks-as-it-moves-into-u-s-stock-trading-and-tokenized-equities/"},
+        {t:"FPSL 借股生息(6/4 上线):用户出借全额持仓美股/ETF 赚被动收益；Binance-Alpaca 合约结构：Binance 获用户出借利息支付后剩余利润 65%——借股是平台核心隐性收益层", src:"https://crypto.news/binance-discloses-alpaca-stake-as-stock-trading-deal-expands/"},
         {t:"新用户促销:首笔合格交易得 $10 USDC 券", src:"https://www.binance.com/en/activity/marketing-campaign"},
         {t:"Referral Lite / Pro 双模式 + 终身手续费返佣", src:"https://www.binance.com/en/activity/referral"},
         {t:"WOTD '专题:Trade Stock'(6/1–6/7):每日猜词(STOCK/EQUITY/FUTURES 等)≥3次瓜分 15 BNB——游戏化教育激活 Hey Stock 余热", src:"https://www.binance.com/en/support/announcement/detail/562eda74c3594ba5aa0b2845059c3f0f"}
@@ -294,7 +296,8 @@ const DATA = {
         {label:"Fortune·美股上线", url:"https://fortune.com/2026/06/01/binance-adds-u-s-stocks-in-super-app-push-plans-to-launch-tokenized-shares/"},
         {label:"CryptoTimes·7000 stocks", url:"https://www.cryptotimes.io/2026/06/01/binance-adds-7000-u-s-stocks-and-plans-bstocks-on-bnb-chain/"},
         {label:"X·zoom in 原帖", url:"https://x.com/binance/status/2061055220000456904"},
-        {label:"PANews·韩股三件套", url:"https://www.panewslab.com/en/articles/019e8390-d620-76b8-9fcd-022754daac93"}
+        {label:"PANews·韩股三件套", url:"https://www.panewslab.com/en/articles/019e8390-d620-76b8-9fcd-022754daac93"},
+        {label:"crypto.news·Alpaca持股+PFOF披露", url:"https://crypto.news/binance-discloses-alpaca-stake-as-stock-trading-deal-expands/"}
       ]
     },
     {
