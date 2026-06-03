@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-21 → 06-04",
-  updated: "2026-06-04 06:00 (北京时间)",
+  updated: "2026-06-04 07:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -183,6 +183,7 @@ const DATA = {
     {grp:"main", date:"5/31", tag:"t-new", txt:"【X实抓 20:00】Binance 官推发 'zoom in 放大看图',Hey Stock 悬念进入互动阶段(6.9k 浏览),典型零信息预热。", src:"https://x.com/binance/status/2061055220000456904"},
     {grp:"main", date:"5/31", tag:"t-new", txt:"【X实抓】Bitget 官推力推 'UEX 通用交易所' 一站式定位,拉新链接埋渠道码(regd/wsvk),把渠道追踪做进每条推。打法与 BIT 高度贴脸。", src:"https://x.com/bitget"},
     {grp:"main", date:"5/30", tag:"t-new", txt:"Binance Hey Stock 悬念发酵,BNB 24h 涨 8%+ 站上 $688——零信息预告本身=一次免费全网拉新事件。", src:"https://startupfortune.com/binances-june-1-reveal-puts-its-next-growth-test-in-focus/"},
+    {grp:"main", date:"5/29", tag:"t-new", txt:"【Bitget 扩品 · SNOWUSDT(Snowflake 云数据)股票永续上线(~5/29)】Bitget 新增 SNOWUSDT(Snowflake Inc., NYSE:SNOW)股票永续，20x 杠杆，USDT 结算；同期上线 CTRUSDT 加密合约——SNOW 于 6/1 Snowflake Summit AI 数据大会当日大涨 +9.6%；Bitget 股票永续赛道从防务/AI硬件延伸至企业软件/云数据类，货架进一步加宽。", src:"https://www.bitget.com/asia/news/detail/12560605432895"},
     {grp:"main", date:"5/28", tag:"t-new", txt:"Bitget U.S. Stocks New User Bonus Campaign(5/28–6/5,进行中):完成净入金+美股永续交易双任务最高得 $2,000 USDT 仓位体验券,另设 iPhone 17 Pro Max 盲盒抽奖——与 Binance Hey Stock 上线同期精准竞品拦截拉新,活动至 6/5 截止。", src:"https://www.techflowpost.com/en-US/newsletter/123906"},
     {grp:"main", date:"5/26", tag:"t-new", txt:"Bitget 上线 Reality(持牌 RWA 平台):FINRA 注册 + SIPC 保护 + 美国持牌券商 1:1 托管真股,一次铺 100+ 标的。", src:"https://www.theblock.co/post/402518/bitget-launches-reality-rwa"},
     {grp:"main", date:"5/26", tag:"t-new", txt:"Bitget CEO Gracy 抛 '10% 资产终将代币化' 行业级宏大叙事,给 Reality 装上趋势故事。", src:"https://beincrypto.com/bitget-launches-reality-aligned-with-ceos-10-tokenization-vision/"},
@@ -254,6 +255,7 @@ const DATA = {
         {t:"IPO Prime · preOPAI(OpenAI,5/15 上线):29,082 枚 @ $725(最低 $100 起);主打 '$4T AI 机会' 叙事;Solana 链,散户 pre-IPO 低门槛入口", src:"https://www.globenewswire.com/news-release/2026/05/18/3296466/0/en/bitget-ipo-prime-taps-into-4t-ai-opportunity-with-openai.html"},
         {t:"IPO Prime · ANTHROPICUSDT pre-IPO 永续(6/2 上线):继 preSPCX/preOPAI 后第三只 IPO Prime 品种;追踪 Anthropic 上市前估值($9650亿),与 Binance/OKX/KuCoin 同日角逐 Anthropic 叙事流量", src:"https://www.bitget.com/support/articles/12560603884829"},
         {t:"防务+无人机+科技永续批量(6/1 UTC+8,共 13 只):LMT/RTX/NOC/DFEN(防务) + IBM/NTAP/NOW/AXON + EH/EVEX/AVAV/KTOS/RCAT,USDT 结算——先于 Coinbase DEF10(6/8)布局防务赛道", src:"https://www.bitget.com/support/articles/12560603884781"},
+        {t:"SNOWUSDT 股票永续(~5/29 上线):Snowflake Inc.(NYSE:SNOW)企业云数据平台，20x 杠杆，USDT 结算；Bitget 股票永续货架向企业软件/AI数据赛道延伸；同期上线 CTRUSDT 加密永续", src:"https://www.bitget.com/asia/news/detail/12560605432895"},
         {t:"AI agent 统一交易生态(5/15 里程碑):100万+ AI用户·$12亿 AI代理累计成交量·58个 AI工具在跑;GetClaw 专属账户自主执行交易;AI Trading Playbooks 自然语言策略创建/回测/部署——Robinhood AI代理(5/27 beta)的领先半年对照项,加密交易所 AI代理规模化最早践行者", src:"https://www.globenewswire.com/news-release/2026/05/15/3295661/0/en/bitget-introduces-unified-ai-trading-ecosystem-surpasses-1m-users-and-1-2b-ai-agent-trading-volume.html"},
         {t:"OpenAI Stock Contract Campaign(5/27–6/11,进行中):交易 OPENAIUSDT pre-IPO 永续可得最高 $8,000 USDT;$50,000 USDT 总奖池 + Mystery Box 盲盒叠加——IPO Prime preOPAI 产品配套拉新激励,覆盖 Binance OPENAIUSDT / KuCoin OPENAI 永续同期竞争窗口", src:"https://www.techflowpost.com/en-US/newsletter/123718"},
         {t:"PayFi Odyssey:$30万奖池,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
