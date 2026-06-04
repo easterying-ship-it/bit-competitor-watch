@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-22 → 06-05",
-  updated: "2026-06-05 01:00 (北京时间)",
+  updated: "2026-06-05 02:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -192,6 +192,7 @@ const DATA = {
     {grp:"main", date:"7月起", tag:"t-info", txt:"Bitget PayFi Odyssey:$30万奖池多阶段,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册——待开跑,后续关注规则。", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
     {grp:"other", date:"6/4", tag:"t-new", txt:"【Bybit 韩股三件套 6/4 跟进(Samsung/SK海力士/现代)】Samsung Electronics(SAMSUNGUSDT)/SK 海力士(SKHYNIXUSDT)/现代汽车(HYUNDAIUSDT)永续合约上线，最高 20x 杠杆，USDT 结算，24/7；Binance 6/2 率先布局同批韩股永续后，Bybit 48 小时内跟进——头部平台非美市场全球蓝筹覆盖趋同加速，韩股叙事已成多家同期拉新流量热点。", src:"https://bitcoinworld.co.in/bybit-perpetual-futures-samsung-sk-hynix-hyundai-motor/"},
     {grp:"other", date:"6/4", tag:"t-new", txt:"【新扫描·Pionex 代币化股票 Bot 生态】Pionex(量化机器人平台,非传统 CEX)已集成 220+ 代币化股票/ETF/商品现货代币(xStocks via Backed Finance Solana + Ondo Stocks Ethereum/BNB Chain 双源聚合)+ 80+ 代币化股票永续合约;业内唯一支持对代币化美股跑 Futures Grid Bot(网格策略) + DCA 自动化定投的平台;0.05% 现货费率,10 USDT 格栅机器人起步;品类覆盖 140+ 美股(AAPLX/TSLAX/NVDAX…)+35+ ETF+25+ 商品;与 Bybit Grid Bot(5月下旬支持 xStocks 网格)直接竞争量化工具层——新增扫描。", src:"https://www.pionex.com/blog/xstocks/"},
+    {grp:"other", date:"6/4", tag:"t-new", txt:"【Coinbase SPCX-PERP 上线(6/4)】Coinbase Advanced 上线 SpaceX pre-IPO 永续合约 SPCX-PERP(6/4 06:00 UTC)：USDC 结算/最高 5x 杠杆/无到期日；IPO 后自动转常规永续；合规非美/英/加/新/印/澳用户可用——Coinbase 宣称'SpaceX 是首个，后续覆盖 AI/科技/能源/航天完整 pre-IPO 管道'；继 Binance/OKX/Bitget/Hyperliquid/Bybit/HTX/BingX 之后，全球最大合规美国交易所正式入局 SPCX pre-IPO 赛道；'Everything Exchange' 战略从真股+CFTC 合规衍生品全面延伸至 pre-IPO 纵深。", src:"https://coingape.com/coinbase-follows-binance-to-launch-elon-musks-spacex-pre-ipo-perps/"},
     {grp:"other", date:"6/3", tag:"t-new", txt:"【SpaceX S-1/A 修订(Amendment No.2 · 6/3 SEC 备案)】净亏损全量披露:2025 全年 -$49.4亿、2026Q1 -$25亿;估值上限在修订中收窄至 $1.8T(较早期 $2T 上限下调);新增 5% DSP 定向份额计划面向零售——关键风险因子正式载入 SEC 文件,机构路演(6/4 启动)将面临 AI 损失追问;链上 pre-IPO 合约定价在三重锚点($135 固定价/$1.75T ↔ Morningstar 公允 $780B ↔ 修订上限 $1.8T)之间拉锯,6/12 开盘套利窗口波动性进一步加大。", src:"https://www.sec.gov/Archives/edgar/data/0001181412/000162828026040364/spaceexplorationtechnologib.htm"},
     {grp:"other", date:"6/3", tag:"t-new", txt:"【行业 macro · SpaceX IPO 固定价 $135/股(Reuters/Bloomberg 6/3 独家)】Reuters/Bloomberg 6/3 报道:SpaceX 拟以固定价 $135/股(5/4 执行 5:1拆股后)发行 5.556亿股,融资 $750亿,估值 $1.75T;打破传统 IPO 路演定价惯例——直接公布固定价格而非价格区间(史上首例大型 IPO 固定价发行)。★关键影响:$135 固定价远低于链上 pre-IPO 合约当前隐含价格($200+ 区间),Binance SPCXUSDT / Bitget preSPCX / Gate SPCX Mirror Note($3.95亿) / OKX / Bybit / HTX 等各所合约进入定价重新锚定阶段;6/4 路演启动 → 6/11 定价日 → 6/12 挂牌首小时合约 vs 真实 IPO 价套利窗口高度敏感,链上价格若高于 $135 将触发即时下行套利压力。", src:"https://www.bloomberg.com/news/articles/2026-06-03/spacex-seeks-75-billion-in-ipo-at-135-per-share-reuters-says"},
     {grp:"other", date:"6/3", tag:"t-info", txt:"【行业 macro·Morningstar SpaceX 独立估值·6/3】Morningstar 首次覆盖 SpaceX 给出公允价值 $780B(约 $7,800亿),仅为 IPO 目标 $1.75T 的 45%($970B 缺口);DCF 拆分:核心发射+Starlink $611B + AI 概率加权 $170B;以 $1.75T 上市意味约 94× 2025 年营收($186.7亿),分析师称'需完美执行'——路演启动前夕最权威独立研究机构给出空头估值锚,形成强反叙事;链上 pre-IPO 合约(Binance SPCXUSDT / Bitget preSPCX / Hyperliquid SPCX-USDC 等)隐含价格 ~$200+/股远超 IPO 固定价 $135 和 Morningstar 公允价;Morningstar 预计上市初期或因小流通盘+纳指入选效应短期支撑,但认为长期将出现更佳买点——套利做空压力将在 6/12 挂牌首小时集中释放,各所 pre-IPO 合约持有者面临重新定价风险。", src:"https://www.cnbc.com/2026/06/03/morningstar-spacex-ipo-target-price-nasdaq.html"},
@@ -231,6 +232,7 @@ const DATA = {
     {grp:"other", date:"5/22", tag:"t-new", txt:"OKX + ICE 宣布合推 ICE Brent/WTI 原油永续:ICE 3月战略入股 OKX($25B估值)后首只具体落地联名品种,向 OKX 1.2亿用户开放——ICE 合作从'股权背书'延伸至'实际产品定价',OKX 大宗商品赛道提速。", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
     {grp:"other", date:"5/22", tag:"t-new", txt:"【新入场者·Hyperliquid DEX】Hyperliquid 通过 HIP-3 市场托管 SPCX pre-IPO 永续合约(5/18 上线,$60M+ USDC 未平仓);平台 23/30 最高 OI 资产为权益/商品,非加密——Motley Fool 称其'建造链上影子证券交易所',FalconX 称其'传统交易所和预测市场的去中心化挑战者';以 DEX 方式切入 CEX 尚未完全覆盖的 pre-IPO 叙事(与 Bitget preSPAX 直接竞争叙事),占去中心化永续全网 OI 70%+。若 SEC 创新豁免落地将从监管灰色区转合规,需持续盯。", src:"https://www.fool.com/investing/2026/05/22/hyperliquid-is-building-a-shadow-stock-exchange-th/"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
+    {grp:"other", date:"5/25", tag:"t-new", txt:"【BingX pre-IPO 扩品·OpenAI+Anthropic(5/25)】BingX 上线 OPENAI(Pre-IPO)+ANTHROPIC(Pre-IPO) USDT 永续期货(5/25 10:35 UTC)：OpenAI 标注估值 $852B，Anthropic $380B；同步开展 OpenAI Pre-IPO Airdrop(5/19–5/28，30万 USDT 奖池，业内首家以 airdrop 形式做 pre-IPO 拉新)——继 SpaceX VNTL(4/10)后补全 AI 三巨头 pre-IPO 产品线，airdrop 空投打法区别于 Binance/Bitget 纯永续路线。", src:"https://www.prnewswire.com/apac/news-releases/bingx-becomes-first-exchange-to-offer-openai-pre-ipo-airdrop-302776315.html"},
     {grp:"other", date:"5/下旬", tag:"t-new", txt:"【新入场者·BingX】SPCX pre-IPO VNTL RWA 代币(4/10上线)+美股永续(100x杠杆,100+传统资产)+35代币化股票(Ondo/xStocks 发行);'Global Capital Gala' TradFi 专题活动+50万USDT奖池 'Earnings Hunt' 挑战赛;CoinGecko 2026年报永续上新量全球第二(66% YoY)——与 Binance/OKX/Bitget/Hyperliquid 并列 SPCX pre-IPO 赛道，实质入场美股/TradFi，补入新入场者扫描名单。", src:"https://financefeeds.com/5-ways-crypto-markets-front-running-spacex-1-75t-ipo/"},
     {grp:"other", date:"趋势", tag:"t-info", txt:"【新入场者补录】KuCoin(Jul/25 xStocks，4100万用户 200+地区)+ Gemini(EU 37+ via Dinari)+ Robinhood(EU 近 2000 代币化股票 MiCA 持牌,Robinhood Chain testnet 2月上线 400万笔,mainnet Q3/Q4 2026)+ Bitrue(Jul/25 Backed Finance xStocks 首三日 $1650万成交·1200+交易者;Apr/26 扩至 40代币化资产·最高 100x 杠杆含 NAS100/XAU/XAG)+ Phemex(6/3 TradFi 扩品至 73资产,1000万用户,USDT 永续美股/商品/全球蓝筹,最高 100x)+ Bitunix(3/26 TradFi 永续上线·14类资产含 SPY/QQQ/TSLA/MSTR/AMZN/SPCX pre-IPO·最高 200x 杠杆·USDT 结算;规模较小,持续观察)——本轮共六张新卡片。", src:"https://invezz.com/news/2026/04/02/bitrue-launches-40-tokenized-assets-with-up-to-100x-leverage-trading/"},
     {grp:"other", date:"趋势", tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新第一话术。"}
@@ -264,7 +266,8 @@ const DATA = {
         {t:"SNOWUSDT 股票永续(~5/29 上线):Snowflake Inc.(NYSE:SNOW)企业云数据平台，20x 杠杆，USDT 结算；Bitget 股票永续货架向企业软件/AI数据赛道延伸；同期上线 CTRUSDT 加密永续", src:"https://www.bitget.com/asia/news/detail/12560605432895"},
         {t:"AI agent 统一交易生态(5/15 里程碑):100万+ AI用户·$12亿 AI代理累计成交量·58个 AI工具在跑;GetClaw 专属账户自主执行交易;AI Trading Playbooks 自然语言策略创建/回测/部署——Robinhood AI代理(5/27 beta)的领先半年对照项,加密交易所 AI代理规模化最早践行者", src:"https://www.globenewswire.com/news-release/2026/05/15/3295661/0/en/bitget-introduces-unified-ai-trading-ecosystem-surpasses-1m-users-and-1-2b-ai-agent-trading-volume.html"},
         {t:"OpenAI Stock Contract Campaign(5/27–6/11,进行中):交易 OPENAIUSDT pre-IPO 永续可得最高 $8,000 USDT;$50,000 USDT 总奖池 + Mystery Box 盲盒叠加——IPO Prime preOPAI 产品配套拉新激励,覆盖 Binance OPENAIUSDT / KuCoin OPENAI 永续同期竞争窗口", src:"https://www.techflowpost.com/en-US/newsletter/123718"},
-        {t:"PayFi Odyssey:$30万奖池,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"}
+        {t:"PayFi Odyssey:$30万奖池,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
+        {t:"'Score Your 40%' 全球代理招募(6月进行中，总奖池 100万 USDT)：100 社媒粉丝/500 社区成员即可申请；新任代理最高 600 USDT 奖励+40% 永久佣金率——超低门槛向内容创作者/社区运营者下沉拉新激励，强化 UEX 渠道覆盖深度", src:"https://www.bitget.com/amp/news/detail/12560605442093"}
       ],
       xsig:"📡 X实抓(6/1 11:29):官推发新悬念 'TS = T＿＿＿＿ S＿＿＿＿＿'(引 @Pixar),按字母位疑似 'Trade Stocks'——疑似股票交易产品起势;另蹭 'Polymarket:SpaceX 6/30 前估值摸 $2.5T'。仍每日多条 + 渠道码拉新链接。",
       sources:[
@@ -451,15 +454,17 @@ const DATA = {
       ]
     },
     {
-      nm:"Coinbase", color:"#0052ff", ink:"#fff", status:"live", statusTxt:"美股已上线 · 期货 6/8",
-      sub:"6/1 美股上线 · Everything Exchange",
+      nm:"Coinbase", color:"#0052ff", ink:"#fff", status:"live", statusTxt:"美股已上线 · SPCX-PERP 6/4 · 期货 6/8",
+      sub:"6/1 美股上线 · 6/4 SPCX-PERP · Everything Exchange",
       promo:[
         "被业界点名为代币化股票关键玩家",
         "'Everything Exchange' 路线图:Crypto + 真股 + 预测市场 + AI 顾问——CFTC 双批准(5/28 加密永续 + 6/8 股权指数期货)使 Coinbase 成为美国首个同时合规运营加密衍生品+股权衍生品的交易所",
         "Yahoo Finance 生态合作:研究→下单一键打通",
-        "SEC '创新豁免' 框架受益者,路线图对齐监管节奏"
+        "SEC '创新豁免' 框架受益者,路线图对齐监管节奏",
+        "pre-IPO 永续管道启动(6/4):SPCX-PERP 首发，明确预告 AI/科技/能源/航天 pre-IPO 管道——'Everything Exchange' 战略从真股+衍生品延伸至 pre-IPO 全覆盖，与 Binance/Bitget/OKX/BingX 形成正面竞争"
       ],
       activities:[
+        {t:"SPCX-PERP pre-IPO 永续上线(6/4 06:00 UTC):SpaceX pre-IPO 永续合约，USDC 结算，5x 杠杆，无到期日；IPO 后自动转常规永续；适用于非美/英/加/新/印/澳用户——SpaceX 为首只，已预告 AI/科技/能源/航天完整 pre-IPO 管道", src:"https://coingape.com/coinbase-follows-binance-to-launch-elon-musks-spacex-pre-ipo-perps/"},
         {t:"美股/ETF 交易正式上线(美国用户):24/5、USD/USDC 入金,同一账户管 Crypto + 股票", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
         {t:"6/8 上线合规权益指数永续(Coinbase Derivatives/CFTC 挂牌):4 只主题合约 AI10(AIP)/China10(CHN)/Defense10(DEF)/Tech100(TEK),24/7 全周无间交易;60/40 税务优待(60%长期资本利得);美国 CFTC 监管框架下首只永续式股权指数期货", src:"https://www.coinbase.com/blog/coming-june-8-perpetual-style-equity-index-futures"},
         {t:"全球加密衍生品永续(CFTC 批准, 5/28):Coinbase Bermuda 通道接入 Deribit(2025年 $29亿收购);BTC/ETH/SOL 等主流加密永续向美国用户开放;解锁此前封闭约 80% 全球加密衍生品市场;CLO 称 '行业历史性突破'——加密衍生品层补全 Everything Exchange 矩阵,叠加 6/8 股权指数期货,Coinbase 首次同时持有合规加密+股权衍生品完整牌照堆栈", src:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"},
@@ -470,7 +475,8 @@ const DATA = {
         {label:"CoinDesk·SEC框架", url:"https://www.coindesk.com/policy/2026/05/18/sec-to-propose-tokenized-stock-framework-as-wall-street-efforts-deepen-bloomberg"},
         {label:"CryptoBriefing·期货", url:"https://cryptobriefing.com/coinbase-perpetual-equity-futures/"},
         {label:"MLQ·美股上线", url:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
-        {label:"CoinDesk·CFTC加密永续批准", url:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"}
+        {label:"CoinDesk·CFTC加密永续批准", url:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"},
+        {label:"CoinGape·SPCX-PERP(6/4)", url:"https://coingape.com/coinbase-follows-binance-to-launch-elon-musks-spacex-pre-ipo-perps/"}
       ]
     },
     {
@@ -611,16 +617,17 @@ const DATA = {
       ]
     },
     {
-      nm:"BingX", tier:2, color:"#2366dc", ink:"#fff", status:"live", statusTxt:"TradFi + pre-IPO VNTL",
-      sub:"新入场者 · 4/10 SpaceX VNTL · 100+传统资产 · 35代币化股票",
+      nm:"BingX", tier:2, color:"#2366dc", ink:"#fff", status:"live", statusTxt:"TradFi + pre-IPO 三件套",
+      sub:"新入场者 · SpaceX VNTL(4/10) + OpenAI/Anthropic(5/25) · 100+传统资产 · 35代币化股票",
       promo:[
-        "SpaceX VNTL pre-IPO RWA 代币:Xpool 质押 USDT 免费获取 + 期货双路;低至 10 USDT 入场——与 Binance/OKX/Bitget/Hyperliquid 同列 SPCX pre-IPO 赛道,散户门槛最低",
+        "pre-IPO 三件套:SpaceX VNTL(4/10，RWA airdrop路线)+OPENAI(5/25，永续)+ANTHROPIC(5/25，永续)——AI 三巨头 pre-IPO 产品线全覆盖；airdrop+永续双路并行，与 Binance/Bitget/OKX 同赛道但以 airdrop 空投做差异化拉新",
         "BingX TradFi:100+ 传统资产(美股/商品/外汇/指数),24/7;美股永续最高 100x 杠杆",
         "'Global Capital Gala' TradFi 主题拉新活动 + 'US Stocks Earnings Hunt' 50万 USDT 奖池挑战赛",
         "35 代币化股票现货(Ondo/xStocks 发行):NVDA/AAPL/MSFT/AMZN/SPY 等",
         "CoinGecko 2026 年报:永续合约上新数量全球第二(66% YoY 增速)"
       ],
       activities:[
+        {t:"OPENAI(Pre-IPO)+ANTHROPIC(Pre-IPO) 永续(5/25 10:35 UTC)：OpenAI 标注估值 $852B，Anthropic $380B；USDT 结算 24/7；配套 OpenAI Pre-IPO Airdrop 活动(5/19–5/28，30万 USDT 奖池，业内首家 pre-IPO airdrop 路线)", src:"https://www.prnewswire.com/apac/news-releases/bingx-becomes-first-exchange-to-offer-openai-pre-ipo-airdrop-302776315.html"},
         {t:"SpaceX VNTL pre-IPO RWA 代币(4/10上线):Xpool 质押模型 + 期货双路;$VNTL 镜像 SpaceX 股价经济暴露,非直接股权;10 USDT 起", src:"https://bingx.com/en/support/articles/15802997358735"},
         {t:"Global Capital Gala:TradFi 专题活动,聚焦美股/商品/外汇/指数 24/7 交易机会拉新", src:"https://crypto.news/bingx-kicks-off-global-capital-gala-spotlighting-tradfi-trading-opportunities/"},
         {t:"US Stocks Earnings Hunt Challenge:50万 USDT 奖池,Spot+Futures 双赛道竞技,KYC 即参与", src:"https://bingx.com/en/events"}
@@ -721,7 +728,7 @@ const DATA = {
     {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:1, pionex:"?"},
     {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0},
     {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0},
-    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:"?", mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1, bitrue:1, backpack:"?", phemex:1, pionex:1},
+    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:1, mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1, bitrue:1, backpack:"?", phemex:1, pionex:1},
     {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:1, bitrue:0, backpack:0, phemex:1, pionex:0},
     {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0},
     {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:"?", pionex:"?"},
