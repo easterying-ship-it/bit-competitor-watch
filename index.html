@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-21 → 06-04",
-  updated: "2026-06-04 18:00 (北京时间)",
+  updated: "2026-06-04 20:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -471,10 +471,13 @@ const DATA = {
         "'Everything Exchange' 路线图:Crypto + 真股 + 预测市场 + AI 顾问——CFTC 双批准(5/28 加密永续 + 6/8 股权指数期货)使 Coinbase 成为美国首个同时合规运营加密衍生品+股权衍生品的交易所",
         "Yahoo Finance 生态合作:研究→下单一键打通",
         "SEC '创新豁免' 框架受益者,路线图对齐监管节奏",
-        "pre-IPO 永续管道启动(6/4):SPCX-PERP 首发，明确预告 AI/科技/能源/航天 pre-IPO 管道——'Everything Exchange' 战略从真股+衍生品延伸至 pre-IPO 全覆盖，与 Binance/Bitget/OKX/BingX 形成正面竞争"
+        "pre-IPO 永续管道启动(6/4):SPCX-PERP 首发，明确预告 AI/科技/能源/航天 pre-IPO 管道——'Everything Exchange' 战略从真股+衍生品延伸至 pre-IPO 全覆盖，与 Binance/Bitget/OKX/BingX 形成正面竞争",
+        "个股永续矩阵已成型(3/20~5/18 上线,非美用户):Mag7(3/20) + AI算力四件套(5/18 CBRS/TSM/NBIS/BE),USDC结算,24/7,单股最高10x/ETF最高20x——国际版 Coinbase Advanced 个股永续层早于 Binance Hey Stock(6/1) 布局完成,但中文宣发投入弱,曝光度被后者压制;合规层级领先(非合成品,USDC结算)"
       ],
       activities:[
         {t:"SPCX-PERP pre-IPO 永续上线(6/4 06:00 UTC):SpaceX pre-IPO 永续合约，USDC 结算，5x 杠杆，无到期日；IPO 后自动转常规永续；适用于非美/英/加/新/印/澳用户——SpaceX 为首只，已预告 AI/科技/能源/航天完整 pre-IPO 管道", src:"https://coingape.com/coinbase-follows-binance-to-launch-elon-musks-spacex-pre-ipo-perps/"},
+        {t:"Mag7+ETF 个股永续(3/20 上线,非美用户):AAPL/MSFT/GOOGL/AMZN/NVDA/META/TSLA + SPY(20x)/QQQ(20x),USDC结算,24/7,单股最高10x——早于 Binance Hey Stock(6/1)布局非美市场个股永续;国际版 Everything Exchange 个股衍生品基础设施已成型;Mag7 全覆盖与 OKX(5x)/Bybit 同赛道但合规层级更高", src:"https://www.theblock.co/post/394485/coinbase-launches-stock-perpetual-futures-for-magnificent-7-names-including-apple-tesla-and-nvidia-expanding-everything-exchange-push"},
+        {t:"AI算力基础设施永续(~5/18 上线,非美用户):Cerebras Systems(CBRS)/TSMC(TSM)/Nebius Group(NBIS)/Bloom Energy(BE),USDC结算,24/7,10x杠杆——AI算力供应链四件套延伸个股永续货架,与 Bitget/OKX/Bybit TradFi 个股层直接竞争", src:"https://cryptonews.net/news/market/32865213/"},
         {t:"美股/ETF 交易正式上线(美国用户):24/5、USD/USDC 入金,同一账户管 Crypto + 股票", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
         {t:"6/8 上线合规权益指数永续(Coinbase Derivatives/CFTC 挂牌):4 只主题合约 AI10(AIP)/China10(CHN)/Defense10(DEF)/Tech100(TEK),24/7 全周无间交易;60/40 税务优待(60%长期资本利得);美国 CFTC 监管框架下首只永续式股权指数期货", src:"https://www.coinbase.com/blog/coming-june-8-perpetual-style-equity-index-futures"},
         {t:"全球加密衍生品永续(CFTC 批准, 5/28):Coinbase Bermuda 通道接入 Deribit(2025年 $29亿收购);BTC/ETH/SOL 等主流加密永续向美国用户开放;解锁此前封闭约 80% 全球加密衍生品市场;CLO 称 '行业历史性突破'——加密衍生品层补全 Everything Exchange 矩阵,叠加 6/8 股权指数期货,Coinbase 首次同时持有合规加密+股权衍生品完整牌照堆栈", src:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"},
@@ -486,7 +489,9 @@ const DATA = {
         {label:"CryptoBriefing·期货", url:"https://cryptobriefing.com/coinbase-perpetual-equity-futures/"},
         {label:"MLQ·美股上线", url:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
         {label:"CoinDesk·CFTC加密永续批准", url:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"},
-        {label:"CoinGape·SPCX-PERP(6/4)", url:"https://coingape.com/coinbase-follows-binance-to-launch-elon-musks-spacex-pre-ipo-perps/"}
+        {label:"CoinGape·SPCX-PERP(6/4)", url:"https://coingape.com/coinbase-follows-binance-to-launch-elon-musks-spacex-pre-ipo-perps/"},
+        {label:"TheBlock·Mag7永续(3/20)", url:"https://www.theblock.co/post/394485/coinbase-launches-stock-perpetual-futures-for-magnificent-7-names-including-apple-tesla-and-nvidia-expanding-everything-exchange-push"},
+        {label:"CryptoNews·AI算力永续(5/18)", url:"https://cryptonews.net/news/market/32865213/"}
       ]
     },
     {
