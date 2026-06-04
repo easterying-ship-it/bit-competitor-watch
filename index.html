@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-21 → 06-04",
-  updated: "2026-06-04 20:00 (北京时间)",
+  updated: "2026-06-04 21:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -223,6 +223,7 @@ const DATA = {
     {grp:"other", date:"5/29", tag:"t-new", txt:"【X实抓】Bybit 挂出 '$100M 全球资产 Giveaway·免费送 xStock' 拉新,并连发 #NewFinancialPlatform 悬念预热——继 Binance 后第二家玩悬念营销,值得盯。", src:"https://x.com/Bybit_Official"},
     {grp:"other", date:"5/28", tag:"t-new", txt:"KuCoin 持续批量扩充股票指数永续合约(5/28批:IBM/NOK/INFQ + OPENAI/RGTI 等共9只,5/22批含 BABA/AVGO/NFLX;4月起累计 20+ 品种,已含 pre-IPO 名字 OPENAI/RGTI;5/27 额外上线 SPCXUSDT pre-IPO 永续 5x):全部 USDT 结算,24/7,最高 20x 杠杆——xStocks 现货(Jul/25)之外再开永续维度,实际产品矩阵远比卡片呈现的宽;悄然成隐形多品类玩家。", src:"https://www.kucoin.com/announcement/en-kucoin-futures-will-list-ibmusdt-nokusdt-infqusdt-stock-index-perpetual-contracts-2026-05-28"},
     {grp:"other", date:"5/28", tag:"t-new", txt:"【风险事件 · SpaceX pre-IPO 闪崩 5/28】Hyperliquid SPACEX-USDH 永续因 Notice.co 预言机错误处理 5:1 拆股事件,30分钟暴跌 45%($2,277→$1,254),405 用户/1393 仓位/$150万名义值被强平;Ventuals 承诺 48h 赔付。同日 Bitget preSPAX→preSPCX 执行 1:5 代币拆分(价格降至 1/5 但持仓总值不变,非实际损失)——两者剧情截然不同。链上 pre-IPO oracle 脆弱性首次大规模曝光,对 Hyperliquid DEX 叙事构成信任损耗。", src:"https://www.coindesk.com/markets/2026/05/28/hyperliquid-s-pre-ipo-spacex-contracts-suffers-45-flash-crash-liquidating-usd1-5-million"},
+    {grp:"other", date:"5/28", tag:"t-new", txt:"【监管 macro · CFTC 历史首批准美国持牌平台开放全球加密永续(5/28)】CFTC 批准 Coinbase Derivatives 旗下 Bermuda 子公司接入 Deribit(2025年以 $29亿收购)面向美国用户提供 BTC/ETH/SOL 等主流加密永续期货;同步批准 Kalshi 预测市场永续——美国用户此前被锁于约 80% 全球加密衍生品市场之外;Coinbase CLO Paul Grewal 称 '行业里程碑';★ 竞争影响:Binance/OKX/Bybit 在加密永续赛道正式迎来 CFTC 合规竞争者;叠加 6/8 股权指数期货(AI10/DEF10),Coinbase '万物交易所' 衍生品层加速落地——是 CFTC 开放加密永续准入的第一枪。", src:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"},
     {grp:"other", date:"5/27", tag:"t-new", txt:"Robinhood 上线 AI 代理交易 beta(股票先行):用户可设 AI agent 在独立账户自主下单执行策略,通过 MCP 协议接入组合分析/下单/研报;后续扩至加密/期权/事件合约/期货;平台 AUM 已达 $3500亿——传统券商带头进入 'agentic finance',对加密交易所 AI 工具叙事构成压力。", src:"https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/"},
     {grp:"other", date:"5/26", tag:"t-new", txt:"【OKX Exchange OS 上线 · OKB +18%】OKX 在 X Layer(Ethereum L2)上发布 Exchange OS:开发者/协议方可从零搭建现货/永续/预测市场,合作方需质押 OKB 入场;OKB 价格当日 +18% 拉升;首个公开演示市场为 2026 FIFA 世界杯预测市场(6月上线)——OKX 从 CEX 向开放金融基础设施平台升级,与 Gate Polymarket Live / Hyperliquid HIP-3 在自定义金融市场赛道正面竞争;OKB 质押激励进一步加深生态闭环。", src:"https://cryptobriefing.com/okx-x-layer-exchange-os-launch/"},
     {grp:"other", date:"5/26", tag:"t-new", txt:"【风险事件·HTX】UK 制裁 HTX 母体 Huobi Global SA(Panama),涉嫌为俄罗斯 A7 网络转移 $15亿规避国际制裁;Binance/OKX/Bybit/Bitget 同步对涉 HTX 转账提升合规审查。HTX 否认线上交易所受直接影响,但合规形象受损,TradFi 扩张节奏面临额外阻力。", src:"https://beincrypto.com/uk-sanctions-justin-suns-htx-russia-ties/"},
@@ -322,7 +323,7 @@ const DATA = {
       activities:[
         {t:"20+ 股票永续(Mag7,最高 5x),24/7 交易", src:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"},
         {t:"联合 Ondo 提供 263 个代币化股票,并入同一账户", src:"https://www.okx.com/en-us/learn/beyond-crypto"},
-        {t:"NYSE 代币化股票预计 H2 2026 上线(ICE 合作);3/24 NYSE 与 Securitize 签 MOU 共建代币化平台(24/7+即时结算+碎股),ICE(NYSE 母公司)持股 OKX 形成背书链条", src:"https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx"},
+        {t:"NYSE 代币化股票预计 H2 2026 上线(ICE 合作);3/24 NYSE 与 Securitize 签 MOU 共建代币化平台(24/7+即时结算+碎股);★4/17 SEC 正式批准 NYSE 规则变更 SR-NYSE-2026-17(Russell 1000 成分股+主要 ETF 代币化在 NYSE 上市,具有法律效力,已生效);ICE(NYSE 母公司)持股 OKX 形成背书链条", src:"https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx"},
         {t:"ICE Brent & WTI 原油永续(5/22 宣布):首只 ICE 联名商品品种,OKX 1.2亿用户可用;ICE 实际价格支撑", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
         {t:"SpaceX/OpenAI/Anthropic pre-IPO 永续合约(5/7上线):USDT 结算,追踪二级市场估值,无实际股权;与 Bitget IPO Prime / Binance SPCX / Hyperliquid HIP-3 同赛道", src:"https://www.coindesk.com/markets/2026/05/06/okx-joins-crypto-s-pre-ipo-frenzy-with-openai-spacex-perpetual-futures"},
         {t:"Event Contracts 上线(6/1):猜涨跌·无杠杆·无爆仓,拓宽零售品类", src:"https://x.com/okx"},
@@ -453,20 +454,22 @@ const DATA = {
       sub:"6/1 美股上线 · Everything Exchange",
       promo:[
         "被业界点名为代币化股票关键玩家",
-        "'Everything Exchange' 路线图:Crypto + 真股 + 预测市场 + AI 顾问",
+        "'Everything Exchange' 路线图:Crypto + 真股 + 预测市场 + AI 顾问——CFTC 双批准(5/28 加密永续 + 6/8 股权指数期货)使 Coinbase 成为美国首个同时合规运营加密衍生品+股权衍生品的交易所",
         "Yahoo Finance 生态合作:研究→下单一键打通",
         "SEC '创新豁免' 框架受益者,路线图对齐监管节奏"
       ],
       activities:[
         {t:"美股/ETF 交易正式上线(美国用户):24/5、USD/USDC 入金,同一账户管 Crypto + 股票", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
         {t:"6/8 上线合规权益指数永续(Coinbase Derivatives/CFTC 挂牌):4 只主题合约 AI10(AIP)/China10(CHN)/Defense10(DEF)/Tech100(TEK),24/7 全周无间交易;60/40 税务优待(60%长期资本利得);美国 CFTC 监管框架下首只永续式股权指数期货", src:"https://www.coinbase.com/blog/coming-june-8-perpetual-style-equity-index-futures"},
+        {t:"全球加密衍生品永续(CFTC 批准, 5/28):Coinbase Bermuda 通道接入 Deribit(2025年 $29亿收购);BTC/ETH/SOL 等主流加密永续向美国用户开放;解锁此前封闭约 80% 全球加密衍生品市场;CLO 称 '行业历史性突破'——加密衍生品层补全 Everything Exchange 矩阵,叠加 6/8 股权指数期货,Coinbase 首次同时持有合规加密+股权衍生品完整牌照堆栈", src:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"},
         {t:"Coinbase Tokenize(机构 RWA 代币化平台)路线图中,预计 2027 年初", src:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"}
       ],
       xsig:"📡 X实抓(6/1):置顶 One Card(消费返最高 4% BTC + $50);另推 '$100万 BTC 连胜池 + 3% 转入奖励 + 40% staking boost + Coinbase One 首年8折'(5/31 截止)——纯 BTC 向;代币化股票仍在路线图,未在 X 推。",
       sources:[
         {label:"CoinDesk·SEC框架", url:"https://www.coindesk.com/policy/2026/05/18/sec-to-propose-tokenized-stock-framework-as-wall-street-efforts-deepen-bloomberg"},
         {label:"CryptoBriefing·期货", url:"https://cryptobriefing.com/coinbase-perpetual-equity-futures/"},
-        {label:"MLQ·美股上线", url:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"}
+        {label:"MLQ·美股上线", url:"https://mlq.ai/news/coinbase-launches-stock-trading-for-us-users-as-part-of-everything-exchange-strategy/"},
+        {label:"CoinDesk·CFTC加密永续批准", url:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"}
       ]
     },
     {
