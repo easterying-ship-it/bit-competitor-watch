@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-05-22 → 06-05",
-  updated: "2026-06-05 23:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-05-23 → 06-06",
+  updated: "2026-06-06 00:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -197,6 +197,7 @@ const DATA = {
     {grp:"main", date:"5/26", tag:"t-new", txt:"Binance 上线 OpenAI pre-IPO 永续合约 OPENAIUSDT(5/26 08:30 UTC):20x 杠杆,USDT 结算;紧跟 SpaceX 版(5/21)首周 $2.8亿成交量——Binance pre-IPO 永续在真股+bStocks 之外再开第四层,与 Bitget IPO Prime / OKX 同赛道争叙事。", src:"https://www.prnewswire.com/news-releases/binance-expands-pre-ipo-perpetuals-with-openai-listing-following-strong-early-market-response-302781593.html"},
     {grp:"main", date:"6月", tag:"t-info", txt:"【Bitget 第二届 Anti-Scam Month(全 6 月)】主题 'More Assets, Stronger Shield: Stay Safe in the Multi-Asset Era'；Interpol 数据：2025 年多资产欺诈全球损失 $4420 亿；全月发布安全系列文章/视频/X Spaces，6 月末发布多资产交易+AI 欺诈联合安全报告——TradFi 扩张大周期内平行推出品牌安全防护，拉新同时强化中文向用户信任层。", src:"https://www.analyticsinsight.net/press-release/bitget-launches-second-year-of-anti-scam-month-campaign-to-fight-growing-cyber-fraud"},
     {grp:"main", date:"7月起", tag:"t-info", txt:"Bitget PayFi Odyssey:$30万奖池多阶段,奖励绑真实使用(刷卡/扫码/P2P)非单纯注册——待开跑,后续关注规则。", src:"https://www.bitget.com/blog/articles/bitget-reality-tokenized-rwa-platform"},
+    {grp:"other", date:"6/8", tag:"t-new", txt:"【2天倒计时·Coinbase 美国首批 CFTC 合规永续式权益指数期货 6/8 上线】Coinbase Derivatives 6/8 上线 4 只主题合约：AI10(AIP·10只AI基础设施公司)/China10(CHN·10只美上市中概股ADR)/Defense10(DEF·10只航空防务公司,防务收入≥50%筛选)/Tech100(TEK·纳斯达克100)；24/7 无到期，CFTC 框架下首批永续式股权指数期货，60/40 税务优待；向美国零售用户分阶段开放——标志合规化最高里程碑：全球首次在美国受监管交易所上市永续式权益指数期货；与 Bitget/Binance/OKX/Bybit 境外无牌所股票永续形成监管级别分化；Coinbase '万物交易所' CFTC 双批准(加密永续5/28+股权指数期货6/8)至此全部兑现。", src:"https://www.coinbase.com/blog/coming-june-8-perpetual-style-equity-index-futures"},
     {grp:"other", date:"6/5", tag:"t-new", txt:"【新入场者·BitMEX SPCXUSDT pre-IPO 永续 6/5 04:00 UTC 上线·Equity Perps 补录】BitMEX(加密衍生品先驱,永续发明者)于 6/5 04:00 UTC 正式上线 SPCXUSDT pre-IPO 永续:USDT 结算/5x 杠杆/无到期日;采用 LastPricePreLaunch 标记(SPCX 上市前无可观察价格),±20%/h Limit Up/Down 波动保护;6/12 上市后切换实时追踪。★BitMEX 自 Jan/26 起已运营 Equity Perps(20+ 美股):首批 AAPL/AMZN/NVDA/TSLA/META/CRCL/COIN/HOOD/SPY/NQ100;3月扩品 MSFT/GOOGL/PLTR/BCOM/INTC/JPM/MSTR/NFLX/ORCL/XOM;Chainlink oracle 定价+BTC/USDT 保证金 24/7;Q1/26 Equity Perps 周成交量达 $4.9B(TradFi 永续赛道整体 +908%);SPCX 使其 pre-IPO 管道正式对标 Binance/Bitget/Bybit/Coinbase——此前未纳入监控,新增监控。", src:"https://www.bitmex.com/blog/spcxusdt"},
     {grp:"other", date:"6/5", tag:"t-new", txt:"【行业 macro·SpaceX IPO 零售门槛降至 $2k·需求 10-20x 超额(6/5)】Fidelity 宣布 SPCX IPO 申购资产门槛从 $500k+ 降至 $2k(降幅 99.6%)——SpaceX 史上 IPO 最高 30% 零售配额驱动此举;严苛反翻转条款:15 天内售出即标记为 flipper(首次违规封 6 个月/二次封 1 年/三次永久封禁+SSN 绑定);Reddit 情绪显示需求约 10-20x 超额认购;JPMorgan CEO Jamie Dimon 亲自向 2500+ 机构客户路演;★大多数零售申请者将获部分填单或零分配——30% 零售配额在史上最大 IPO 中仍不够用；传统券商渠道(Schwab/Fidelity/Robinhood/SoFi/E*TRADE)与链上 pre-IPO 合约(Binance SPCXUSDT/Bitget preSPCX/Gate Mirror Note/OKX/Bybit/HTX/BitMEX/Coinbase SPCX-PERP)进入上市倒计时最后 7 天争夺叙事流量。", src:"https://beincrypto.com/fidelity-spacex-ipo-flipping-rules/"},
     {grp:"other", date:"6/5", tag:"t-new", txt:"【行业 macro·SpaceX 日本 IPO 增发 25% 至 $25亿(Bloomberg 6/5)】SpaceX 将日本零售发售目标从 $20亿上调至 $25亿(+25%)：计划发行 1480–1850 万股 @$135/股；理由：日本零售投资者需求强劲——是路演正式启动(6/4)后首条需求超预期实证信号；继 Fidelity 将零售申购门槛降至 $2k 后，美日两大零售市场同步显示超额认购态势；★链上各所 pre-IPO 合约(Binance SPCXUSDT/Bitget preSPCX/Coinbase SPCX-PERP/Gate Mirror Note $3.95亿/BitMEX SPCXUSDT 等)距 6/11 定价日仅剩 6 天；零售超额需求信号或支撑链上合约在 $135 固定发行价上方持续溢价直至定价日，套利做空压力将在 6/12 挂牌首小时集中释放。", src:"https://www.bloomberg.com/news/articles/2026-06-05/spacex-boosts-japan-fundraising-goal-to-2-5-billion-in-mega-ipo"},
@@ -251,11 +252,10 @@ const DATA = {
     {grp:"other", date:"5/27", tag:"t-new", txt:"Robinhood 上线 AI 代理交易 beta(股票先行):用户可设 AI agent 在独立账户自主下单执行策略,通过 MCP 协议接入组合分析/下单/研报;后续扩至加密/期权/事件合约/期货;平台 AUM 已达 $3500亿——传统券商带头进入 'agentic finance',对加密交易所 AI 工具叙事构成压力。", src:"https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/"},
     {grp:"other", date:"5/26", tag:"t-new", txt:"【OKX Exchange OS 上线 · OKB +18%】OKX 在 X Layer(Ethereum L2)上发布 Exchange OS:开发者/协议方可从零搭建现货/永续/预测市场,合作方需质押 OKB 入场;OKB 价格当日 +18% 拉升;首个公开演示市场为 2026 FIFA 世界杯预测市场(6月上线)——OKX 从 CEX 向开放金融基础设施平台升级,与 Gate Polymarket Live / Hyperliquid HIP-3 在自定义金融市场赛道正面竞争;OKB 质押激励进一步加深生态闭环。", src:"https://cryptobriefing.com/okx-x-layer-exchange-os-launch/"},
     {grp:"other", date:"5/26", tag:"t-new", txt:"【风险事件·HTX】UK 制裁 HTX 母体 Huobi Global SA(Panama),涉嫌为俄罗斯 A7 网络转移 $15亿规避国际制裁;Binance/OKX/Bybit/Bitget 同步对涉 HTX 转账提升合规审查。HTX 否认线上交易所受直接影响,但合规形象受损,TradFi 扩张节奏面临额外阻力。", src:"https://beincrypto.com/uk-sanctions-justin-suns-htx-russia-ties/"},
-    {grp:"other", date:"5/22", tag:"t-new", txt:"【行业 macro·OpenAI S-1 秘密递交确认(5/22)】OpenAI 于 5/22 向 SEC 秘密递交 S-1 招股书(Goldman Sachs/Morgan Stanley 联合承销);最新私募估值 $8520亿,目标 IPO 定价 $1T+;最早 2026 年 9 月上市,公开 S-1 预计 8 月下旬披露;CEO Altman:'递交不等于立刻上市'——接力 SpaceX 6/12 挂牌成为下一轮链上 pre-IPO 合约热点;OKX(5/7 首发 OPENAI 永续)/Bitget preOPAI(5/15)/Binance OPENAIUSDT(5/26)/KuCoin OPENAIUSDT(5/28) 均已布局,公开 S-1 后合约进入最终定价重锚阶段。", src:"https://enterprisedna.co/resources/news/openai-ipo-confidential-filing-may-2026/"},
-    {grp:"other", date:"5/22", tag:"t-new", txt:"OKX + ICE 宣布合推 ICE Brent/WTI 原油永续:ICE 3月战略入股 OKX($25B估值)后首只具体落地联名品种,向 OKX 1.2亿用户开放——ICE 合作从'股权背书'延伸至'实际产品定价',OKX 大宗商品赛道提速。", src:"https://www.bloomberg.com/news/articles/2026-05-22/nyse-owner-and-okx-seek-to-launch-perpetual-futures-tied-to-oil"},
     {grp:"other", date:"5/22", tag:"t-new", txt:"【新入场者·Hyperliquid DEX】Hyperliquid 通过 HIP-3 市场托管 SPCX pre-IPO 永续合约(5/18 上线,$60M+ USDC 未平仓);平台 23/30 最高 OI 资产为权益/商品,非加密——Motley Fool 称其'建造链上影子证券交易所',FalconX 称其'传统交易所和预测市场的去中心化挑战者';以 DEX 方式切入 CEX 尚未完全覆盖的 pre-IPO 叙事(与 Bitget preSPAX 直接竞争叙事),占去中心化永续全网 OI 70%+。若 SEC 创新豁免落地将从监管灰色区转合规,需持续盯。", src:"https://www.fool.com/investing/2026/05/22/hyperliquid-is-building-a-shadow-stock-exchange-th/"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"HTX 上线 TradFi Zone 美股期货:66 个 USDT 永续,含 SpaceX/OpenAI/Anthropic 等 pre-IPO 名字;配 HTX Research 报告造声量。", src:"https://www.cryptotimes.io/2026/05/25/htx-launches-us-stock-futures-trading-with-usdt/"},
     {grp:"other", date:"5/25", tag:"t-new", txt:"【BingX pre-IPO 扩品·OpenAI+Anthropic(5/25)】BingX 上线 OPENAI(Pre-IPO)+ANTHROPIC(Pre-IPO) USDT 永续期货(5/25 10:35 UTC)：OpenAI 标注估值 $852B，Anthropic $380B；同步开展 OpenAI Pre-IPO Airdrop(5/19–5/28，30万 USDT 奖池，业内首家以 airdrop 形式做 pre-IPO 拉新)——继 SpaceX VNTL(4/10)后补全 AI 三巨头 pre-IPO 产品线，airdrop 空投打法区别于 Binance/Bitget 纯永续路线。", src:"https://www.prnewswire.com/apac/news-releases/bingx-becomes-first-exchange-to-offer-openai-pre-ipo-airdrop-302776315.html"},
+    {grp:"other", date:"5月下旬", tag:"t-new", txt:"【新扫描·WEEX Exchange TradFi 上线·400x 杠杆赛道已知最高·新增监控】WEEX Exchange(全球加密交易所)于5月下旬上线 WEEX TradFi 永续赛道：8只美股永续(NVDA/TSLA/AAPL/AMZN/MSFT/AMD/ORCL/SMCI) + 纳斯达克/标普500指数 + 黄金/白银/原油；USDT 保证金 24/7；最高 400x 杠杆(赛道目前已知最高,与 BTCC 100x/BingX 100x 形成差异化) + 零手续费期间；配套 5/21–5/31 $50,000 USDT 奖池入场活动；用户规模/市场份额待抓取——与 Phemex/BingX/BTCC 同属「跟随者」波次新入场，新增监控。", src:"https://tradersunion.com/news/brokers-news/show/2214417-weex-unveils-tradfi-trading-platform/"},
     {grp:"other", date:"5/下旬", tag:"t-new", txt:"【新入场者·BingX】SPCX pre-IPO VNTL RWA 代币(4/10上线)+美股永续(100x杠杆,100+传统资产)+35代币化股票(Ondo/xStocks 发行);'Global Capital Gala' TradFi 专题活动+50万USDT奖池 'Earnings Hunt' 挑战赛;CoinGecko 2026年报永续上新量全球第二(66% YoY)——与 Binance/OKX/Bitget/Hyperliquid 并列 SPCX pre-IPO 赛道，实质入场美股/TradFi，补入新入场者扫描名单。", src:"https://financefeeds.com/5-ways-crypto-markets-front-running-spacex-1-75t-ipo/"},
     {grp:"other", date:"趋势", tag:"t-info", txt:"【新入场者补录】KuCoin(Jul/25 xStocks，4100万用户 200+地区)+ Gemini(EU 37+ via Dinari)+ Robinhood(EU 近 2000 代币化股票 MiCA 持牌,Robinhood Chain testnet 2月上线 400万笔,mainnet Q3/Q4 2026)+ Bitrue(Jul/25 Backed Finance xStocks 首三日 $1650万成交·1200+交易者;Apr/26 扩至 40代币化资产·最高 100x 杠杆含 NAS100/XAU/XAG)+ Phemex(6/3 TradFi 扩品至 73资产,1000万用户,USDT 永续美股/商品/全球蓝筹,最高 100x)+ Bitunix(3/26 TradFi 永续上线·14类资产含 SPY/QQQ/TSLA/MSTR/AMZN/SPCX pre-IPO·最高 200x 杠杆·USDT 结算;规模较小,持续观察)——本轮共六张新卡片。", src:"https://invezz.com/news/2026/04/02/bitrue-launches-40-tokenized-assets-with-up-to-100x-leverage-trading/"},
     {grp:"other", date:"趋势", tag:"t-up", txt:"行业整体把卖点从'高杠杆 perps'转向'合规/真股托管 + 传统交易所合作背书'——监管与机构信任成为新一轮拉新第一话术。"}
@@ -808,21 +808,40 @@ const DATA = {
         {label:"GlobeNewswire·TradFi Carnival(5/28)", url:"https://www.globenewswire.com/news-release/2026/05/28/3302953/0/en/btcc-exchange-launches-tradfi-trading-carnival-rewarding-traders-as-multi-asset-demand-grows.html"},
         {label:"BTCC·官网", url:"https://www.btcc.com/en-US"}
       ]
+    },
+    {
+      nm:"WEEX", tier:2, color:"#0062ff", ink:"#fff", status:"live", statusTxt:"TradFi 已上线 · 400x 杠杆",
+      sub:"新入场者 · 5月下旬 · 8只美股永续 · 最高 400x · USDT 结算",
+      promo:[
+        "最高 400x 杠杆赛道差异化(黄金/白银等商品品类;美股具体杠杆上限待核实)——与 BTCC(100x)/BingX(100x)/Phemex(100x) 同属跟随波次但杠杆参数领先",
+        "WEEX TradFi：无需独立经纪账户,USDT 一站入金直接交易美股/商品/指数期货——延续零门槛拉新打法",
+        "零费率入场活动(5/21–5/31):$50,000 USDT 奖池激励首批用户,先到先得——与 MEXC/BingX/BTCC 同期以零费率切入，跟随策略趋同",
+        "品类：8只美股永续(NVDA/TSLA/AAPL/AMZN/MSFT/AMD/ORCL/SMCI) + 纳斯达克/标普500指数 + 黄金/白银/原油"
+      ],
+      activities:[
+        {t:"WEEX TradFi 上线(5月下旬):8只美股永续(NVDA/TSLA/AAPL/AMZN/MSFT/AMD/ORCL/SMCI) + 纳斯达克/标普500指数 + 黄金/白银/原油；USDT 保证金 24/7；最高 400x 杠杆；无需独立账户", src:"https://tradersunion.com/news/brokers-news/show/2214417-weex-unveils-tradfi-trading-platform/"},
+        {t:"TradFi 入场活动(5/21–5/31,已截止):完成 TradFi 期货交易可得 $5–$100 随机奖金;$50,000 USDT 总奖池,先到先得", src:"https://tradersunion.com/news/brokers-news/show/2214417-weex-unveils-tradfi-trading-platform/"}
+      ],
+      xsig:"🔒 X 信号待抓取",
+      sources:[
+        {label:"TradersUnion·WEEX TradFi", url:"https://tradersunion.com/news/brokers-news/show/2214417-weex-unveils-tradfi-trading-platform/"},
+        {label:"WEEX·TradFi介绍", url:"https://www.weex.com/news/detail/what-is-tradfi-how-crypto-traders-can-now-access-crude-oil-gold-and-global-markets-ycuakl26m71frzp0pb5zbrbi"}
+      ]
     }
   ],
   techniques:[
-    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0},
-    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0},
-    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0},
-    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:1, pionex:"?", bitmex:"?", btcc:"?"},
-    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0},
-    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0},
-    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:1, mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1, bitrue:1, backpack:"?", phemex:1, pionex:1, bitmex:1, btcc:0},
-    {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:1, bitrue:0, backpack:0, phemex:1, pionex:0, bitmex:1, btcc:1},
-    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:1, btcc:0},
-    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:"?", pionex:"?", bitmex:"?", btcc:"?"},
-    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?", bingx:1, bitrue:"?", backpack:"?", phemex:"?", pionex:0, bitmex:"?", btcc:"?"},
-    {name:"图表平台(TradingView)分发", bitget:0, binance:0, okx:0, gate:0, bybit:0, htx:0, kraken:0, coinbase:0, mexc:1, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:1, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0}
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0},
+    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0},
+    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0},
+    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:1, pionex:"?", bitmex:"?", btcc:"?", weex:"?"},
+    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0},
+    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0},
+    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:1, mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1, bitrue:1, backpack:"?", phemex:1, pionex:1, bitmex:1, btcc:0, weex:1},
+    {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:"?", bybit:1, htx:"?", kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:1, bitrue:0, backpack:0, phemex:1, pionex:0, bitmex:1, btcc:1, weex:1},
+    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:1, btcc:0, weex:0},
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:"?", pionex:"?", bitmex:"?", btcc:"?", weex:"?"},
+    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?", bingx:1, bitrue:"?", backpack:"?", phemex:"?", pionex:0, bitmex:"?", btcc:"?", weex:1},
+    {name:"图表平台(TradingView)分发", bitget:0, binance:0, okx:0, gate:0, bybit:0, htx:0, kraken:0, coinbase:0, mexc:1, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:1, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0}
   ]
 };
 
