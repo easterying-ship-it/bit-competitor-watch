@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-05-23 → 06-06",
-  updated: "2026-06-06 07:00 (北京时间)",
+  updated: "2026-06-06 08:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -253,6 +253,7 @@ const DATA = {
     {grp:"other", date:"5月底", tag:"t-up", txt:"【监管 macro】SEC 推迟代币化股票'创新豁免'(Nasdaq/NYSE/Cboe 施压),DTCC 已设 7/10 月上线时间表;Coinbase/Robinhood/Ondo 路线图受直接影响。", src:"https://www.blockhead.co/2026/05/05/dtcc-sets-july-pilot-october-launch-for-tokenized-securities-platform/"},
     {grp:"other", date:"5/29", tag:"t-up", txt:"【监管 macro · CFTC 股票永续政策声明(5/29)】CFTC 发布 PR-9242-26:引用股票/窄基指数的权益永续合约须走 CFTC+SEC 双头联合审批(Regulation 40.3 自愿产品审批流程),与加密大宗商品永续可走简化通道不同——Coinbase 6/8 上线的 CFTC 持牌权益指数期货(DEF10/AI10 等)即为此合规路径的具体落地;Binance/Bitget/OKX/Gate/Bybit 等境外所运营的 SPCXUSDT/ANTHROPICUSDT/OPENAIUSDT 等股票永续在美国法律框架下无先例;BeInCrypto 分析:'SPCX 6/12 挂牌后 90 天内至少一家交易所限制/下架合约是基线情形';IPO 落地将加速监管锚定进程,对境外股票永续赛道形成系统性压力。", src:"https://www.cryptotimes.io/2026/05/30/cftc-lays-out-rules-for-crypto-perpetuals-beyond-bitcoin/"},
     {grp:"other", date:"5/29", tag:"t-new", txt:"【X实抓】Bybit 挂出 '$100M 全球资产 Giveaway·免费送 xStock' 拉新,并连发 #NewFinancialPlatform 悬念预热——继 Binance 后第二家玩悬念营销,值得盯。", src:"https://x.com/Bybit_Official"},
+    {grp:"other", date:"5/29", tag:"t-new", txt:"【OKX × 韩国 Coinone 19.6% 股权(5/29)·$5300万·亚太合规分发网络布局】OKX Ventures 斥 $5300 万收购韩国第四大加密交易所 Coinone 19.6% 股权(与 Korea Investment & Securities 对半各持 19.6%，合计 39.2%)；CEO Cha Myunghun 仍持最大股 27.8%；韩国 STO/数字资产立法推进背景下，OKX 以持牌通道切入全球最活跃散户加密市场之一；★时间点与三星/SK海力士/现代汽车韩股永续热炒窗口(6/2 Binance 率先/6/4 Bybit 跟进)高度重合——OKX 有望借 Coinone 合规渠道在韩国分发代币化权益/TradFi 永续产品；OKX Global Markets VP Netero Dai 称韩国是'全球最成熟数字资产市场之一'；与 ICE/NYSE 战略入股+H2 NYSE 代币化股票路线并行，OKX 机构(ICE/NYSE)+亚太零售(Coinone)双线合规分发网络快速成型。", src:"https://www.coindesk.com/markets/2026/05/29/okx-ventures-buys-usd53-million-stake-in-korea-s-coinone-exchange"},
     {grp:"other", date:"5/28", tag:"t-new", txt:"KuCoin 持续批量扩充股票指数永续合约(5/28批:IBM/NOK/INFQ + OPENAI/RGTI 等共9只,5/22批含 BABA/AVGO/NFLX;4月起累计 20+ 品种,已含 pre-IPO 名字 OPENAI/RGTI;5/27 额外上线 SPCXUSDT pre-IPO 永续 5x):全部 USDT 结算,24/7,最高 20x 杠杆——xStocks 现货(Jul/25)之外再开永续维度,实际产品矩阵远比卡片呈现的宽;悄然成隐形多品类玩家。", src:"https://www.kucoin.com/announcement/en-kucoin-futures-will-list-ibmusdt-nokusdt-infqusdt-stock-index-perpetual-contracts-2026-05-28"},
     {grp:"other", date:"5/28", tag:"t-new", txt:"【风险事件 · SpaceX pre-IPO 闪崩 5/28】Hyperliquid SPACEX-USDH 永续因 Notice.co 预言机错误处理 5:1 拆股事件,30分钟暴跌 45%($2,277→$1,254),405 用户/1393 仓位/$150万名义值被强平;Ventuals 承诺 48h 赔付。同日 Bitget preSPAX→preSPCX 执行 1:5 代币拆分(价格降至 1/5 但持仓总值不变,非实际损失)——两者剧情截然不同。链上 pre-IPO oracle 脆弱性首次大规模曝光,对 Hyperliquid DEX 叙事构成信任损耗。", src:"https://www.coindesk.com/markets/2026/05/28/hyperliquid-s-pre-ipo-spacex-contracts-suffers-45-flash-crash-liquidating-usd1-5-million"},
     {grp:"other", date:"5/28", tag:"t-new", txt:"【监管 macro · CFTC 历史首批准美国持牌平台开放全球加密永续(5/28)】CFTC 批准 Coinbase Derivatives 旗下 Bermuda 子公司接入 Deribit(2025年以 $29亿收购)面向美国用户提供 BTC/ETH/SOL 等主流加密永续期货;同步批准 Kalshi 预测市场永续——美国用户此前被锁于约 80% 全球加密衍生品市场之外;Coinbase CLO Paul Grewal 称 '行业里程碑';★ 竞争影响:Binance/OKX/Bybit 在加密永续赛道正式迎来 CFTC 合规竞争者;叠加 6/8 股权指数期货(AI10/DEF10),Coinbase '万物交易所' 衍生品层加速落地——是 CFTC 开放加密永续准入的第一枪。", src:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"},
@@ -355,7 +356,8 @@ const DATA = {
         "'Kinetic Finance(动能金融)' 行业叙事包装 RWA 上链",
         "OKB 平台币联动(ICE 消息后涨 38%;Exchange OS 发布后再涨 18%)",
         "Exchange OS(5/26):在 X Layer 上开放金融基础设施,第三方可自建市场 + OKB 质押激励——从 CEX 向链上金融 OS 平台化升级",
-        "把社交网络做进交易 App,增强留存"
+        "把社交网络做进交易 App,增强留存",
+        "OKX Ventures × 韩国 Coinone(5/29 宣布):$5300 万收购 19.6% 股权,韩国 STO/数字资产立法背景下以持牌通道切入亚太最活跃零售市场；与 ICE/NYSE 机构背书并行，全球合规分发网络亚太层落地——有望将三星/SK海力士/现代代币化权益产品通过 Coinone 向韩国本土用户分发"
       ],
       activities:[
         {t:"20+ 股票永续(Mag7,最高 5x),24/7 交易", src:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"},
@@ -371,7 +373,8 @@ const DATA = {
       sources:[
         {label:"Fortune·ICE入股", url:"https://fortune.com/2026/03/05/okx-ice-intercontinental-exchange-investment-tokenized-securities-25-billio/"},
         {label:"TheBlock·股票永续", url:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"},
-        {label:"CryptoBriefing·Exchange OS", url:"https://cryptobriefing.com/okx-x-layer-exchange-os-launch/"}
+        {label:"CryptoBriefing·Exchange OS", url:"https://cryptobriefing.com/okx-x-layer-exchange-os-launch/"},
+        {label:"CoinDesk·Coinone投资(5/29)", url:"https://www.coindesk.com/markets/2026/05/29/okx-ventures-buys-usd53-million-stake-in-korea-s-coinone-exchange"}
       ]
     },
     {
