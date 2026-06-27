@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-06-13 → 06-27",
-  updated: "2026-06-27 19:00 (北京时间)",
+  updated: "2026-06-27 21:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -176,6 +176,7 @@ const DATA = {
     {grp:"other", date:"6/27", tag:"t-new", txt:"【✅ Robinhood '世界是平的(The World is Flat)' 发布会明日确认(7/1 19:00 BST=北京7/2 02:00·cryptonews.net)：地点 Old Royal Naval College 伦敦·CEO Vlad Tenev 亲自主持·主题'Borderless Market Journey(无边界市场之旅)'·全球直播(Robinhood App/X/YouTube/官网)；特定产品发布前未披露·各方预期：Robinhood Chain Arbitrum L2 主网路线图/新代币化资产品类/欧洲扩张计划；★精准卡位 Binance EU 7/1 强制停服同日·承接数百万 EU 用户迁移流量最大化；⚠️BoL(立陶宛央行)仍在就 SPV 结构询问合规细节·可能影响部分产品发行节奏", src:"https://cryptonews.net/news/market/32955145/"},
     {grp:"other", date:"6/27", tag:"t-new", txt:"★ Aave V4 代币化股票证券借贷(6/26·BlockchainReporter)：Aave 创始人 Stani Kulechov 宣布 Aave V4 将支持代币化证券借贷·目标 $4.6 万亿全球证券借贷市场·用户可将代币化股票(AAPL/TSLA 等)作为抵押品借入流动性·或出借代币化股票赚取利息·消除传统证券借贷中间商及再抵押风险·★基础设施层信号：继 Ondo/Backed/Dinari/Superstate 之后又一 DeFi 蓝筹协议进入代币化权益赛道·从代币化发行层延伸至证券借贷二级市场·与 Binance bStocks×Lista DAO/Venus(BNB Chain借贷·6/20)·Kraken Bitcoin Vault(Aave+Morpho·5/26)同方向但更大规模", src:"https://blockchainreporter.net/aave-targets-4-6-trillion-securities-lending-market-with-tokenized-stocks/"},
     {grp:"other", date:"6/27", tag:"t-new", txt:"✅ SPCX 正式纳入 Nasdaq-100 官宣 7/7·QQQ ETF 7/6 收盘后被动建仓(CNBC/Yahoo Finance 6/26·Nasdaq 官宣·unusual_whales X即时确认)：追踪资产逾 $8000亿；JPMorgan 估 Nasdaq-100 被动买压约 $4.3B(单独口径)；★修正：此前各条 '~7/2-7/6 QQQ 纳入($22-27B)' 中，纳入日确认为 7/7，$22-27B 为 Russell+Nasdaq-100 合计早期估算；6/27 Russell 建仓完成→6/29 MSCI($5-7.5B)→7/7 QQQ($4.3B)为三窗最后一波；Binance SPCXB/Bitget rSPCX/Bybit SPCXX 代币化 SPCX 24/7 全程跟随", src:"https://uk.finance.yahoo.com/news/spacex-join-nasdaq-100-july-071207102.html"},
+    {grp:"other", date:"6/27", tag:"t-new", txt:"★ Coinbase 抢接 Binance EU 用户·卢森堡 MiCA Hub + 5%转仓奖励(6/25–6/27·BanklessTimes/CoinDesk)：①6/25 Coinbase 拿下卢森堡 MiCA CASP 牌照·指定卢森堡为 EU 总部·成首家持 EU MiCA 牌照的美国加密所·全覆盖 EU 27国 4.5亿用户；②MiCA 7/1 清场后同步推出 5% 转仓奖励(7/13截止·EU主要市场+英国新用户将其他所资产转入 Coinbase)；③与 OKX EU 8%存款匹配(至7/13)构成 MiCA 7/1 后欧洲最大双强用户承接战——EU代币化股票赛道格局：Coinbase/OKX/Kraken/Robinhood EU 四强承接 Binance 4.5亿 EU 退出用户", src:"https://www.coindesk.com/business/2026/06/27/coinbase-and-okx-try-to-lure-in-binance-s-450m-eu-users-after-failing-to-secure-a-mica-license"},
     {grp:"other", date:"6/26", tag:"t-new", txt:"✅ SPCX Russell 1000 重构已执行(6/26 收盘·北京 6/27 凌晨确认)·$6-9B Russell ETF 被动建仓收盘完成·流入为正·$150 IPO首日开盘价支撑守住·日内区间 $150.00–$160.65·6/29 起按新权重正式交易·★下一窗口：6/29 MSCI 再平衡($5-7.5B)→~7/2-7/6 QQQ 纳入($22-27B)·合计约$28-35B接力被动买压·代币化 SPCX(Binance SPCXB/Bitget rSPCX/Bybit SPCXX)24/7 跟随·SK Hynix SKHY F-1 6/24 已向 Nasdaq 提交·7/10 目标上市·$29B 规模超 BABA 2014 创亚洲赴美上市最大纪录", src:"https://www.etf.com/sections/news/spacex-joins-russell-1000-what-fridays-historic-index-rebalancing-means-your-etf"},
     {grp:"other", date:"6/26", tag:"t-info", txt:"【Gate 港股永续三件套上线(6/26·mpost.io·USDT-M·20x杠杆)：Pop Mart(POPMART·潮玩龙头)/Kingboard Holdings(KBHLD·建滔集团)/Kingboard Laminates(KBLAM·建滔层压板)·港交所主板蓝筹·Gate港股现货(1,500+·6/15上线)首次向港股衍生品层延伸；同期Gate宣布即将推出Gate Simple Options(用户仅选方向+到期日·系统自动撮合行权价与权利金)·Gate Options过去5周OI+140%·★Gate港股战略从'现货(1,500+只)'升级为'现货+永续'双轨·赛道首家同时覆盖美股/港股/韩股三市场且港股延伸衍生品层的CEX平台", src:"https://mpost.io/gate-update-semiconductor-boom-regulatory-milestones-and-new-products-define-a-pivotal-week-for-gate/"},
     {grp:"other", date:"6/26", tag:"t-new", txt:"【Gate 新增 SKHYNIX/SOXL 3x杠杆代币(6/26·mpost.io)：SKHYNIX3L/SKHYNIX3S(3x做多/做空·SK海力士)/SOXL3L/SOXL3S(3x做多/做空·Direxion 3x半导体ETF)·Gate杠杆代币总量扩至362只·配合SK海力士6/25 KOSPI+12%(MU财报超预期+$29B纳斯达克ADR催化)·半导体全产业链叙事+Russell SPCX 6/26入指多头窗口协同；同期Gate完成DuPont(DD)1:3反向拆股处理+五只股票现金分红(HD/LIN/UNH/QCOM/META)", src:"https://mpost.io/gate-update-semiconductor-boom-regulatory-milestones-and-new-products-define-a-pivotal-week-for-gate/"},
@@ -673,8 +674,8 @@ const DATA = {
       ]
     },
     {
-      nm:"Coinbase", color:"#0052ff", ink:"#fff", status:"live", statusTxt:"✅ Take Control 6/16 落地 · Everything Exchange 全资产统一 · Base App + Tokenize",
-      sub:"6/1 美股上线 · 6/16 Take Control 落地 · Coinbase Tokenize(机构RWA) + Base App + 1:1代币化股票(非美·8月·多源·待确认) + 24/7黄金白銀期货",
+      nm:"Coinbase", color:"#0052ff", ink:"#fff", status:"live", statusTxt:"✅ Take Control 6/16 落地 · 卢森堡 MiCA Hub(6/25) · EU 5%转仓奖励(7/13)",
+      sub:"6/1 美股上线 · 6/16 Take Control 落地 · 6/25 卢森堡 MiCA Hub(首家持EU MiCA牌照美国所) · EU 5%转仓奖励(7/13截止) · 1:1代币化股票(非美·8月) + 24/7黄金白銀期货",
       promo:[
         "被业界点名为代币化股票关键玩家",
         "'Everything Exchange' 路线图:Crypto + 真股 + 预测市场 + AI 顾问——CFTC 双批准(5/28 加密永续 + 6/8 股权指数期货)使 Coinbase 成为美国首个同时合规运营加密衍生品+股权衍生品的交易所",
@@ -696,7 +697,8 @@ const DATA = {
         {t:"★ 股票期权(equity options)发布(6/16 Take Control·CoinDesk确认)：Coinbase Everything Exchange从真股+永续+预测市场正式延伸至股票期权；加密期权+equity options双赛道合并；Coinbase成为美国首个同时持有CFTC加密衍生品+CFTC股权指数期货+SEC股权期权三重监管许可的交易所——Everything Exchange衍生品矩阵完整落地；直接竞争Robinhood(期权赛道头部散户平台)。另：Coinbase Advisor(SEC注册投资顾问+NFA双重注册)·Coinbase One专属AI投顾·个性化组合分析+税损收割·支持外部AI代理授权——加密交易所首个受监管AI投资顾问", src:"https://www.coindesk.com/business/2026/06/16/coinbase-intoduces-ai-advisor-stock-options-and-pre-ipo-markets-in-finance-push"},
         {t:"★ Coinbase for Agents(6/12 上线):AI 代理直连账户·自主执行 Crypto/股票/预测市场/商品全资产交易；现有：Crypto现货/衍生品·组合再平衡·限价单·资本效率管理；计划扩展：股票/指数/预测市场/商品——Everything Exchange AI代理层落地，与Bitget AI-native(100万+AI用户·$12亿代理成交)/Robinhood AI Agent beta(5/27)构成三强竞争格局", src:"https://www.cryptotimes.io/2026/06/12/coinbase-launches-for-agents-product-to-connect-ai-to-coinbase-account/"},
         {t:"★ '下一阶段 Everything Exchange' 6/16(周二)揭晓预告(6/13·CoinGape):单一账户统一 Crypto+近10,000只美股/ETF+现金+预测市场+永续+借贷+卡奖励，24/7即时结算；COIN 股价 6/12 已上涨；6/16 = SPCX期权上线首日——全资产统一平台最终拼图宣告落地，与 Binance Super App/Bitget UEX/Robinhood '7/1 World is Flat' 同台争叙事制高点", src:"https://coingape.com/coinbase-sets-june-16-date-for-next-phase-of-everything-exchange-vison-coin-stock-gains/"},
-        {t:"★ ANTHROPIC-PERP+OPENAI-PERP pre-IPO永续(6/22 11:00 UTC·SeekingAlpha)：USDC结算，无到期日，24/7，非美用户；追踪Anthropic($900B估值·Q4 2026预期IPO·6/1机密S-1)和OpenAI($1.4T估值·6/8机密S-1·IPO日期待定)IPO前估值；无股东权利（纯价格追踪）；继SPCX-PERP(6/4)后Coinbase pre-IPO管道第二弹——Everything Exchange pre-IPO三件套(SPCX+Anthropic+OpenAI)完整落地", src:"https://seekingalpha.com/news/4605588-coinbase-launches-pre-ipo-perpetual-futures-tied-to-anthropic-openai-after-spacex"}
+        {t:"★ ANTHROPIC-PERP+OPENAI-PERP pre-IPO永续(6/22 11:00 UTC·SeekingAlpha)：USDC结算，无到期日，24/7，非美用户；追踪Anthropic($900B估值·Q4 2026预期IPO·6/1机密S-1)和OpenAI($1.4T估值·6/8机密S-1·IPO日期待定)IPO前估值；无股东权利（纯价格追踪）；继SPCX-PERP(6/4)后Coinbase pre-IPO管道第二弹——Everything Exchange pre-IPO三件套(SPCX+Anthropic+OpenAI)完整落地", src:"https://seekingalpha.com/news/4605588-coinbase-launches-pre-ipo-perpetual-futures-tied-to-anthropic-openai-after-spacex"},
+        {t:"★ 卢森堡 MiCA Hub 确立 + EU 5%转仓奖励(6/25–6/27·BanklessTimes/CoinDesk)：①Coinbase 6/25拿下卢森堡 MiCA CASP 授权·指定卢森堡为 EU 总部·成首家持 EU MiCA 牌照的美国加密所·全覆盖 EU 27国 4.5亿用户；②7/1 MiCA 清场后同步推出 5% 转仓奖励(7/13截止·EU主要市场+英国新用户转入·CoinDesk 6/27确认)；③与 OKX EU 8%存款匹配(至7/13)组成最强 MiCA 双强承接格局——合规背书+迁移激励双层组合·EU代币化股票赛道格局：Coinbase/OKX/Kraken/Robinhood EU 四强承接 Binance 4.5亿EU退出用户", src:"https://www.banklesstimes.com/articles/2026/06/25/coinbase-secures-luxembourg-mica-licence-to-serve-all-27-eu-states/"}
       ],
       xsig:"📡 X实抓(6/1):置顶 One Card(消费返最高 4% BTC + $50);另推 '$100万 BTC 连胜池 + 3% 转入奖励 + 40% staking boost + Coinbase One 首年8折'(5/31 截止)——纯 BTC 向;代币化股票仍在路线图,未在 X 推。",
       sources:[
@@ -706,7 +708,8 @@ const DATA = {
         {label:"CoinDesk·CFTC加密永续批准", url:"https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm"},
         {label:"CoinGape·SPCX-PERP(6/4)", url:"https://coingape.com/coinbase-follows-binance-to-launch-elon-musks-spacex-pre-ipo-perps/"},
         {label:"TheBlock·Mag7永续(3/20)", url:"https://www.theblock.co/post/394485/coinbase-launches-stock-perpetual-futures-for-magnificent-7-names-including-apple-tesla-and-nvidia-expanding-everything-exchange-push"},
-        {label:"CryptoNews·AI算力永续(5/18)", url:"https://cryptonews.net/news/market/32865213/"}
+        {label:"CryptoNews·AI算力永续(5/18)", url:"https://cryptonews.net/news/market/32865213/"},
+        {label:"BanklessTimes·卢森堡MiCA Hub(6/25)", url:"https://www.banklesstimes.com/articles/2026/06/25/coinbase-secures-luxembourg-mica-licence-to-serve-all-27-eu-states/"}
       ]
     },
     {
