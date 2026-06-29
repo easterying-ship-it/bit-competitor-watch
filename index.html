@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-06-17 → 07-03",
-  updated: "2026-07-02 08:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-06-17 → 06-30",
+  updated: "2026-06-30 06:30 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -1109,21 +1109,53 @@ const DATA = {
       sources:[
         {label:"TradersUnion·代币化股票上线(6/23)", url:"https://tradersunion.com/news/brokers-news/show/2462056-tokocrypto-launches-tokenized-stock-trading/"}
       ]
+    },
+    {
+      nm:"CoinSwitch", tier:2, color:"#7b2ff7", ink:"#fff", status:"live", statusTxt:"★新入场者 · 6/28代币化美股 · 印度 · 850万+用户",
+      sub:"新入场者 · 印度头部加密平台 · 850万+活跃用户 · 代币化美股₹1000起 · VDA框架",
+      promo:[
+        "850万+印度活跃用户基础，代币化美股作为新品类切入，无需开设美国券商账户门槛极低",
+        "从₹1,000(约$12)起购，TSLA/AAPL/NVDA/MSFT/SpaceX等主流标的，USDT交易对",
+        "基于持牌经纪商1:1托管，落在印度VDA框架(非SEBI证券监管)"
+      ],
+      activities:[
+        {t:"代币化美股上线(~6/28)：TSLA/AAPL/NVDA/MSFT/SpaceX/Micron等；₹1000起·1:1持牌经纪商托管·USDT计价·无需美国账户", src:"https://www.newsbytesapp.com/news/business/indian-coinswitch-and-mudrex-offer-tokenized-us-stocks-from-rs1000/tldr"}
+      ],
+      xsig:"🔒 X 信号待抓取",
+      sources:[
+        {label:"NewsBytesApp·CoinSwitch/Mudrex代币化美股(6/28)", url:"https://www.newsbytesapp.com/news/business/indian-coinswitch-and-mudrex-offer-tokenized-us-stocks-from-rs1000/tldr"}
+      ]
+    },
+    {
+      nm:"Mudrex", tier:2, color:"#00c896", ink:"#fff", status:"live", statusTxt:"★新入场者 · 6/28代币化美股 · 印度 · AI算法策略双轨",
+      sub:"新入场者 · 印度 · AI算法策略+代币化美股双轨 · ₹1000起 · VDA框架",
+      promo:[
+        "AI算法策略平台+代币化美股双轨运营，差异化定位印度散户",
+        "与CoinSwitch同步6/28上线，覆盖TSLA/AAPL/NVDA/MSFT/SpaceX等主力品种",
+        "从₹1,000(约$12)起购，1:1托管，无需美国券商账户"
+      ],
+      activities:[
+        {t:"代币化美股上线(~6/28)：与CoinSwitch联动·AI算法策略+美股持仓双轨·₹1000起·USDT交易对·印度VDA框架合规", src:"https://www.newsbytesapp.com/news/business/indian-coinswitch-and-mudrex-offer-tokenized-us-stocks-from-rs1000/tldr"}
+      ],
+      xsig:"🔒 X 信号待抓取",
+      sources:[
+        {label:"NewsBytesApp·CoinSwitch/Mudrex代币化美股(6/28)", url:"https://www.newsbytesapp.com/news/business/indian-coinswitch-and-mudrex-offer-tokenized-us-stocks-from-rs1000/tldr"}
+      ]
     }
   ],
   techniques:[
-    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:1, zoomex:1, tokocrypto:1},
-    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:1, zoomex:0, tokocrypto:0},
-    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0},
-    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:1, pionex:"?", bitmex:"?", btcc:"?", weex:"?", ondo:"?", coinw:1, blockchain:"?", zoomex:"?", tokocrypto:"?"},
-    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:0, zoomex:0, tokocrypto:0},
-    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:1, bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:"?", zoomex:0, tokocrypto:0},
-    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:1, mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1, bitrue:1, backpack:"?", phemex:1, pionex:1, bitmex:1, btcc:0, weex:1, ondo:1, coinw:1, blockchain:1, zoomex:0, tokocrypto:0},
-    {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:"?", kraken:1, coinbase:"?", mexc:1, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:1, bitrue:0, backpack:0, phemex:1, pionex:0, bitmex:1, btcc:1, weex:1, ondo:0, coinw:"?", blockchain:0, zoomex:"?", tokocrypto:0},
-    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:1, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0},
-    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:"?", pionex:"?", bitmex:"?", btcc:"?", weex:"?", ondo:"?", coinw:"?", blockchain:"?", zoomex:"?", tokocrypto:"?"},
-    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?", bingx:1, bitrue:"?", backpack:"?", phemex:"?", pionex:0, bitmex:"?", btcc:"?", weex:1, ondo:0, coinw:"?", blockchain:"?", zoomex:"?", tokocrypto:"?"},
-    {name:"图表平台(TradingView)分发", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:0, coinbase:0, mexc:1, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:1, bingx:1, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0}
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:1, zoomex:1, tokocrypto:1, coinswitch:1, mudrex:"?"},
+    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:1, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0},
+    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0},
+    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:1, pionex:"?", bitmex:"?", btcc:"?", weex:"?", ondo:"?", coinw:1, blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?"},
+    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0},
+    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:1, bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:"?", zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0},
+    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:1, mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1, bitrue:1, backpack:"?", phemex:1, pionex:1, bitmex:1, btcc:0, weex:1, ondo:1, coinw:1, blockchain:1, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0},
+    {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:"?", kraken:1, coinbase:"?", mexc:1, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:1, bitrue:0, backpack:0, phemex:1, pionex:0, bitmex:1, btcc:1, weex:1, ondo:0, coinw:"?", blockchain:0, zoomex:"?", tokocrypto:0, coinswitch:0, mudrex:0},
+    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:1, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0},
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:"?", pionex:"?", bitmex:"?", btcc:"?", weex:"?", ondo:"?", coinw:"?", blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?"},
+    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?", bingx:1, bitrue:"?", backpack:"?", phemex:"?", pionex:0, bitmex:"?", btcc:"?", weex:1, ondo:0, coinw:"?", blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?"},
+    {name:"图表平台(TradingView)分发", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:0, coinbase:0, mexc:1, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:1, bingx:1, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0}
   ]
 };
 
