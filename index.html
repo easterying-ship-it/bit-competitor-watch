@@ -163,14 +163,15 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-06-17 → 07-01",
-  updated: "2026-07-01 03:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-06-17 → 07-02",
+  updated: "2026-07-01 04:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
     {grp:"other", date:"7/2", tag:"t-new", txt:"★ SECZ NYSE 7/2正式开交·Benchmark首家分析师覆盖：Buy/$16目标价(7/2·多源)：Securitize SECZ在Cantor Equity Partners II SPAC并购7/1收官后以NYSE:SECZ代码正式开始交易；Benchmark成为首家分析师覆盖·给出Buy评级/$16目标价；合并估值约$12.5亿·$400M毛收入(含$225M超额认购PIPE)；★首家纯RWA代币化基础设施公司传统交易所完成定价·为Coinbase Tokenize/Kraken xStocks/Binance bStocks基础设施层估值锚定参考"},
     {grp:"main", date:"7/1", tag:"t-new", txt:"✅ Binance EU 7/1停服正式执行(7/1·CryptoSlate/crypto.news多源)：Binance如期停止向EEA用户提供新现货下单/入金/新用户注册/Earn/质押/Launchpool服务；保留：提款(无限制)+Convert(仅卖出·有序平仓)；bStocks/Hey Stock EU仓位有序退出；EU代币化美股市场正式进入Binance缺席格局·OKX EU/Kraken/Coinbase EU/Robinhood EU四方实际承接正式启动", src:"https://cryptoslate.com/binance-cut-off-from-europe-on-july-1-best-liquidity-world-cz/"},
     {grp:"main", date:"7/1", tag:"t-up", txt:"Binance 真实美股手续费折扣延长至8/31(7/1·TradersUnion)：Binance宣布将美股交易50%手续费折扣(实0.05%)与零Maker费促销延长至2026年8月31日；EU停服后向全球非EU用户层持续维持拉新留存激励", src:"https://tradersunion.com/news/brokers-news/show/2517526-binance-extends-stocks-fee-discount/"},
+    {grp:"main", date:"6/30", tag:"t-new", txt:"★ Binance bStocks 6/30 扩品5只·10只→15只(6/30 13:30 UTC·U.Today/Binance官方确认)：新增LITEB/USDT(Lumentum·光通信)·METAB/USDT(Meta Platforms·Mag7首入bStocks)·MSFTB/USDT(Microsoft·Mag7首入bStocks)·PLTRB/USDT(Palantir·AI数据分析)·QQQB/USDT(Invesco QQQ Trust·★首只Nasdaq-100宽基指数ETF进入bStocks货架)；全部支持Spot Algo Trading Bot；零Maker费至8/31延续；★bStocks货架一个月内三次扩品：6/11首批6只→6/22+4只(10只)→6/30+5只(15只)；QQQB上线时机精准：7/7 SPCX Nasdaq-100正式纳入(QQQ $4.3B被动建仓)前一周", src:"https://u.today/binance-lists-microsoft-and-meta-stocks-amid-347-billion-rwa-surge"},
     {grp:"main", date:"6/30", tag:"t-up", txt:"CZ公开声称Binance MiCA申请合规·政治势力干预致希腊退出(6/30·The Block/BlockchainReporter多源)：创始人赵长鹏发声：希腊MiCA申请'完全合规·至少一家EU监管机构已准备批准·数周内有望获批'，因外部政治势力介入被迫撤回；联合CEO Richard Teng：'未来数月内将在另一EU成员国重新申请'·Binance Blog同日发布'MiCA许可进程更新'官方声明；★竞争含义：Binance EU退出或为临时性·若重新申请成功bStocks/Hey Stock将重返EU——OKX EU/Kraken/Robinhood EU当前承接窗口期存在不确定性·EU代币化美股赛道7/1格局非最终定局", src:"https://www.theblock.co/post/406554/binance-founder-cz-mica-application-fully-compliant-near-approval-political-forces-intervened"},
     {grp:"other", date:"7/1", tag:"t-new", txt:"★ Robinhood 'World is Flat'(Borderless Market Journey) 7/1 伦敦 Old Royal Naval College 正式发布(7/1 19:00 BST=7/2 02:00北京·官方新闻稿同日发布确认)：四大产品矩阵正式上线——①EU 200+代币化美股/ETF(30国EEA·MiFID II合规·0佣金·24/5·含分红权利·Arbitrum运行·美国券商托管)②Robinhood Chain(以太坊L2·Arbitrum架构·公共测试网100M+测试交易·主网Q3/Q4接管代币化结算·24/7)③EU加密永续期货(最高3x杠杆·Bitstamp撮合·夏末全面推出)④美国+EU ETH/SOL质押上线·★7/1 Binance EU强制停服同日精准EU市场卡位·承接Binance EU 4.5亿退出用户·与6/30戛纳'To Catch a Token'为同系列连续宣发(6/30首发→7/1正式上线)·★HOOD 6/30 ATH $93.63+13%为市场对整体EU代币化战略正面裁决", src:"https://robinhood.com/us/en/newsroom/robinhood-launches-stock-tokens-reveals-layer-2-blockchain-and-expands-crypto-suite-in-eu-and-us-with-perpetual-futures-and-staking/"},
     {grp:"other", date:"6/29", tag:"t-new", txt:"★ MEXC TradFi Gala 四子活动核实(6/26–7/26·mexc.co/GlobeNewswire)：总奖池100万USDT·①0-Fee Trading Fest：MUUSDT/SKHYNIXUSDT/INTCUSDT/SNDKUSDT期货0手续费；②Treasure Lever Frenzy：30万USDT奖池·大奖$2万SKHYNIX仓位空投；③TradFi Trading Rush：65万USDT期货奖金(≥50万USDT成交分20万池·≥500万USDT成交分30万池·各设人均上限)；④Welcome Power Reward：净入金≥$100持24h→$200新用户仓位空投+Treasure Lever抽奖资格；覆盖RealStocks(真实美股·7,000+标的)+Ondo代币化股票·RealStocks 6/1上线后首次大型TradFi促销·与BingX $100万Stock Trading Carnival(至7/4)并行", src:"https://www.globenewswire.com/news-release/2026/06/29/3318759/0/en/mexc-launches-tradfi-gala-with-1-000-000-usdt-reward-pool.html"},
@@ -391,8 +392,8 @@ const DATA = {
       ]
     },
     {
-      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks 10只 · FPSL生息",
-      sub:"6/1 揭晓 · 真实股票 + bStocks 10只(6/22扩至) · FPSL + super app",
+      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks 15只 · FPSL生息",
+      sub:"6/1 揭晓 · 真实股票 + bStocks 15只(6/30扩至) · FPSL + super app",
       promo:[
         "悬念营销兑现:Hey Stock → bStocks,解谜→揭晓节奏完整,BNB 同步涨 8%",
         "Richard Teng (co-CEO) 主导 'multi-asset financial super app' 战略定位",
@@ -427,6 +428,7 @@ const DATA = {
         {t:"★ bStocks 现可通过 Binance Convert 购买·最低 0.01 起(~6/20·官方公告 e87980ae86524568ba511a08ab92ea44)·Spot 之外新增 Convert 一键兑换入口·门槛显著低于 Spot $5 最低·与 6/22 扩品4只(AMDB/EWYB/INTCB/MSTRB)协同·bStocks 三通路(Convert+Spot+DeFi)完成·进一步降低零售拉新摩擦", src:"https://www.binance.com/en/support/announcement/e87980ae86524568ba511a08ab92ea44"},
         {t:"✅ 菲律宾 BlockShoals 正式可访问(~6/20·BitPinas 'Now Official')：Binance 已通过 BlockShoals SEC StratBox 沙盒对菲律宾用户正式开放访问(从 6/11 '申请' 升级为 '实际可访问')；BlockShoals 引导菲律宾用户进入 Binance 全球平台；★ BSP 仍无 VASP 牌照·无比索法币服务；约 2500 万菲律宾加密用户·Hey Stock/bStocks/FPSL 等美股产品正式可触达东南亚最活跃用户群", src:"https://financefeeds.com/binance-returns-to-philippines-through-blockshoals-trading-arrangement/"},
         {t:"✅ bStocks 6/22扩品4只正式开交(13:30 UTC·Binance官方公告)：新增AMDB/USDT(AMD·半导体)·EWYB/USDT(iShares MSCI Korea ETF·★首只非美地区指数ETF进入bStocks)·INTCB/USDT(Intel)·MSTRB/USDT(Strategy/MicroStrategy·BTC策略股)；bStocks从6只扩至10只；存取款14:30 UTC开放；零Maker费延续至2026/8/31；★Hey Stock活动收官后常态化扩品节奏确认，进入留存深耕阶段", src:"https://www.binance.com/en/support/announcement/79bfc2e1c5f943e79d485c8ea87b2794"},
+        {t:"★ bStocks 6/30扩品5只正式开交(13:30 UTC·U.Today/Binance官方)：新增LITEB/USDT(Lumentum·光通信)·METAB/USDT(Meta Platforms·Mag7首入bStocks)·MSFTB/USDT(Microsoft·Mag7首入bStocks)·PLTRB/USDT(Palantir·AI数据分析)·QQQB/USDT(Invesco QQQ Trust·首只Nasdaq-100宽基指数ETF)；bStocks从10只扩至15只；全部支持Spot Algo Trading Bot；一个月三次扩品：6/11首批6只→6/22 10只→6/30 15只；QQQB上线时机：7/7 SPCX Nasdaq-100正式纳入前一周", src:"https://u.today/binance-lists-microsoft-and-meta-stocks-amid-347-billion-rwa-surge"},
         {t:"★ bStocks AUM突破$1亿(~6/26·CZ在X宣布·上线约2周达成)：bStocks 10只1:1代币化·BNB Chain·24/7·与'真实美股8,000+·8天$4亿AUM'为独立统计线：$4亿=Alpaca托管真实持仓 vs $1亿=纯bStocks代币化产品·竞品横比：Bitget Reality 115只rToken~$5000万·bStocks 10只2周$1亿领跑代币化赛道AUM积累速度", src:"https://blockchain.news/news/bstocks-100-million-aum-two-weeks"},
         {t:"★ 美股计入VIP Spot量 3x倍率(6/27·限时促销)：每$1美股成交额 = $3 VIP Spot量·面向普通用户及VIP 1-2升级激励·打通'TradFi成交量→VIP高权益'闭环——Hey Stock上线四周首次将TradFi成交量纳入VIP等级体系·EU 7/1停服前夕加速全球用户留存", src:"https://www.binance.com/en/support/announcement/24d9efcec1024984b94b8526d0e76494"},
         {t:"TradFi Futures 25万 USDC 促销(~6/27·TradersUnion)：新入场/回归/活跃 Futures 用户完成指定 TradFi 任务可分享 250,000 USDC 奖池·与 VIP 3x 股票量并行·EU 7/1 停服前夕双管齐下维持 Hey Stock 后留存深度", src:"https://tradersunion.com/news/brokers-news/show/2493856-binance-unveils-250000-usdc-futures/"}
