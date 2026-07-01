@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-06-17 → 07-01",
-  updated: "2026-07-01 21:00 (北京时间)",
+  updated: "2026-07-01 22:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -178,6 +178,7 @@ const DATA = {
     {grp:"other", date:"7/1", tag:"t-new", txt:"✅ HOOD 7/1延续涨势至$103-109·Goldman Sachs目标价上调至$121(Buy)+BTIG目标$125(7/1·多源)：Robinhood '世界是平的'7/1伦敦正式发布+7/1 Binance EU强制退场双催化·HOOD于7/1交易区间$103.46–$109.08·延续6/30 ATH $93.63+13%后进一步上攻·Goldman Sachs James Yaro上调目标至$121(驱动：EU代币化美股扩张+加密+预测市场)；BTIG目标$125；★两日合计涨幅约+25-30%·EU代币化美股赛道最大股价赢家地位确认"},
     {grp:"other", date:"7/1", tag:"t-up", txt:"✅ SPCX 7/1日内$160.38–$173.28·收盘约$172.39(+5.1%·Yahoo Finance确认)·较6/30收$164.19进一步修复·从MSCI再平衡低点$148.51累计反弹约+16%；BNP Paribas重估QQQ全球被动买压约$8B(含全球Nasdaq-100追踪基金·7/1·FastCompany)·JPM $4.3B仅计QQQ/QQQM·含全球$800B+规模追踪资产；★7/7入指前6天·bStocks SPCXB/Bitget rSPCX/Bybit SPCXX代币化仓位24/7同步跟随正股修复；Nasdaq-100正式纳入生效日SPCX权重<1%", src:"https://finance.yahoo.com/quote/SPCX/"},
     {grp:"other", date:"7/1", tag:"t-new", txt:"✅ DTCC 7月代币化证券生产试点正式启动(7月初·CoinDesk/CCN多源确认)：ComposerX平台首批限量生产交易开始执行·标的：Russell 1000成分股+主要指数ETF+美债·50+机构实盘参与(BlackRock/Goldman/JPM/Circle/Ondo Finance/Ripple)·SEC Dec/25无行动函授权(3年试点)·10月全量商业上线计划·★从'7月启动预告'到'正式启动'·传统清算基础设施代币化首次进入生产环境·赛道含义：Coinbase Tokenize/Kraken xStocks/Binance bStocks分发层基础设施叙事具体化·机构合规通道实际可用", src:"https://www.ccn.com/news/crypto/dtcc-launch-tokenized-stocks-etfs-treasuries-july-2026/"},
+    {grp:"other", date:"6/30", tag:"t-new", txt:"★ Bitrue 上线10只3x杠杆代币化美股(6/30·BeinCrypto/Invezz双源确认)：四类标的——①AI/半导体(NVDA·TSLA·AMD 3L/3S)②芯片(MU Micron·Intel·SanDisk 3L/3S)③加密原生AI(CRCL Circle·MSTR MicroStrategy 3L/3S)④指数/前沿(iShares MSCI韩国ETF·SPCX SpaceX 3L/3S)；★SPCX3L/SPCX3S为全球首个3x SpaceX杠杆敞口；无保证金·无强平·无资金费率·3x日涨跌幅跟踪·底层基于Bitrue多发行方现货架构+部分Binance bToken流动性支持；Bitrue路线：Jul/25接入xStocks(Backed Finance)→Apr/26扩至40代币化资产(100x杠杆期货)→6/30推3x杠杆代币美股·高杠杆代币化产品线持续系统化·赛道中型所3x杠杆代币美股首个落地者", src:"https://beincrypto.com/bitrue-launches-3x-leveraged-tokenized-us-stocks/"},
     {grp:"other", date:"6/30", tag:"t-new", txt:"★ MEXC 上线 STRCON/USDT·Ondo代币化Strategy优先股首列CEX现货(6/30 14:00 UTC·MEXC Blog/Chainwire多源确认)：STRCON追踪Strategy优先股(STRC)·Strategy=前MicroStrategy·全球最大公司BTC持有者(84.7万BTC·约6/21)·Ondo Finance代币化·持牌经纪商1:1股权托管·非美用户现货交易；★赛道首例BTC Treasury Company优先股代币化上线CEX现货·MEXC 6月Ondo扩品路线：6/19 9只→6/25 5只(核能/AI基础设施)→6/30 STRCON优先股·月内三批连续扩品·MEXC成目前Ondo代币化股票现货品种最全的CEX", src:"https://blog.mexc.com/press-release/mexc-lists-ondos-tokenized-strategy-preferred-stock-on-spot-market/"},
     {grp:"main", date:"6/30", tag:"t-new", txt:"★ Binance bStocks 6/30 扩品5只·10只→15只(6/30 13:30 UTC·U.Today/Binance官方确认)：新增LITEB/USDT(Lumentum·光通信)·METAB/USDT(Meta Platforms·Mag7首入bStocks)·MSFTB/USDT(Microsoft·Mag7首入bStocks)·PLTRB/USDT(Palantir·AI数据分析)·QQQB/USDT(Invesco QQQ Trust·★首只Nasdaq-100宽基指数ETF进入bStocks货架)；全部支持Spot Algo Trading Bot；零Maker费至8/31延续；★bStocks货架一个月内三次扩品：6/11首批6只→6/22+4只(10只)→6/30+5只(15只)；QQQB上线时机精准：7/7 SPCX Nasdaq-100正式纳入(QQQ $4.3B被动建仓)前一周", src:"https://u.today/binance-lists-microsoft-and-meta-stocks-amid-347-billion-rwa-surge"},
     {grp:"main", date:"6/30", tag:"t-up", txt:"★ Binance bStocks 首15天用户行为统计(~6/30·crypto.news/CryptoBriefing多源)：上线首15天(6/11–6/26)累计$4.58亿成交量·$1亿AUM；用户行为三项指标：①47%成交量发生在美东正常交易时段外(盘前/盘后/周末·24/7独有)·②58%活跃来自新兴市场(印度/东南亚/拉美/中东·非美西方发达国家)·③80%+订单为碎股交易(最低$5起·零售驱动)；★与美国传统券商(正常时段+本土用户为主)形成显著差异·赛道核心增量在新兴市场24/7碎股散户维度·bStocks 4x倍率计入Alpha Points机制进一步强化该用户群拉新效率", src:"https://crypto.news/binance-bstocks-push-heats-up-after-143m-equities-debut/"},
@@ -885,8 +886,8 @@ const DATA = {
       ]
     },
     {
-      nm:"Bitrue", tier:2, color:"#1c69d4", ink:"#fff", status:"live", statusTxt:"xStocks + 100x 代币化资产",
-      sub:"新入场者 · Jul/25 Backed Finance xStocks · Apr/26 40代币化资产 · 高杠杆差异化",
+      nm:"Bitrue", tier:2, color:"#1c69d4", ink:"#fff", status:"live", statusTxt:"xStocks · 100x 代币化资产 · 3x 杠杆代币美股",
+      sub:"新入场者 · Jul/25 xStocks · Apr/26 40代币化资产(100x) · 6/30 3x杠杆代币美股10只(SPCX3L首发) · 高杠杆差异化",
       promo:[
         "Backed Finance xStocks 集成(Jul/25):首三日 $1650万成交/1200+ 交易者——以高杠杆切入,最高 100x 杠杆 vs xStocks 通常无杠杆",
         "Bitrue Alpha 平台:xStocks + 代币化资产统一账户,USDT 结算 24/7",
@@ -894,12 +895,14 @@ const DATA = {
       ],
       activities:[
         {t:"xStocks 现货(Jul/25 上线):AAPL/TSLA/NVDA/MSTR/CRCL/SPY 等,24/7,USDT 结算,Backed Finance 1:1 托管", src:"https://cryptonews.com/news/bitrue-launches-tokenized-stock-trading-for-us-equities-via-xstocks/"},
-        {t:"40代币化资产(Apr/26 扩品,最高 100x 杠杆):NVDA/TSLA/AMZN/NAS100 + XAU/XAG 贵金属;全部 USDT 结算 24/7", src:"https://invezz.com/news/2026/04/02/bitrue-launches-40-tokenized-assets-with-up-to-100x-leverage-trading/"}
+        {t:"40代币化资产(Apr/26 扩品,最高 100x 杠杆):NVDA/TSLA/AMZN/NAS100 + XAU/XAG 贵金属;全部 USDT 结算 24/7", src:"https://invezz.com/news/2026/04/02/bitrue-launches-40-tokenized-assets-with-up-to-100x-leverage-trading/"},
+        {t:"3x杠杆代币美股10只(6/30上线·全球首个SPCX3L/SPCX3S):NVDA·TSLA·AMD·MU·Intel·SanDisk·CRCL·MSTR·韩国ETF·SPCX各出3L/3S·无保证金·无强平·无资金费率·Binance bToken流动性支持", src:"https://beincrypto.com/bitrue-launches-3x-leveraged-tokenized-us-stocks/"}
       ],
       xsig:"🔒 X 信号待抓取",
       sources:[
         {label:"CryptoNews·xStocks上线", url:"https://cryptonews.com/news/bitrue-launches-tokenized-stock-trading-for-us-equities-via-xstocks/"},
-        {label:"Invezz·40代币化资产", url:"https://invezz.com/news/2026/04/02/bitrue-launches-40-tokenized-assets-with-up-to-100x-leverage-trading/"}
+        {label:"Invezz·40代币化资产", url:"https://invezz.com/news/2026/04/02/bitrue-launches-40-tokenized-assets-with-up-to-100x-leverage-trading/"},
+        {label:"BeinCrypto·3x杠杆代币美股", url:"https://beincrypto.com/bitrue-launches-3x-leveraged-tokenized-us-stocks/"}
       ]
     },
     {
