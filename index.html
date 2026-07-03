@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-06-19 → 07-03",
-  updated: "2026-07-03 21:00 (北京时间)",
+  updated: "2026-07-03 23:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -176,6 +176,7 @@ const DATA = {
     {grp:"other", date:"7/3", tag:"t-up", txt:"SPCX 7/3 正股最后定价日·收$162.00(日内区间$155.88–$162.01·Yahoo Finance)：较7/1收$172.39累计约-6%·较7/2收$160.95略回升·在$162区间完成纳入前最终正股定价；7/4独立日+7/5-6周末休市三连休·代币化层(Binance SPCXB/Bitget rSPCX/Bybit SPCXX)24/7跨假期不停盘；下次正股开盘7/7周一即Nasdaq-100入指生效首日·$4.3B QQQ被动买压正式执行·★$162区间=Nasdaq-100被动建仓成本参考锚定价", src:"https://finance.yahoo.com/quote/SPCX/"},
     {grp:"other", date:"7/3", tag:"t-new", txt:"★ Bybit xStocks 两只/天扩品节奏·7/3上线GOOGLX(Alphabet)+AMZNX(Amazon)·10只批次已上7只(ainvest/Bybit官方确认)：Bybit与xStocks(Backed Finance 1:1真实托管)按每日两只速度执行10只批次扩品：COINX(Coinbase)/NVDAX(NVIDIA·6/30)→CRCLX(Circle)/APPLX(Apple·7/1)→HOODX(Robinhood股)/METAX(Meta·7/2)→GOOGLX(Alphabet)/AMZNX(Amazon·7/3)→TSLAX(Tesla)/MCDX(McDonald's·预计7/7)；7/7为SPCX Nasdaq-100入指生效首日·Tesla/McDonald's上线与指数日精准重合；Bybit xStocks货架持续向60+只扩展·USDT永续+xStocks代币化现货+TradFi CFD三层并行·与Kraken xStocks/KuCoin共用Backed Finance基础设施", src:"https://www.ainvest.com/news/bybit-partners-xstocks-launch-10-tokenized-stocks-blockchain-2507/"},
     {grp:"other", date:"7/3", tag:"t-up", txt:"Gate CFD Stocks 141只USDT股息完成自动分发(7/3·mpost.io)：Gate向141只CFD美股/ETF持仓用户自动派发USDT股息·覆盖NVDA·BAC·纳指ETF等科技/金融/能源品类·按持仓比例USDT自动入账·无需手动操作；141只单批次分发规模为赛道已知最大·与Bitget rToken(20只·7/1)·Binance bStocks MUB(7/6快照·7/21派息)形成赛道三角股息分发格局·Gate CFD 440+只货架规模化股息自动分发机制正式运行", src:"https://mpost.io/gate-update-regulatory-milestone-in-europe-new-equity-tools-and-a-wave-of-campaigns-kick-off-july/"},
+    {grp:"other", date:"7/3", tag:"t-new", txt:"★ Gate gStocks 1:1代币化股票正式上线·首批15只含SPCXG/TSLAG(7/3·gate.com官方公告)：Gate推出gStocks品牌代币化股票产品·底层Backed Finance xStocks 1:1真实股权托管·首批15只含SPCXG(SpaceX)·TSLAG(Tesla)等；★Gate以gStocks命名自建代币化股票品牌·与原有xStocks永续专区并存·跟进Kraken/Bybit/KuCoin同用Backed Finance基础设施·Gate代币化产品矩阵升格为gStocks现货(1:1)+xStocks永续双轨并行；★Gate六层矩阵完整：①Gate Stock真实美股10,000+(Alpaca)②TradFi CFD 440+(MT5)③gStocks 1:1代币化(7/3新·15只)④xStocks+永续130+⑤pre-IPO⑥Polymarket", src:"https://www.gate.com/announcements/article/100484"},
     {grp:"other", date:"7/3", tag:"t-new", txt:"★ Kraken Pro xStocks 10只升格期货+保证金双层抵押品(7/3·crypto-economy·Kraken Blog确认)：SPYx/QQQx/AAPLx/GOOGLx/TSLAx/NVDAx等10只xStocks正式可用于Kraken Pro期货及保证金交易抵押；期货抵押：全球非美用户含EEA可用；保证金抵押：全球非美用户(不含EEA)；折扣率10-30%·设单标的持仓上限·可与USDT/加密资产混用；★资本效率升级：xStocks持仓者直接以代币化股权担保期货/保证金仓位·无需出售持仓·与Binance bStocks×Venus/Lista DAO(6/20)·Aave V4代币化股票借贷(6/27)·Edel Finance xStocks借贷事件(7/1)共同推进代币化股权DeFi抵押层叙事", src:"https://crypto-economy.com/kraken-pro-adds-xstocks-as-futures-collateral/"},
     {grp:"other", date:"7/3", tag:"t-up", txt:"MEXC 6月报告(7/3·mpost.io/Invezz多源)：月总成交$437B·RealStocks(6/1上线·Atomic Vaults FINRA持牌)货架7,000+只NYSE+Nasdaq真实股权含真实股息·0佣金启动窗口·Ondo代币化股票双轨并行(6月三批共15只Ondo品种+STRCON优先股·TradFi Gala百万USDT活动至7/26)·月节省用户手续费$1.45亿·Guardian Fund$1.01亿(Hacken独立审计·USDT储备率114%)·153只新币上线；★MEXC RealStocks(真实持股)+Ondo代币化双产品矩阵·月成交$437B·Ondo代币化货架品种数赛道已知最多", src:"https://mpost.io/mexcs-june-highlights-437-billion-in-trading-volume-offering-access-to-7-000-us-stocks-and-etfs/"},
     {grp:"main", date:"7/2", tag:"t-up", txt:"★ Bitget CEO Gracy Chen 7/2 中年战略致辞(Invezz)：'brokering the unbrokered'——从'为无银行账户者服务'升格为'为无券商账户者提供券商服务'；平台战略目标从加密交易所向Universal Exchange Provider(UEX)全资产通用平台转型；1M+ AI交易用户·1M+ 跟单用户·52%用户同时持有股票+加密资产·51%使用AI工具·35%持有黄金；GetClaw/GetAgent AI产品矩阵正式首披露；Stock+(真实美股)+Reality rToken(代币化)+UEX CFD+AI策略四轨全栈CEO级战略公开确认", src:"https://invezz.com/news/2026/07/02/bitget-ceo-outlines-long-term-plan-built-on-ai-tokenization-and-global-market-access/"},
@@ -511,10 +512,10 @@ const DATA = {
       ]
     },
     {
-      nm:"Gate", color:"#2354e6", ink:"#fff", status:"live", statusTxt:"Gate Stock 6/1上线 · 港股1,500+(6/15上) · 韩股1,000+(6/23上) · 6层矩阵 · IPO Access首日$9200万",
-      sub:"Gate Stock(6/1) · 真实美股10,000++港股1,500+(6/15上线后扩·首家统一美+港USDT单账户) · 韩股1,000+(6/23·美+港+韩三市场统一账户) · TradFi CFD + xStocks + pre-IPO",
+      nm:"Gate", color:"#2354e6", ink:"#fff", status:"live", statusTxt:"Gate Stock 6/1上线 · 港股1,500+(6/15上) · 韩股1,000+(6/23上) · gStocks 1:1代币化7/3新 · 6层矩阵",
+      sub:"Gate Stock(6/1) · 真实美股10,000++港股1,500+(6/15)·韩股1,000+(6/23) · TradFi CFD + gStocks 1:1(7/3新·Backed Finance) + xStocks永续 + pre-IPO",
       promo:[
-        "【六层产品矩阵·OI 全球第三·★7日净流入全球CEX第一($4.96亿·~6/22)·★YTD TradFi 永续量全球第一】① Gate Stock 真实美股现货(6/1新·10,000+) ② TradFi CFD(MT5·605标的·6月最新) ③ xStocks 代币化 + 股票永续(130+·已超 Bybit) ④ pre-IPO SPCX Mirror Note(已筹 $3.95亿) ⑤ Polymarket Live；24h 总 OI ~$116亿，全球第三(仅次 Binance/Bybit)；★CryptoQuant(6月): YTD TradFi 永续总成交 $368B 全球第一(Binance $298B 第二)，两家合计约占赛道 2/3——Gate YTD 领先主要源于黄金/白银/原油永续，股票永续子赛道 Binance 41% 市占领先。产品广度头部最宽，OI 规模赛道第三极",
+        "【六层产品矩阵·OI 全球第三·★7日净流入全球CEX第一($4.96亿·~6/22)·★YTD TradFi 永续量全球第一】① Gate Stock 真实美股现货(6/1·10,000+·Alpaca) ② TradFi CFD(MT5·440+·6月最新) ③ gStocks 1:1代币化(7/3新·15只·Backed Finance) ④ xStocks代币化+股票永续(130+) ⑤ pre-IPO SPCX Mirror Note(已筹 $3.95亿) ⑥ Polymarket Live；24h 总 OI ~$116亿，全球第三(仅次 Binance/Bybit)；★CryptoQuant(6月): YTD TradFi 永续总成交 $368B 全球第一(Binance $298B 第二)，两家合计约占赛道 2/3——Gate YTD 领先主要源于黄金/白银/原油永续，股票永续子赛道 Binance 41% 市占领先。产品广度头部最宽，OI 规模赛道第三极",
         "Gate Stock 真实持仓话术:Alpaca SIPC 保护、零持仓费、USDT 直接入金、10,000+ NYSE/Nasdaq 全覆盖",
         "'无需开户 / 24-7 USDT 直接买' 低门槛话术(xStocks 专区)",
         "Gate TradFi(MT5 集成):605 标的(外汇/商品/指数/美股 CFD·6月最新;较1月 300 标的持续扩品),外汇最高 500x、美股 CFD 最高 5x 杠杆,USDx(1:1 锚定 USDT)结算;5月末累计成交 $145B+(日峰超 $15B)",
@@ -549,6 +550,7 @@ const DATA = {
         {t:"Gate ETF 杠杆代币扩品(6/26·4只新增):SKHYNIX3L/SKHYNIX3S(SK海力士3x做多/做空)+SOXL3L/SOXL3S(Direxion 半导体ETF 3x做多/做空)；Gate ETF 总数扩至 362 只；配套交易挑战至7/4·50,000 USDT 奖池——精准配合SK海力士6/25 KOSPI+12%(MU财报催化)+$29B纳斯达克ADR(7/10 SKHY目标上市)双叙事；Gate以杠杆代币快速覆盖半导体热点标的与代币化永续路线差异化", src:"https://mpost.io/gate-update-semiconductor-boom-regulatory-milestones-and-new-products-define-a-pivotal-week-for-gate/"},
         {t:"★ 零手续费券商实物转仓补贴活动(7/1–7/7·mpost确认)：美股DTC渠道转入最高报销15,000 USDT·港股CCASS渠道最高报销6,000 USDT·最低转入3,000 USDT·期间配套临时VIP等级升级·9只新CFD Stocks上线(UVXY/Sony/EWZ/Reddit/DKNG等含港股标的·4x杠杆)——Gate以最高15,000USDT补贴争夺富途/老虎/IBKR美股+港股仓位迁入用户·与Bitget 10,000USDT(至7/31)/Coinbase ACATS无缝转仓直接竞争", src:"https://mpost.io/gate-introduces-fee-free-stock-transfers-to-strengthen-global-equities-and-multi-asset-trading-ecosystem/"},
         {t:"VIP Exclusive Airdrop Carnival Phase 16(7/1起·gate.com/mpost确认)：VIP6+用户SK Hynix(SKHYNIX)代币化股票空投最高1,000 USDT·按交易量+VIP等级双维度分配·Phase 15 Anthropic股票(至6/26)收官后无缝接棒；CFD Stocks新代币空投Phase 5(至7/9)同步：持有/交易新上线CFD Stocks标的者共享900,000 USDT奖池·新用户额外300 USDT；与VIP Futures Elite Challenge(6/29–7/20·5万USDT)三活动并行·Gate继续以真实/代币化股权奖励锁定VIP用户", src:"https://mpost.io/gate-update-regulatory-milestone-in-europe-new-equity-tools-and-a-wave-of-campaigns-kick-off-july/"},
+        {t:"★ gStocks 1:1代币化股票正式上线(7/3·gate.com官方公告)：Gate推出gStocks品牌代币化股票产品·底层Backed Finance xStocks 1:1真实股权托管·首批15只含SPCXG(SpaceX)·TSLAG(Tesla)；Gate以gStocks命名自建代币化股票品牌·与原有xStocks永续专区并存·跟进Kraken/Bybit/KuCoin同用Backed Finance基础设施·Gate代币化产品升格为gStocks现货(1:1·15只)+xStocks永续(130+)双轨并行·六层产品矩阵正式完整", src:"https://www.gate.com/announcements/article/100484"},
       ],
       xsig:"📡 X实抓(6/1):官号已迁至 @Gate(原 @Gate_io 仅留迁移公告);仍主推 GateAI(AI 交易助手),X 上未重点推美股(靠产品页 xStocks);调性偏品牌/AI。",
       sources:[
