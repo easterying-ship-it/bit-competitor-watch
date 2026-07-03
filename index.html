@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-06-19 → 07-03",
-  updated: "2026-07-03 23:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-06-19 → 07-04",
+  updated: "2026-07-04 00:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -203,6 +203,7 @@ const DATA = {
     {grp:"other", date:"7/2", tag:"t-up", txt:"Hyperliquid + Trade[XYZ] 接入TradingView实时数据·链上权益永续24/7行情全球可查(7/2·crypto.news/Cryptopolitan多源)：TradingView新增HYPERLIQUID:前缀(原生加密永续+现货100+对·24/7)与HIP3XYZ:前缀(Trade[XYZ] HIP-3 RWA永续·覆盖NVDA/TSLA美股·黄金/原油/S&P 500/Nasdaq-100/外汇·SpaceX等·24/7)；全球数千万TradingView用户可直接在主流图表工具查看链上权益行情·分发层里程碑；Hyperliquid>59%去中心化永续成交量·HIP-3 OI超$30亿·Trade[XYZ]成Robinhood Chain DEX生态之外最重要的链上股票永续入口之一", src:"https://crypto.news/tradingview-unlocks-hyperliquid-markets-with-24-7-data/"},
     {grp:"other", date:"7/2", tag:"t-up", txt:"【行业macro】IMF警告代币化或碎片化全球金融体系·同日Forbes：$600亿RWA市场中90%资产无周交易(7/2·IMF Blog/Forbes多源)：IMF金融顾问Tobias Adrian警告·当前政策选择将决定代币化能否'强化还是分裂'全球金融体系·核心担忧：自动保证金追缴+即时赎回+24/7清算可能引发快于人工干预的流动性危机；Forbes报告：代币化RWA总规模$600亿覆盖7,000+产品·但$329亿(910项)周内零转账——流动性悖论凸显；★DTCC 7月生产试点正式启动(50+机构)或为破局关键", src:"https://crypto.news/imf-warns-tokenization-could-remake-finance-or-fracture-it/"},
     {grp:"other", date:"7/2", tag:"t-new", txt:"★ OKX创始人Star Xu 7/2公开批评Binance风控体系引发2025年10月加密市场崩盘(CryptoTimes/CCN/DLNews多源)：Xu公开声明称Binance高收益USDe稳定币策略吸引用户形成'杠杆循环'——USDe作为跨抵押品借入后再叠加杠杆·2025年10月10日宏观冲击触发USDe快速脱锚·Binance后端数据库读取路径在峰值压力下延迟33分钟·二者叠加引发$190亿仓位连环清算；前Binance高管联署批评'遗留深层损害'；★继6/24'You Can\\'t Buy Compliance' MiCA批评后OKX持续以公开叙事进攻Binance信任背书·赛道公开对阵OKX vs Binance系统性风控叙事战升温", src:"https://www.cryptotimes.io/2026/07/02/binance-october-10-flaws-fueled-current-crypto-bear-market-ex-cfo-okx/"},
+    {grp:"other", date:"7/2", tag:"t-new", txt:"HTX KIOXIA/USDT 永续期货上线·KIOXIA Trading Carnival(7/2–7/9·TradersUnion确认)：KIOXIA Holdings(东交所285A·全球NAND闪存龙头·前Toshiba Memory·2024年东交所IPO)代币化股票期货·1x-10x杠杆·USDT结算·瓜分20,000 USDT奖池；制裁压力下HTX继续扩充TradFi货架(STXX 6/26→KIOXIA 7/2·连续新增日本东交所股票标的)", src:"https://tradersunion.com/news/brokers-news/show/2566527-htx-launches-kioxia-usdt-contract-event/"},
     {grp:"other", date:"7/1", tag:"t-new", txt:"★ Kraken xStocks EthCC 2026黑客松(Cannes·7月初·Kraken Blog确认)：60名开发者48小时内构建链上资本市场应用·★获奖：xPrime(1st·以太坊+Ink·机构级链上股票组合收益策略——USD利差交易+备兑看涨)·Stretch(2nd·$STRCx分红自动复利循环最高5x)·xStream(3rd·将xStocks拆分两种可重组Token的收益代币化协议)·另设Paragon/Aura/Otomato自由裁量奖；★xStocks开发者生态拓展信号：从CEX零售代币化产品→DeFi可编程金融基础设施层；xStocks累计成交$250亿·131只上线·年内目标500只", src:"https://blog.kraken.com/event/xstocks-hackathon-ethcc-2026"},
     {grp:"main", date:"7/1", tag:"t-new", txt:"✅ Binance EU 7/1停服正式执行(7/1·CryptoSlate/crypto.news多源)：Binance如期停止向EEA用户提供新现货下单/入金/新用户注册/Earn/质押/Launchpool服务；保留：提款(无限制)+Convert(仅卖出·有序平仓)；bStocks/Hey Stock EU仓位有序退出；EU代币化美股市场正式进入Binance缺席格局·OKX EU/Kraken/Coinbase EU/Robinhood EU四方实际承接正式启动", src:"https://cryptoslate.com/binance-cut-off-from-europe-on-july-1-best-liquidity-world-cz/"},
     {grp:"main", date:"7/1", tag:"t-new", txt:"★ Binance 美股业务总AUM突破$10亿(7/1·CryptoBriefing确认)：Binance旗下股票产品(真实持股 Alpaca/Nest托管+bStocks 15只代币化·BNB Chain)合计资产管理规模首次突破$10亿；增长节奏：6/11 bStocks首日$560万→6/26 bStocks $1亿AUM→7/1 全产品AUM合计$10亿；★赛道对比：Bitget Reality rToken ~$5000万(6/19·115只)·Kraken xStocks 累计成交$250亿(未公开独立AUM)·Binance $10亿为赛道单平台已知最高股票AUM；EU 7/1停服后全球非EU用户资产集中加速·6/30扩至15只bStocks为AUM加速主动力", src:"https://cryptobriefing.com/binance-1b-aum-tokenized-stocks/"},
@@ -619,7 +620,8 @@ const DATA = {
         {t:"✅ TradFi Trading Contest(6/1–6/11·已结束):$50,000 USDT 总奖池——主池 47,000 USDT(成交量≥10,000 USDT 参与排名,前三 10,000/8,000/5,000 USDT 固定奖)+新人专属池 3,000 USDT(交易量≥500 USDT+持仓≥100 USDT 满2天);品种:NVDA/TSLA/GOOGL/SPX500/USOIL/XAU/MSTRX/INTCX——制裁压力下逆势大手笔拉新,与 Binance/Bitget/OKX 同期激战 TradFi 流量", src:"https://www.prnewswire.com/news-releases/breaking-traditional-financial-barriers-htx-launches-us-stock-futures-tradfi-contest-with-a-massive-50-000-usdt-prize-pool-302789463.html"},
         {t:"⚠ FixedFloat AML 合规更新(6/8)：暂停所有来源 Huobi/HTX 的资金并要求额外身份验证——6/7 WLFI 冻结/USD1 下架后首个第三方加密服务主动落实英国制裁；ZachXBT 公开批评'链上地址污染已造成灾难性后果'（合规工具无法区分制裁前后历史交互）；TradFi 拉新入金/出金实际受阻范围超出官方披露", src:"https://crypto.news/fixedfloat-suspends-huobi-funds-but-did-uk-sanctions-go-too-far/"},
         {t:"★ 5月 TradFi 月报(6/12 GlobeNewswire):月度成交量突破 $10亿；货架扩至 75只资产(5月净新增 51只，42只为股票类合约)；截至 6/10，HTX 7日全球 CEX 净流入第一约 $2750万；6/1–15 全平台 >$1000万感恩空投；储备金 100%+——制裁环境下 TradFi 运营指标阶段性乐观，但入金/出金合规壁垒持续累积", src:"https://www.globenewswire.com/news-release/2026/06/12/3310981/0/en/HTX-Releases-May-Performance-Report-TradFi-Monthly-Trading-Volume-Surpasses-1-Billion-While-Multi-Front-Progress-Rebuilds-Ecosystem-Confidence.html"},
-        {t:"★ STXX/USDT 永续期货上线·STXX Futures Trading Carnival(6/26·TradersUnion)：Seagate Technology(STXX)代币化股票期货·1x-10x杠杆·瓜分20,000 USDT奖池·制裁压力下继续扩充 TradFi 货架", src:"https://tradersunion.com/news/brokers-news/show/2506048-htx-launches-stxx-usdt-futures-event/"}
+        {t:"★ STXX/USDT 永续期货上线·STXX Futures Trading Carnival(6/26·TradersUnion)：Seagate Technology(STXX)代币化股票期货·1x-10x杠杆·瓜分20,000 USDT奖池·制裁压力下继续扩充 TradFi 货架", src:"https://tradersunion.com/news/brokers-news/show/2506048-htx-launches-stxx-usdt-futures-event/"},
+        {t:"★ KIOXIA/USDT 永续期货上线·KIOXIA Trading Carnival(7/2–7/9·TradersUnion)：KIOXIA Holdings(东交所285A·全球NAND闪存龙头·前Toshiba Memory·2024年东交所IPO)代币化股票期货·1x-10x杠杆·瓜分20,000 USDT奖池·制裁压力下继续扩充TradFi货架(STXX 6/26→KIOXIA 7/2·连续新增日本东交所股票标的)", src:"https://tradersunion.com/news/brokers-news/show/2566527-htx-launches-kioxia-usdt-contract-event/"}
       ],
       xsig:"📡 X实抓(6/1 12:12):上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000、新人送 $3 拉新——pre-IPO 名字做期货标的;仍 meme/零售调性。",
       sources:[
