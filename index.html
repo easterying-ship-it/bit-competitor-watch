@@ -163,12 +163,12 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-06-26 → 07-09",
-  updated: "2026-07-09 21:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-06-26 → 07-10",
+  updated: "2026-07-10 01:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
-    {grp:"other", date:"7/10", tag:"t-new", txt:"★ SKHY 7/10 Nasdaq首日开市启动·首日实盘首小时·Bitget/Gate/Binance/Bybit/BingX代币化层今日首次以正股价格实时定价·Bloomberg 7/9发行指引$149→IPO最终定价$158.14(7x超额认购·7/9 IPOScoop确认)；★实盘意义：Bitget SKHYUSDT pre-IPO永续·Gate SKHYNIX3L/SKHYNIX3S·Binance SKHYNIXUSDT·Bybit SKHYNIXUSDT·BingX SKHY Pre-IPO永续今日均以实盘价格首次定价·正股承压背景：美伊双重风险(7/8-7/9)+AMD-6.5%·INTC-9.7%半导体全线下挫·$70亿锚定投资者(Baillie Gifford+Coatue+Situational Awareness)提供支撑·ProShares SKHU/GraniteShares SKUU+SKDD传统2x杠杆ETF 7/13上线·代币化层与传统杠杆ETF层7/13后完整并行·Q2财报7/29为下一估值节点", src:"https://finance.yahoo.com/markets/stocks/articles/sk-hynix-said-guide-us-131527230.html"},
+    {grp:"other", date:"7/10", tag:"t-new", txt:"★ SKHY 7/10 Nasdaq以SKHYV临时代码开启when-issued首交易日(7/13换票SKHY正式常规交易·结算日7/14)·Bitget/Gate/Binance/Bybit/BingX代币化层首次以正股价格实时定价·IPO最终定价$158.14(7x超额认购·7/9 IPOScoop确认)；★实盘意义：Bitget SKHYUSDT pre-IPO永续·Gate SKHYNIX3L/SKHYNIX3S·Binance SKHYNIXUSDT·Bybit SKHYNIXUSDT·BingX SKHY Pre-IPO永续今日均以实盘价格首次定价·正股承压背景：美伊双重风险(7/8-7/9)+AMD-6.5%·INTC-9.7%半导体全线下挫·$70亿锚定投资者(Baillie Gifford+Coatue+Situational Awareness)提供支撑·7/10首日实盘开盘价待美股收盘后确认·ProShares SKHU/GraniteShares SKUU+SKDD传统2x杠杆ETF 7/13上线·代币化层与传统杠杆ETF层7/13后完整并行·Q2财报7/29为下一估值节点", src:"https://finance.yahoo.com/markets/stocks/articles/sk-hynix-said-guide-us-131527230.html"},
     {grp:"other", date:"7/9", tag:"t-new", txt:"★ 美伊7/9再次达成停止互击协议·和谈移师卡塔尔本周·BTC从$62K底部企稳(CryptoBriefing/bydfi 7/9)：继7/8双方激烈互击、Trump宣布停火'已结束'后·美伊双方7/9再次就停止互击达成协议·和平谈判移师卡塔尔本周举行(与CLARITY Act参院7/13复会同周)；BTC从$62,038底部回升·加密市场跌势暂缓·油价从7/8 WTI $74.45高位开始回落；★7/8三重压力共振(地缘·FOMC鹰派·SPCX $150跌破)中·地缘压力7/9初步缓解·代币化赛道宏观最重压节点7/8已过·CLARITY Act立法冲刺窗口(7/13-8月休会)维持有效·rSPCX/SPCXB/SPCXX代币化持仓随风险偏好初步修复", src:"https://cryptobriefing.com/us-iran-ceasefire-crypto-market-impact/"},
     {grp:"other", date:"7/9", tag:"t-new", txt:"★ SKHY SK Hynix $28.13B Nasdaq ADR最终定价$158.14/ADS·7/10正式开市·史上最大外国企业美国ADR(IPOScoop·Renaissance Capital 7/9确认)：177.9M ADS最终定价$158.14(1ADS=0.1韩国普通股·BofA/Citi/Goldman/JPMorgan主承销)·净募资约$28.1B·7/10 Nasdaq正式开交；★赛道直接影响：Gate SKHYNIX3L/SKHYNIX3S(6/26上线)+Binance SKHYNIXUSDT/Bybit SKHYNIXUSDT韩股永续·7/10进入实盘定价+高波动窗口·正股$158.14开盘价成代币化层估值锚·承压背景：美伊风险(7/8-7/9)+半导体全线下挫(AMD-6.5%·INTC-9.7%)·$70亿锚定投资者(Baillie Gifford+Coatue+Situational Awareness)提供支撑", src:"https://www.iposcoop.com/the-ipo-buzz-sk-hynix-skhy-launches-28-13b-u-s-offering-nasdaq-uplisting/"},
     {grp:"other", date:"7/9", tag:"t-up", txt:"★ CLARITY Act参院本周将发布最终法律文本·7/13复会后楼层投票(CryptoAdventure·7/9)：参院领导层计划于本周末在7/13复会前发布CLARITY Act最终法律文本供审阅·文本发布=清除楼层投票最后程序障碍·复会后启动最终冲刺；三大障碍仍悬：①Trump $14亿加密收入道德条款②Section 604 DeFi开发者保护③稳定币收益漏洞·仍需至少7名民主党参议员；★较7/8条目'Thune楼层时间已排'进一步具体化：从'时间已排'到'本周发最终文本'·8月休会前三周立法窗口正式倒计时", src:"https://cryptoadventure.com/senate-nears-clarity-act-text-release-as-july-vote-push-builds/"},
