@@ -163,11 +163,13 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-07-01 → 07-14",
-  updated: "2026-07-14 23:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-07-01 → 07-15",
+  updated: "2026-07-15 01:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+    {grp:"other", date:"7/15", tag:"t-new", txt:"✨ Gate Pre-IPOs Phase 2·OpenAI资产证书7/15-17订阅开启·$2000万·27,700张CPNs·$722/张·7/20预售二级交易(coincu/BeInCrypto·7/15)：Gate Pre-IPOs第二轮聚焦OpenAI·总规模约$2000万·27,700张Contingent Payout Notes(CPNs)·每张$722·最低100 USDT/GUSD·无托管费；三阶段解锁(7月+8月+9月)·7/20预市交易开放；激励：GT代币空投+GUSD持仓年化收益；★直接竞争Bitget IPO Prime preOPAI(5/15·29,082枚·$725/枚·Solana链·Republic合规发行)·Gate $722 vs Bitget $725形成直接对标·OpenAI估值已达$3T+(6/8机密S-1·IPO待定)·★Gate pre-IPO产品线：Phase 1 SPCX Mirror Note($3.95亿·4月)→Phase 2 OpenAI CPNs(7/15·$2000万)·六层RWA矩阵再添pre-IPO新阶段", src:"https://coincu.com/gate-launches-second-phase-of-pre-ipos-featuring-openai-usdt-gusd-participation/"},
+    {grp:"other", date:"7/15", tag:"t-up", txt:"⚠️ CLARITY Act Polymarket通过率续跌至~24%历史新低·从7/14 ~37%再降约13pct·双重打击：①White House首席谈判官Patrick Witt宣布7/27起军事假期·副手Harry Jung接手·②参议员Warren周一(7/14)致信Thune/Schumer·要求道德条款禁止总统/副总统/议员及家属从加密产业获益(Yahoo Finance/CoinGape/CryptoTimes·7/14-15多源)：Patrick Witt为白宫数字资产委员会执行主任·被格鲁吉亚陆军国民警卫队JAG培训征召·7/27报到·最早7月底重返·Harry Jung任代理谈判负责人；Warren信件要求在CLARITY Act中加入禁止总统/副总统/高级行政官员/国会议员及家属从加密产业获益的道德条款·为8/7休会前最大新增政治阻力；★Polymarket概率链：73%(5/14)→53%(7/7)→46%(7/13草案)→37%(7/14·Trump中国警告)→~24%(7/15·Witt离职+Warren道德信·历史新低)·7/17 Wall Street听证+7/20楼层周目标维持·但关键谈判官缺席4周为最大执行风险", src:"https://coingape.com/clarity-act-odds-fall-to-new-low-patrick-witts-leave-warrens-ethics-rules-push/"},
     {grp:"other", date:"7/14", tag:"t-up", txt:"⚠️ SKHY Q2财报日期确认为7/22·非此前条目所标注的7/29·提前约一周·距今8天为代币化层下一核心估值节点(TipRanks/Investing.com·7/14)：SK Hynix ADR Q2 2026财报正式确认为7月22日·早于此前各7/14-7/8条目所引7/29·7/14 SKHY报$152.35·仅高于IPO定价$149约2%·Q2财报为SKHY上市后首份完整季报·市场关注：①HBM Q3出货展望 ②ADR溢价~25.6%能否获财报基本面支撑 ③Q2净利润对比三星/美光验证AI内存格局；★代币化各层(Binance SKHYNIXUSDT·Bybit SKHYNIXUSDT·Bitget SKHYUSDT·Gate SKHYNIX3L/3S·xStocks SKHYNIXx·Ondo $SKHYon)共同以7/22财报为最近估值催化节点·此条目同步修正本页前述各条'Q2财报7/29'为'Q2财报7/22'", src:"https://www.tipranks.com/stocks/skhy/earnings"},
     {grp:"other", date:"7/14", tag:"t-up", txt:"⚠️ SKHY ADR 7/14大幅回调·$152.35(-9.3%·较7/13收$168.01)·Seoul市场7/13单日跌-15.4%(SK Hynix史上最大单日跌幅)·AI芯片板块全线下挫(NVDA/AMD/AVGO/MU/SNDK均跌4-5%)·触发：韩国券商报告警示Q3营业利润或低于预期+ADR溢价约25.6%引估值质疑(FXLeaders/Yahoo Finance/CNBC·7/14)：SKHY从7/10首日收盘$171.42高点快速回落·7/14盘中测试$150 IPO定价水平；代币化SKHY持仓全线承压：Binance SKHYNIXUSDT永续·Bybit SKHYNIXUSDT永续·Bitget SKHYUSDT pre-IPO永续·Gate SKHYNIX3L/3S 3x杠杆代币·xStocks SKHYNIXx 1:1现货均同步回调；技术背景：SKHY于Cboe期权首日(7/14)即面临价格承压·★下一催化节点：Q2财报7/22·短期支撑参考$149 IPO定价·$135下一支撑位", src:"https://www.fxleaders.com/news/2026/07/14/skhy-adr-tests-150-as-sk-hynix-rout-raises-valuation-concerns-after-nasdaq-debut/"},
     {grp:"other", date:"7/14", tag:"t-new", txt:"✅ SKHY Cboe期权7/14首日开市·SKHX(Cboe BZX·2x多)+SKHZ(Cboe BZX·1x空)同日正式上线·十二层生态全面落地(Cboe/Leverage Shares官方·7/14)：Cboe Global Markets于7/14(SKHY 7/13换票后首个完整交易日)正式开放SK Hynix ADR期权交易·如7/10 Reuters/Yahoo Finance所预报('两个交易日后开放'=7/14)；Leverage Shares SKHX(2x Long SK Hynix Daily·Cboe BZX)与SKHZ(1x Short SK Hynix Daily·Cboe BZX)亦于7/14在Cboe BZX正式上线(原7/12条目标注'7/13·NYSE Arca'·实际Cboe BZX上线日确认为7/14)；★SKHY完整十二层生态7/14全面落地：①正股SKHY ②传统ETF七只(SKHU/SKUU/SKDD/SKHL/SKHX/SKHZ/Corgi SK·7/13-14) ③Cboe期权(7/14✅) ④SynFutures永续(7/13·DeFi) ⑤xStocks 1:1现货(Kraken/Bybit) ⑥Ondo $SKHYon全收益 ⑦Gate 3x杠杆代币 ⑧Binance/Bybit USDT永续 ⑨Bitget/BingX/MEXC pre-IPO永续 ⑩Bybit Alpha+Byreal SKHY现货·单只韩国ADR十二层生态历史之最·Q2财报7/22为下一估值节点", src:"https://finance.yahoo.com/markets/options/articles/sk-hynix-etfs-2x-long-155200206.html"},
@@ -533,7 +535,7 @@ const DATA = {
       ]
     },
     {
-      nm:"Gate", color:"#2354e6", ink:"#fff", status:"live", statusTxt:"Gate Stock 6/1上线 · 港股1,500+(6/15上) · 韩股1,000+(6/23上) · gStocks 三批41只(7/9止) · 6层矩阵",
+      nm:"Gate", color:"#2354e6", ink:"#fff", status:"live", statusTxt:"Gate Stock 6/1上线 · 港股1,500+(6/15上) · 韩股1,000+(6/23上) · gStocks 三批41只(7/9止) · OpenAI pre-IPO(7/15开) · 6层矩阵",
       sub:"Gate Stock(6/1) · 真实美股10,000++港股1,500+(6/15)·韩股1,000+(6/23) · TradFi CFD + gStocks 1:1(三批·41只·Backed Finance) + xStocks永续 + pre-IPO",
       promo:[
         "【六层产品矩阵·OI 全球第三·★7日净流入全球CEX第一($4.96亿·~6/22)·★YTD TradFi 永续量全球第一】① Gate Stock 真实美股现货(6/1·10,000+·Alpaca) ② TradFi CFD(MT5·440+·6月最新) ③ gStocks 1:1代币化(三批·41只·Backed Finance) ④ xStocks代币化+股票永续(130+) ⑤ pre-IPO SPCX Mirror Note(已筹 $3.95亿) ⑥ Polymarket Live；24h 总 OI ~$116亿，全球第三(仅次 Binance/Bybit)；★CryptoQuant(6月): YTD TradFi 永续总成交 $368B 全球第一(Binance $298B 第二)，两家合计约占赛道 2/3——Gate YTD 领先主要源于黄金/白银/原油永续，股票永续子赛道 Binance 41% 市占领先。产品广度头部最宽，OI 规模赛道第三极",
@@ -575,6 +577,7 @@ const DATA = {
         {t:"Gate DOGE Airdrop Season(6/30–7/8·mpost/gate.com确认)：100万USDT等值DOGE奖池·每次抽奖保底奖励·最高5,000 DOGE/次·通过交易+邀友累计抽奖次数·贯穿7月第一周", src:"https://mpost.io/gate-update-regulatory-milestone-in-europe-new-equity-tools-and-a-wave-of-campaigns-kick-off-july/"},
         {t:"★ gStocks 7/8第二批新增11只·货架升至26只·首批韩国蓝筹入阵(7/8·mpost/gate.com)：SKHYNIXG(SK海力士)·SAMSUNGG(三星电子)·AAPLG(苹果)·GOOGLG(谷歌)·JPMG(摩根大通)·BRKBG(伯克希尔B)等11只；全部Backed Finance 1:1真实股权托管·24/7；精准卡位SKHY 7/10 Nasdaq开交·与SKHYNIX3L/3S加密杠杆代币形成'杠杆代币+1:1现货'双轨覆盖", src:"https://mpost.io/gate-update-from-gstocks-to-mica-recognition-gate-advances-across-crypto-tradfi-and-global-compliance/"},
         {t:"★ gStocks 7/9第三批新增15只·货架升至41只(7/9·mpost)：含CBRSG(Cerebras AI芯片)·COING(Coinbase)·SPYG(标普500 ETF)·QCOMG(高通)·ORCLG(甲骨文)·SOXLG(Direxion 3x半导体ETF)等；三批时间线：7/3(15只)→7/8(+11·总26)→7/9(+15·总41)·10天三轮扩品·与Binance bStocks 25只(7/7)·KuCoin xStocks密集竞赛", src:"https://mpost.io/gate-update-gate-us-expands-to-47-jurisdictions-and-launches-visa-card-as-markets-rally-and-new-products-roll-out/"},
+        {t:"★ Pre-IPOs Phase 2·OpenAI资产证书(CPNs)7/15-17订阅·$2000万·27,700张·$722/张·7/20预售交易开放(coincu/BeInCrypto·7/15)：继Phase 1 SPCX Mirror Note($3.95亿·4月)后Gate Pre-IPOs第二轮·OpenAI Contingent Payout Notes·最低100 USDT/GUSD·无托管费·三阶段解锁(7月/8月/9月)·GT空投激励+GUSD年化收益·★直竞Bitget IPO Prime preOPAI(5/15·$725/枚)·OpenAI估值$3T+(6/8机密S-1)", src:"https://coincu.com/gate-launches-second-phase-of-pre-ipos-featuring-openai-usdt-gusd-participation/"},
       ],
       xsig:"📡 X实抓(6/1):官号已迁至 @Gate(原 @Gate_io 仅留迁移公告);仍主推 GateAI(AI 交易助手),X 上未重点推美股(靠产品页 xStocks);调性偏品牌/AI。",
       sources:[
