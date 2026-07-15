@@ -163,11 +163,12 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-07-01 → 07-15",
-  updated: "2026-07-15 16:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-07-01 → 07-16",
+  updated: "2026-07-16 06:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+    {grp:"main", date:"7/15", tag:"t-new", txt:"★ Binance bStocks第四批10只7/15 21:30 UTC上架·货架从26升至36只·精准卡位TSMC 7/16 Q2财报+AI半导体/中概全覆盖(Binance官方公告·7/15)：ARMB(Arm Holdings·AI芯片设计)·AVGOB(Broadcom·AI网络芯片)·TSMB(TSMC·台积电·7/16财报)·HOODB(Robinhood·竞品券商股首入bStocks)·BABAB(Alibaba·中概第一)·IBMB(IBM·企业AI)·MRVLB(Marvell·AI互联)·NOKB(Nokia·电信)·RKLBB(Rocket Lab·商业航天)·AAOIB(Applied Optoelectronics·光通信)·全部零Maker费至9/1 07:59 UTC·支持算法Bot；★本批三大亮点：①TSMB精准卡位TSMC 7/16 Q2财报(市场预期AI/HBM代工营收创历史新高)②HOODB(Robinhood竞品本身)首次代币化进入Binance bStocks·'竞品代币化'格局初现③BABAB/ARMB/AVGOB/MRVLB/TSMB四只AI半导体+中概ADR集中入阵·bStocks AI半导体矩阵随SKHY(7/15 +27.29%)强势持续深化；扩品时间线：6/11首批6只→6/22 10只→6/30 15只→7/7 25只→7/13 26只(SKHYB)→7/15 36只", src:"https://www.binance.com/en/support/announcement/detail/d7a82549cf41442c8654e720eee656ad"},
     {grp:"other", date:"7/15", tag:"t-new", txt:"✨ Gate Pre-IPOs Phase 2·OpenAI资产证书7/15-17订阅开启·$2000万·27,700张CPNs·$722/张·7/20预售二级交易(coincu/BeInCrypto·7/15)：Gate Pre-IPOs第二轮聚焦OpenAI·总规模约$2000万·27,700张Contingent Payout Notes(CPNs)·每张$722·最低100 USDT/GUSD·无托管费；三阶段解锁(7月+8月+9月)·7/20预市交易开放；激励：GT代币空投+GUSD持仓年化收益；★直接竞争Bitget IPO Prime preOPAI(5/15·29,082枚·$725/枚·Solana链·Republic合规发行)·Gate $722 vs Bitget $725形成直接对标·OpenAI估值已达$3T+(6/8机密S-1·IPO待定)·★Gate pre-IPO产品线：Phase 1 SPCX Mirror Note($3.95亿·4月)→Phase 2 OpenAI CPNs(7/15·$2000万)·六层RWA矩阵再添pre-IPO新阶段", src:"https://coincu.com/gate-launches-second-phase-of-pre-ipos-featuring-openai-usdt-gusd-participation/"},
     {grp:"other", date:"7/15", tag:"t-up", txt:"⚠️ CLARITY Act Polymarket通过率续跌至~24%历史新低·从7/14 ~37%再降约13pct·双重打击：①White House首席谈判官Patrick Witt宣布7/27起军事假期·副手Harry Jung接手·②参议员Warren周一(7/14)致信Thune/Schumer·要求道德条款禁止总统/副总统/议员及家属从加密产业获益(Yahoo Finance/CoinGape/CryptoTimes·7/14-15多源)：Patrick Witt为白宫数字资产委员会执行主任·被格鲁吉亚陆军国民警卫队JAG培训征召·7/27报到·最早7月底重返·Harry Jung任代理谈判负责人；Warren信件要求在CLARITY Act中加入禁止总统/副总统/高级行政官员/国会议员及家属从加密产业获益的道德条款·为8/7休会前最大新增政治阻力；★Polymarket概率链：73%(5/14)→53%(7/7)→46%(7/13草案)→37%(7/14·Trump中国警告)→~24%(7/15·Witt离职+Warren道德信·历史新低)·7/17 Wall Street听证+7/20楼层周目标维持·但关键谈判官缺席4周为最大执行风险", src:"https://coingape.com/clarity-act-odds-fall-to-new-low-patrick-witts-leave-warrens-ethics-rules-push/"},
     {grp:"other", date:"7/15", tag:"t-new", txt:"✨ SKHY ADR 7/15美股收盘$193.92(+27.29%·较7/14收$152.35)·录得上市以来最大单日涨幅·SK海力士官宣12层HBM4量产启动·配套Nvidia Vera Rubin AI平台·9月起全面扩大出货·代币化层全线跟随(美股收盘数据·HBM4量产消息加速拉升·早盘TradingKey曾报$178.66)：SK Hynix ADR(SKHY)7/15美股收盘$193.92(+27.29%)·较7/14收盘$152.35创ADR上市以来最大单日涨幅·大幅超越7/10首日最高$176.34·盘中持续上行(早盘$178.66→收盘$193.92)；驱动因素：SK Hynix官方正式宣布12层HBM4(High Bandwidth Memory 4)批量生产启动·专项配套英伟达下一代AI训练芯片平台Vera Rubin(GB300 GPU节点)·9月起全面扩大出货·为AI内存产业链最重要量产实证之一；代币化层全线跟随反弹：Binance SKHYNIXUSDT永续·Bybit SKHYNIXUSDT永续·Bitget SKHYUSDT·Gate SKHYNIX3L大涨·xStocks SKHYNIXx·Ondo $SKHYon；★三日叙事转折：7/13换票收$168→7/14大跌$152.35(-9.3%·Q3利润预警+ADR溢价质疑+首日Cboe期权压力)→7/15收盘$193.92(+27.29%·HBM4量产确认·贯穿全交易日持续强势)·高波动进入Q2财报7/22前最后冲刺阶段·HBM4量产为Nvidia Vera Rubin平台落地最强硬件验证信号", src:""},
@@ -445,8 +446,8 @@ const DATA = {
       ]
     },
     {
-      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks 26只(SKHYB·7/13) · 9周年3.23亿用户 · FPSL生息",
-      sub:"6/1 揭晓 · 真实股票 + bStocks 26只(7/13 SKHYB扩至) · 9周年(7/14·3.23亿用户) · FPSL + super app",
+      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks 36只(第四批·7/15) · 9周年3.23亿用户 · FPSL生息",
+      sub:"6/1 揭晓 · 真实股票 + bStocks 36只(7/15第四批:ARMB/AVGOB/TSMB/HOODB+6) · 9周年(7/14·3.23亿用户) · FPSL + super app",
       promo:[
         "悬念营销兑现:Hey Stock → bStocks,解谜→揭晓节奏完整,BNB 同步涨 8%",
         "Richard Teng (co-CEO) 主导 'multi-asset financial super app' 战略定位",
