@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-17 → 07-31",
-  updated: "2026-07-31 09:30 (北京时间)",
+  updated: "2026-07-31 10:45 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -172,6 +172,12 @@ const DATA = {
     {grp:"main", date:"7/31", tag:"t-new", txt:"✨ Binance bStocks 7/31 AUM约$5.99亿·正式超越Kraken xStocks(约$5.89亿)成全球代币化股票AUM第二(Ondo Finance居第一·约$9.55亿)·★赛道格局里程碑：7周从零起步的bStocks在AUM层面超越xStocks Alliance(Kraken发起)·bStocks 7/30第六批(56只)+AAPL/AMZN Q2催化+AI Fiesta活动收官(7/31 23:59 UTC)多重驱动AUM加速·★Binance Research预测年底合并AUM目标$100亿·bStocks单项目前进度约6%(bitcoinworld.co.in·incrypted.com·7/31)", src:"https://bitcoinworld.co.in/binance-bstocks-overtakes-xstocks-aum/"},
 
     {grp:"main", date:"7/31", tag:"t-up", txt:"⚡ Binance AI Fiesta bStocks交易活动今日(7/31)收官·本轮$800K奖励池·活动周期6月下旬至7/31 23:59 UTC·参与方式：交易bStocks积累分值兑换奖励·★与7/27–7/31最密集宣发周收官时间节点对齐：bStocks $5亿AUM里程碑(7/29)+第六批AAPLB/AMZNB等10只上线(7/30)+AI Fiesta活动收官(7/31)·下一拉新周期预计随bStocks新批次(第七批)启动·★AAPL AH修正：bStocks AAPLB定价基准7/30 AH最终数-5.85%/收盘$313.93(非初报-3%-4%·已修正)·AMZNB正向锚维持AH+9%/$254-258区间·Binance AI Fiesta活动页"},
+
+    {grp:"other", date:"7/31", tag:"t-up", txt:"📊 AAPL 7/31首个财报后常规交易日收盘·约$328.67·-1.41%(较7/30常规收盘$333.43)·★大幅优于7/30 AH最终-5.85%($313.93)·从AH低点反弹约+$14.74(+4.7%)·Services/China双MISS悲观叙事已在AH中消化·7/31常规日投资者重新定价：iOS 19+iPhone 17需求+Tim Cook升执行董事长(9/1)平稳交接预期·★代币化AAPL全层(Binance AAPLB·Bitget rAAPL·Gate AAPLG·Bybit AAPLUSDT·xStocks AAPLx)以$328.67为7/31常规收盘定价基准(finviz·7/31)", src:"https://finviz.com/news/123978/markets-finish-july-with-a-slight-selloff-plus-aapl-amzn-report"},
+
+    {grp:"other", date:"7/31", tag:"t-up", txt:"📊 AMZN 7/31首个财报后常规交易日·约+3.90%(约$244.35·较7/30常规收盘$235.50)·部分保留AH+9%($258)催化动能·AWS+37% YoY最强18季加速×Q3指引强劲持续正向叙事·★代币化AMZN全层(Binance AMZNB·Bitget rAMZN·Bybit AMZNUSDT·xStocks AMZNx·Ondo $AMZNon)以$244.35为7/31收盘定价基准(finviz·7/31)", src:"https://finviz.com/news/123978/markets-finish-july-with-a-slight-selloff-plus-aapl-amzn-report"},
+
+    {grp:"other", date:"7/31", tag:"t-up", txt:"⚠️ SPCX 7/31收盘区间$111.35–$118.93·约$112–115·较7/30收盘$114.91小幅承压·★8/4 SpaceX Q2 2026首次公开季报前最后交易日·共识营收约$6.72-6.90B·EPS共识-$0.26(运营亏损持续)·Motley Fool 7/31维持'财报后下跌'预判(64x P/S无容错)·★8/6内部解禁911.5M股(须≥$175触发·距$113约$62·触发概率极低)·代币化SPCX全层(Binance SPCXUSD1+SPCXB+SPCXUSDT·Bitget rSPCX·Bybit SPCXX·Gate SPCXG·xStocks SPCXx·Ondo $SPCXon)以$112–115为7/31收盘区间定价基准(finbold/Macrotrends·7/31)", src:"https://finbold.com/ai-predicts-spacex-stock-price-for-july-31-2026/"},
 
     {grp:"main", date:"7/30", tag:"t-new", txt:"✨ Bitget Wallet 'Assetback'宣布将于8/1正式上线·Bitget Wallet Card(Visa/Mastercard·50+市场)消费自动以BTC/黄金(XAUT)/代币化美股ETF作为返现(cashback)·支持NVIDIA/Tesla/Google/S&P 500等代币化股票(via xStocks·Payward/Backed Finance底层)·标准2%返现率·新用户+月达标解锁3%返现率·★产品意义：自托管钱包首次将日常消费卡返现直接映射为代币化股票/BTC持仓·将消费行为转化为资产积累入口·面向50+市场·底层使用xStocks(Payward·Backed Finance)而非Bitget自家rToken·消费卡→代币化股票入金为拉新路径创新(nation.com.pk·odaily.news·au.finance.yahoo.com·7/30)", src:"https://au.finance.yahoo.com/news/exclusive-bitget-wallet-launch-assetback-102408200.html"},
 
