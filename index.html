@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-19 → 08-02",
-  updated: "2026-08-02 04:00 (北京时间)",
+  updated: "2026-08-02 07:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -273,6 +273,7 @@ const DATA = {
     {grp:"other", date:"7/26", tag:"t-up", txt:"⚠️ FOMC 7/28-29加息概率7/26最新·CME FedWatch约46%+(较7/24 Kalshi 38%进一步上行·CoinGape/Forbes 7/24-25)·按兵不动约54%·较1周前~10%骤升+36pt·伊朗战争→Brent原油$100/桶→通胀压力持续·★★7/29 2PM ET联储决议为本周代币化美股科技层最高宏观风险节点·若加息25BPS至3.75–4.00%：高成长代币化层(rToken/bStocks/xStocks·NVDA/META/AAPL/AMZN)首当其冲·Warsh第2次主持FOMC·市场对其反应函数高度不确定·与7/29 Meta Q2/7/30 Apple+Amazon Q2财报叠加·波动放大窗口", src:"https://coingape.com/prediction-markets/fomc-meeting-next-week-will-the-fed-cut-raise-or-hold-interest-rates/"},
     {grp:"other", date:"7/26", tag:"t-up", txt:"⚡ Bybit Stock Earnings Season实物大奖细节确认·顶奖Tesla Cybertruck·iPhone 17 Pro Max·Nvidia RTX 5060 Ti·+$100万USDT奖池·7/21–8/30·加分期财报五只永续(TSLA/GOOGL/META/AAPL/AMZN·至7/30)·★代币化美股赛道首个以Tesla Cybertruck实物为顶奖的活动·强化品牌吸引力·与Binance FPSL排行榜(至8/2·388 USDC)·MEXC SNDK $500万空投并列Q3三大长线活动", src:"https://www.benzinga.com/content/60601295/bybit-presents-exclusive-1m-prize-pool-stock-themed-trading-wall-street-enters-earnings-season"},
     {grp:"other", date:"7/25", tag:"t-new", txt:"⚡ Robinhood Chain代币化RWA 7/25突破$7000万(2周内5倍增长·CoinDesk/coincu·7/25)·GME代币化股份日成交$2660万领涨·NVDA $1400万·SPCX $640万·12只代币化股票日成交>$50万·5只>$100万·较2周前$1280万(7/13·上线首周)飞速成长·赛道实证：代币化美股交易规模正在从'Meme主导'向'RWA交易层'切换·★对比：Robinhood Chain代币化$7000万 vs Binance bStocks $1亿+AUM·Bitget rToken $1.14亿AUM·Chain RWA层与CEX差距显著收窄·但Meme+稳定币仍主导链上总成交量·★GME代币化领涨可能与散户meme记忆共鸣叙事高度相关", src:"https://coincu.com/robinhood-chain-tokenized-rwa-value-70-million-two-weeks/"},
+    {grp:"other", date:"7/24", tag:"t-new", txt:"⚠️ HTX 7/24被列入EU第21轮俄罗斯制裁名单·EU/EEA/瑞士企业及个人8/23起禁止与HTX交易(非资产冻结·仅交易禁止)·★继英国OFSI制裁(5月确认)后叠加EU制裁·双重制裁同时生效·EU用户可在3个月内申请授权出金/关户·18家加密/支付平台同批列入(含EXMO/Rapira/BitPapa等)·官方理由：涉嫌协助俄罗斯绕过制裁·★8/23为HTX欧洲用户最后交易截止日·HTX TradFi运营受欧洲合规壁垒进一步强化", src:"https://www.theblock.co/amp/post/409668/eu-adds-htx-to-russia-sanctions-list-barring-transactions-starting-aug-23"},
     {grp:"other", date:"7/24", tag:"t-new", txt:"✨ Gate gStocks Phase 3·7/24新增9只代币化证券(Gate官方·7/24)·含SNXXG(Tradr 2X Long SNDK Daily ETF)·CRWVG(CoreWeave·AI云GPU)·QNTG(Quantinuum·量子计算)·TQQQG(ProShares UltraPro QQQ·纳指3x ETF)+5只·全部1:1真实持股托管·24/7·配套Phase 3 trading event 50,000 SNDKG奖池(至7/30)·货架升至约67只·★与Binance bStocks 7/22批(CRWVB/QNTB/TQQQB/SNXXB)高度重叠·Gate平行跟进Binance同周扩品节奏·CoreWeave/Quantinuum/ProShares纳指3x ETF三大AI核心叙事标的同批入Gate代币化层", src:"https://www.gate.com/announcements/article"},
     {grp:"other", date:"7/24", tag:"t-new", txt:"✨ Gate首发股票Copy Trading(7/24·赛道首创)·全球首家将Copy Trading扩展至全球股票+ETF的CEX·覆盖美股/港股/韩股共12,500+只·支持分数股·采用High-Water Mark费率结构·★行业首创：加密CEX Copy Trading首次延伸至真实股票·与Gate Stocks 24/7三市场统一账户(6/24)深度集成·配套$70,000 USDT启动奖池至8/13·带单员奖励+跟单员双轨并行(Gate官方·7/24)", src:"https://www.gate.com/stock-trading"},
     {grp:"other", date:"7/25", tag:"t-new", txt:"✅ ★纠正前次看板(08:00 BJ)·Starship Flight 13于7/24 22:45 UTC(北京7/25 06:45)成功发射·前次写'第三次中止(Bertha)'系错误——实际Bertha延迟后22:45 UTC窗口如期开放·成功升空·①Ship S40：成功部署20颗Starlink V3卫星(V3首批正式入轨)·印度洋软溅落✓·②Booster B20：Gulf of Mexico受控离岸溅落·着陆燃烧未全点13台引擎·速度'略高'·受控但不完美·★SPCX市场反应：7/24收盘$118.24→7/25早盘$114.25(-$4/-3.4%)·'buy rumor sell news'+Booster不完美·前次'4th attempt 7/26-28'叙事作废·代币化SPCX全层(Binance SPCXUSD1+SPCXB·Bitget rSPCX·Bybit SPCXX·Gate SPCXG·xStocks SPCXx·Ondo $SPCXon)以$114.25为7/25早盘基准·★下一节点：①7/27 CME SPCXF单股期货首日 ②8/4 SpaceX首次公开季报 ③8/6首批内部解禁(须≥$175·距$114约$61)", src:"https://www.space.com/news/live/spacex-starship-flight-13-launch-updates-july-24-2026"},
@@ -656,7 +657,7 @@ const DATA = {
       ]
     },
     {
-      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"watch", statusTxt:"⚠ OFSI 制裁 + FixedFloat 冻结 · TradFi H1 $15亿(129只) · 制裁悖论",
+      nm:"HTX", color:"#1a4cff", ink:"#fff", status:"watch", statusTxt:"⚠ 英国OFSI制裁(5月) + EU第21轮制裁(7/24·8/23生效) · TradFi H1 $15亿(129只) · 双重制裁悖论",
       sub:"TradFi Zone 美股期货 · ⚠ OFSI 直接制裁(6/1 确认) · FixedFloat 6/8 冻结",
       promo:[
         "'打破时间壁垒,把华尔街搬进币圈' 叙事",
@@ -675,7 +676,8 @@ const DATA = {
         {t:"★ INTW/XBI USDT-M永续上线·TradFi Trading Carnival(7/15–7/22·TradersUnion)：INTW(GraniteShares 2x Long INTC日杠杆ETF)+XBI(SPDR生物科技ETF)·最高10x杠杆·$20,000 USDT奖池·累计≥1,000 USDT成交量参与排名·制裁压力下继续扩品TradFi货架", src:"https://tradersunion.com/news/brokers-news/show/2703390-htx-unveils-new-futures-trading/"},
         {t:"★ H1 2026半年报(7/16 GlobeNewswire)：TradFi板块H1累计成交量突破$15亿·覆盖129只资产(AI/黄金/大宗商品/美股/ETF/航天/新能源)——制裁压力下TradFi规模化初步验证；5月单月峰值$10亿·H1月均~$2.5亿(制裁后各月显著低于5月峰值)·货架从75只(5月)升至129只"},
         {t:"★ 首次TradFi'Trade to Earn'活动结案(7/29·GlobeNewswire)：活动机制'24/7挖矿'+最高110%手续费返还·总成交额63.37M USDT·最高奖励$5,206 USDT·总奖励超$23,000 USDT·1.8B $HTX手续费节省·OFSI制裁环境下首次完整TradFi专项活动全生命周期", src:"https://www.manilatimes.net/2026/07/29/tmt-newswire/globenewswire/htxs-first-tradfi-trade-to-earn-campaign-unleashes-new-trading-momentum-rewards-exceed-23000-fee-savings-reach-18-billion-htx/2393759"},
-        {t:"★ 第二期TradFi'Trade to Earn'正在筹备(7/29结案公告预告)·将继续采用负费率交易(negative-fee trading)+24/7奖励机制·具体时间/奖池待官方公告", src:"https://www.manilatimes.net/2026/07/29/tmt-newswire/globenewswire/htxs-first-tradfi-trade-to-earn-campaign-unleashes-new-trading-momentum-rewards-exceed-23000-fee-savings-reach-18-billion-htx/2393759"}
+        {t:"★ 第二期TradFi'Trade to Earn'正在筹备(7/29结案公告预告)·将继续采用负费率交易(negative-fee trading)+24/7奖励机制·具体时间/奖池待官方公告", src:"https://www.manilatimes.net/2026/07/29/tmt-newswire/globenewswire/htxs-first-tradfi-trade-to-earn-campaign-unleashes-new-trading-momentum-rewards-exceed-23000-fee-savings-reach-18-billion-htx/2393759"},
+        {t:"⚠️ EU第21轮俄罗斯制裁7/24列入·8/23交易禁止生效：EU/EEA/瑞士企业及个人8/23起禁止与HTX交易(非资产冻结·仅交易禁止)·EU用户可3个月内申请授权出金/关户·HTX与18家加密/支付平台同批列入(含EXMO/Rapira/BitPapa等)·★继英国OFSI制裁(5月)后双重制裁叠加·8/23为欧洲用户最后交易截止日·HTX TradFi欧洲合规壁垒进一步强化", src:"https://www.theblock.co/amp/post/409668/eu-adds-htx-to-russia-sanctions-list-barring-transactions-starting-aug-23"}
       ],
       xsig:"📡 X实抓(6/1 12:12):上线 'SPCX Futures'(SpaceX 期货)+ 瓜分 $20,000、新人送 $3 拉新——pre-IPO 名字做期货标的;仍 meme/零售调性。",
       sources:[
@@ -686,7 +688,8 @@ const DATA = {
         {label:"Crystal·OFSI直接制裁确认", url:"https://crystalintelligence.com/news/uk-sanctions-htx-what-your-screening-list-needs-today/"},
         {label:"Steptoe·制裁周报6/1", url:"https://www.steptoe.com/en/news-publications/international-compliance-blog/weekly-sanctions-update-june-1-2026.html"},
         {label:"crypto.news·FixedFloat 冻结(6/8)", url:"https://crypto.news/fixedfloat-suspends-huobi-funds-but-did-uk-sanctions-go-too-far/"},
-        {label:"CryptoTimes·ZachXBT批评(6/8)", url:"https://www.cryptotimes.io/2026/06/08/zachxbt-slams-uk-htx-sanctions-as-fixedfloat-suspends-huobi-funds/"}
+        {label:"CryptoTimes·ZachXBT批评(6/8)", url:"https://www.cryptotimes.io/2026/06/08/zachxbt-slams-uk-htx-sanctions-as-fixedfloat-suspends-huobi-funds/"},
+        {label:"TheBlock·EU制裁(7/24)", url:"https://www.theblock.co/amp/post/409668/eu-adds-htx-to-russia-sanctions-list-barring-transactions-starting-aug-23"}
       ]
     },
     {
