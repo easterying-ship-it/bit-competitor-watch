@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-21 → 08-04",
-  updated: "2026-08-04 01:00 (北京时间)",
+  updated: "2026-08-04 02:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -176,6 +176,7 @@ const DATA = {
     {grp:"other", date:"8/3", tag:"t-up", txt:"⚡ KuCoin Futures 8/3 07:00 UTC上线INTWUSDT·GraniteShares 2x Long INTC Daily ETF永续(USDT-M)·延续7月系统性扩品节奏·Gate 7/23已先行上线同标的INTWG代币化现货版·KuCoin在永续期货层跟进·(KuCoin官方公告·7/31发布·8/3 07:00 UTC上线)", src:"https://www.kucoin.com/announcement"},
     {grp:"other", date:"8/3", tag:"t-up", txt:"⚠️ CLARITY Act 8/3确认缺席参院周一楼层日程·★Senate Democratic Caucus 8/3已公布日程：CLARITY Act不在今日议程·参院改投Continuing Resolution(Cal.#320 H.R.6500)·★Galaxy Research 8/3将2026年生效概率从50%下调至30%——称法案'需要最后一搏(last-ditch effort)'(The Block·8/3)·★72小时倒计时规则：若需在8/7(周五)前cloture投票→须最迟周三(8/5)提交cloture动议·即使通过cloture(60票)仍需30小时辩论→8/10(周二)暑期休会前实质上已无可行时间窗口·★Polymarket约27%(历史最低·部分聚合商读数24-32%·较8/2约28%略走低)·★推进障碍不变：Thune确认距60票filibuster门槛仍差约10票·★结论升级：2026立法窗口关闭概率进一步提升→代币化美股CLARITY Title II监管框架最早延至2027年·5个工作日余量(8/3-8/7·CryptoTimes·CryptoSlate·Bitcoin.com·crypto.news·The Block·8/3)", src:"https://www.cryptotimes.io/2026/08/03/clarity-act-absent-from-senate-schedule-as-72-hour-deadline-looms/"},
     {grp:"other", date:"8/3", tag:"t-up", txt:"⚡ SNDK FQ4 2026共识上修(8/3最新·距8/5 After Close财报2日)·★EPS共识更新至$34.24–$34.67/股(较8/1版$33.28上修约+3-5%·Moomoo/Yahoo Finance 8/3最新)·营收共识$8.39B(+363% YoY·重组后首季)·分析师最新：Evercore Amit Daryanani $3,100(最高·Buy·8/1确认)·BofA Wamsi Mohan $2,500(Buy)·Goldman James Schneider $2,200(Buy)·TipRanks共识Strong Buy·14 Buy/3 Hold·★Options隐含约21%单日波幅(较早期~25%收窄)·8/13 Investor Day为8/5财报后下一叙事节点·代币化SNDK全层(Binance SNXXB 2x ETF·Bitget rSNDK/rSNXX·MEXC SNDKUSDT·Gate SNXXG·xStocks SNDKx·Ondo $SNDKon)以更新后EPS共识$34.24–$34.67进入8/5财报前最终2日定价窗口·(Yahoo Finance·Moomoo·Barchart·8/3)"},
+    {grp:"other", date:"8/3", tag:"t-new", txt:"✨ MEXC '财报季RealStocks Rally' 8/3正式启动·总奖池$1,000,000·0手续费·运行至8/24 10:00 UTC·★三层奖励：①欢迎奖励$10万USDT(前2,000名入金$100+用户·每人另得$10美股奖励) ②转移奖励30天Nasdaq实时行情Pass ③首交易奖励$50万美股奖励池·★主题：借Q2财报季情绪放大美股交易热情·与MEXC RealStocks(7,000+只直购·0手续费)·Ondo代币化现货(38+只)·股票期货(210+品种)三轨并行·★对比Binance 8月活动矩阵(bStocks零Maker费至8/31+Dual Investment 5,888 USDC排行榜+Affiliate 500K奖池)·MEXC以$100万大奖池切入财报季流量·(GlobeNewswire·8/3)", src:"https://www.globenewswire.com/news-release/2026/08/03/3337295/0/en/mexc-launches-earnings-season-realstocks-rally-with-1-000-000-prize-pool.html"},
     {grp:"other", date:"7/30", tag:"t-up", txt:"⚡ Bernstein上调HOOD目标价至$160(Outperform·7/30·Q2财报后)·较盘后~$89.84+78%上行空间·★核心驱动：①Q2预测市场收入$156M(+10x YoY)·Rothera为美国第三大预测市场 ②Bernstein预测2028年预测市场收入$1.7B(64% CAGR) ③代币化股票Stock Tokens覆盖120+国家 ④Bitstamp机构加密布局完成·★行业含义：Binance WOTD Wave10'Prediction Markets'(8/3→)叙事与HOOD Q2验证的预测市场增长精准呼应·预测市场头部：Robinhood/Binance.US DCM申请(7/29)/Kalshi/Polymarket·(Bernstein Research·7/30)"},
 
     {grp:"main", date:"8/1", tag:"t-new", txt:"✨ Bitget Wallet 'Assetback' 8/1正式上线确认·消费卡(Visa/Mastercard)自动返现至BTC/黄金(XAUT)/代币化美股ETF·覆盖50+市场·标准2%返现率·新用户+月达标解锁3%·底层xStocks(Payward·Backed Finance)·支持NVIDIA/Tesla/Google/S&P 500等代币化股票·★产品意义：自托管钱包首次将日常消费卡返现直接映射为代币化股票/BTC持仓·消费行为→资产积累入口·已由多源确认上线(blockchainreporter.net·crypto.news·nation.com.pk·odaily.news·au.finance.yahoo.com·8/1)", src:"https://au.finance.yahoo.com/news/exclusive-bitget-wallet-launch-assetback-102408200.html"},
@@ -809,7 +810,7 @@ const DATA = {
       ]
     },
     {
-      nm:"MEXC", tier:2, color:"#1e4dff", ink:"#fff", status:"live", statusTxt:"6/1 新入场 · 7/20 $500万SNDK空投0费期货活动(赛道最大单轮奖池) · Ondo代币化38只(月内七批·赛道最多) · Q2 SPCX期货$71亿USDT · 两轮PRE Launchpad $1.73亿",
+      nm:"MEXC", tier:2, color:"#1e4dff", ink:"#fff", status:"live", statusTxt:"6/1 新入场 · ★ 8/3财报季RealStocks Rally$100万奖池(至8/24·0费) · Ondo代币化38只(月内七批) · Q2 SPCX期货$71亿USDT · 两轮PRE Launchpad $1.73亿",
       sub:"6/1 · RealStocks 真实美股",
       promo:[
         "与 Binance 同日冲赛道,标语 'Crypto Meets Wall Street'",
@@ -819,6 +820,7 @@ const DATA = {
         "CoinGecko 2026永续报告全球第一(6/4)：Jan/25–Apr/26累计上线 879只新永续合约(约55只/月)，OI市场份额全球第四(11.4%)，现货成交量全球第二(8.2%市占率)——新合约上线速度最快的主要 CEX，扩张战略与 RealStocks 美股入场形成多品类覆盖共振"
       ],
       activities:[
+        {t:"★ 财报季RealStocks Rally 8/3启动·$1,000,000总奖池·0手续费·至8/24 10:00 UTC·三层奖励：欢迎$10万(前2,000名)+首交易$50万+30天Nasdaq行情Pass·Q2财报季主题·覆盖RealStocks 7,000+只真实美股", src:"https://www.globenewswire.com/news-release/2026/08/03/3337295/0/en/mexc-launches-earnings-season-realstocks-rally-with-1-000-000-prize-pool.html"},
         {t:"★ Ondo代币化股票第七批4只上线(7/24·13:30 UTC提现开放·Chainwire)：NETON(Cloudflare·边缘计算/企业网络安全)·MXLON(MaxLinear·高性能模拟半导体·AI互联)·GFSON(GlobalFoundries·全球前三晶圆代工·非ARM工艺)·AGON(First Majestic Silver·贵金属矿业)·现货7/23 13:30 UTC上线·月内七批·Ondo货架累计约38只·从AI算力供应链延伸至晶圆代工+贵金属矿业多元化·赛道单CEX Ondo品种最多", src:"https://chainwire.org/2026/07/24/mexc-expands-ondo-tokenized-stock-offerings-with-ai-infrastructure-and-mining-assets/"},
         {t:"★ Stock Futures新增5只(7/25·预定·MEXC公告)：AAPL(Apple)·AMZN(Amazon)·GOOGL(Alphabet)·META·MCD(McDonald's)·USDT-M永续·0手续费·继7/23批次后再扩主力科技+消费蓝筹", src:"https://www.mexc.com/cs-CZ/support/articles/17827791527060"},
         {t:"★ Stock Futures新增4只(7/23·MEXC公告)：COIN(Coinbase)·TSLA(Tesla)·HOOD(Robinhood)·NVDA(NVIDIA)·USDT-M永续·0手续费·继7/15 CLSK/WULF/FAST后再扩加密+AI+金融科技股", src:""},
