@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-07-20 → 08-03",
-  updated: "2026-08-03 23:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-07-21 → 08-04",
+  updated: "2026-08-04 01:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -204,7 +204,6 @@ const DATA = {
 
     {grp:"main", date:"7/29", tag:"t-new", txt:"✨ Binance.US宣布计划申请CFTC DCM(指定合约市场)牌照进军预测市场·★CEO Stephen Gregory在Rare Evo大会(拉斯维加斯·7/29–8/初)台上确认将于2026年8月提交CFTC DCM申请·DCM牌照将允许Binance.US面向美国零售客户提供期货/期权/事件预测合约·直接竞争Kalshi/Polymarket US/Gemini(已获DCM)·★叙事串联：与Binance全球WOTD Wave10'Prediction Markets'(8/3启动)精准联动·Binance品牌从Wallet预测市场API(6/8)→全球WOTD叙事→Binance.US DCM申请三层布局系统性展开·★Binance.US此前因2024监管和解大幅收缩·DCM申请为品牌美国复苏战略核心举措·(Bloomberg 7/29·CoinTelegraph·CryptoTimes·BeInCrypto)", src:"https://www.bloomberg.com/news/articles/2026-07-29/binance-us-wants-to-join-prediction-markets-race-with-cftc-stamp"},
     {grp:"main", date:"7/末", tag:"t-new", txt:"✨ Bitget rToken非交易时段扩至61对·新增22只含rMRNA(Moderna)/rAMAT(Applied Materials)/rORCL(Oracle)等·美股开市外及周末基于周五收盘+做市商报价+广义市场预期生成参考价·限价单支持±20%价格保护·★截至近期Bitget rToken货架115+只·61对7×24非停盘时段覆盖为赛道当前最大非交易时段代币化组合·对比Binance bStocks 56只+7×24+0费率·Bybit xStocks 7×24·(Bitget官方公告·近期)", src:"https://www.bitget.com/asia/news/detail/12560605513799"},
-    {grp:"main", date:"7/18", tag:"t-up", txt:"⚡ Binance ONDO代币化证券零手续费促销延至8/18·原7/18到期延期至2026-08-18 12:00 UTC(Binance官方Telegram确认)·此即早前'AI Fiesta 8/18延期'信源的实际来源：该日期属ONDO零手续费+零Gas费促销，非bStocks AI Fiesta竞赛(AI Fiesta已于7/31 23:59 UTC如期收官·无延期)·ONDO零手续费持续至8/18 UTC", src:"https://t.me/s/binance_announcements"},
 
     {grp:"main", date:"7/31", tag:"t-new", txt:"✨ Binance bStocks 7/31 AUM约$5.99亿·正式超越Kraken xStocks(约$5.89亿)成全球代币化股票AUM第二(Ondo Finance居第一·约$9.55亿)·★赛道格局里程碑：7周从零起步的bStocks在AUM层面超越xStocks Alliance(Kraken发起)·bStocks 7/30第六批(56只)+AAPL/AMZN Q2催化+AI Fiesta活动收官(7/31 23:59 UTC)多重驱动AUM加速·★Binance Research预测年底合并AUM目标$100亿·bStocks单项目前进度约6%(bitcoinworld.co.in·incrypted.com·7/31)", src:"https://bitcoinworld.co.in/binance-bstocks-overtakes-xstocks-aum/"},
 
@@ -479,6 +478,7 @@ const DATA = {
       ],
       activities:[
         {t:"★ FPSL HODL Leaderboard(7/22·截止8/2·Binance官方公告)：持仓bStocks/美股/ETF用户开启FPSL出借→按借出量高低排行→五梯度奖励最高388 USDC(Tier1 10+→3U/Tier2 100+→33U/Tier3 500+→88U/Tier4 2000+→188U/Tier5 5000+→388U)·FPSL 6/10全量上线6周后首次专项激励活动·借股量竞争=零售用户感知FPSL价值的最快路径", src:"https://www.binance.com/en/support/announcement/detail/20e78bad531f4696a6e09536dddfea20"},
+        {t:"ONDO代币化证券零手续费+零Gas费·延期至2026-08-18 12:00 UTC(原7/18到期·Binance官方Telegram 7/18确认延期)", src:"https://t.me/s/binance_announcements"},
         {t:"★ bStocks Affiliate 3x Volume Boost(7/16–10/15·Binance官方)：加盟商引流的bStocks成交额×3倍计入季度VIP评级成交量·加速佣金层级升级·与bStocks AI Fiesta $80万奖池+FPSL排行榜三层促活并行", src:"https://www.binance.com/en/square/post/345224150041361"},
         {t:"★ bStocks第三轮扩品10只新上线·bStocks总量扩至25只(7/7·bloomingbit/Yahoo Finance确认)：GOOGLB(Alphabet)/QCOMB(Qualcomm)/COINB(Coinbase)/SPYB(SPDR S&P500 ETF)/WDCB(Western Digital)/GLWB(Corning)/NBISB(Nebius·AI云GPU)/SOXLB(Direxion 3x半导体ETF)/DRAMB(Roundhill Memory ETF)/CBRSB(Cerebras·AI推理芯片)全部上线Spot并同日纳入Cross/Portfolio Margin抵押品(VIP3+)；bStocks从15只扩至25只；4天内第二轮扩品(上轮7/4 15只入保证金)；新亮点：COINB首次代币化入bStocks·Nebius/Cerebras AI算力层新增·SPYB宽基ETF扩张；扩品时间线：6/11首批6只→6/22 10只→6/30 15只→7/7 25只", src:"https://en.bloomingbit.io/feed/news/115760"},
         {t:"逾 8,000 美股/ETF 真实交易(6/1 上线,面向非美用户;官方 PR 称 '7,000+',多家媒体报道为 8,000):零佣金,$5 起,USDC/USDT/BNB/USD1/$U 多币种入金;Nest Trading(阿布扎比持牌)做 broker dealer,Alpaca Securities 持仓/清算/分红；★ 上线 8 天(6/9)真实 AUM 突破 $4亿(Bitcoin.com/CryptoTimes 多源确认)，与 Gate pre-IPO SPCX Mirror Note $3.95亿单品融资额并驾——赛道最快 AUM 积累速度", src:"https://www.cryptotimes.io/2026/06/09/binance-stocks-crosses-400m-aum-1-week-after-launch/"},
