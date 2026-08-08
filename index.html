@@ -164,10 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-25 → 08-08",
-  updated: "2026-08-08 04:00 (北京时间)",
+  updated: "2026-08-08 15:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+
+    {grp:"main", date:"8/8", tag:"t-up", txt:"⚠️ Binance bStocks 8/8约3小时股票交易临时暂停·合作券商(Alpaca)计划性系统升级维护窗口·暂停期间用户无法访问股票交易界面·加密及其他服务正常运行·★同期本周另有数只bStocks Spot交易对列入下线计划(具体品种待核实)·★运营提示：bStocks产品稳定性依托第三方持牌券商基础设施(Alpaca Securities·FINRA/SIPC)·计划性维护为正常SLA行为·与8/8 AAPLB/IBMB 1:1转换暂停(股息快照准备)叠加·8/8多项bStocks服务调整集中节点·(Binance官方公告·PrimeXBT·8/7-8/8)", src:"https://primexbt.com/news/binance-to-pause-us-stock-trading-and-delist-four-spot-pairs-this-week/"},
 
     {grp:"other", date:"8/8", tag:"t-new", txt:"✨ MEXC 0808 Stock Season主活动8/8 08:08 UTC正式开幕·$500,000总奖池·运行至8/28 23:59 UTC·覆盖Stock Futures(210+品种)+Tokenized Stocks(200+只)+RealStocks(7,000+只真实美股/ETF)全线0手续费·活动机制：Opportunity Map 8项任务积累抽奖券→Dream Fund最高$3,888+$88股票期货仓位+APR加速最高888%·★与同期财报季RealStocks Rally($100万·至8/24)双奖池并行·MEXC首次以'年度品牌日'(0808)形式固化美股交易节日叙事·★精准卡位Q2财报尾声(SNDK 8/13 Investor Day·NVDA 8/26确认)·中型CEX宣发密度最高节点·(GlobeNewswire·The Block·8/5宣布·8/8启动)", src:"https://www.theblock.co/amp/post/410850/mexc-0808-debuts-as-an-annual-brand-event-with-stock-season-and-a-500000-prize-pool"},
 
@@ -188,6 +190,8 @@ const DATA = {
     {grp:"other", date:"8/7", tag:"t-up", txt:"⚡ SPCX 8/7解禁后首日反弹·盘中约$114.92(日内区间$105.11–$115.75)·较8/6收盘$108.27约+6.2%·CNN:'SpaceX rises 6% after 900M shares unlocked'·解禁日(8/6)实际抛压被消化·空头覆盖主导8/7反弹·★代币化SPCX全层(Binance SPCXUSD1+SPCXB+SPCXUSDT·Bitget rSPCX·Bybit SPCXX·Gate SPCXG·xStocks SPCXx·Ondo $SPCXon)以$114.92为8/7盘中最新参考价·(CNN Business·Yahoo Finance·8/6-7)", src:"https://finance.yahoo.com/markets/stocks/article/spacex-lockup-expires-today-with-stock-bucking-higher-100000039.html"},
 
     {grp:"main", date:"8/6", tag:"t-new", txt:"⚡ Bitget × 不丹Gelephu Mindfulness City合规协议8/6签署·与Gelephu Mindfulness City Authority(GMCA)签署合作协议·探索申请Gelephu金融服务办公室(GFSO)金融服务牌照+设立本地法律实体+联合监管生态建设·★Bitget首个不丹监管布局·Gelephu Mindfulness City为不丹皇家政府推动的国际金融/科技特区·与Bitget NZ FSPR注册(7/23·大洋洲)·Bitget Mexico SAT/UIF(Q2)·UNICEF联盟扩至孟加拉/印尼/玻利维亚(7/28)并列新兴市场合规布局系统化推进·(GlobeNewswire·Manila Times·8/6)", src:"https://www.manilatimes.net/2026/08/06/tmt-newswire/globenewswire/bitget-signs-cooperation-agreement-with-gelephu-mindfulness-city-authority-to-explore-licensed-digital-asset-presence-in-bhutan/2400159"},
+
+    {grp:"main", date:"8/6", tag:"t-new", txt:"✨ Binance NOKB(Nokia bStocks)~8/6完成股息分发·Nokia 7/28快照日持有人每股获$0.02股息·以追加NOKB代币形式直接入账Spot钱包·★NOKB于7/15第四批上线·★为bStocks迄今首只完成实际股息分发记录的标的(AAPLB/IBMB快照8/10·8/7公告)·代币化层'价格+股息'完整股东权益机制首次实证完成·(blockchain.news flashnews·约8/6)", src:"https://blockchain.news/flashnews/binance-nokia-bstock-dividends-distributed"},
 
     {grp:"main", date:"8/7", tag:"t-new", txt:"✨ Binance bStocks 8/7首次股息公告·AAPLB(苹果代币化)+IBMB(IBM代币化)持有人将首次获代币化股息·★快照：8/10 09:00 KST(=8/10 00:00 UTC·08:00 北京)·bStocks 1:1现货转换服务8/8起暂停至快照后恢复·股息扣税后自动以追加代币化股票形式再投资(非现金)·★里程碑含义：bStocks首次实现代币化股票股息分发·从'价格跟踪代币'正式进化为'可收息权益代币'·完整股东经济权利(价格+股息)首次在bStocks层兑现·★与Bitget rToken 7/1 USDT股息(20只首发)·Coinbase UK真实持股(8/6·完整股东权利)并列三大平台代币化股息竞争格局·8/8前持有AAPLB/IBMB方可参与快照·现货交易不受影响·(bloomingbit·~8/7)", src:"https://en.bloomingbit.io/feed/news/117803"},
 
