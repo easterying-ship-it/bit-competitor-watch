@@ -164,10 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-27 → 08-09",
-  updated: "2026-08-09 09:18 (北京时间)",
+  updated: "2026-08-09 11:18 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+
+    {grp:"other", date:"8/9", tag:"t-new", txt:"✨ Gate Pre-IPOs Phase 3正式上线·标的：Moonshot AI(KIMI·中国头部大模型公司·Kimi K3系列)·★订阅窗口：8/11 07:00–8/13 07:00 UTC·每份$105–$115/股·隐含估值约$500亿·接受USDT+GUSD·最低单笔10,000 USDT/GUSD·5%承销服务费+超额收益20%分成(Carry)·★KIMI资产证书8/17 07:00 UTC分发·100%份额即刻解锁·预计约1个月后进入专属市场交易·★背景：Moonshot AI最新融资$35亿·估值$34.9亿→Pre-IPO期冲$500亿估值·Kimi K3模型引爆市场·推进香港IPO·★Gate Pre-IPOs三阶段序列：Phase1 SPCX Mirror Note($3.95亿·4月)→Phase2 OpenAI(7/15·$2,000万·639%超额认购)→Phase3 Moonshot AI KIMI(8/11·$500亿估值)·Gate Pre-IPOs系列规模+覆盖面逐轮升级·与Binance bStocks/Bitget rToken面向流通证券的路线差异化——Gate独家押注一级Pre-IPO赛道流量·★MEXC同期推出KIMI IPO购买指南·显示KIMI为多平台竞争Pre-IPO热点(BeinCrypto·8/9)", src:"https://beincrypto.com/gate-pre-ipos-phase-3-launches-moonshot-ai-kimi/"},
 
     {grp:"main", date:"8/8", tag:"t-up", txt:"⚠️ Binance bStocks 8/8约3小时股票交易临时暂停·合作券商(Alpaca)计划性系统升级维护窗口·暂停期间用户无法访问股票交易界面·加密及其他服务正常运行·★PrimeXBT标题所报'本周下线4只Spot对'经核实为常规加密货币对(QNT/BTC·RPL/USDC·SIGN/BNB·SKL/USDC)·已于8/7 03:00 UTC完成下线·非bStocks品种·bStocks货架无额外下线公告·★运营提示：bStocks产品稳定性依托第三方持牌券商基础设施(Alpaca Securities·FINRA/SIPC)·计划性维护为正常SLA行为·与8/8 AAPLB/IBMB 1:1转换暂停(股息快照准备)叠加·8/8多项bStocks服务调整集中节点·(Binance官方公告·PrimeXBT·8/7-8/8)", src:"https://primexbt.com/news/binance-to-pause-us-stock-trading-and-delist-four-spot-pairs-this-week/"},
 
@@ -668,6 +670,7 @@ const DATA = {
         {t:"FOMC Event Contracts(~7/27-7/29)：BTC/ETH短线方向性事件合约·无杠杆·无强平·无追加保证金·5min/15min/1h/4h多窗口·精准绑定联储7/29决议(最终按兵不动·3.50–3.75%)·门槛极低·适合纯预测市场用户(mpost·~7/27)", src:"https://mpost.io/gate-update-spacex-hits-launchpool-fomc-contracts-go-live-and-17-new-cfds-join-a-packed-product-week/"},
         {t:"17只新CFD上线(~7/27-8/1)·扩充Gate CFD货架·具体标的待官方公告核实(mpost·~7/27)", src:"https://mpost.io/gate-update-spacex-hits-launchpool-fomc-contracts-go-live-and-17-new-cfds-join-a-packed-product-week/"},
         {t:"★ 港股+美股TradFi永续8/3大扩张·11只新USDT-M永续(mpost·8/3)：SMIC(00981.HK·中国最大晶圆代工)·BYD(01211.HK·电动车/电池)·CATL(03750.HK·宁德时代·全球动力电池#1)·Zijin Mining(02899.HK·紫金矿业)·HHGRACE(01347.HK·华虹半导体)·YOFC(06869.HK·长飞光纤)·Zhongji Innolight(03308.HK·中际旭创·光模块)·GigaDevice-HK(03986.HK·兆易创新HK)·PYPL(PayPal)·JMKE(Jersey Mike's)·全部1-20x杠杆·★首次将BYD/CATL/SMIC/宁德等中国新能源+半导体核心港股资产纳入USDT永续层·与Binance 8/3 GIGADEVUSDT(A股·25x)·Bybit 8/1 PYPLUSDT(20x)同周扩品呼应·Gate港股衍生品层系统性完善", src:"https://mpost.io/gate-update-record-inflows-and-full-reserves-as-gstocks-futures-contracts-and-polymarket-expand-the-ecosystem/"},
+        {t:"★ Pre-IPOs Phase 3·Moonshot AI(KIMI)资产证书(8/11–13订阅)：$105–$115/股·隐含估值约$500亿·USDT/GUSD双币·最低10,000 USDT·5%承销费+20%超额分成·8/17 07:00 UTC发证书·预计1个月后二级交易开放·Moonshot AI为中国头部大模型公司(Kimi系列)·推进香港IPO·Phase1 SPCX($3.95亿)→Phase2 OpenAI(639%超购)→Phase3 KIMI($500亿估值)三阶段升级", src:"https://beincrypto.com/gate-pre-ipos-phase-3-launches-moonshot-ai-kimi/"},
       ],
       xsig:"📡 X实抓(6/1):官号已迁至 @Gate(原 @Gate_io 仅留迁移公告);仍主推 GateAI(AI 交易助手),X 上未重点推美股(靠产品页 xStocks);调性偏品牌/AI。",
       sources:[
