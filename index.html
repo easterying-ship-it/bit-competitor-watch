@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-28 → 08-11",
-  updated: "2026-08-11 18:00 (北京时间)",
+  updated: "2026-08-11 22:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -172,6 +172,10 @@ const DATA = {
     {grp:"other", date:"8/11", tag:"t-new", txt:"⚡ SEC 8/11深夜公告·8/14正式提案'Regulation Crypto'开放公众意见·★SEC主席Atkins 8/11(周一)深夜发布紧急公告·设定8/14(本周五)三委员委员会(共和党全员)正式投票提案'Regulation Crypto'并开放公众意见征集·★公告'短通知期'(周一深夜→周五)被业界解读为CLARITY Act 9/15程序投票不确定背景下Atkins加速行政备案的信号·★Regulation Crypto核心提案内容：①加密投资合约临时注册豁免 ②限额募资安全港 ③发行方减少项目控制权的安全港·提案开放公众意见后进入正式规则制定程序·★代币化证券'创新豁免'独立于此次Regulation Crypto主提案·作为Atkins另一标志性举措平行推进·★双轨监管路径正式确立：⑴立法轨(CLARITY Act·9/15程序投票·不确定·Polymarket~15-20%) ⑵行政规则轨(SEC Regulation Crypto·8/14提案→公众意见→最终规则)·8/14提案为行政规则轨里程碑节点·即使CLARITY失败规则轨可独立为赛道交付监管确定性·★赛道含义：Binance bStocks/Bitget rToken/Kraken xStocks等平台以'监管沙盒'方式运营的代币化美股产品或受益于最终Regulation Crypto正式规则框架·(CoinDesk·8/11)", src:"https://www.coindesk.com/policy/2026/08/11/u-s-sec-sets-meeting-to-propose-reg-crypto-to-support-certain-digital-assets-offerings"},
 
     {grp:"main", date:"8/11", tag:"t-up", txt:"📊 Binance bStocks 8/10-11市场格局数据·★★62%的bStocks交易量发生于美股传统市场时段外（after-hours/盘前/周末·7月数据·24/7交易核心价值主张的实证·blockchain.news flashnews ~8/11）·★bStocks捕获7月代币化股票链上DEX成交量85%+份额（全链口径·CoinRepublic 8/10）·★41%的bStocks用户此前从未在Binance平台交易过任何资产（bStocks独立获客渠道确立·CryptoBriefing ~8/10-11）·★BNB Chain代币化资产7月创历史新高$190亿总TVL（稳定币$148亿·代币化基金$36亿·代币化股票$6.204亿·大宗商品$0.825亿·tronweekly/rwatimes ~8/10）·(blockchain.news·CoinRepublic·CryptoBriefing·tronweekly·~8/10-11)"},
+
+    {grp:"other", date:"8/11", tag:"t-new", txt:"✨ KuCoin Alpha 8/11正式集成Ondo代币化股票·用户可在KuCoin主应用(Alpha)内直接访问Ondo代币化股票及ETF·无需切换至Web3 Wallet或链上应用·初始选择覆盖大盘ETF及科技/半导体/数字金融头部公司·★与此前KuCoin Web3 Wallet×Ondo集成形成'交易所主站(Alpha)+自托管(Web3 Wallet)'双轨分发体系·KuCoin代币化股票生态从'链上工具'升级为'主站交易所一体化'·与MEXC×Ondo(27批累计)·Gate gStocks·Binance bStocks并列多平台Ondo代币化分发网络持续扩张·(PRNewswire·Manila Times·8/11)", src:"https://www.manilatimes.net/2026/08/11/tmt-newswire/pr-newswire/kucoin-strengthens-its-rwa-ecosystem-with-ondo-tokenized-stocks-on-kucoin-alpha/2402621"},
+
+    {grp:"other", date:"8/11", tag:"t-new", txt:"✨ Coinbase 8/11面向英国专业投资者推出衍生品·170+合约覆盖加密/大宗商品/股票/外汇四类·永续最高50x杠杆(24/7)·定期期货最高20x(固定到期·资金费用锁定入场)·期权仅限加密标的(单腿/多腿策略)·★继8/6 FCA持牌下向英国零售用户推出~4,000只真实美股(零佣金)后·Coinbase 8/11向英国专业投资者层扩展衍生品·MiFID投资服务授权(7月获批)全面启动·★受众为MiFID专业认证客户(非零售大众)·Coinbase'Everything Exchange'英国战略完整落地：真实股票(零售)+衍生品(专业投资者)双层·与Coinbase澳大利亚AFSL永续(8/6)·Coinbase Derivatives US500(7/31)并列Coinbase全球多持牌衍生品网络·(The Block·CryptoTimes·8/11)", src:"https://www.cryptotimes.io/2026/08/11/coinbase-brings-170-derivatives-contracts-to-uk-professional-investors/"},
 
     {grp:"main", date:"8/10", tag:"t-new", txt:"✅ Binance AAPLB $0.27/股股息已确认分发·苹果8/10 09:00 KST快照完成后·Binance向Spot钱包持有AAPLB用户分发Apple Q3股息$0.27/股·扣税后自动以追加AAPLB代币形式到账（免现金转换·类DRIP自动再投资）·★AAPLB $0.27为bStocks迄今最大单次股息分发额（远超NOKB $0.02/股·8/6）·继NOKB股息机制验证后·AAPLB Mag7核心标的股息兑现确立bStocks'价格跟踪+股息收益'双层权益代币完整性·★IBMB IBM Q3股息$1.69/股快照同日完成·IBM支付日9/10·IBMB追加代币分发时间待Binance公告·★1:1现货转换服务8/8起暂停·股息快照完成后将恢复(CoinDesk·8/10)", src:"https://coindesk.cc/binance-distributes-0-27-dividend-for-apple-bstock-holders-98543.html"},
 
