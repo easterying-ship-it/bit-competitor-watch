@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-29 → 08-12",
-  updated: "2026-08-12 15:00 (北京时间)",
+  updated: "2026-08-12 16:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -172,6 +172,8 @@ const DATA = {
     {grp:"other", date:"8/13预", tag:"t-new", txt:"⚡ VCX/VCXx 8/13(明日)解锁·~10万早期持仓人可从8/14起自由流通·★VCX(NYSE:VCX) = Fundrise Innovation Fund·持仓SpaceX/OpenAI/Anthropic/Databricks等头部私募科技公司股份·IPO发行价$31·ATH约$575·3月Citron Research做空报告后从ATH $575暴跌至约$262·后持续下行·8/10收盘约$32.86(52周区间$32–35.47·较IPO发行价$31仅微幅溢价·较ATH已跌-94%·NAV $18.97·当前溢价约+73%)·早期持仓约10万散户成本约$10-11/股·3x浮盈(较ATH期55x已大幅收窄)·★Fundrise 7/24提前公告(原9/14→加速至8/13)：'锁定期已完成服务有序价格发现的主要目的'·★解锁规模：~10万零售持仓(成本约$10-11/股)·vs 日均交易量约15万股·解锁规模与日均量相当·需关注流动性冲击风险·★VCXx = Kraken xStocks平台代币化版本(Backed Assets 1:1背书·Kraken×Fundrise 3/27联合发布)·提供SpaceX/OpenAI/Anthropic/Databricks单代币链上敞口·★双催化共振：VCX 8/13解锁与SNDK Investor Day(8/13 9am ET)同日·代币化私募科技+代币化AI存储双核催化同日集中·★赛道含义：VCXx是Kraken xStocks私募科技代币化首发·解锁后VCX流通量扩大将直接影响VCXx二级定价基准·监控8/14后VCX走势对xStocks平台私募科技代币化叙事的传导·(BusinessWire·7/24·Kraken Blog·3/27·CrowdfundedWealth·8/10)", src:"https://www.businesswire.com/news/home/20260724132836/en/Fundrise-Innovation-Fund-NYSE-VCX-to-Accelerate-Lockup-Expiration-of-Restricted-Shares-by-One-Month"},
 
     {grp:"other", date:"8/13预", tag:"t-new", txt:"⚡ MEXC BMNR USDT-M永续8/13上线·BitMine Immersion Technologies(AI液冷算力·Nasdaq:BMNR·当前市值约$124.6亿)·0手续费促销·与Binance BMNRB(8/5 bStocks第七批)合计形成代币化+永续双层BMNR产品覆盖·MEXC Stock Futures持续快速扩品(MEXC官方·8/12公告)", src:"https://www.mexc.com/cs-CZ/support/articles/17827791528832"},
+
+    {grp:"other", date:"8/12", tag:"t-new", txt:"✨ 新入场者·Crypto.com 8/12正式上线代币化美股·1,500只美股/ETF·$1起·零佣金·24/7·底层Alpaca持牌券商1:1真实股票托管(美国合规监管)·CySEC持牌(Foris Capital CY Limited)·面向EEA及全球适格用户·Stocks Earn最高4% p.a.持仓收益直接计入钱包·即时区块链结算·★Crypto.com约1亿注册用户基础·底层使用Alpaca持牌券商与Binance bStocks共享基础设施路径·产品品种(1,500只)在头部CEX中规模最大·★★赛道含义：Crypto.com进入代币化美股赛道·头部加密平台代币化美股全面覆盖格局基本成型(Binance bStocks/Bitget rToken/Coinbase/Crypto.com四强)·(PRNewswire·Crypto.com官方·8/12)", src:"https://crypto.com/en/product-news/tokenized-stocks-launch"},
 
     {grp:"other", date:"8/12", tag:"t-up", txt:"📊 VCX 8/11收盘$31.70(-3.5%·较8/10收盘$32.86·趋近52周低$31.01)·今日(8/12)为锁定期到期(8/13)前最后一个交易日·解锁后~10万早期持仓(成本~$10-11/股)从8/14起可自由出售·NAV $18.97·当前溢价+67%(较8/10 +73%收窄)·★VCXx(Kraken xStocks代币化版)同步跟踪·关注8/14起潜在抛压与VCXx二级定价传导·(CrowdfundedWealth·8/11)", src:"https://www.crowdfundedwealth.com/articles/fundrise-vcx-review"},
 
@@ -1412,6 +1414,24 @@ const DATA = {
       sources:[
         {label:"CoinDesk·美国本土上线(8/4)", url:"https://www.coindesk.com/business/2026/08/04/dinari-brings-tokenized-u-s-stocks-to-american-investors-as-equity-race-heats-up"},
         {label:"Dinari官网", url:"https://dinari.com"}
+      ]
+    },
+    {
+      nm:"Crypto.com", tier:2, color:"#003087", ink:"#fff", status:"live", statusTxt:"★新入场者 · 8/12代币化美股 · 1,500只 · ~1亿用户 · CySEC持牌 · Alpaca托管",
+      sub:"新入场者 · 8/12 · 1,500只美股/ETF · $1起 · 零佣金 · 24/7 · Alpaca持牌券商1:1托管 · EEA+全球适格用户",
+      promo:[
+        "~1亿注册用户基础·品牌知名度极高·全球多地合规持牌平台·以CySEC(Foris Capital CY Limited)为EEA监管锚点",
+        "Stocks Earn：最高4% p.a.持仓收益直接计入钱包·差异化于同赛道纯交易产品·与Bitget rToken固定收益路线竞争",
+        "底层使用Alpaca持牌券商1:1真实股票托管(美国合规)·与Binance bStocks共享基础设施路径·即时区块链结算",
+        {t:"1,500只美股/ETF上线(8/12)·规模在头部CEX中最大·$1起·零佣金·24/7·面向EEA及全球适格用户", src:"https://crypto.com/en/product-news/tokenized-stocks-launch"}
+      ],
+      activities:[
+        {t:"代币化美股正式上线(8/12)：1,500只美股/ETF·$1起·零佣金·24/7·Alpaca 1:1持牌托管·CySEC(Foris Capital CY Limited)·EEA及全球适格用户·Stocks Earn最高4% p.a.·即时区块链结算", src:"https://crypto.com/en/product-news/tokenized-stocks-launch"}
+      ],
+      xsig:"🔒 待本地 X 补充",
+      sources:[
+        {label:"Crypto.com官方·代币化美股上线(8/12)", url:"https://crypto.com/en/product-news/tokenized-stocks-launch"},
+        {label:"PRNewswire·Crypto.com Tokenized Stocks(8/12)", url:"http://www.prnewswire.com/news-releases/cryptocom-launches-the-future-of-trading-with-tokenized-stocks-302849027.html"}
       ]
     }
   ],
