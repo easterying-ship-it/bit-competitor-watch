@@ -164,14 +164,16 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-29 → 08-12",
-  updated: "2026-08-12 09:00 (北京时间)",
+  updated: "2026-08-12 10:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
 
     {grp:"other", date:"8/13预", tag:"t-new", txt:"⚡ VCX/VCXx 8/13(明日)解锁·~10万早期持仓人可从8/14起自由流通·★VCX(NYSE:VCX) = Fundrise Innovation Fund·持仓SpaceX/OpenAI/Anthropic/Databricks等头部私募科技公司股份·IPO发行价$31·ATH约$575·Citron Research做空报告后回调至约$170-175区间·★Fundrise 7/24提前公告(原9/14→加速至8/13)：'锁定期已完成服务有序价格发现的主要目的'·★解锁规模：~10万零售持仓(成本约$10-11/股)·vs 日均交易量约15万股·解锁规模与日均量相当·需关注流动性冲击风险·★VCXx = Kraken xStocks平台代币化版本(Backed Assets 1:1背书·Kraken×Fundrise 3/27联合发布)·提供SpaceX/OpenAI/Anthropic/Databricks单代币链上敞口·★双催化共振：VCX 8/13解锁与SNDK Investor Day(8/13 9am ET)同日·代币化私募科技+代币化AI存储双核催化同日集中·★赛道含义：VCXx是Kraken xStocks私募科技代币化首发·解锁后VCX流通量扩大将直接影响VCXx二级定价基准·监控8/14后VCX走势对xStocks平台私募科技代币化叙事的传导·(BusinessWire·7/24·Kraken Blog·3/27·CrowdfundedWealth·8/10)", src:"https://www.businesswire.com/news/home/20260724132836/en/Fundrise-Innovation-Fund-NYSE-VCX-to-Accelerate-Lockup-Expiration-of-Restricted-Shares-by-One-Month"},
 
-    {grp:"other", date:"8/12", tag:"t-up", txt:"📊 SNDK 8/12(周二)盘前约$1,204.97(-0.60%·较8/11收盘$1,212.21)·Investor Day明日(8/13 9am ET·CEO Goeckeler·LTA长期供货协议新增量)临近·盘前轻微走弱·静候催化·代币化SNDK全层(Binance SNXXB 2x ETF·Bitget rSNDK/rSNXX·MEXC SNDKUSDT·Gate SNXXG·xStocks SNDKx·Ondo $SNDKon)以$1,204.97为8/12盘前参考锚·LTA公告为8/13核心定价催化·(investing.com·Robinhood·8/12盘前)"},
+    {grp:"other", date:"8/12", tag:"t-up", txt:"📊 SNDK 8/12(周二)盘前约$1,204.97(-2.7%·较8/11实际收盘$1,237.92·★更正：原条目标注'较8/11收盘$1,212.21'有误·$1,212.21为8/8收盘价·8/11实际收盘$1,237.92)·Investor Day明日(8/13 9am ET·CEO Goeckeler·LTA长期供货协议新增量)临近·盘前走弱·静候催化·代币化SNDK全层(Binance SNXXB 2x ETF·Bitget rSNDK/rSNXX·MEXC SNDKUSDT·Gate SNXXG·xStocks SNDKx·Ondo $SNDKon)以$1,204.97为8/12盘前参考锚·LTA公告为8/13核心定价催化·(investing.com·Robinhood·8/12盘前)"},
+
+    {grp:"other", date:"8/12", tag:"t-up", txt:"📊 SNDK 8/12(周二)正常时段收涨·收盘$1,271.05(+2.7%·较8/11实际收盘$1,237.92)·盘前低点$1,204.97→正常时段收盘$1,271.05日内+5.5%全面修复·Investor Day明日(8/13 9am ET)前夕多头定价主导·★★Q4财报(8/5)发布但早期条目未完整捕获的NBM/LTA关键数据：8份NBM(新商业模式)长期供货协议·覆盖6-8位客户·合计最低总价值$93.9B·加权平均合同期4年以上·含价格底限+上限机制保护毛利率·覆盖FY2027超50%计划产量+FY2028约2/3产量·单季Data Center营收$30亿(同比翻倍)·Q4非GAAP毛利率84.6%·★$93.9B最低合同营收可见度为Investor Day核心叙事支柱——提供跨越NAND周期的多年期营收底线保障·CFO Visoso：NAND市场2027年有望超$5000亿·供应紧张延续至2028年·★Argus Buy $1,600目标·机构共识19买:0卖·当前股价较共识均价约$2,107折价约-40%·代币化SNDK全层(Binance SNXXB 2x ETF·Bitget rSNDK/rSNXX·MEXC SNDKUSDT·Gate SNXXG·xStocks SNDKx·Ondo $SNDKon)以$1,271.05为8/12收盘定价锚·8/13 9am ET Investor Day新LTA增量为明日核心催化(Investing.com·BigGo Finance·Seeking Alpha·8/12)", src:"https://finance.biggo.com/news/US_SNDK_2026-08-05"},
 
     {grp:"other", date:"8/11", tag:"t-new", txt:"⚡ SEC 8/11深夜公告·8/14正式提案'Regulation Crypto'开放公众意见·★SEC主席Atkins 8/11(周一)深夜发布紧急公告·设定8/14(本周五)三委员委员会(共和党全员)正式投票提案'Regulation Crypto'并开放公众意见征集·★公告'短通知期'(周一深夜→周五)被业界解读为CLARITY Act 9/15程序投票不确定背景下Atkins加速行政备案的信号·★Regulation Crypto核心提案内容：①加密投资合约临时注册豁免 ②限额募资安全港 ③发行方减少项目控制权的安全港·提案开放公众意见后进入正式规则制定程序·★代币化证券'创新豁免'独立于此次Regulation Crypto主提案·作为Atkins另一标志性举措平行推进·★双轨监管路径正式确立：⑴立法轨(CLARITY Act·9/15程序投票·不确定·Polymarket~15-20%) ⑵行政规则轨(SEC Regulation Crypto·8/14提案→公众意见→最终规则)·8/14提案为行政规则轨里程碑节点·即使CLARITY失败规则轨可独立为赛道交付监管确定性·★赛道含义：Binance bStocks/Bitget rToken/Kraken xStocks等平台以'监管沙盒'方式运营的代币化美股产品或受益于最终Regulation Crypto正式规则框架·(CoinDesk·8/11)", src:"https://www.coindesk.com/policy/2026/08/11/u-s-sec-sets-meeting-to-propose-reg-crypto-to-support-certain-digital-assets-offerings"},
 
