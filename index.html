@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-07-29 → 08-12",
-  updated: "2026-08-12 13:00 (北京时间)",
+  updated: "2026-08-12 14:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -192,6 +192,8 @@ const DATA = {
     {grp:"other", date:"8/11", tag:"t-new", txt:"✨ MEXC RealStocks 8/11三大新功能升级·①RWA Feature：更贴近真实美股市场体验·适用时享股东权利(持有真实股份·与Coinbase UK/Bitget Stock+同类真实持股路线对齐) ②Recurring Investments(定投)：设定固定金额+投资频率(周度/月度)自动买入·减少手动下单·支持长期定投策略 ③Spot账户直转(Direct Spot Account Transfer)：RealStocks余额不足时可在下单流程中直接从Spot账户划转资金·消除预充值步骤·降低首次使用门槛·★RealStocks为MEXC与持牌经纪商合作提供的7,000+美股/ETF直购产品·本次升级强化'真实持股+定投留存+股东权利'三层产品竞争力·与0808 Stock Season($50万·至8/28)·财报季RealStocks Rally($100万·至8/24)并行·三大功能+双奖池共构MEXC 8月RealStocks拉新留存闭环·(GlobeNewswire·Manila Times·8/11)", src:"https://crypto.news/mexc-upgrades-realstocks-with-three-new-features-to-enhance-u-s-stock-trading-experience/"},
 
     {grp:"other", date:"8/11", tag:"t-up", txt:"📊 MEXC《下一代投资者·传统金融行为迁移报告》8/11发布·★调研规模：6,185份有效问卷·13语言·2,874名传统金融背景受访者(46.5%)·53.5%加密原生用户·★核心数据：①74.2%有传统金融背景受访者已将部分或全部传统资产交易迁移至加密交易所 ②83.3%所有受访者计划进一步增加在加密交易所的传统资产交易量·★赛道叙事含义：CEX TradFi产品(代币化股票/股票永续/RealStocks真实持股)已成传统金融用户大规模迁移主要目的地·MEXC以独立调研数据为其TradFi战略提供第三方用户行为背书·与MEXC×CoinGecko H1报告(CEX TradFi成交$1.32T·7/29)·TokenInsight 7月流动性第一(8/4)形成MEXC三重外部数据叙事支柱·(Cryptopolitan·ChainBits·Economymono·8/11)", src:"https://www.chainbits.com/press-releases/mexc-report-74-2-of-traditional-finance-users-have-shifted-their-trading-activity-to-crypto-exchanges/"},
+
+    {grp:"other", date:"8/11", tag:"t-new", txt:"✨ Gate gStocks ETF层8/11上线LITE/PLTRX/DELL/QCOM 4只3x杠杆ETF代币·7:00 UTC开始交易·底层内置3x杠杆+每日自动再平衡(无保证金存入/无强平管理·持仓自动扩缩维持约3x目标)·配套60,000 USDT活动运行至8/20：①首次交易≥500 USDT得$10手续费券(首批1,000名) ②日均≥1,000 USDT分日奖励 ③总成交达标解锁30,000 USDT共享池 ④邀友交易≥500 USDT得$50·★与Gate gStocks现货(78只·1:1真实持股)·SNDKG Launchpool(8/6-)·Pre-IPOs KIMI(8/11)·股票Copy Trading(8/7)共构Gate 8月五层TradFi矩阵·(CoinGabbar·Gate官方·8/11)", src:"https://www.coingabbar.com/en/crypto-currency-news/crypto-listing-news-gate-lists-four-new-etf-pairs"},
 
     {grp:"main", date:"8/10", tag:"t-new", txt:"✅ Binance AAPLB $0.27/股股息已确认分发·苹果8/10 09:00 KST快照完成后·Binance向Spot钱包持有AAPLB用户分发Apple Q3股息$0.27/股·扣税后自动以追加AAPLB代币形式到账（免现金转换·类DRIP自动再投资）·★AAPLB $0.27为bStocks迄今最大单次股息分发额（远超NOKB $0.02/股·8/6）·继NOKB股息机制验证后·AAPLB Mag7核心标的股息兑现确立bStocks'价格跟踪+股息收益'双层权益代币完整性·★IBMB IBM Q3股息$1.69/股快照同日完成·IBM支付日9/10·IBMB追加代币分发时间待Binance公告·★1:1现货转换服务8/8起暂停·股息快照完成后将恢复(CoinDesk·8/10)", src:"https://coindesk.cc/binance-distributes-0-27-dividend-for-apple-bstock-holders-98543.html"},
 
@@ -239,6 +241,8 @@ const DATA = {
     {grp:"other", date:"8/7", tag:"t-up", txt:"⚡ Kraken xStocks突破100只里程碑·累计成交$370亿·链上持有人约20万·★货架从上线60只→100只·年底目标500+·覆盖美股+港股(GTN合作·7/22宣布·UK/South Korea待监管批准)+EU(已上线)·Broadridge代理投票(8/5·ProxyVote.com)已集成·RWA.xyz：xStocks AUM约$5.07亿(赛道第二·仅次Ondo $9.55亿)·★$370亿累计成交量超Binance bStocks 7月单月$182亿·代币化美股先发平台积累优势显现·与Coinbase UK真实持股(8/6·FCA·4,000只)·Bybit xStocks 10只Dual Asset(8/7)并列代币化美股8月赛道扩张核心节点·(Kraken Blog·约8/7)", src:"https://blog.kraken.com/product/xstocks/celebrating-100-xstocks"},
 
     {grp:"other", date:"8/7", tag:"t-new", txt:"✨ Bybit xStocks Dual Asset 8/7扩至10对·新增METAx(Meta)/TSLAx(Tesla)/HOODx(Robinhood)/CRCLx(Circle)四只代币化股票进入Dual Asset固定收益产品·★从初始6只(SPCXx/NVDAx/AAPLx/GOOGLx/COINx/AMZNx·7/23首批)扩至10只·HOODx(Robinhood股权)/CRCLx(Circle USDC发行方稳定币概念股)两只特殊叙事标的纳入结构化产品底层·★Bybit xStocks三层用例完整化：①持仓/交易 ②抵押品(7/31·6只UTA Loans/Crypto Loans) ③Dual Asset固定收益·★对比Binance bStocks Dual Investment(5,888 USDC·至8/31)·Bitget Cross-Asset UTA(100只rToken统一保证金)并列三平台代币化美股'结构化收益'赛道格局·(PRNewswire·Yellow·8/7)", src:"http://www.prnewswire.com/news-releases/bybit-dual-asset-integrates-four-new-xstocks-expanding-use-cases-for-tokenized-equities-on-bybit-302846199.html"},
+
+    {grp:"other", date:"8/7", tag:"t-new", txt:"✨ Bybit UTA Loan 8/7免息借款扩至24只资产·从2只稳定币扩至24只·新增22只加密资产(BTC/ETH/SOL/XRP/ADA/OP/NEAR/DOT/DOGE/LINK/SUI/LTC/UNI/MNT/AAVE/BCH/HYPE/XLM/ETC/FIL/APT/AVAX)·免息适用场景：永续/期货仓位未实现亏损触发UTA自动借款·额度内零利率·手动借款/现货保证金/期权不适用·★8/7双产品并发：UTA Loan 24资产+xStocks Dual Asset 4只新增(METAx/TSLAx/HOODx/CRCLx)·与Binance bStocks零Maker费(至8/31)·Bitget Cross-Asset UTA 100只rToken统一保证金并列三大CEX代币化美股'资本效率基础设施'升级·(PRNewswire·Chainwire·8/7)", src:"https://chainwire.org/2026/08/07/bybit-expands-uta-loan-interest-free-borrowing-to-24-assets-empowering-more-capital-efficient-trading/"},
 
     {grp:"other", date:"8/7", tag:"t-up", txt:"📊 SNDK 8/7美股实际收盘约$1,258.58·日内区间$1,163.09–$1,324.00·较8/6收盘$1,350.50约-6.81%·★8/6 FQ4双Beat催化后高点$1,441.76起连续两日走弱·★下一关键催化：8/13 SNDK Investor Day(9am ET·investor.sandisk.com·CEO Goeckeler+CFO Visoso·长期供货协议LTA新增量+长期财务模型为核心看点)·代币化SNDK全层(Binance SNXXB 2x ETF·Bitget rSNDK/rSNXX·MEXC SNDKUSDT·Gate SNXXG·xStocks SNDKx·Ondo $SNDKon)以$1,258.58为8/7收盘定价锚·'sell the news'延续压制·Investor Day LTA公告为重建AI存储叙事信心关键节点(Investing.com·Yahoo Finance·8/7)", src:"https://finance.yahoo.com/quote/SNDK/"},
 
