@@ -163,11 +163,15 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-07-31 → 08-14",
-  updated: "2026-08-14 23:30 (北京时间)",
+  range: "滚动近 2 周 · 2026-07-31 → 08-15",
+  updated: "2026-08-15 00:30 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+
+    {grp:"other", date:"8/14", tag:"t-up", txt:"✨ Bybit TradFi永续8/14里程碑·官方PR确认货架突破200只·覆盖美/港/韩股·ETF·贵金属·指数·原油·★2026年4月上线以来持续每周扩品·从'数十只'到200+只·覆盖AI芯片/半导体/全球指数/Pre-IPO等高质量品类·★Bybit TradFi永续从赛道新产品进入'规模化覆盖'里程碑·相比Binance bStocks 66只代币化现货·Bybit TradFi永续已在衍生品层覆盖更广范围·(PRNewswire·8/14)", src:"http://www.prnewswire.com/news-releases/bybit-tradfi-perpetuals-extend-24-7-exposure-to-over-200-global-equities-and-pre-ipo-assets-302851866.html"},
+
+    {grp:"other", date:"8/10", tag:"t-new", txt:"⚡ 新入场者·UMX(Avenir Group孵化·前火币CEO李林)8/10邀请制公测·真实美股/ETF/期权+加密跨资产平台·★李林(前火币CEO)·Avenir Group(亚洲最大机构BTC ETF持有者·持BlackRock iShares BTC Trust 1828万股·约$7亿)孵化·★跨资产功能：USDT→USD资本桥直接购入美股/ETF/期权·以加密仓位为抵押品借款买入股票·现货/杠杆/期货/期权全品类·★收益产品：BTC年化2.5%/USDT年化5.5%·★定位专业投资者·邀请制公测阶段·★赛道含义：前火币系顶级机构投资人以真实美股+加密跨资产融合路线入场·有别于Binance bStocks/Bitget rToken代币化路线——UMX走真实证券+加密融合路径·与Coinbase Everything Exchange叙事最近似但更机构化·(crypto.news·Odaily·CryptoRank·8/10)", src:"https://crypto.news/umx-launches-beta-with-crypto-and-real-u-s-stocks/"},
 
     {grp:"other", date:"8/14", tag:"t-new", txt:"🚨 重大转折·SEC 8/13深夜取消8/14 Regulation Crypto公开提案会议·双监管催化剂同日双空·★SEC官方以'突发日程问题(unforeseen scheduling issue)'取消原定8/14 10am ET会议·三委员(共和党全员)提案投票及开放公众意见全部延期·无新日期·★与Innovation Exemption(Eleanor Terrett/Fox Business 8/14确认进一步延迟·与CLARITY Act Section 10505谈判挂钩·同样无新时间表)形成双延迟·★白宫同步宣布8/19加密圆桌会议+CFTC 8/20创新会议·监管推进重心从SEC公开程序向白宫/CFTC行政通道转移·★对赛道含义：代币化股票两大监管安全港(行政规则轨+豁免轨)双空·短期无新合规框架落地·Binance bStocks/Bitget rToken/Kraken xStocks等平台在现行SEC默许框架下继续运营·格局不变但监管确定性窗口进一步推迟·(CoinDesk·CryptoTimes·TFTC·8/13-14)", src:"https://www.coindesk.com/policy/2026/08/13/sec-cancels-long-awaited-proposal-of-reg-crypto-postponing-meeting-without-new-date"},
 
@@ -1439,21 +1443,39 @@ const DATA = {
         {label:"CoinDesk·美国本土上线(8/4)", url:"https://www.coindesk.com/business/2026/08/04/dinari-brings-tokenized-u-s-stocks-to-american-investors-as-equity-race-heats-up"},
         {label:"Dinari官网", url:"https://dinari.com"}
       ]
+    },
+    {
+      nm:"UMX", tier:2, color:"#6600cc", ink:"#fff", status:"soon", statusTxt:"★新入场者 · 8/10邀请制公测 · Avenir Group(李林)孵化 · 真实美股+加密跨资产",
+      sub:"新入场者 · 8/10邀请制公测 · 前火币CEO李林/Avenir Group孵化 · 真实US Stocks/ETF/Options+Crypto跨资产 · 专业投资者",
+      promo:[
+        "前火币CEO李林/Avenir Group孵化·Avenir持BlackRock iShares BTC Trust 1828万股(亚洲最大机构BTC ETF持有者·约$7亿)",
+        "真实美股/ETF/期权+加密跨资产一体化·非代币化路线——真实证券账户直接与加密账户联通",
+        "资本桥机制：USDT→USD兑换直接购入美股/ETF/期权·或以加密仓位抵押借款买入权益证券",
+        "BTC年化2.5%/USDT年化5.5%收益产品·定位专业投资者·邀请制公测"
+      ],
+      activities:[
+        {t:"邀请制公测启动(8/10·crypto.news/Odaily多源)：真实美股/ETF/期权+加密现货/杠杆/期货/期权·USDT↔USD资本桥·以加密抵押借入法币买股·BTC 2.5%/USDT 5.5%收益", src:"https://crypto.news/umx-launches-beta-with-crypto-and-real-u-s-stocks/"}
+      ],
+      xsig:"🔒 X 信号待抓取",
+      sources:[
+        {label:"crypto.news·UMX公测(8/10)", url:"https://crypto.news/umx-launches-beta-with-crypto-and-real-u-s-stocks/"},
+        {label:"Odaily·UMX公测", url:"https://www.odaily.news/en/newsflash/508223"}
+      ]
     }
   ],
   techniques:[
-    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:1, zoomex:1, tokocrypto:1, coinswitch:1, mudrex:"?", bitso:0, dinari:1},
-    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:1, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?"},
-    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?"},
-    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:1, pionex:"?", bitmex:"?", btcc:"?", weex:"?", ondo:"?", coinw:1, blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?", bitso:"?", dinari:"?"},
-    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?"},
-    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:1, bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:"?", zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?"},
-    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:1, mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1, bitrue:1, backpack:"?", phemex:1, pionex:1, bitmex:1, btcc:0, weex:1, ondo:1, coinw:1, blockchain:1, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?"},
-    {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:"?", kraken:1, coinbase:"?", mexc:1, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:1, bitrue:0, backpack:0, phemex:1, pionex:0, bitmex:1, btcc:1, weex:1, ondo:0, coinw:"?", blockchain:0, zoomex:"?", tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?"},
-    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:1, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?"},
-    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:"?", pionex:"?", bitmex:"?", btcc:"?", weex:"?", ondo:"?", coinw:"?", blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?", bitso:"?", dinari:"?"},
-    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?", bingx:1, bitrue:"?", backpack:"?", phemex:"?", pionex:0, bitmex:"?", btcc:"?", weex:1, ondo:0, coinw:"?", blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?", bitso:"?", dinari:"?"},
-    {name:"图表平台(TradingView)分发", bitget:1, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:0, coinbase:0, mexc:1, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:1, bingx:1, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?"}
+    {name:"合规/持牌背书话术", bitget:1, binance:1, okx:1, gate:1, bybit:0, htx:0, kraken:1, coinbase:1, mexc:1, kucoin:1, gemini:1, robinhood:1, hyperliquid:0, cryptocom:1, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:1, zoomex:1, tokocrypto:1, coinswitch:1, mudrex:"?", bitso:0, dinari:1, umx:"?"},
+    {name:"传统交易所/机构合作背书", bitget:0, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:1, coinbase:"?", mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:1, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?", umx:1},
+    {name:"悬念/解谜预告", bitget:1, binance:1, okx:0, gate:0, bybit:1, htx:0, kraken:0, coinbase:0, mexc:0, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?", umx:0},
+    {name:"CEO/大佬亲自下场", bitget:1, binance:1, okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:1, mexc:"?", kucoin:"?", gemini:"?", robinhood:1, hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:1, pionex:"?", bitmex:"?", btcc:"?", weex:"?", ondo:"?", coinw:1, blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?", bitso:"?", dinari:"?", umx:1},
+    {name:"平台币联动炒作", bitget:1, binance:1, okx:1, gate:"?", bybit:"?", htx:"?", kraken:0, coinbase:0, mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:1, cryptocom:0, bingx:0, bitrue:0, backpack:1, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?", umx:0},
+    {name:"奖励绑定真实使用", bitget:1, binance:0, okx:"?", gate:1, bybit:"?", htx:"?", kraken:1, coinbase:"?", mexc:0, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:1, coinw:0, blockchain:"?", zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?", umx:"?"},
+    {name:"全品类货架(股/ETF/商品/pre-IPO)", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:1, kraken:1, coinbase:1, mexc:0, kucoin:1, gemini:1, robinhood:1, hyperliquid:1, cryptocom:1, bingx:1, bitrue:1, backpack:"?", phemex:1, pionex:1, bitmex:1, btcc:0, weex:1, ondo:1, coinw:1, blockchain:1, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?", umx:1},
+    {name:"主题活动节/节庆运营", bitget:1, binance:1, okx:1, gate:1, bybit:1, htx:"?", kraken:1, coinbase:"?", mexc:1, kucoin:"?", gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:1, bitrue:0, backpack:0, phemex:1, pionex:0, bitmex:1, btcc:1, weex:1, ondo:0, coinw:"?", blockchain:0, zoomex:"?", tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?", umx:0},
+    {name:"研究报告造声量", bitget:"?", binance:"?", okx:"?", gate:"?", bybit:"?", htx:1, kraken:"?", coinbase:"?", mexc:"?", kucoin:1, gemini:0, robinhood:0, hyperliquid:0, cryptocom:0, bingx:0, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:1, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?", umx:0},
+    {name:"社媒埋渠道码追踪", bitget:1, binance:"?", okx:"?", gate:"?", bybit:"?", htx:"?", kraken:"?", coinbase:"?", mexc:"?", kucoin:"?", gemini:"?", robinhood:"?", hyperliquid:0, cryptocom:"?", bingx:"?", bitrue:"?", backpack:"?", phemex:"?", pionex:"?", bitmex:"?", btcc:"?", weex:"?", ondo:"?", coinw:"?", blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?", bitso:"?", dinari:"?", umx:"?"},
+    {name:"新人首单返券/免费赠股", bitget:"?", binance:1, okx:"?", gate:"?", bybit:1, htx:1, kraken:"?", coinbase:"?", mexc:1, kucoin:"?", gemini:"?", robinhood:0, hyperliquid:0, cryptocom:"?", bingx:1, bitrue:"?", backpack:"?", phemex:"?", pionex:0, bitmex:"?", btcc:"?", weex:1, ondo:0, coinw:"?", blockchain:"?", zoomex:"?", tokocrypto:"?", coinswitch:"?", mudrex:"?", bitso:"?", dinari:"?", umx:0},
+    {name:"图表平台(TradingView)分发", bitget:1, binance:0, okx:1, gate:0, bybit:0, htx:0, kraken:0, coinbase:0, mexc:1, kucoin:0, gemini:0, robinhood:0, hyperliquid:0, cryptocom:1, bingx:1, bitrue:0, backpack:0, phemex:0, pionex:0, bitmex:0, btcc:0, weex:0, ondo:0, coinw:0, blockchain:0, zoomex:0, tokocrypto:0, coinswitch:0, mudrex:0, bitso:0, dinari:"?", umx:0}
   ]
 };
 
