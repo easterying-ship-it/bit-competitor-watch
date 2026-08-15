@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-08-02 → 08-16",
-  updated: "2026-08-16 07:45 (北京时间)",
+  range: "滚动近 2 周 · 2026-08-02 → 08-15",
+  updated: "2026-08-15 09:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -225,6 +225,8 @@ const DATA = {
 
     {grp:"other", date:"8/13", tag:"t-new", txt:"⚠️ 行业信号·SECZ(Securitize·NYSE:SECZ) 8/13 Q2首次公开财报暴雷·营收$1,440万vs预期$2,060万(大幅低于预期)·净亏$2,170万·EPS -$2.37 vs 预期-$0.15·★股价：8/13 -20%·8/14 -27%·较6-7月高点累计跌60%·★代币化AUM却创历史新高$43亿(YoY+16%)·★背景：Securitize 7/2通过Cantor SPAC(约$4亿·估值$12.5亿)在NYSE挂牌(NYSE:SECZ)·首季公开财报即大幅miss·★机构背景：BlackRock/Ark Invest/Hamilton Lane背书·管理BlackRock BUIDL等代币化基金·已签署NYSE数字交易平台数字过户代理人MOU(8/8·已记录)·★赛道含义：全球最大代币化基础设施运营商首次公开财报揭示'AUM创新高·营收严重不达预期'的商业模式困境·'代币化AUM膨胀但服务费收入未能同步转化'格局·对以基础设施服务费为营收模型的赛道主体形成参照警示·(CoinDesk·SeekingAlpha·FinanceFeeds·8/13)", src:"https://www.coindesk.com/markets/2026/08/12/securitize-falls-20-after-earnings-miss-as-tokenization-revenue-falls-short"},
 
+    {grp:"other", date:"8/13", tag:"t-new", txt:"⚡ 行业里程碑·DTCC 8/13完成40家华尔街机构区块链证券实盘试点·4小时live trial·10月运营·★DTCC(美国最大证券结算机构·处理美国99%证券交易)与40家顶级华尔街机构完成区块链证券结算实盘试点(4小时实时运行)·真实证券在区块链轨道成功完成全流程结算·预计2026年10月正式运营上线·★里程碑含义：DTCC上链意味着代币化证券结算从'补充轨道'进入'主流金融基础设施核心整合'阶段·DTCC Frank La Salle确认出席8/19白宫加密CEO圆桌会议·★同步：IMF发出警告——代币化原子结算+24/7+智能合约三重叠加或在下次危机中加速流动性冲击传导(Bloomberg 8/6同类风险警示并行)·★与NYSE×Securitize MOU(8/8)·BlackRock欧洲$3110亿货币市场基金代币化(8/4)·Wells Fargo代币化存款秋季(8/4宣布)构成8月TradFi→链上结算三大基础设施密集落地里程碑·(Blockhead·8/13)", src:"https://www.blockhead.co/2026/08/13/dtcc-completes-its-tokenization-pilot-the-imf-wants-everyone-to-slow-down/"},
+
     {grp:"main", date:"8/12", tag:"t-new", txt:"★★ Binance bStocks AUM $610.6M超越Kraken xStocks($601.2M)·成为全球第二大代币化股票发行人(8/12·Cointelegraph·crypto.news)·★上线仅约2个月(6/11首批5只)即反超·★全球代币化股票格局：Ondo Finance第一(全市场~$27亿)→Binance bStocks $610.6M(第二·↑)→Kraken xStocks $601.2M(第三·↓)·一年前xStocks仅$4070万(YoY +14.7x)·★格局重塑：代币化美股市场从xStocks一极转变为Binance vs Backed Finance/xStocks双极竞争·★bStocks优势：Binance 3.23亿注册用户分发网络+41%新用户为bStocks独立获客·(Cointelegraph·crypto.news·Cryptopolitan·8/12-13)", src:"https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer"},
 
     {grp:"other", date:"8/12", tag:"t-new", txt:"✨ Crypto.com 8/12全球EEA+大规模扩张：代币化股票衍生品向EEA及全球适格用户正式推出·1,500只美股/ETF覆盖·$1起·零佣金·24/7·★产品形态更正：衍生品结构(Tokenized Stock Derivatives)非1:1真实持股·Foris Capital CY Ltd(EEA·CySEC)/Foris Capital MU Ltd(其他区域)发行·底层真实股票由Alpaca持牌美国自清算券商托管·用户持衍生品敞口·无股东所有权及投票权·可获股息等额调整·Stocks Earn计划：最高4% p.a.·每日计算·每周in-kind同种股票形式发放·★Crypto.com约1亿注册用户·品种规模(1,500只)为头部CEX最大·★赛道含义：产品形态为合成衍生品·有别于Binance bStocks/Bitget rToken 1:1代币化路线·Crypto.com以衍生品路线+Citadel $4亿背书大规模切入EEA代币化权益赛道·(PRNewswire·CoinDesk·Crypto.com官方·8/12)", src:"https://crypto.com/en/product-news/tokenized-stocks-launch"},
@@ -246,6 +248,8 @@ const DATA = {
     {grp:"other", date:"8/12", tag:"t-new", txt:"✨ Gate 8/12股票期货新增8只永续·包含CSOP SK Hynix 2x(香港杠杆ETF·SK海力士2倍做多)·CSOP Samsung 2x(香港杠杆ETF·三星2倍做多)·GlobalFoundries(GFS·全球前三晶圆代工·纽交所上市)·Vistra(VST·美国最大电力公司·AI电力赛道)·Okta(OKTA·身份安全SaaS)·Ouster(OUST·激光雷达/传感器·自动驾驶)等8只·1-20x杠杆·★CSOP港股杠杆ETF入驻Gate·继MEXC 8/11首发(CSOP SK Hynix/Samsung)后第二大平台跟进·Gate股票期货货架持续扩充至140+只·(tradersunion·Gate公告·8/12)", src:"https://tradersunion.com/news/brokers-news/show/2461356-gate-io-adds-new-stock-futures/"},
 
     {grp:"main", date:"8/12", tag:"t-new", txt:"✨ Binance Wallet Stock Hub 8/12正式上线·代币化股票链上发现聚合专属页·用户可按股票代码/公司名搜索代币化版本·跨发行商比较同一标的不同代币化产品·按主题(科技/AI/半导体等)浏览代币化货架·建立个人自选股观察列表·直达配套Earn/Launchpool收益入口·★入口：Binance Wallet主页或Markets section直接进入·★赛道含义：Stock Hub将bStocks(66只)+PancakeSwap链上代币化(709只+)等多发行商产品聚合为单一链上发现层·强化Binance Wallet作为代币化股票'链上超级门户'定位·与Bybit xStocks/Kraken xStocks App内发现功能并列CEX钱包代币化股票可发现性基础设施升级·(CoinReporter·8/12)", src:"https://www.coinreporter.io/2026/08/binance-wallet-launches-stock-hub-to-simplify-discovery-of-on-chain-tokenized-stocks/"},
+
+    {grp:"main", date:"8/12", tag:"t-new", txt:"⚡ Bitget CFD机构级流动性解决方案8/12正式发布·面向量化/自营/基金/券商专业用户·★核心能力：①100% STP(Straight-Through Processing·全自动直通处理·无人工干预) ②亚毫秒级订单撮合 ③FIX API连接 ④一线银行+非银做市商多层流动性聚合·★背景：XAUUSD(黄金)为Bitget TradFi自1月上线以来最活跃CFD品种·上线4日内日均成交突破$20亿·★机构级CFD基础设施建设与Binance bStocks机构Algo Bot+Bybit TradFi Combo并列代币化/TradFi'机构工具层'三平台扩张·★与同日(8/12)Bitget Wallet Affiliate Program 60%佣金+Bitget rToken抵押品扩至128只·多维机构/渠道基础设施同日密集落地·(AlexaBlockchain·mpost·Cryptopolitan·8/12)", src:"https://mpost.io/bitget-expands-cfd-business-with-institutional-grade-liquidity-and-sub-millisecond-execution/"},
 
     {grp:"main", date:"8/12", tag:"t-new", txt:"✨ Bitget Wallet 8/12全球Affiliate Program正式上线·双轨佣金架构：①交易轨：最高60%佣金·覆盖代币化股票/代币互换/永续全品类·无成交量门槛 ②支付轨：新持卡人推荐奖励+持续消费返佣(与Assetback消费→BTC/XAUT/代币化美股返现生态协同)·面向KOL/社区运营者/内容创作者·★60%交易佣金为自托管钱包赛道最高之一·与Bitget主站'Score Your 40%'(6月起·40%永久佣金)并列→Wallet独立渠道体系以更高佣金率切入·与Binance 8/1 Affiliate Dual-Star Program(500K USDC奖池·Refer+Trade双轨)竞争渠道生态·★Bitget Wallet(1亿自托管用户)Affiliate Program强化代币化美股+消费支付双向获客渠道·(GlobeNewswire·CoinEdition·8/12)", src:"https://www.globenewswire.com/news-release/2026/08/12/3343565/0/en/bitget-wallet-launches-global-affiliate-program-with-dual-track-commission-up-to-60.html"},
 
@@ -284,6 +288,8 @@ const DATA = {
     {grp:"other", date:"8/11", tag:"t-new", txt:"⚠️ 韩国国务院8/11批准加密AML规则修正案·29+境外交易所App已被下架韩国Google Play(Bybit 7/10·MEXC/HTX ~7月)·★新规核心：①国内所有VASP转账须附完整身份信息(金额无下限·Travel Rule全面强化) ②₩10M+境外转账面临强化AML监控 ③金融情报机构将主导境外VASP合规督查·预计2027年2月生效·★赛道影响：Bybit/MEXC/HTX韩国市场准入实质受阻·境外未注册VASP在韩用户获客渠道收窄·★韩国为亚洲第一大加密现货交易量市场之一·多家主要竞品东亚扩张节奏或受影响·(crypto.news·blockchainreporter·8/11)", src:"https://crypto.news/south-korea-tightens-crypto-transfers/"},
 
     {grp:"main", date:"8/10", tag:"t-new", txt:"✅ Binance AAPLB $0.27/股股息已确认分发·苹果8/10 09:00 KST快照完成后·Binance向Spot钱包持有AAPLB用户分发Apple Q3股息$0.27/股·扣税后自动以追加AAPLB代币形式到账（免现金转换·类DRIP自动再投资）·★AAPLB $0.27为bStocks迄今最大单次股息分发额（远超NOKB $0.02/股·8/6）·继NOKB股息机制验证后·AAPLB Mag7核心标的股息兑现确立bStocks'价格跟踪+股息收益'双层权益代币完整性·★IBMB IBM Q3股息$1.69/股快照同日完成·IBM支付日9/10·IBMB追加代币分发时间待Binance公告·★1:1现货转换服务8/8起暂停·股息快照完成后将恢复(CoinDesk·8/10)", src:"https://coindesk.cc/binance-distributes-0-27-dividend-for-apple-bstock-holders-98543.html"},
+
+    {grp:"main", date:"8/10", tag:"t-new", txt:"⚡ Binance 全量股票+bStocks成交量3x计入VIP积分·★Binance官方确认：所有股票和bStocks成交量按3倍权重计入VIP层级晋升积分(前版仅限指定bStocks品种·此次扩展至全量)·★意义：实质降低用户通过TradFi路径维持高VIP等级的门槛·高VIP=更低费率+优先API额度+更高日提限额·激励所有高成交量用户选择股票/bStocks路径满足VIP成交量要求·★与7月QQQB指定品种3x积分(单月驱动QQQB成交$92.7亿·占7月代币化股票成交82%)类比：此次全量扩展将为其他bStocks品种带来系统性成交量激励·★与Maker零费率(至8/31)·Dual Investment 5888 USDC排行榜·Affiliate 500K USDC双星奖池·WOTD Wave11'Yield Infrastructure'构成Binance 8月五层激励矩阵·(Binance官方公告)", src:"https://www.binance.com/en/support/announcement/detail/59227a0d516c401aaf6f2511fead00d4"},
 
     {grp:"main", date:"8/10", tag:"t-new", txt:"★ Binance WOTD Wave 11 'Crypto's Yield Infrastructure'今日(8/10)启动·接棒Wave10 Prediction Markets(8/3–8/9)·用户猜词分享500,000 BNB奖励池·★叙事含义：Binance品牌教育从'预测市场'切换至'收益基础设施'主题·与同日AAPLB $0.27股息到账、Dual Investment 5,888 USDC排行榜(至8/31)、Wallet Assetback消费返现(8/1上线)形成'收益基础设施'叙事闭环·★完整十一波WOTD弧线：Trade Stock(6/1)→bStocks(6/15)→超级App(6/22)→AI炒股(6/29)→Pre-IPO(7/6)→BinanceTurns9(7/13)→TradFi×Crypto(7/20)→AI Agent(7/27)→Prediction Markets(8/3)→Yield Infrastructure(8/10)·Binance品牌宣发系统性覆盖整个TradFi×DeFi用户教育矩阵·(Coingabbar·MEXC Blog·artru.net WOTD答案·8/10)", src:"https://www.coingabbar.com/en/crypto-currency-news/binance-word-of-the-day-answer-10-august-2026-full-wotd-list"},
 
