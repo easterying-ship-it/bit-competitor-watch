@@ -164,10 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-03 → 08-17",
-  updated: "2026-08-17 16:00 (北京时间)",
+  updated: "2026-08-17 17:30 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+
+    {grp:"main", date:"8/17", tag:"t-info", txt:"⚡ Binance bStocks Batch 9已公告·15只新增·货架扩至约82只·具体标的待人工核查·★Google已索引Binance官方公告·标题'Binance Adds 15 bStocks Tokenized Securities as ...'·15只为bStocks单批次历史最大扩品(Batch 1-7各批约10只·Batch 8单只GMEB)·★具体新增标的未知(binance.com远程访问受阻)·待人工访问binance.com/support/announcement核对完整标的列表·★时间线：@bstocksfinance 8/14 'Almost time'预告→8/17 Batch 9公告上线·与Batch 8(GMEB·8/12)间隔约5天·与此前扩品节奏吻合·(Binance官方·Google搜索·8/17)", src:"https://www.binance.com/en/support/announcement/detail/0e22b98c9f154d35b50f40dbad43d1c5"},
 
     {grp:"other", date:"8/17", tag:"t-up", txt:"🏛️ CLARITY Act监管赔率8/17再下调·Galaxy Research将2026年内通过概率从~21%(8/15白宫圆桌宣布后)下调至约10%·Polymarket当前约17-19%·★8/19白宫CEO圆桌新增确认：Commerce Secretary Howard Lutnick(商务部长)加入出席·与SEC主席Atkins·CFTC主席Selig·财政部长Bessent·DTCC董事长La Salla·Coinbase/Kraken/Robinhood/Gemini/NYSE/Nasdaq高管同台·★CFTC 8/20创新顾问委员会(IAC)议程正式公布：核心议题'加密监管演进·AI代理·预测市场'·为新届领导层首次正式IAC会议·★两大行政通道(Innovation Exemption+Regulation Crypto)双延迟无时间表·8/19圆桌+8/20 CFTC为下一监管信号窗口·Galaxy 10%赔率反映立法通道2026年不乐观·代币化股票平台短期在现行SEC默许框架下继续运营·(Galaxy Research·CryptoTimes·8/17)"},
 
@@ -579,8 +581,8 @@ const DATA = {
       ]
     },
     {
-      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks 67只 · AUM $610M全球第二(超xStocks·8/12) · FPSL生息 · @bstocksfinance独立品牌(8/13)",
-      sub:"6/1 揭晓 · 真实股票 + bStocks 67只(+GMEB 8/12) · AUM $610.6M(全球第二·超越xStocks $601.2M·8/12) · @bstocksfinance独立品牌X账号(8/13) · 9周年(7/14·3.23亿用户) · FPSL + super app",
+      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks ~82只(Batch 9·15只·8/17·待核查) · AUM $610M全球第二(超xStocks·8/12) · FPSL生息 · @bstocksfinance独立品牌(8/13)",
+      sub:"6/1 揭晓 · 真实股票 + bStocks ~82只(+Batch 9 15只·8/17·具体标的待人工核查) · AUM $610.6M(全球第二·超越xStocks $601.2M·8/12) · @bstocksfinance独立品牌X账号(8/13) · 9周年(7/14·3.23亿用户) · FPSL + super app",
       promo:[
         "悬念营销兑现:Hey Stock → bStocks,解谜→揭晓节奏完整,BNB 同步涨 8%",
         "Richard Teng (co-CEO) 主导 'multi-asset financial super app' 战略定位",
@@ -639,6 +641,7 @@ const DATA = {
         {t:"★ bStocks第六批10只·货架扩至56只(7/30·12:00 UTC·Binance官方)：AAPLB(Apple)/AMZNB(Amazon)/AMATB(Applied Materials)/BEB(Bloom Energy)/DELLB(Dell)/FLNCB(Fluence Energy)/GSB(Goldman Sachs)/PYPLB(PayPal)/SMHB(VanEck Semiconductor ETF)/SOXSB(Direxion Semiconductor Bear 3X ETF)·精准卡位AAPL FQ3+AMZN Q2(7/30 After Close·代币化上线与财报催化同日首次叠加)·零Maker费延续至8/31·扩品时间线：...→7/22 46只→7/30 56只", src:"https://finance.yahoo.com/markets/crypto/articles/binance-adds-10-more-tokenized-072709446.html"},
         {t:"★ bStocks第七批10只·货架扩至66只(8/5·12:00 UTC·Binance官方)：ALABB(Astera Labs)/ASMLB(ASML·荷兰EUV光刻机龙头·bStocks首只欧洲核心科技)/ASTSB(AST SpaceMobile)/BMNRB(BitMine)/COHRB(Coherent·光通信)/CRDOB(Credo Technology)/IRENB(IREN·AI算力挖矿)/NFLXB(Netflix)/SMCIB(Super Micro Computer·AI服务器)/USARB(USA Rare Earth·稀土)·零Maker费延续至8/31·完整扩品时间线：6/11 6只→6/22 10只→6/30 15只→7/7 25只→7/13 26只→7/15 36只→7/22 46只→7/30 56只→8/5 66只", src:"https://dailycoin.com/binance-adds-10-tokenized-stocks-including-asml-and-netflix"},
         {t:"★ bStocks第八批·GMEB(GameStop 1:1代币化)8/12上线·货架扩至67只·同日纳入Cross/Portfolio Margin·BNB Chain PancakeSwap同步上线GMEB·★GameStop为bStocks首只高波动Meme股代币化标的·背景：GME 8/3宣布$14亿可转换票据换股·完整扩品时间线：...→8/5 66只→8/12 67只", src:"https://cryptobriefing.com/binance-tokenized-stock-gamestop-bstocks/"},
+        {t:"★ bStocks Batch 9·15只新增·货架扩至约82只(8/17·Binance官方公告·具体标的待人工核查)·★Google已索引官方公告'Binance Adds 15 bStocks Tokenized Securities as ...'·15只为bStocks单批历史最大扩品·较Batch 7(10只·8/5)·Batch 8(单只GMEB·8/12)显著扩量·★具体新增标的未知(binance.com远程受阻)·待人工访问binance.com核对·完整扩品时间线：6/11 6只→6/22 10只→6/30 15只→7/7 25只→7/13 26只→7/15 36只→7/22 46只→7/30 56只→8/5 66只→8/12 67只→8/17 ~82只", src:"https://www.binance.com/en/support/announcement/detail/0e22b98c9f154d35b50f40dbad43d1c5"},
         {t:"★★ bStocks AUM $610.6M超越Kraken xStocks($601.2M)·成为全球第二大代币化股票发行人(8/12·Cointelegraph·上线仅约2个月)·全市场~$27亿·Ondo Finance仍为第一·★同日宣布@bstocksfinance专属品牌X账号(8/13·~13,800粉丝·'bStocks now has a home of its own')·bStocks品牌化与市场份额双重里程碑", src:"https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer"}
       ],
       xsig:"📡 X实抓(6/1 12:00):Hey Stock 悬念降温——主页未见正式揭晓帖,最新转为玩梗('touching grass')+ 区块链科普(Academy),热度回落;置顶仍为 5/27 女高管入选 Fortune。揭晓或延期/转活动页,待确认。※ [公开新闻后续] bStocks 已通过官方新闻稿正式发布(Fortune/TheBlock 等均确认上线),非 X 主页推文首发。",
