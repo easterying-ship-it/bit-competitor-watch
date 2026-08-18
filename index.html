@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-04 → 08-18",
-  updated: "2026-08-18 09:00 (北京时间)",
+  updated: "2026-08-18 10:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -182,6 +182,8 @@ const DATA = {
     {grp:"other", date:"8/17", tag:"t-new", txt:"🎮 Gate Events Market·Events Points Campaign Phase 1·8/17 10:00 UTC正式上线(App v8.32+)·Trade to Earn Scratch Cards机制：每20 USDT Events合约成交量获1张刮刮卡(2x指定市场每10 USDT)·奖品含USDT+Events Points积分+试用券·每周积分榜Top 100分奖池·欧洲五大联赛Events合约交易量榜Top 100额外分50,000 USDT·★Phase 1为Gate Events Market积分化留存机制首次上线·与Football Campaign(至8/31·200,000 USDT)·TradFi CFD Financial Masters(至9/3·500,000 USDT奖池)三层活动并行运转·Gate Events Market从'单次赛事合约预测'进化为'积分+赛季化留存'机制·(Gate官方·8/17)"},
 
     {grp:"other", date:"8/17", tag:"t-new", txt:"✨ Gate TradFi CFD Financial Masters活动(至9/3·500,000 USDT奖池+SK Hynix实股奖励)·三赛道竞争：①成交量排行榜 ②ROI收益率排行榜 ③每小时SK Hynix实股抽奖(VIP5+享专属双日双次加奖资格)·★奖池规模：Gate $500K vs Bybit TradFi Trading Tools Arena $100K(至9/12·同期竞争)·Gate以5倍奖池+SK Hynix实股差异化于竞品纯USDT奖池路线·★配套Convert&Auto-Invest Benefits Phase 6(至8/17·500 USDT双币投资试用金+100%现金返还)·★Gate以SK Hynix实股为最高奖励·瞄准AI存储赛道财报季交易量·(mpost Gate周报·8/17)", src:"https://mpost.io/gate-update-anniversary-market-dominance-and-platform-wide-growth-define-gates-latest-week/"},
+
+    {grp:"other", date:"8/17", tag:"t-up", txt:"📊 The Block 8/17代币化股票市场全景·总市值$28亿·市占率15%(年初3倍增长)·月度链上转账量$200亿(月均)·持有地址131万·★最新AUM格局：Ondo Finance $9.57亿(#1)·Binance bStocks $6.22亿(#2·↑较8/12 $6.10亿)·Kraken xStocks $6.00亿(#3·↓较8/12 $6.01亿)·bStocks超越xStocks格局巩固·★代币化权益从'机构试水'进入零售规模化·赛道总规模$28亿·(The Block·8/17)", src:"https://www.theblock.co/news/defi/2026-08-17-tokenized-equities-triple-market-share-ondo-binance-xstocks-dominate-411996"},
 
     {grp:"other", date:"8/11", tag:"t-new", txt:"⚡ 新入场者·Coinbase 8/11获阿布扎比ADGM(FSRA)授权·钱包原生代币化股票交易·★含真实股东权利：股息支付+投票权·代币化股票可出借获收益/用作贷款抵押/P2P转让·★8/6先行：Coinbase在英国(FCA/MiFID授权)启动股票交易·★美国本土：等待SEC代币化创新豁免框架落地·★路线对比：Coinbase代币化(真实股东权利+股息·1:1背书)有别于Binance bStocks/Bitget rToken(无投票权)·Coinbase ADGM+UK双牌布局vs Bullish GFSC(8/13)·代表持牌'真实股东权利'路线竞争格局·(CoinDesk·TechTimes·8/11)", src:"https://www.techtimes.com/articles/323926/20260811/coinbase-secures-abu-dhabi-license-wallet-only-stock-trading-redemption-requires-broker.htm"},
 
@@ -497,7 +499,6 @@ const DATA = {
 
     {grp:"other", date:"8/4", tag:"t-new", txt:"⚡ Bybit Galaxy 7日TradFi预测挑战8/4-8/10·每日预测指定Bybit上市资产收盘涨跌(GREEN/RED)·7轮累计积分前5名各得30 USDT·另随机10名获奖·300 USDT总奖池·★Galaxy积分体系(7/27上线)下首个专项TradFi互动预测子任务·与Stock Earnings Season $100万奖池(7/21-8/30)+xStocks Dual Asset 10只(8/7)+Bybit xStocks贷款抵押品6只(7/31)并行·Galaxy TradFi预测任务精准卡位SNDK Investor Day(8/13)+NVDA Q2财报(8/26)等代币化美股高波动节点前·(Bybit Announcements·8/4)", src:"https://announcements.bybit.com/en/article/7-day-tradfi-prediction-challenge-300-usdt-up-for-grabs--artbf3ec6a021c1/"},
 
-    {grp:"other", date:"8/1", tag:"t-new", txt:"⚡ 新入场者·KCEX 8/1上线5只代币化美股·DELLON(Dell·戴尔)/MRVLN(Marvell Technology·美满科技)/ORCLN(Oracle·甲骨文)/MSTRON(MicroStrategy·Strategy)/MSFTON(Microsoft·微软)·全部0手续费·24/7·★KCEX为新入场代币化美股赛道的小型平台·5只标的聚焦主流科技+AI叙事核心标的·0费率入场策略与MEXC/Bitget头部平台差异化竞争·★新入场者监控：KCEX规模较小·当前无公开AUM数据·代币化美股赛道长尾化趋势持续·(TradersUnion·8/1)", src:"https://tradersunion.com/news/brokers-news/show/3000868-kcex-unveils-five-tokenized-stocks/"},
 
   ],
   competitors: [
@@ -584,8 +585,8 @@ const DATA = {
       ]
     },
     {
-      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks ~82只(Batch 9·15只·8/17·待核查) · AUM $610M全球第二(超xStocks·8/12) · FPSL生息 · @bstocksfinance独立品牌(8/13)",
-      sub:"6/1 揭晓 · 真实股票 + bStocks ~82只(+Batch 9 15只·8/17·具体标的待人工核查) · AUM $610.6M(全球第二·超越xStocks $601.2M·8/12) · @bstocksfinance独立品牌X账号(8/13) · 9周年(7/14·3.23亿用户) · FPSL + super app",
+      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks ~82只(Batch 9·15只·8/17·待核查) · AUM $622M全球第二(超xStocks·8/17·The Block) · FPSL生息 · @bstocksfinance独立品牌(8/13)",
+      sub:"6/1 揭晓 · 真实股票 + bStocks ~82只(+Batch 9 15只·8/17·具体标的待人工核查) · AUM $622M(全球第二·超越xStocks $600M·8/17·The Block) · @bstocksfinance独立品牌X账号(8/13) · 9周年(7/14·3.23亿用户) · FPSL + super app",
       promo:[
         "悬念营销兑现:Hey Stock → bStocks,解谜→揭晓节奏完整,BNB 同步涨 8%",
         "Richard Teng (co-CEO) 主导 'multi-asset financial super app' 战略定位",
