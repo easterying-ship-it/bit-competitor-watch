@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-08 → 08-21",
-  updated: "2026-08-21 01:15 (北京时间)",
+  updated: "2026-08-21 02:15 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -176,6 +176,8 @@ const DATA = {
     {grp:"other", date:"8/20", tag:"t-new", txt:"⚡ 新入场者·Anchored 8/20公告代币化股票登陆Arbitrum+Uniswap·目标8/21启动·★Anchored定位'全球资本市场数字运营层(digital operating layer for global capital markets)'·8/20 PRNewswire公告：计划8/21在Arbitrum L2+Uniswap正式上线代币化股票·via UniswapX路由·★产品结构：1:1真实持股背书·USDC结算·完整链上发行/赎回工作流·目标接入Uniswap生态获全球最大DEX代币化股票流动性·★上线取决于最终技术就绪+流动性安排+合作伙伴审核+适用合规批准·★赛道含义：Anchored为8月又一DEX端代币化股票新入场者·继ether.fi DeFi Neobank(8/13)·Roqqu尼日利亚Ondo集成(8/8)·Bullish GFSC(8/13)·xStocks Hyperliquid HyperCore(8/10)·Robinhood Chain Uniswap V4(TVL $3818万·GME/NVDA/SpaceX日成交$50K-$100K+)·8月DEX代币化股票基础设施集群扩张持续·CEX(Binance bStocks/Bitget rToken/Kraken xStocks)+DEX(Robinhood Chain/Hyperliquid/Anchored+Uniswap)双轨竞争格局深化·(PRNewswire·advfn UK·8/20)", src:"https://www.prnewswire.com/news-releases/anchored-to-launch-tokenized-stocks-on-arbitrum-with-uniswap-302856111.html"},
 
     {grp:"other", date:"8/19", tag:"t-up", txt:"📊 Coinbase Q2 2026财报8/19发布·8/20 COIN股价+5.87%·市占率10.3% ATH·代币化叙事驱动·★Coinbase Q2 2026总营收$1.22B(YoY -19.0%·低于华尔街预期·GAAP EPS -$1.36)·但调整后EBITDA $208M(连续第14个季度正EBITDA)·★★市占率里程碑：加密现货交易市占率10.3% ATH(第三个连续季度新高)·加密总市值-11% QoQ+现货成交-25% QoQ背景下仍拿下市占率新高·★营收结构升级：交易营收$599M(-21% QoQ)·订阅+服务营收$555M(占净营收48%)·非BTC现货营收占比88%(接近2020Q2 44%的2倍)·稳定币营收$292M(以USDC为主·季均$20亿USDC托管)·★8/20股价反应：COIN +5.87%·催化包括Q2市占率+SEC'Innovation Exemption'预期(Coinbase有望获批后扩展代币化股票至美国本土·8/19白宫圆桌Coinbase CEO Armstrong+Kraken/Gemini/Robinhood高管同框)·★赛道含义：Coinbase 'Everything Exchange'战略以市占率数据背书·代币化股票美国本土落地预期升温·与Bitget Reality/Binance bStocks/Kraken xStocks形成美国持牌CEX代币化股票赛道竞争·(Coinbase官方·InsiderFinance·Timothy Sykes·8/19-20)", src:"https://www.timothysykes.com/news/coinbase-global-inc-coin-news-2026_08_20-2/"},
+
+    {grp:"main", date:"8/20", tag:"t-new", txt:"⚙️ Bitget CFD 8/20推出MT5-Linked子账户·单主账户最多5个MT5子账户·面向量化/自营/HNW多策略并行·★核心结构：一个Bitget主账户下可默认开设最多5个CFD子账户·每个子账户独立分配MT5 ID·可运行独立EA/算法策略·仓位与执行按子账户隔离·全部CFD活动在主账户统一监管视图·★KYC继承：子账户自动继承主账户KYC+风控参数·无需重新验证·★目标用户：专业交易者·自营量化团队·EA/算法交易者·高净值客户·★与Bitget 8/15 CFD XAUUSD 800x杠杆+机构级流动性(8/12)+CFD Private Copy Trading(8/4)构成Bitget CFD专业用户基础设施四层堆栈·★赛道对比：Bybit MetaTrader 5(2026年8月上线加密/外汇/CFD)·MEXC/Gate暂无MT5子账户能力·Bitget MT5子账户为CEX代币化+CFD多策略量化并行赛道首创·(Metaverse Post·CoinGape·8/20)", src:"https://mpost.io/bitget-rolls-out-mt5-linked-cfd-sub-accounts-to-streamline-multi-strategy-trading-for-professional-users/"},
 
     {grp:"main", date:"8/20", tag:"t-new", txt:"🚀 ★★ Bitget行业首发RWA指数永续合约(RWA Index Perpetuals)·8/20正式上线·首批：TSLAUSDT(RWA)/NVDAUSDT(RWA)/CRCLUSDT(RWA)·★核心机制：每只合约底层为多发行商代币化股票的复合指数(composite index)·初始报价来源为xStocks平台发行代币·计划后续引入更多可信发行商·多源定价设计消除单一发行商报价垄断风险·★产品参数：最高10x杠杆·隔离保证金模式·5×24交易时间表(非24/7·周末及股市休市日暂停·休市期间价格冻结防止清算)·季度内后续标的持续扩展·★行业首创意义：RWA Index Perpetuals首次将多发行商代币化股票聚合为复合指数作为永续合约底层·差异化于Binance bStocks单一发行1:1代币化现货·Kraken xStocks单一发行衍生品·Gate TradFi CFD永续·实现代币化股票永续合约层的去中心化定价基准·★赛道含义：赋予用户10x杠杆代币化股票永续敞口·同时以多源定价机制规避单点操控风险·与8/26 NVDA Q2财报精准对齐·NVDAUSDT(RWA)首发时机高度战略性·★首日实盘验证：TSLAUSDT(RWA)/NVDAUSDT(RWA)/CRCLUSDT(RWA)三合约首日成交突破$2亿(edgen.tech·8/20)·★Q3内更多RWA Index Perpetuals标的待公布·(Blockonomi·FinanceMagnates·blockchain.news·BitGet官方·8/20)", src:"https://blockonomi.com/bitget-brings-tesla-and-nvidia-to-crypto-with-first-rwa-index-perpetuals/"},
 
