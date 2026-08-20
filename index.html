@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-08 → 08-21",
-  updated: "2026-08-21 05:00 (北京时间)",
+  updated: "2026-08-21 06:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -188,6 +188,10 @@ const DATA = {
     {grp:"main", date:"8/19", tag:"t-new", txt:"💰 ★★ Binance bStocks AUM破$10亿(1B美元)历史里程碑·Anchorage Digital加入托管合作体系·★Batch 10上线后(8/19)AUM正式突破$10亿·从6/2首发0起步→75天破$10亿·代币化股票史上最快$10亿速度·★Anchorage Digital(美国首个OCC联邦银行信托牌照加密托管机构)新加入bStocks托管合作体系·合规托管层升级至联邦持牌信托级·★AUM格局可能翻转：bStocks $10亿已超越Ondo Finance 8/17口径~$9.57亿·若Ondo AUM同期未大幅增长则bStocks或跃升全球第一大代币化股票发行人·★赛道含义：代币化股票格局重排·OCC持牌信托托管强化机构级叙事·配合8/19白宫圆桌监管信号·Bitget rToken/Kraken xStocks/Ondo格局形成新竞争压力·(The Block·Yahoo Finance·8/19)"},
 
     {grp:"main", date:"8/19", tag:"t-new", txt:"✨ Binance bStocks Batch 10(8/19)·10只新增现货·含AAPL(苹果)/AMZN(亚马逊)/GS(高盛)/PYPL(PayPal)/AMAT(应用材料)/DELL(戴尔)/BE(Bloom Energy)/FLNC(Fluence Energy)+SMHB(VanEck半导体ETF·多头)/SOXSB(Direxion 3x空头半导体ETF)·全部USDT交易对·Spot上线后1小时内同步支持BTC Convert零手续费·★促销：全bStocks交易对做市商手续费豁免至8/31 23:59 UTC·★货架约扩至92只·Batch 10为8/19当日追加·继Batch 9(82只·8/17·15只)后仅2天再扩·★标的特点：AAPL+AMZN为流通量最大消费科技蓝筹·GS为首只金融蓝筹·DELL+BE+FLNC覆盖AI基础设施/储能新能源赛道·AMAT为NVDA供应链核心设备商(同为AMATB股息快照标的·8/20 00:00 UTC)·SMHB+SOXSB为bStocks首次同时上线多/空半导体ETF对·提供双向板块敞口·★赛道含义：bStocks品种从半导体/AI向金融/消费/能源全面扩张·与Maker Fee Waiver活动双轨拉新·(Yahoo Finance·Binance官方·8/19)", src:"https://finance.yahoo.com/markets/crypto/articles/binance-adds-10-more-tokenized-072709446.html"},
+
+    {grp:"main", date:"8/19", tag:"t-new", txt:"📅 Binance Blockchain Week Bangkok 2026·11/28-29·QSNCC曼谷·主题'EVOLVE'·★8/19 PRNewswire正式宣发·核心议题：①Bitcoin机构化 ②RWA代币化/代币化权益 ③稳定币支付基础设施 ④AI+区块链融合·Co-CEO Richard Teng+He Yi+CMO Eowyn Chen主讲·★时机：Binance在bStocks AUM破$10亿(8/19)、代币化赛道全面扩张节点·以旗舰年度品牌活动将'RWA代币化+TradFi融合'定为Q4 2026核心叙事·★战略含义：与Bitget CEO Gracy Chen在Indonesia Blockchain Week(8/12-13·雅加达)宣传'Universal Finance'并列·两大主要竞品均以旗舰区域品牌活动固化TradFi叙事·曼谷为Binance.TH+bStocks东南亚拉新枢纽·(CryptoTimes·HipTher·PRNewswire·8/19)", src:"https://www.cryptotimes.io/press-release/binance-blockchain-week-2026-bangkok/"},
+
+    {grp:"other", date:"8/20", tag:"t-up", txt:"🏛️ TFOS 8/20 SAIFM峰会研究报告·代币化权益市场7月ATH $22亿·DTC 10月全量上线倒计时·★TFOS(Turlov Family Office Securities·FSCA持牌)于第10届SAIFM监管峰会(8/20)发布报告'全球权益代币化进入关键实施阶段'·核心数据：代币化权益市场7月ATH $22亿·全液态代币化RWA $335亿·★10月关键基础设施节点：DTC(美国证券存管信托公司)从限量生产(7/14启动·Russell 1000+主要指数ETF+美国国债)向全面运营转换·代币化证券从'试点轨道'进入'主流金融基础设施核心'·与DTCC 8/13完成40家华尔街机构4小时实盘试点(已在data)互为表里·(ADVFN UK·PRNewswire·8/20)", src:"https://uk.advfn.com/stock-market/share-news/GLOBAL-EQUITY-TOKENIZATION-ENTERS-CRITICAL-IMPLEME/99165048"},
 
     {grp:"other", date:"8/20", tag:"t-new", txt:"📈 ★★ SK Hynix宣布₩40万亿(约$286亿)史上最大回购·8/20发布·KOSPI反弹+6.3%·SK Hynix当日飙升+12%+·★SK Hynix董事会8/20批准₩40万亿回购并注销(8/20–11/19·约2,400万股·占总股本约3.3%)·韩国上市公司有史以来最大单次库存股注销·同步上调股东回报承诺至2025–2027累计FCF的50%+(约$1,700亿)·★市场反应：KOSPI 8/20反弹+6.3%·SK Hynix飙升+12%+·三星电子同步受回购情绪提振·直接反转8/19暴跌(SK Hynix -9%·KOSPI -5.80%)·★代币化影响面(8+平台同日定价修复)：①Binance SKHYB ②Bitget rSKHY(FCN首发5标的之一·8/18上线·暴跌后反弹→若行权日价格反弹至行权价以上FCN全额USDT本金交割·非保本结构首次真实压力测试反弹验证) ③Bybit SKHYNIXUSDT永续 ④Gate CSOP SK Hynix 2x杠杆ETF(8/12上线)+Financial Masters SK Hynix实股奖励同步获益 ⑤MEXC CSOPSKHYNIX2LUSDT(8/11首批港股) ⑥xStocks SKHYx(Hyperliquid 8/10首发)·★直接反转本周期8/19'暴跌'叙事·代币化韩股全平台从'定价冲击'切换为'回购驱动修复'·(Bloomberg·CNBC·Korea Herald·KoreaJoongAng Daily·SK Hynix Newsroom·8/20)", src:"https://www.cnbc.com/2026/08/20/sk-hynixs-south-korean-shares-surge-stock-buyback-.html"},
 
