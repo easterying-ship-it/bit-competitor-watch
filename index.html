@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-08 → 08-22",
-  updated: "2026-08-22 04:00 (北京时间)",
+  updated: "2026-08-22 05:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -494,7 +494,7 @@ const DATA = {
   ],
   competitors: [
     {
-      nm:"Bitget", tier:1, color:"#00f0ff", ink:"#003", status:"live", statusTxt:"Stock+(真实持股) · Stocks 2.0 · 600+ rToken(8/12) · Cross-Asset UTA · 周末交易",
+      nm:"Bitget", tier:1, color:"#00f0ff", ink:"#003", status:"live", statusTxt:"Stock+(真实持股) · Stocks 2.0 · 600+ rToken(8/12) · FCN结构化票据(8/18) · RWA指数永续(8/20) · MT5子账户(8/20) · Cross-Asset UTA",
       sub:"5/26+6/3+6/22 · Stock+ 真实美股直购(6/22 CEO官宣) · Reality Stocks 2.0 · 600+ rToken(8/12) · 周末交易(6/12) · 7/1 rToken首次USDT股息(20只) · 7/2 Wallet×Robinhood Chain · UEX + IPO Prime",
       promo:[
         "合规叙事前置:FINRA/SIPC/持牌券商 1:1 托管做第一卖点;6/1 官宣 Alpaca 为 Reality rTokens 独家 broker-dealer(clearing/custody/execution)——与 Binance 同用同一持牌通道,Alpaca 成两家主要竞品共享基础设施节点",
@@ -566,6 +566,11 @@ const DATA = {
         {t:"⚠️ Bitget EU 7/1起暂停EEA全服(casptracker/crypto.news·6/26确认)：Bitget EU GmbH(维也纳总部)6/17向奥地利FMA提交MiCAR CASP授权申请·FMA审批中·7/1起EEA区域全服务暂停(新开仓/入金/新用户注册)·保留提款；与Binance EU同日退出EEA", src:"https://crypto.news/bitget-eu-mica-austria-fma/"},
         {t:"★ 行业首发·Stock+ 美股期权(7/3·GlobeNewswire)：540+期权合约覆盖标普500+纳斯达克100成分股及热门ETF·仅限做多(Long Call/Long Put·单腿策略·多腿策略后续规划)·100%权利金预付·美股交易时段·T+1结算·平台费$0.60/张+清算及监管费用·0佣金；Bitget成为赛道首家向全球散户开放真实美股期权交易的主要加密交易所·与Coinbase股票期权(SEC监管·仅限美国用户)形成'监管合规vs全球开放'两条路线对照", src:"https://www.globenewswire.com/news-release/2026/07/03/3321876/0/en/bitget-launches-crypto-industry-s-first-ever-us-stock-options-trading.html"},
         {t:"⚠️ Bitget 8/3宣布退出日本市场·即日起停止新日本用户注册·现有日本账户须11/1前完成Level 2 KYC(含地址证明)·未通过账户11月起限制功能·所有未平仓头寸12/31前强制平仓·★继Bybit后第二家主要CEX正式退出日本·日本FSA列为未注册境外交易所·rToken/TradFi日本用户窗口正式关闭(DailyCoin·crypto-times.jp·8/3)", src:"https://dailycoin.com/bitget-withdraws-from-japan-as-crypto-regulation-tightens"},
+        {t:"★★ 行业首发FCN固定票息票据(8/18·GlobeNewswire)：USDT认购+预定义USDT票息·底层挂钩rSNDK/rMRVL/rSKHY/rNVDA/rMU·传统私人银行高净值常用结构化产品首次以USDT结算+美股rToken交割替换底层·代币化股票结构化产品深度首次落地·首发奖励期8/17–9/18·(GlobeNewswire·Manila Times·8/18)", src:"https://www.manilatimes.net/2026/08/18/tmt-newswire/globenewswire/bitget-launches-fixed-coupon-notes-for-us-stock-rtokens/2407652"},
+        {t:"★ CFD MT5子账户(8/20)·单主账户最多5个·独立EA/算法策略隔离·KYC自动继承·目标量化/自营/HNW多策略并行·(Metaverse Post·8/20)", src:"https://mpost.io/bitget-rolls-out-mt5-linked-cfd-sub-accounts-to-streamline-multi-strategy-trading-for-professional-users/"},
+        {t:"★★ 行业首发RWA指数永续合约(8/20)·首批TSLAUSDT(RWA)/NVDAUSDT(RWA)/CRCLUSDT(RWA)·底层为多发行商代币化股票复合指数·多源定价消除单一发行商垄断风险·最高10x·首日成交$2亿·(Blockonomi·FinanceMagnates·8/20)", src:"https://blockonomi.com/bitget-brings-tesla-and-nvidia-to-crypto-with-first-rwa-index-perpetuals/"},
+        {t:"rToken新增23只美股/ETF(8/20)·含rHDV/rJEPI收益类ETF·货架累计超600只·(Bitget官方·8/20)", src:"https://www.bitget.com/support/articles/12560603884658"},
+        {t:"⚙️ CFD动态分层保证金8/21升级·XAUUSD最高800x(≤10万USDT·保证金率0.125%)·首次发布USDCNH(美元/离岸人民币)最高100x·分层机制：保证金率随仓位规模逐档递进·大仓位用户实际成本显著降低·(Daily Guardian·8/21)", src:"https://dailyguardian.ca/bitget-cfd-introduces-dynamic-leverage-with-up-to-800x-leverage-on-gold/"},
       ],
       xsig:"📡 X实抓(6/1 11:29):官推发新悬念 'TS = T＿＿＿＿ S＿＿＿＿＿'(引 @Pixar),按字母位疑似 'Trade Stocks'——疑似股票交易产品起势;另蹭 'Polymarket:SpaceX 6/30 前估值摸 $2.5T'。仍每日多条 + 渠道码拉新链接。",
       sources:[
@@ -576,8 +581,8 @@ const DATA = {
       ]
     },
     {
-      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks ~82只(Batch 9·15只·8/17·待核查) · AUM $622M全球第二(超xStocks·8/17·The Block) · FPSL生息 · @bstocksfinance独立品牌(8/13)",
-      sub:"6/1 揭晓 · 真实股票 + bStocks ~82只(+Batch 9 15只·8/17·具体标的待人工核查) · AUM $622M(全球第二·超越xStocks $600M·8/17·The Block) · @bstocksfinance独立品牌X账号(8/13) · 9周年(7/14·3.23亿用户) · FPSL + super app",
+      nm:"Binance", tier:1, color:"#f0b90b", ink:"#1c1c1c", status:"live", statusTxt:"逾 8,000 美股 + bStocks ~92只(Batch 10·10只·8/19·AAPL/AMZN/GS等) · AUM $10亿+(8/19·Anchorage Digital加入托管·超Ondo·全球第一候选) · FPSL生息 · @bstocksfinance独立品牌(8/13)",
+      sub:"6/1 揭晓 · 真实股票 + bStocks ~92只(Batch 10·10只·8/19·AAPL/AMZN/GS等) · AUM $10亿+(8/19·Anchorage Digital加入托管·超Ondo全球第一候选) · @bstocksfinance独立品牌X账号(8/13) · 9周年(7/14·3.23亿用户) · FPSL + super app",
       promo:[
         "悬念营销兑现:Hey Stock → bStocks,解谜→揭晓节奏完整,BNB 同步涨 8%",
         "Richard Teng (co-CEO) 主导 'multi-asset financial super app' 战略定位",
@@ -637,7 +642,10 @@ const DATA = {
         {t:"★ bStocks第七批10只·货架扩至66只(8/5·12:00 UTC·Binance官方)：ALABB(Astera Labs)/ASMLB(ASML·荷兰EUV光刻机龙头·bStocks首只欧洲核心科技)/ASTSB(AST SpaceMobile)/BMNRB(BitMine)/COHRB(Coherent·光通信)/CRDOB(Credo Technology)/IRENB(IREN·AI算力挖矿)/NFLXB(Netflix)/SMCIB(Super Micro Computer·AI服务器)/USARB(USA Rare Earth·稀土)·零Maker费延续至8/31·完整扩品时间线：6/11 6只→6/22 10只→6/30 15只→7/7 25只→7/13 26只→7/15 36只→7/22 46只→7/30 56只→8/5 66只", src:"https://dailycoin.com/binance-adds-10-tokenized-stocks-including-asml-and-netflix"},
         {t:"★ bStocks第八批·GMEB(GameStop 1:1代币化)8/12上线·货架扩至67只·同日纳入Cross/Portfolio Margin·BNB Chain PancakeSwap同步上线GMEB·★GameStop为bStocks首只高波动Meme股代币化标的·背景：GME 8/3宣布$14亿可转换票据换股·完整扩品时间线：...→8/5 66只→8/12 67只", src:"https://cryptobriefing.com/binance-tokenized-stock-gamestop-bstocks/"},
         {t:"★ bStocks Batch 9·15只新增·货架扩至约82只(8/17·Binance官方公告·具体标的待人工核查)·★Google已索引官方公告'Binance Adds 15 bStocks Tokenized Securities as ...'·15只为bStocks单批历史最大扩品·较Batch 7(10只·8/5)·Batch 8(单只GMEB·8/12)显著扩量·★具体新增标的未知(binance.com远程受阻)·待人工访问binance.com核对·完整扩品时间线：6/11 6只→6/22 10只→6/30 15只→7/7 25只→7/13 26只→7/15 36只→7/22 46只→7/30 56只→8/5 66只→8/12 67只→8/17 ~82只", src:"https://www.binance.com/en/support/announcement/detail/0e22b98c9f154d35b50f40dbad43d1c5"},
-        {t:"★★ bStocks AUM $610.6M超越Kraken xStocks($601.2M)·成为全球第二大代币化股票发行人(8/12·Cointelegraph·上线仅约2个月)·全市场~$27亿·Ondo Finance仍为第一·★同日宣布@bstocksfinance专属品牌X账号(8/13·~13,800粉丝·'bStocks now has a home of its own')·bStocks品牌化与市场份额双重里程碑", src:"https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer"}
+        {t:"★★ bStocks AUM $610.6M超越Kraken xStocks($601.2M)·成为全球第二大代币化股票发行人(8/12·Cointelegraph·上线仅约2个月)·全市场~$27亿·Ondo Finance仍为第一·★同日宣布@bstocksfinance专属品牌X账号(8/13·~13,800粉丝·'bStocks now has a home of its own')·bStocks品牌化与市场份额双重里程碑", src:"https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer"},
+        {t:"★★ bStocks Batch 10·10只新增·货架扩至约92只(8/19·Yahoo Finance·Binance官方)·含AAPL(苹果)/AMZN(亚马逊)/GS(高盛)/PYPL(PayPal)/AMAT(应用材料)/DELL(戴尔)/BE(Bloom Energy)/FLNC(Fluence Energy)/SMHB(VanEck半导体ETF多)/SOXSB(Direxion半导体ETF空)·全bStocks交易对做市商手续费豁免至8/31·BTC Convert零手续费同步支持·(Yahoo Finance·8/19)", src:"https://finance.yahoo.com/markets/crypto/articles/binance-adds-10-more-tokenized-072709446.html"},
+        {t:"★★ bStocks AUM突破$10亿里程碑(8/19·代币化股票史上最快75天·The Block/Yahoo Finance)·Anchorage Digital(OCC联邦银行信托牌照·首家)新加入bStocks托管合作体系·AUM格局可能重排：bStocks $10亿或超越Ondo Finance(~$9.57亿8/17口径)成全球第一大代币化股票发行人·(The Block·Yahoo Finance·8/19)"},
+        {t:"★ Binance Agent OS(8/20·PRNewswire·TechCrunch)：AI代理操作系统·标准化连接AI应用与Binance金融基础设施·MCP Server支持·兼容ChatGPT/Claude/Codex/Cursor·子账户权限管控·用户可随时撤销授权·bStocks/TradFi交易可通过AI代理自动化执行·与Bitget GetClaw AI原生账户正面竞争·(TechCrunch:'Binance now lets AI agents trade'·8/20)", src:"https://www.prnewswire.com/news-releases/binance-introduces-agent-os-to-connect-ai-applications-to-financial-infrastructure-302856306.html"}
       ],
       xsig:"📡 X实抓(6/1 12:00):Hey Stock 悬念降温——主页未见正式揭晓帖,最新转为玩梗('touching grass')+ 区块链科普(Academy),热度回落;置顶仍为 5/27 女高管入选 Fortune。揭晓或延期/转活动页,待确认。※ [公开新闻后续] bStocks 已通过官方新闻稿正式发布(Fortune/TheBlock 等均确认上线),非 X 主页推文首发。",
       sources:[
@@ -900,7 +908,7 @@ const DATA = {
       ]
     },
     {
-      nm:"Coinbase", color:"#0052ff", ink:"#fff", status:"live", statusTxt:"✅ Take Control 6/16 落地 · 卢森堡 MiCA Hub(6/25) · 1:1代币化股票(非美·8/1确认上线) · US500永续8/17(CFTC·7/31宣布) · 加拿大Everything Exchange战略(7/21)",
+      nm:"Coinbase", color:"#0052ff", ink:"#fff", status:"live", statusTxt:"✅ Take Control 6/16 落地 · 卢森堡 MiCA Hub(6/25) · 1:1代币化股票(非美·8/1确认上线) · 阿布扎比ADGM-FSRA代币化证券牌照(8/11) · US500永续8/17(CFTC·7/31宣布) · 加拿大Everything Exchange战略(7/21)",
       sub:"6/1 美股上线 · 6/16 Take Control 落地 · 6/25 卢森堡 MiCA Hub(首家持EU MiCA牌照美国所) · EU 5%转仓奖励(7/13截止) · 1:1代币化股票(非美·7/1已上线·原计划8月) + 24/7黄金白銀期货",
       promo:[
         "被业界点名为代币化股票关键玩家",
@@ -928,7 +936,8 @@ const DATA = {
         {t:"★ 卢森堡 MiCA Hub 确立 + EU 5%转仓奖励(6/25–6/27·BanklessTimes/CoinDesk)：①Coinbase 6/25拿下卢森堡 MiCA CASP 授权·指定卢森堡为 EU 总部·成首家持 EU MiCA 牌照的美国加密所·全覆盖 EU 27国 4.5亿用户；②7/1 MiCA 清场后同步推出 5% 转仓奖励(7/13截止·EU主要市场+英国新用户转入·CoinDesk 6/27确认)；③与 OKX EU 8%存款匹配(至7/13)组成最强 MiCA 双强承接格局——合规背书+迁移激励双层组合·EU代币化股票赛道格局：Coinbase/OKX/Kraken/Robinhood EU 四强承接 Binance 4.5亿EU退出用户", src:"https://www.banklesstimes.com/articles/2026/06/25/coinbase-secures-luxembourg-mica-licence-to-serve-all-27-eu-states/"},
         {t:"★ Base L2 1:1代币化股票生态即将上线(7/21·Jesse Pollak X官宣)：'imminent'·无发行日期/标的列表披露·1:1真实持股vs合成品路线·Base L2作为开放链上分发层(区别于Coinbase Take Control平台内1:1代币化·非美用户·7/1已上线)·Pollak承认Base EVM代币化赛道落后Robinhood Chain·Fortune 7/20·Pollak承认Base社交战略失败→全面转向Finance基础设施", src:"https://cointelegraph.com/news/bases-tokenized-equities-imminent-pollak"},
         {t:"★ 加拿大'Everything Exchange'战略宣布(7/21·BNN Bloomberg/crypto.news)：Coinbase加拿大CEO Eric Richmond公开宣布将Everything Exchange落地加拿大·产品线：加密+1:1代币化美股(真实持股·完整股息权·24/7·即时结算)+预测市场+未来加元稳定币(待2027加拿大稳定币规则落地后)；代币化股票7月底前向非美用户开放(含加拿大·1:1真实股权背书·区别于CFD/合成品路线)·★Everything Exchange从US+EU向北美全域扩张·单账户整合全资产叙事覆盖最完整", src:"https://crypto.news/coinbase-plans-everything-exchange-launch-in-canada-with-tokenized-stocks/"},
-        {t:"★ US500 Equity Index Perp-Style Futures 8/17上线(7/31宣布·Coinbase Derivatives/CFTC)：S&P 500大盘基准指数永续，无到期日，20x杠杆，24/7；计划接受USDC抵押（待CFTC批准）——继6/8 AI10/China10/Defense10/Tech100四只主题指数永续后，Coinbase Derivatives向S&P 500大盘基准延伸；美国零售首次可通过CFTC合规CEX永续式期货获得S&P 500敞口；与CME传统到期式S&P 500期货差异化（永续/无到期日）", src:"https://en.cryptonomist.ch/2026/07/31/us500-perpetual-futures-coinbase/"}
+        {t:"★ US500 Equity Index Perp-Style Futures 8/17上线(7/31宣布·Coinbase Derivatives/CFTC)：S&P 500大盘基准指数永续，无到期日，20x杠杆，24/7；计划接受USDC抵押（待CFTC批准）——继6/8 AI10/China10/Defense10/Tech100四只主题指数永续后，Coinbase Derivatives向S&P 500大盘基准延伸；美国零售首次可通过CFTC合规CEX永续式期货获得S&P 500敞口；与CME传统到期式S&P 500期货差异化（永续/无到期日）", src:"https://en.cryptonomist.ch/2026/07/31/us500-perpetual-futures-coinbase/"},
+        {t:"★★ Coinbase 8/11获阿布扎比ADGM(FSRA)代币化证券牌照·Coinbase Onchain SPV Ltd.·授权范围：安排投资交易+代币化证券托管·首产品Apple CB Certificates(AAPL真实股份1:1背书·链上可流通)·代币化证券兼具法定证券监管保护+区块链原生特性(DeFi可组合性+钱包可携带)·★Coinbase Abu Dhabi Hub成为美国以外首个FSRA持牌代币化证券中心·差异化于Base Chain 1:1代币化(非美用户·7/1上线)·后续扩至其他Nasdaq/NYSE股票·(TechTimes·Fortune·8/11-8/19)", src:"https://www.techtimes.com/articles/323926/20260811/coinbase-secures-abu-dhabi-license-wallet-only-stock-trading-redemption-requires-broker.htm"}
       ],
       xsig:"📡 X实抓(6/1):置顶 One Card(消费返最高 4% BTC + $50);另推 '$100万 BTC 连胜池 + 3% 转入奖励 + 40% staking boost + Coinbase One 首年8折'(5/31 截止)——纯 BTC 向;代币化股票仍在路线图,未在 X 推。",
       sources:[
