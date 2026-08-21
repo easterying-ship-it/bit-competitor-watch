@@ -164,10 +164,16 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-08 → 08-21",
-  updated: "2026-08-21 19:00 (北京时间)",
+  updated: "2026-08-21 21:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+
+    {grp:"main", date:"8/21", tag:"t-new", txt:"⚙️ Bitget CFD 8/21动态分层保证金管理升级·XAUUSD最高800x(≤10万USDT仓位·保证金率0.125%)·首次发布USDCNH(美元/离岸人民币)最高100x(≤100万USDT仓位·1%)·★分层机制核心：保证金率随仓位规模逐档递进·仅对该档范围内仓位部分收对应费率·大仓位用户不再按最高档全仓计价·更大灵活性+精细化风控·★背景：Bitget CFD XAUUSD上线以来日均成交达$80亿·为最活跃CFD品种·8/21分层升级为机构/高净值用户大仓位部署提供更高弹性·★与8/20 MT5子账户(5个·独立EA/算法策略隔离)·8/12机构级CFD流动性(亚毫秒撮合·FIX API·一线银行+非银做市商)构成Bitget CFD专业基础设施三层堆栈·(Daily Guardian·Bitget官方·8/21)", src:"https://dailyguardian.ca/bitget-cfd-introduces-dynamic-leverage-with-up-to-800x-leverage-on-gold/"},
+
+    {grp:"other", date:"8/21", tag:"t-new", txt:"📅 ★★ Coinbase CEO Armstrong 8/21声明'监管清晰度两路必达'·CLARITY Act 9/15参议院cloture程序票+CFTC规则草案9/16双节点确立·★Armstrong：'立法轨或行政规则轨·两路皆通·清晰度必将到来'·核心双节点：①9/15参议院CLARITY Act启动辩论动议(motion to proceed)cloture票·非最终通过投票·共和党持53席须再获7+民主党票达60票门槛 ②CFTC拟9/16发布加密市场结构规则草案(接续8/20 Selig Bloomberg TV'规则轨已备好'声明)·★★Securitize总裁Redfearn同日(The Block 8/20)披露：SEC Innovation Exemption延至'大概10月初(probably early October)'·CLARITY Act通过后推出·若传统金融机构(SIFMA等)诉讼挑战可能再延2年·★Galaxy Research当前CLARITY Act 2026年通过概率约10%·Polymarket约17%·Armstrong声明定调行政规则轨为主干·立法轨为加速选项·9/15-9/16为代币化股票赛道下一关键监管双节点·(CryptoTimes·The Block·Crypto Economy·8/20-8/21)", src:"https://www.cryptotimes.io/2026/08/21/coinbases-armstrong-clarity-coming-either-way-senate-vote-or-cftc-sec-rules/"},
+
+    {grp:"other", date:"8/21", tag:"t-new", txt:"💊 MEXC 8/21上线MRNAON(Moderna·Ondo代币化现货)·踩准MRNA 8/19 +177%→8/20 -25%极端波动窗口完成上线·★事件背景：Moderna+Merck 8/19宣布个性化mRNA癌症疫苗(黑色素瘤)三期临床达成主要终点·MRNA单日+177%(从$62.96→$174.38·历史级涨幅·空头遭重创)·8/20获利回吐-25%(-$14-18亿市值)·MRNAon(Ondo代币化)同期从ATH $193.43→$136.20(-30%)·★MEXC上线节奏：8/20 09:00 UTC开放存款+MRNAON/USDT现货·8/21 09:00 UTC开放提现·+177%暴涨48小时内完成Ondo代币化现货上线·★赛道含义：代币化股票'叙事跟随'极端事件速度再验证·MRNA极端生物科技催化48小时内上线·±30%波动窗口内落地·与MEXC 0808 Stock Season($50万·至8/28)和Win Infinity Arena($1000万·8/25-9/15)同期·代币化生物科技赛道正式打开叙事空间·(Chainwire·CNBC·The Crypto Basic·Benzinga·8/19-8/21)", src:"https://chainwire.org/2026/08/21/mexc-lists-ondo-tokenized-stock-moderna-mrnaon-expanding-access-to-u-s-biotech-exposure/"},
 
     {grp:"other", date:"8/21", tag:"t-new", txt:"📈 ✅★★ 三星电子董事会8/21正式通过·2026年总股东回报₩90-110万亿韩元($65-80亿·三星官方新闻稿确认)·韩国企业史上最大单次股东回报·★★官方确认数字：Samsung Global Newsroom 8/21 披露'2026全年股东回报₩90-110万亿韩元·韩企史上最大·约$65-80亿'·Korea Times口径'最高$79.6B'与官方上限₩110T吻合·★★首期执行细节：董事会同日批准₩15万亿($10.9亿)回购方案·8/24-11/21·回购53,285,968股·三家承销券商(三星证券/新韩证券/KB证券)·所购股份用于员工股权激励(非注销)·★★注意：此前Bloomberg/Reuters 8/20'₩100万亿'预测和Bloomingbit'₩150万亿/$108亿'口径均与官方₩90-110万亿范围存在偏差·官方数字为权威·★★全年剩余回报(特别股息+后续回购)将于明年1月待2026全年业绩出炉后再行决定·整体目标维持FCF 50%+分配·★市场反应：CNBC 8/21报道韩股上涨·三星GDR 8/21+5.9%·三星股价8/20已先行+9-10%·8/21官批为最终确认节点·★与SK Hynix 8/20 ₩40万亿回购(史上最大韩企单次回购)形成韩股双龙同周最大股东回报双发·★代币化影响面：Bybit SAMSUNGUSDT永续·Gate CSOP Samsung 2x·MEXC CSOPSAMSUNG2LUSDT·Binance SKHYB(韩股bStocks)同步受益于正向情绪延续·(Samsung Global Newsroom·CNBC·Korea Times·8/21)", src:"https://news.samsung.com/global/samsung-electronics-to-implement-largest-ever-shareholder-return-in-2026-estimated-at-krw-90-to-110-trillion"},
 
