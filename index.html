@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-08 → 08-22",
-  updated: "2026-08-22 11:00 (北京时间)",
+  updated: "2026-08-22 13:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -776,7 +776,7 @@ const DATA = {
       ]
     },
     {
-      nm:"Bybit", color:"#f7a600", ink:"#1c1c1c", status:"live", statusTxt:"TradFi 200+(8/14·US/HK/KR+ETF+商品+指数) · xStocks · IPO Express 6/7",
+      nm:"Bybit", color:"#f7a600", ink:"#1c1c1c", status:"live", statusTxt:"TradFi 200+(8/14·US/HK/KR+ETF+商品+指数) · xStocks抵押品(7/31·Margin+借款) · Dual Asset 10只(8/7) · IPO Express 6/7",
       sub:"TradFi 永续 + xStocks + IPO Express(首家 CEX 代币化 IPO 认购)",
       promo:[
         "TradFi 全家桶叙事(永续/xStocks/RWA Earn 一体)",
@@ -819,7 +819,9 @@ const DATA = {
         {t:"★ RWA Earn 正式上线(6/15·PRNewswire):首批 PIMCO Dynamic Income Opportunities Fund(PDO·企业债/MBS/政府债·AUM $2.26万亿) + CMBI Investment Grade Bond Fund；DigiFT 代币化·Plume 链上基础设施；USDC 订阅，认购/赎回/链上交易全程零手续费；赛道首家 CEX 将 PIMCO 级别机构债基引入链上零售访问", src:"https://www.prnewswire.co.uk/news-releases/bybit-launches-rwa-earn-bringing-institutional-investment-opportunities-on-chain-to-eligible-users-302800321.html"},
         {t:"★ Global Assets Trading Fest(6/18·至7/16·$202K USDT奖池)：两大排行榜各$101K·顶奖$2万/人·全球资产跨类别(贵金属/能源/外汇/指数/CFD/xStocks)·NVDAX/SPCXX/TSLAX等RWA对入围·KYC L1+·与零佣金(6/8–7/10)+Starship裂变(至7/12)+Token Buzz(至6/30)+Football Season($100万·至7/19)五活动并轨——截至本轮已知赛道单月并发活动最多平台", src:"https://chainwire.org/2026/06/18/global-assets-trading-fest-on-bybit-offers-202000-usdt-prize-pool-across-tradfi-and-crypto-markets/"},
         {t:"⚠ 新加坡 MAS 投资者警示名单(6/17·CryptoTimes/CryptoBriefing)：Bybit Fintech Limited 被列入 MAS IAL，标注'可能被误认为持牌机构'；不属执法行动/禁令；Bybit 已 geo-block 新加坡 IP，新加坡用户实际影响有限；Bybit 6/18 声明正在与 MAS 沟通；继4月从马来西亚 SC 警示名单移除后不到两月再被新加坡 MAS 列入——合规监管风险持续累积", src:"https://cryptobriefing.com/bybit-singapore-mas-investor-alert-list/"},
-        {t:"★ Bybit EU '迁入有奖(Move Your Funds, Get Rewarded)' MiCA承接活动(~6/26 PRNewswire·活动6/19–7/31)：针对EEA新用户(未持Bybit EU账户·不含马耳他)；①新用户礼包：€20起入金礼+€120卡欢迎礼+首月Netflix/Spotify/ChatGPT 100%现金返还(上限€50)；②存款≥$100即快速解锁VIP费率权益；③存款≥$5万年化3%现金返还(USDC月付12个月·上限$30万/年)；★精准卡位Binance EU 7/1强制退出·Bybit EU持奥地利FMA MiCAR牌照(覆盖EEA·不含马耳他)·与OKX EU 8%存款匹配(至7/13)共同构成MiCA 7/1后EU存款迁移双强承接方", src:"https://www.prnewswire.co.uk/news-releases/bybit-eu-strengthens-european-positioning-ahead-of-micar-transition-302806575.html"}
+        {t:"★ Bybit EU '迁入有奖(Move Your Funds, Get Rewarded)' MiCA承接活动(~6/26 PRNewswire·活动6/19–7/31)：针对EEA新用户(未持Bybit EU账户·不含马耳他)；①新用户礼包：€20起入金礼+€120卡欢迎礼+首月Netflix/Spotify/ChatGPT 100%现金返还(上限€50)；②存款≥$100即快速解锁VIP费率权益；③存款≥$5万年化3%现金返还(USDC月付12个月·上限$30万/年)；★精准卡位Binance EU 7/1强制退出·Bybit EU持奥地利FMA MiCAR牌照(覆盖EEA·不含马耳他)·与OKX EU 8%存款匹配(至7/13)共同构成MiCA 7/1后EU存款迁移双强承接方", src:"https://www.prnewswire.co.uk/news-releases/bybit-eu-strengthens-european-positioning-ahead-of-micar-transition-302806575.html"},
+        {t:"★ Bybit Dual Asset 8/7新增4只xStocks·METAx/TSLAx/HOODx/CRCLx·共10只双资产配对·8h/1D/7D三期·每笔30–200,000 USDT·覆盖AI(Meta)/电动车(Tesla)/金融科技(Robinhood)/稳定币(Circle)四行业·非保本结构+固定预期收益·(Chainwire·PRNewswire·8/7)", src:"https://chainwire.org/2026/08/07/bybit-dual-asset-integrates-four-new-xstocks-expanding-use-cases-for-tokenized-equities-on-bybit/"},
+        {t:"★ Bybit 7/31新增6只xStocks为Margin Trading/加密借款/机构借款三产品抵押品·NVDAX/HOODX/CRCLX/TSLAX/GOOGLX/AAPL·7/31 08:00 UTC起生效·Unified Trading Account(UTA)/加密借款/机构借款全覆盖·★与Binance bStocks 15只抵押品(7/4)+Kraken xStocks 10只抵押品(7/3)形成三平台代币化权益抵押品三轨并行·(PRNewswire·7/31)", src:"https://www.prnewswire.com/news-releases/bybit-adds-six-xstock-assets-as-collateral-across-margin-trading-crypto-loans-and-institutional-loans-302839944.html"},
       ],
       xsig:"📡 X实抓(6/1):置顶仍挂 '$100M 全球资产 Giveaway·免费送 xStock';新增 'xStocks Puzzle Hunt'(联合 @xStocksFi,20万 USDT 奖池)解谜拉新;#NewFinancialPlatform 悬念延续。",
       sources:[
@@ -864,7 +866,7 @@ const DATA = {
       ]
     },
     {
-      nm:"Kraken", color:"#7132f5", ink:"#fff", status:"live", statusTxt:"xStocks 国际扩张·GTN合作(7/22·HK/UK/KR港英韩股)·$370亿+ · USD结算加密期权(7/20) · IPO目标2027年",
+      nm:"Kraken", color:"#7132f5", ink:"#fff", status:"live", statusTxt:"xStocks EEA 7,000+(8/18·三重持牌) · 代理投票权(8/5·125,000+持有人) · GTN国际扩张(7/22·HK/UK/KR) · $370亿+ · IPO目标2027年",
       sub:"× Nasdaq · xStocks 龙头 · USD结算期权(7/20)",
       promo:[
         "已收购 xStocks 发行方 Backed Finance(Dec 2025,自有平台);Alpaca 为首选托管商(Dec 17, 2025 扩大合作,负责底层股票托管/代币化基础设施)——同一 Alpaca 也为 Binance 股票清算/托管服务",
@@ -900,6 +902,8 @@ const DATA = {
         {t:"★ xStocks 10只正式作为Kraken Pro期货/保证金抵押品(7/3·Kraken Blog)：SPYx/QQQx/AAPLx/TSLAx/NVDAx/GOOGLx/HOODx/MSTRx/GLDx/CRCLx；折扣率：宽基ETF/贵金属 10%(最高$100万)/个股 20%(最高$25万)/高波动股 30%；期货抵押：EEA+非美用户；保证金抵押：非美/非EEA用户；★与Binance bStocks 15只纳入Cross/Portfolio Margin(7/4)并行·代币化权益作为杠杆交易抵押品赛道同周双落地", src:"https://blog.kraken.com/product/xstocks/eligible-as-collateral-for-futures-and-margin"},
         {t:"★ USD结算BTC/ETH加密期权上线(~7/20·CryptoBriefing)：全现金美元结算·无需加密抵押品·线性结构·USD计价结算保证金/损益/交割·覆盖周度/月度/季度/半年多到期周期·RFQ面向机构合格客户·默认组合保证金·后续计划公开订单簿+欧洲访问(H2 2026待监管)·注：此为BTC/ETH加密期权(非代币化权益期权)", src:"https://cryptobriefing.com/kraken-usd-settled-bitcoin-ethereum-options/"},
         {t:"★ Payward × GTN合作(7/22·TheBlock)：xStocks国际扩张至港股/英股/韩股·GTN提供90+国际市场执行/托管/登记基础设施·港股已覆盖·英国/韩国待监管批准·xStocks目标500+只(美股+ETF+IPO相关)·累计成交量突破$370亿+·链上持有人~20万·与Coinbase UK FCA真实持股(8/6)/Gemini EU/Dinari并列代币化权益国际扩张三路线", src:"https://www.theblock.co/amp/post/409448/kraken-parent-payward-partners-gtn-scale-xstocks-internationally-beyond-us-equities"},
+        {t:"★ Payward × Broadridge 8/5宣布·xStocks持有人获代理投票权·125,000+持有人可通过ProxyVote.com提交股东投票意见·Web3钱包认证+委托投票全数字化·★填补代币化权益最大法律缺口(股东治理权)·与Coinbase代币化(真实投票权·ADGM+UK牌照)对比·Ondo/Binance bStocks持有人无投票权·Kraken xStocks成已知最大规模代币化权益持有人投票赋权·(PRNewswire·CryptoBriefing·8/5)", src:"https://www.prnewswire.com/news-releases/broadridge-and-payward-services-collaborate-to-give-xstocks-holders-a-voice-in-corporate-governance-302843541.html"},
+        {t:"★★ Kraken 8/18 EEA大规模扩张·7,000+只美股/ETF向欧洲经济区(EEA)用户开放·爱尔兰央行CASP+CySEC MiFID+E-money三重持牌框架·'代币化xStocks+7,000只真实持股+600+加密资产'三层统一EEA账户落地·★规模对比：Kraken EEA 7,000只 vs Coinbase UK 4,000只(FCA·8/6) vs Gate×Alpaca 10,000+(全球·8/13) vs Binance bStocks ~82只代币化·Kraken成已知EU最广美股覆盖CEX·(TheBlock·crypto.news·8/18)", src:"https://www.theblock.co/news/business/2026-08-18-kraken-us-stock-trading-europe-economic-area-412027"},
       ],
       xsig:"📡 X实抓(5/31):Bitcoin/crypto 调性;近期推 US 永续(经 Bitnomial 合规自证)+ Bitcoin Vault;代币化股票不在 X 重点。",
       sources:[
