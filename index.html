@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-09 → 08-23",
-  updated: "2026-08-23 00:30 (北京时间)",
+  updated: "2026-08-23 02:30 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -176,6 +176,8 @@ const DATA = {
     {grp:"other", date:"8/22", tag:"t-up", txt:"🔗 Robinhood Chain总TVL 8/22突破$10亿·L2Beat口径$10.8亿·Standard Chartered称'迄今增速最快区块链'·★7/1启动仅7周达成·主要驱动：稳定币市值近$6.4亿(USDe+50%至$2.86亿)·Morpho借贷+Uniswap V4+Lighter DEX构成三层DeFi生态·★注意：此TVL为整条链总锁仓(含稳定币/DeFi协议/所有资产)·有别于已在data的'Uniswap V4代币化股票成交量$10亿'(成交量)和'Uniswap V4代币化股票池TVL $3818万'(专属代币化股票流动性)三个口径不同指标·★赛道含义：Robinhood Chain已从'代币化股票专用链'演变为稳定币+DeFi+代币化股票复合生态·链层基础设施规模验证CEX(Binance bStocks/Bitget rToken/Kraken xStocks)+DEX(Robinhood Chain/Hyperliquid/Anchored)双轨格局中DEX轨道基础设施成熟度·(CryptoBriefing·8/22)", src:"https://cryptobriefing.com/robinhood-chain-crosses-1-billion-tvl/"},
 
     {grp:"other", date:"8/22", tag:"t-new", txt:"⚡ ★ Uniswap代币化股票成交量8/22突破$10亿·Robinhood Chain上Uniswap累计代币化股票成交量首破$10亿·Uniswap创始人Hayden Adams 8/22 X帖宣布·12只代币化股票日成交超$50万·日活跃交易者突破22万+·本周初口径$6.385亿→8/22突破$10亿·Adams预期：最终达$1万亿·★赛道含义：Robinhood Chain(7/1启动·7周)上Uniswap V4代币化股票累计成交$10亿为DEX层代币化股票全球最大里程碑·与Backpack/Solana代币化股票$4.65亿市值·Hyperliquid RWA永续·Anchored×Uniswap/Arbitrum并列·CEX(bStocks/rToken/xStocks)+公链DEX(Robinhood Chain/Hyperliquid/Solana)双轨格局进一步确认·(cryptonews.net·coinfomania·cryptobriefing·8/22)", src:"https://cryptonews.net/news/market/33332442/"},
+
+    {grp:"other", date:"8/22", tag:"t-info", txt:"⚠️ 行业风险·Fairmint CEO 8/22 CoinDesk专访：代币化股票或重演1960年代华尔街'纸质危机'·分发速度超前于所有权记录基础设施·★Joris Delanoue(Fairmint CEO·链上证券基础设施商)：代币化股票解决了真实的准入问题·但行业在所有权记录层面的进展落后于分发层·1968年华尔街纸质危机：后台积压→证券丢失→结算失败→NYSE周三停市·若无统一发行人认可的链上股东名册仍面临同类制度性风险·★与8/13 DTCC 40机构区块链结算实盘试点(10月全量)·8/8 NYSE×Securitize MOU构成'基础设施建设进行中但仍有结构性断层'叙事三角·(CoinDesk·8/22)", src:"https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says"},
 
     {grp:"other", date:"8/21", tag:"t-new", txt:"⚡ ★★ Gate 8/21上线东证(TSE)日本股票·约300只东京证券交易所Prime市场证券·USDT直购·无需日本券商账户·★首批标的含丰田汽车(7203.P)/索尼集团(6758.P)/软银集团(9984.P)/三菱UFJ金融(8306.P)/任天堂(7974.P)/东京电子(8035.P)·Gate Web先行·手机App后续上线·★★五市场里程碑：结合同日A股USDT-M永续上线·Gate完成NYSE/Nasdaq(美股10,000+)+港交所(港股1,500+)+KRX(韩股1,000+)+上交所/深交所(A股永续)+TSE(日股~300只真实持股)五大市场覆盖·成为迄今已知唯一在单一USDT账户内统一覆盖全球五大主要权益市场的CEX·(Metaverse Post·~8/21)", src:"https://mpost.io/gate-launches-japanese-stock-trading-on-tse-strengthening-its-one-stop-multi-asset-trading-ecosystem/"},
 
@@ -315,6 +317,8 @@ const DATA = {
     {grp:"other", date:"8/14", tag:"t-up", txt:"✨ Bybit TradFi永续8/14里程碑·官方PR确认货架突破200只·覆盖美/港/韩股·ETF·贵金属·指数·原油·★2026年4月上线以来持续每周扩品·从'数十只'到200+只·覆盖AI芯片/半导体/全球指数/Pre-IPO等高质量品类·★Bybit TradFi永续从赛道新产品进入'规模化覆盖'里程碑·相比Binance bStocks 66只代币化现货·Bybit TradFi永续已在衍生品层覆盖更广范围·(PRNewswire·8/14)", src:"http://www.prnewswire.com/news-releases/bybit-tradfi-perpetuals-extend-24-7-exposure-to-over-200-global-equities-and-pre-ipo-assets-302851866.html"},
 
     {grp:"other", date:"8/14", tag:"t-new", txt:"⚡ Bybit 8/14新增韩股+ETF永续5只·三星电机(SEMCO)/汉米半导体(Hanmi)/LG Electronics/NAVER/KODEX 200 ETF·全部USDT-M永续·最高25x杠杆·24/7·★Bybit韩股TradFi永续从三星/SK海力士/现代汽车(既有品种)系统性扩至制造业蓝筹(三星电机·三星电子电子零部件子公司)/半导体设备(汉米半导体·CMP研磨工艺)/互联网(NAVER·韩国Google)/ETF层(KODEX 200·韩国最大指数ETF)·★与8/14 TradFi 200+里程碑PR同日新增·与MEXC 8/11首批港股(快手/美团/CSOP SK Hynix/Samsung)·Gate 8/12港股+ETF(CSOP SK Hynix 2x/Samsung 2x/GFS/VST等)并列中文向平台韩/港股TradFi衍生品持续扩张·★Bybit韩股永续覆盖从蓝筹大厂(三星/SK海力士/现代)延伸至产业链上游(汉米半导体)/互联网(NAVER)/大盘ETF(KODEX 200)全链条·(bloomingbit·8/14)", src:"https://en.bloomingbit.io/feed/news/118345"},
+
+    {grp:"other", date:"8/14", tag:"t-new", txt:"✨ Gate Card积分兑换升级(8/14)·新增代币化股票+BTC/ETH/GUSD/XAUT为积分兑换选项·最高返现升至8%·★标的含NVIDIA/Apple/Google/SpaceX/Tesla/Micron/SanDisk/SK Hynix·100积分=1 USDT等值·无到期限制·★Gate消费卡积分体系从单一USDT/GT扩展至加密资产+代币化股票全品类·以卡片消费生态深化代币化股票用户粘性·(Gate官方·8/14)"},
 
     {grp:"other", date:"8/12", tag:"t-new", txt:"⚡ Crypto.com 8/12大规模扩张·1,500只代币化美股/ETF衍生品向EEA+全球适格用户推出·赛道最大单次上线规模·★产品结构：永续合约形态(非1:1持股·无投票权)·oracle定价·自动展期·★合规路径：MiFID II·Foris Capital CY Limited(Cyprus CIF·CySEC)·2025年5月收购Foris Capital获MiFID II牌照+已有MiCA批准·★覆盖：EEA+全球批准司法区(非美)·最低$1碎股·NVDA/TSLA/AAPL/GLD/SLV等·Stocks Earn最高4% p.a.·★赛道对比：1,500只远超Bybit 200只TradFi永续·Gate 39+只权益永续·Binance bStocks 67只现货·(CoinDesk·CryptoTimes·8/12)", src:"https://www.coindesk.com/business/2026/08/12/crypto-com-rolls-out-tokenized-stock-derivatives-as-crypto-exchanges-push-into-equities"},
 
