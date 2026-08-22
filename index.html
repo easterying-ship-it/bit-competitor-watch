@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-09 → 08-23",
-  updated: "2026-08-23 02:30 (北京时间)",
+  updated: "2026-08-23 04:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -184,6 +184,8 @@ const DATA = {
     {grp:"other", date:"8/21", tag:"t-new", txt:"✨ Gate 8/21首次上线中国A股USDT-M永续合约·正式完成美+港+韩+A股四市场全覆盖·★首批A股标的含贵州茅台/美的集团/海光信息/百济神州/富士康工业互联网/寒武纪/阳光电源·全部USDT-M永续·1-20x杠杆·★赛道意义：Gate成为迄今唯一在单一USDT账户内统一覆盖NYSE/Nasdaq(美股10,000+)+港交所(港股1,500+)+KRX(韩股1,000+)+上交所/深交所(A股)四大市场永续合约的CEX·A股标的覆盖白酒龙头(茅台)/家电龙头(美的)/AI芯片(海光/寒武纪)/生物医药(百济)/新能源(阳光)/科技制造(富士康工业)主要板块·★同周数据：Gate 7日净流入$2.73亿(全球CEX第二·仅次Binance)·24h净流入$2595万·RWA永续OI占全CEX赛道49.6%($3.788亿/$7.63亿)·(Metaverse Post·Odaily·约8/21)", src:"https://mpost.io/gate-update-top-2-in-global-cex-inflows-new-chinese-stock-futures-and-a-100000-usdt-event-contracts-carnival/"},
     {grp:"other", date:"8/19", tag:"t-new", txt:"⚡ Gate宇树科技(Unitree)8/19 IPO+629%首日暴涨→Gate同日迁移UNITREEUSDT官方永续·1-50x杠杆+5万USDT交易竞赛(至8/28 UTC+8)·★宇树科技8/19上交所STAR Market首日+629%·市值$530亿(全球首日表现最强AI机器人IPO之一)·Gate 8/19当日完成UNITREEUSDT从盘前永续→官方永续迁移·杠杆从10x升至最高50x·配套50,000 USDT交易竞赛：新用户首笔合约+5,000 USDT成交量→5 USDT；累计≥10,000 USDT成交量→按比例分享30,000 USDT奖池(上限200 USDT)·活动至8/28 16:00(UTC+8)·★与MEXC UNITREEUSDT(首发7/31·+1,104%日均成交暴增8/9)·Bybit UNITREEUSDT(8/15上线·10x)·Gate从IPO三级火箭(Pre-IPO盘前→IPO日迁移官方→高倍杠杆扩容)完整覆盖宇树科技全生命周期·(Odaily·8/19)", src:"https://www.odaily.news/en/newsflash/510680"},
     {grp:"main", date:"8/21", tag:"t-new", txt:"⚙️ Bitget CFD 8/21动态分层保证金管理升级·XAUUSD最高800x(≤10万USDT仓位·保证金率0.125%)·首次发布USDCNH(美元/离岸人民币)最高100x(≤100万USDT仓位·1%)·★分层机制核心：保证金率随仓位规模逐档递进·仅对该档范围内仓位部分收对应费率·大仓位用户不再按最高档全仓计价·更大灵活性+精细化风控·★背景：Bitget CFD XAUUSD上线以来日均成交达$80亿·为最活跃CFD品种·8/21分层升级为机构/高净值用户大仓位部署提供更高弹性·★与8/20 MT5子账户(5个·独立EA/算法策略隔离)·8/12机构级CFD流动性(亚毫秒撮合·FIX API·一线银行+非银做市商)构成Bitget CFD专业基础设施三层堆栈·(Daily Guardian·Bitget官方·8/21)", src:"https://dailyguardian.ca/bitget-cfd-introduces-dynamic-leverage-with-up-to-800x-leverage-on-gold/"},
+
+    {grp:"main", date:"8/21", tag:"t-info", txt:"⚠️ Binance UAE员工拘留事件(8/21·NYT报道)·两名员工近期在阿联酋机场被拘留·均已获释·非调查目标·★NYT 8/21报道(四名知情人证实)：一名Binance中层员工在沙迦机场被拘·羁押一夜；另一名迪拜子公司负责人7月在警察局接受问询·★Binance官方回应：UAE当局就一Binance客户资金账户第三方资金流向进行例行查询·员工'迅速获清白释放'·非调查目标·调查具体内容UAE当局未公开·★背景：阿布扎比2025年12月已向Binance发放牌照(伴随$20亿阿联酋主权基金投资)·UAE为Binance中东核心监管中枢·★合规风险信号：与Binance bStocks AUM破$10亿(8/19)·Agent OS发布(8/20)强势产品扩张并行·UAE合规质询出现于最关键业务节点·机构用户对平台合规稳定性敏感度值得关注·(NYT·Yahoo Finance·Benzinga·Blockonomi·crypto.news·8/21)", src:"https://finance.yahoo.com/markets/crypto/articles/two-binance-employees-were-detained-211746431.html"},
 
     {grp:"other", date:"8/21", tag:"t-new", txt:"📅 ★★ Coinbase CEO Armstrong 8/21声明'监管清晰度两路必达'·CLARITY Act 9/15参议院cloture程序票+CFTC规则草案9/16双节点确立·★Armstrong：'立法轨或行政规则轨·两路皆通·清晰度必将到来'·核心双节点：①9/15参议院CLARITY Act启动辩论动议(motion to proceed)cloture票·非最终通过投票·共和党持53席须再获7+民主党票达60票门槛 ②CFTC拟9/16发布加密市场结构规则草案(接续8/20 Selig Bloomberg TV'规则轨已备好'声明)·★★Securitize总裁Redfearn同日(The Block 8/20)披露：SEC Innovation Exemption延至'大概10月初(probably early October)'·CLARITY Act通过后推出·若传统金融机构(SIFMA等)诉讼挑战可能再延2年·★Galaxy Research当前CLARITY Act 2026年通过概率约10%·Polymarket约17%·Armstrong声明定调行政规则轨为主干·立法轨为加速选项·9/15-9/16为代币化股票赛道下一关键监管双节点·(CryptoTimes·The Block·Crypto Economy·8/20-8/21)", src:"https://www.cryptotimes.io/2026/08/21/coinbases-armstrong-clarity-coming-either-way-senate-vote-or-cftc-sec-rules/"},
 
