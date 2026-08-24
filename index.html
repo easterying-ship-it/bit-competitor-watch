@@ -164,10 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-11 → 08-25",
-  updated: "2026-08-25 02:00 (北京时间)",
+  updated: "2026-08-25 03:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+
+    {grp:"main", date:"8/25", tag:"t-info", txt:"⚙️ BNB Chain Pasteur Hard Fork 8/25 02:30 UTC预定升级·TPS翻近一倍(1,237→2,324)·直接利好bStocks BNB Chain/PancakeSwap DEX层·★BEP-682(跨链桥安全·拒绝重复验证签名)+BEP-695(验证器密钥管理)+BEP-675(区块容量扩容)三提案合并BEP-673元提案·吞吐量+88%·区块时间与最终确认性不变·★赛道含义：BNB Chain底层性能翻倍为bStocks代币化股票BEP-20 24/7高频交易提供更高链上容量支撑·与8/20 PancakeSwap v3新增10只bStocks DEX品种(累计DEX成交$31亿)协同·BNB Chain代币化股票基础设施持续强化·(crypto.news·cryptobriefing·8/25)", src:"https://crypto.news/bnb-chain-pasteur-hard-fork-goes-live-aug-25/"},
 
     {grp:"main", date:"8/20", tag:"t-new", txt:"⚡ PancakeSwap v3 BNB Chain新增10只bStocks DEX流动性(8/20·Thursday)·ASMLB(ASML)/NFLXB(Netflix)/SMCIB(SuperMicro)/ASTSB(AST SpaceMobile)/IRENB(IREN)/COHRB(Coherent)/CRDOB(Credo)/BMNRB(BitMine)/USARB(USA Rare Earth)/ALABB(Astera Labs)·均为Binance Spot已有品种(8/5 Batch 7)首次扩展至PancakeSwap v3 DEX层·BEP-20链上·24/7 DEX交易·★全平台bStocks DEX累计代币化股票成交$31亿+(PancakeSwap v3口径)·★bStocks CEX→BNB Chain BEP-20→DEX三层路径：继6/12初批5只+8/12 GameStop GMEB之后第三批PancakeSwap扩品·与Binance bStocks DeFi生态(Venus/Lista DAO/PancakeSwap)持续深化并行·★全bStocks做市手续费豁免至8/31持续运行·(Crypto Economy·CoinFomania·8/20)", src:"https://crypto-economy.com/pancakeswap-adds-10-tokenized-stocks-to-bnb-chain-expanding-real-world-asset-push/"},
 
@@ -262,6 +264,8 @@ const DATA = {
     {grp:"other", date:"8/19", tag:"t-info", txt:"📊 代币化股票链上市值$30亿里程碑·CryptoBriefing确认'Tokenized stocks surpass $3B in onchain market cap'·★8/17已验证$28亿(The Block)→8/18-19区间突破·Kraken EEA 7,000只真实持股上线(8/18)为单日最大AUM推手·三强格局维持：Ondo Finance #1(~$9.57亿)·Binance bStocks #2(~$6.22亿)·Kraken xStocks #3(~$6.00亿)·持有人131万+·链上月均转账$231亿·代币化股票从一年前$1.7亿→$30亿里程碑·30倍增幅·★具体突破日期待确认(访问受阻)·(CryptoBriefing·~8/18-8/19)", src:"https://cryptobriefing.com/tokenized-stocks-surpass-3b-onchain-market-cap/"},
 
     {grp:"other", date:"8/19", tag:"t-new", txt:"✨ MEXC Win: Infinity Arena 8/19发布·早鸟8/19 12:00 UTC开放·主赛事8/25–9/15·总奖池最高$1,000万USDT·三赛道：①团队成交量竞赛$150万USDT ②日成交量榜每日最高$28,571 USDT ③股票盈利大赛$10万等值XAUT·覆盖Stock Futures(210+品种)+Tokenized Stocks(200+只)+RealStocks(7,000+只)全线0手续费·★接棒0808 Stock Season($50万·至8/28)·以$1,000万奖池规模全面升级MEXC年度品牌化股票活动·与Binance bStocks 3x VIP积分·Gate TradFi CFD Financial Masters($50万·至9/3)·Bybit TradFi Tools Arena($10万·至9/12)同期并行·MEXC以最大单活动奖池主导赛道8月末-9月促销竞争·(GlobeNewswire·Manila Times·CoinGabbar·8/19)", src:"https://www.manilatimes.net/2026/08/19/tmt-newswire/globenewswire/mexc-launches-win-infinity-arena-with-0-fee-stock-trading-and-up-to-10m-usdt-prize-pool/2408391"},
+
+    {grp:"other", date:"8/19", tag:"t-new", txt:"🔗 ★ Coinbase Base App 8/19集成Hyperliquid永续合约·290+市场最高50x杠杆·含代币化股票+大宗商品永续·非美国/UK/加拿大用户·★Coinbase将Base App延伸至杠杆衍生品层·通过Hyperliquid链上订单簿路由执行·用户在Base App界面内操作·Hyperliquid负责链上撮合/结算·★290+品种覆盖BTC/ETH/代币化股票永续/大宗商品·最高50x杠杆·Coinbase Head of Engineering Turakhia：'永续合约是Base App用户请求最多的功能·约占全球加密成交量75%'·★地区限制：美国/英国/加拿大不可用·★赛道含义：Coinbase以Hyperliquid基础设施将Base App定位为消费级衍生品超级App·填补Everything Exchange衍生品层·含代币化股票永续敞口·与Bitget RWA Index Perpetuals(8/20首发)/Bybit TradFi 200+品种/Gate权益永续形成永续层对位竞争·(Decrypt·Finance Magnates·CoinSpectator·8/19)", src:"https://decrypt.co/375921/coinbase-50x-crypto-perps-base-app-hyperliquid"},
 
     {grp:"other", date:"8/18", tag:"t-new", txt:"⚖️ Kalshi华盛顿州8/18法院禁令·King County高等法院裁令Kalshi须在华盛顿州停止绝大多数业务并于8/19前实施IP/居住地地理围栏·★法院认定Kalshi违反华盛顿州《赌博法》及《消费者保护法》·区别于8/13巴尔的摩(马里兰州)联邦案·此为州级民事法院独立禁令·★赛道含义：预测市场(Polymarket/Kalshi)平台被州法院拦截→直接影响Gate Polymarket Live(Gate与Polymarket深度集成的事件合约功能)·Kalshi+Polymarket州级法律障碍持续积累·与CFTC 8/20创新顾问委员会议程并行·预测市场合规路径短期仍不明朗"},
 
