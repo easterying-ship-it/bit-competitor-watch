@@ -164,12 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-11 → 08-25",
-  updated: "2026-08-25 03:00 (北京时间)",
+  updated: "2026-08-25 09:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
 
-    {grp:"main", date:"8/25", tag:"t-info", txt:"⚙️ BNB Chain Pasteur Hard Fork 8/25 02:30 UTC预定升级·TPS翻近一倍(1,237→2,324)·直接利好bStocks BNB Chain/PancakeSwap DEX层·★BEP-682(跨链桥安全·拒绝重复验证签名)+BEP-695(验证器密钥管理)+BEP-675(区块容量扩容)三提案合并BEP-673元提案·吞吐量+88%·区块时间与最终确认性不变·★赛道含义：BNB Chain底层性能翻倍为bStocks代币化股票BEP-20 24/7高频交易提供更高链上容量支撑·与8/20 PancakeSwap v3新增10只bStocks DEX品种(累计DEX成交$31亿)协同·BNB Chain代币化股票基础设施持续强化·(crypto.news·cryptobriefing·8/25)", src:"https://crypto.news/bnb-chain-pasteur-hard-fork-goes-live-aug-25/"},
+    {grp:"main", date:"8/25", tag:"t-new", txt:"✅ BNB Chain Pasteur Hard Fork 8/25 02:30 UTC已升级落地·TPS翻近一倍(1,237→2,324)·直接利好bStocks BNB Chain/PancakeSwap DEX层·★BEP-682(跨链桥安全·拒绝重复验证签名)+BEP-695(验证器密钥管理)+BEP-675(区块容量扩容)三提案合并BEP-673元提案·吞吐量+88%·区块时间与最终确认性不变·★赛道含义：BNB Chain底层性能翻倍为bStocks代币化股票BEP-20 24/7高频交易提供更高链上容量支撑·与8/20 PancakeSwap v3新增10只bStocks DEX品种(累计DEX成交$31亿)协同·BNB Chain代币化股票基础设施持续强化·(crypto.news·cryptobriefing·pluang·8/25)", src:"https://crypto.news/bnb-chain-pasteur-hard-fork-goes-live-aug-25/"},
 
     {grp:"main", date:"8/20", tag:"t-new", txt:"⚡ PancakeSwap v3 BNB Chain新增10只bStocks DEX流动性(8/20·Thursday)·ASMLB(ASML)/NFLXB(Netflix)/SMCIB(SuperMicro)/ASTSB(AST SpaceMobile)/IRENB(IREN)/COHRB(Coherent)/CRDOB(Credo)/BMNRB(BitMine)/USARB(USA Rare Earth)/ALABB(Astera Labs)·均为Binance Spot已有品种(8/5 Batch 7)首次扩展至PancakeSwap v3 DEX层·BEP-20链上·24/7 DEX交易·★全平台bStocks DEX累计代币化股票成交$31亿+(PancakeSwap v3口径)·★bStocks CEX→BNB Chain BEP-20→DEX三层路径：继6/12初批5只+8/12 GameStop GMEB之后第三批PancakeSwap扩品·与Binance bStocks DeFi生态(Venus/Lista DAO/PancakeSwap)持续深化并行·★全bStocks做市手续费豁免至8/31持续运行·(Crypto Economy·CoinFomania·8/20)", src:"https://crypto-economy.com/pancakeswap-adds-10-tokenized-stocks-to-bnb-chain-expanding-real-world-asset-push/"},
 
@@ -532,6 +532,7 @@ const DATA = {
         "★ TokenInsight Q2 2026报告：TradFi永续成最快增长赛道·Bitget全球第二(仅次Binance)·Q2 TradFi永续成交量近$700亿·TradFi占Bitget总衍生品成交量8.61%(第二高渗透率)·月度成交从1月$520亿增至6月$2680亿·股票永续为Q2主要增长驱动力——与Binance二强格局确立·赛道外部权威背书(TokenInsight Q2·BeInCrypto/FinanceMagnates·7月中)"
       ],
       activities:[
+        {t:"★ rToken 2M笔交易里程碑(8/5·AlexaBlockchain/Cointrust)：rToken累计交易量突破200万笔·7月单日峰值127,691笔·7月MoM成交量+121.95%·7月跨资产(Crypto+rToken)用户MoM+23.54%·rToken AUM $1亿+(6/4 UTA集成后)·★背景：从6/3首发→8/5两个月达2M笔·代币化股票单平台累计交易量新基准·(AlexaBlockchain·Cointrust·8/5)", src:"https://alexablockchain.com/bitget-rtoken-tops-2-million-transactions/"},
         {t:"★ CryptoRank代币化股票执行质量独立评测(7/24)：Bitget大单执行居赛道第一·$50,000订单模拟滑点低于同类最高58%·评测标的：NVDA/MSFT/META/TSLA·赛道代币化股票市值接近$20亿·链上持有人471,000+·与TokenInsight Q2 TradFi永续全球第二并列双维度外部背书·Bitget直联NYSE/Nasdaq流动性为低滑点核心原因(CoinGape·7/24)", src:"https://coingape.com/bitget-tops-cryptorank-study-for-tokenized-stock-trade-execution-as-market-nears-2b/"},
         {t:"★ 行业首发Quanto Perpetual Futures(7/21·GlobeNewswire)：首合约MINIMAXHKDUSDT(港股MiniMax AI·HK:0100)·HKD定价/USDT结算·20x杠杆·24/7·8h资金费·Quanto机制使非美本币股票(HKD/JPY等)无需汇率转换即可以USDT全程结算·P&L港元价格数值1:1等值USDT·规划延伸JPY日元日本蓝筹·TradFi五层矩阵新增非美本币股票衍生品层", src:"https://www.manilatimes.net/2026/07/21/tmt-newswire/globenewswire/bitget-launches-industry-first-quanto-perpetual-futures-for-tradfi-assets/2388476"},
         {t:"Bitget × Siebly.io API SDK合作(7/20·ccn.com)：官方协作提供Node.js/TypeScript SDK接入Bitget V3统一账户及V2 Classic API·覆盖Spot/Futures/跟单/市场数据/账户管理全接口·内置HMAC/RSA/Ed25519多鉴权·算法交易者/量化机器人开发者门槛降低·Siebly同步支持Binance/Bybit/OKX/Gate/KuCoin/Coinbase/Kraken SDK·与GetClaw AI原生账户+Trading Builder IB招募+GetAgent AI日报三层算法/机构分发生态协同深化", src:"https://www.ccn.com/bitget-enhances-algorithmic-trading-experience-with-siebly-io-sdk-integration/"},
