@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-16 → 08-30",
-  updated: "2026-08-30 16:00 (北京时间)",
+  updated: "2026-08-30 17:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -376,6 +376,7 @@ const DATA = {
 
     {grp:"other", date:"8/16", tag:"t-up", txt:"📣 Justin Sun 8/16公开回应HTX制裁限制：'仅适用UK/EU用户'·FCA和解谈判进行中·★Sun在X声明：Binance/Bitget转账限制'仅适用UK和EU用户'·HTX不在UK/EU开展业务·★关键进展：HTX正在与英国FCA积极谈判和解·UK High Court案件在8/25前获法院stay(中止执行)·谈判焦点为HTX违规广告指控·★时间线对比：Binance+Bitget封锁8/23生效·UK High Court stay到期8/25→封锁比stay到期早2天·★叙事升级：HTX从'制裁被动承受方'转为'主动争议+FCA和解谈判'双轨·若FCA和解成功可能部分缓解欧洲合规压力·但双平台8/23封锁已确定生效·(BeInCrypto·CryptoTimes·bloomingbit·8/16)", src:"https://beincrypto.com/justin-sun-binance-htx-restrictions-response/"},
 
+    {grp:"other", date:"8/12", tag:"t-new", txt:"⚡ 新入场者·Crypto.com 8/12正式推出代币化股票产品·1,500+只美股/ETF合成衍生品(发行方Foris Capital CY Limited·Crypto.com全资子公司)·非1:1真实持股·合成敞口·24/7·最低$1·面向EEA及全球批准司法管辖区·Alpaca集成·★Crypto.com(约8,000万注册用户·CRO代币·全球前十CEX)以合成衍生品路线首次进入代币化股票赛道·品种含NVDA/TSLA/AAPL等蓝筹科技及贵金属ETF(GLD/SLV)·与Gate TradFi CFD/Bybit TradFi永续同为衍生品结构路线·区别于Bitget rToken/Binance bStocks/Kraken xStocks 1:1真实持股路线·★注：8/12为实际上线日·本轮首次纳入监控·(PRNewswire·CoinDesk·CryptoTimes·8/12)", src:"https://www.prnewswire.com/news-releases/cryptocom-launches-the-future-of-trading-with-tokenized-stocks-302849027.html"},
 
   ],
   competitors: [
@@ -1432,6 +1433,24 @@ const DATA = {
         {label:"GlobeNewswire·TradFi Zone升级(8/27)", url:"https://www.globenewswire.com/news-release/2026/08/27/3352148/0/en/zoomex-launches-tradfi-zone-upgrade-with-80-fee-discount-early-bird-campaign.html"},
         {label:"Bitcoin.com·Zoomex Stocks(6/17)", url:"https://news.bitcoin.com/as-capital-rotates-from-crypto-to-ai-zoomex-traders-already-have-access-to-both/"},
         {label:"Yellow.com·Zoomex(6/17)", url:"https://yellow.com/press-releases/capital-rotates-crypto-ai-zoomex-trading"}
+      ]
+    },
+    {
+      nm:"Crypto.com", tier:2, color:"#002d74", ink:"#fff", status:"live", statusTxt:"★新入场者 · 代币化股票衍生品(8/12) · 1,500+只 · 合成敞口 · EEA及全球批准地区",
+      sub:"新入场者 · 8/12上线 · 1,500+只美股/ETF合成衍生品 · Foris Capital CY Limited发行(Crypto.com全资子公司) · 非1:1真实持股 · 约8,000万注册用户",
+      promo:[
+        "24/7合成代币化股票衍生品(1,500+只·$1最低入场)·与Gate TradFi CFD/Bybit TradFi永续同为衍生品结构路线·区别于Bitget rToken/Binance bStocks/Kraken xStocks 1:1真实持股路线",
+        "EEA用户优先·全球批准司法管辖区逐步扩张·MiCA合规框架下运营",
+        "Alpaca集成·品种覆盖蓝筹科技(NVDA/TSLA/AAPL)及贵金属ETF(GLD/SLV)·与既有加密交易产品统一账户"
+      ],
+      activities:[
+        {t:"代币化股票衍生品正式上线(8/12·PRNewswire·CoinDesk)：1,500+只美股/ETF合成敞口产品·$1起·24/7·EEA+全球批准地区·Foris Capital CY Limited(Crypto.com子公司)发行·Alpaca集成·首批含NVDA/TSLA/AAPL及GLD/SLV等贵金属ETF·'Tokenized Stocks referencing underlying assets'合成衍生品结构(非1:1真实持股)", src:"https://www.prnewswire.com/news-releases/cryptocom-launches-the-future-of-trading-with-tokenized-stocks-302849027.html"}
+      ],
+      xsig:"🔒 X信号待抓取",
+      sources:[
+        {label:"PRNewswire·上线(8/12)", url:"https://www.prnewswire.com/news-releases/cryptocom-launches-the-future-of-trading-with-tokenized-stocks-302849027.html"},
+        {label:"CoinDesk·8/12", url:"https://www.coindesk.com/business/2026/08/12/crypto-com-rolls-out-tokenized-stock-derivatives-as-crypto-exchanges-push-into-equities"},
+        {label:"CryptoTimes·8/12", url:"https://www.cryptotimes.io/2026/08/12/crypto-com-launches-tokenized-stocks-with-24-7-access-to-nvda-tsla-aapl/"}
       ]
     }
   ],
