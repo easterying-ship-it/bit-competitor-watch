@@ -164,10 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-19 → 09-02",
-  updated: "2026-09-02 18:20 (北京时间)",
+  updated: "2026-09-02 19:20 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+    {grp:"main", date:"9/2", tag:"t-up", txt:"📈 ★★ Binance bStocks 9/2确认超越xStocks成代币化股票第二大发行商(按链上分布价值)·bStocks $610-622M > xStocks $601-609M·Ondo Finance仍居首($842M+)·★时间线：7/28 bStocks首次超越xStocks→短暂失去→8/3起稳定维持领先(bStocks $624M vs xStocks $579M)→9/1-2确认$610-622M vs $601-609M·★注：8/30 RWA.xyz快照数据显示xStocks仍略领先($609.3M vs $599.9M)·最终超越发生在8/30-9/2区间·★意义：bStocks从6/11上线仅80天达成·代币化股票格局确认变为Ondo(#1)·bStocks(#2)·xStocks(#3)三强·(CoinTelegraph·9/1-2)", src:"https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer"},
+    {grp:"other", date:"9/2", tag:"t-new", txt:"📊 ★★ 代币化股票8月持有人月度总结(9/2·多源)·8月新增928,400+持有人(历史单月最大增幅·3.4x 7月纪录272K)·★BNB Chain 730K持有人(全链第一)·Robinhood Chain 518.8K(第二)·两链合计占新增持有人70%+·★Binance bStocks单月持有人从52.9K跳至464.7K(+411.8K·单平台最大增幅)·8月bStocks首次在持有人规模上全面超越xStocks·★全市场持有人总数截至8/30突破2.36M·月度转账量$295亿(+415%·30日ATH)·代币化股票进入'百万级持有人大众资产'阶段·(news.bitcoin.com·CoinTurk·Cryptopolitan·9/2)", src:"https://news.bitcoin.com/crypto-news/tokenized-stock-holders-near-1-million-after-92-growth-in-30-days/"},
     {grp:"other", date:"9/2", tag:"t-new", txt:"📈 ★ Robinhood Chain 9/2 DEX日成交$20亿新ATH·周涨61%·★接棒9/1 $15.95亿ATH后24小时内再创历史新高·升至$20亿量级·主网7/1上线仅2月跃升全球第二大DEX链(按日成交量·仅次Solana)·代币化股票+memecoin×代币化股票配对双驱动·链总TVL约$7.25亿·★$20亿为代币化股票DEX基础设施规模化新里程碑·印证公链DEX层(Robinhood Chain/Hyperliquid/Anchored)已能与CEX层(Binance bStocks/Bitget rToken/Kraken xStocks)正面竞争流动性·(CryptoBriefing·9/2)", src:"https://cryptobriefing.com/robinhood-chain-dex-volume-surges-2b/"},
     {grp:"main", date:"9/1", tag:"t-new", txt:"⚡ ★★ Binance 9/1正式上线美股期权(Stock Options)·实物交割(Physical Settlement)·买方专属(只可买入call/put·不可卖出/做空期权)·覆盖1000+美股及ETF(全部7000+美股中初期提供1000+只期权合约·Phase 1仅限价单·买方最大亏损上限=权利金)·交易时段跟随美股市场(9:30am-4pm ET)·★结算架构：Nest Trading作为引介经纪商·Alpaca Securities负责经纪执行/结算/托管·行权后股票持仓由Alpaca持牌托管·在Binance资金账户及股票界面查看·★与bStocks(1:1代币化·24/7链上·BEP-20)并行：bStocks=24/7链上代币化现货·Stock Options=美市时段真实期权·期权层落地标志Binance在代币化股票赛道从'现货+算法+抵押'升级为'代币化现货+真实期权+永续+DEX+AI代理'完整生态·★赛道对比：Binance Stock Options(实物交割·买方仅买入·标准美市时段) vs Bybit Perp Options(9/17 20:00 UTC开始·USDT结算·perp底层·24/7·SPCX+NVDA首发) vs Bitget Stock+(7/2上线期权·免佣·散户层) vs Coinbase US500指数期货(CFTC合规·5年现金结算·美国本土)·Binance Stock Options为全球最大CEX首次提供传统美股实物交割期权·★Binance 8月TradFi永续月成交$4330亿(15x vs 1月·超BTCUSDT永续成交额2倍·市场份额76%·The Block/PRNewswire·9/1)·(Bloomberg/CoinDesk/crypto.news·9/1)", src:"https://crypto.news/binance-launches-u-s-stock-and-etf-options/"},
     {grp:"main", date:"9/1", tag:"t-new", txt:"📈 Binance 9/1港股·HK0625USDT USDⓈ-Margined Quanto永续合约上线(10:45 BJ·02:45 UTC)·追踪SHEIN International Holdings Limited(港交所：0625)·最高20x杠杆·4小时资金费·USDT结算·资金费率上限±1%·★SHEIN 9/1 HKEX IPO首日(开盘最低跌约10%后近平价收盘)同日Binance以HK0625USDT Quanto结构迅速上线港股永续·与MEXC SHEIN IPO Express(HKEX首日收盘价USDT结算·9/1结案)形成双轨同日响应·Quanto机制无需汇率换算直接USDT结算HKD定价港股·★赛道含义：港股IPO事件驱动代币化响应格局再验证·继宇树科技(8/19·上交所STAR Market·Gate/MEXC同日上线)之后又一亚股IPO触发Binance衍生品层单日响应·★注：MEXC SHEIN IPO Express为现货镜像结算产品·Binance HK0625USDT为USDT-M Quanto永续合约·两种不同产品形态同日响应同一港股IPO·(PANews English·Gate News·三.ws·9/1)", src:"https://panews.io/articles/01a05ac4-d8d3-716a-a83e-757808c5cbd4"},
@@ -1408,6 +1410,25 @@ const DATA = {
         {label:"GlobeNewswire·TradFi Zone升级(8/27)", url:"https://www.globenewswire.com/news-release/2026/08/27/3352148/0/en/zoomex-launches-tradfi-zone-upgrade-with-80-fee-discount-early-bird-campaign.html"},
         {label:"Bitcoin.com·Zoomex Stocks(6/17)", url:"https://news.bitcoin.com/as-capital-rotates-from-crypto-to-ai-zoomex-traders-already-have-access-to-both/"},
         {label:"Yellow.com·Zoomex(6/17)", url:"https://yellow.com/press-releases/capital-rotates-crypto-ai-zoomex-trading"}
+      ]
+    },
+    {
+      nm:"KuCoin", tier:2, color:"#23af91", ink:"#fff", status:"live", statusTxt:"★新入场者 · KuCoin Alpha × Ondo 代币化股票 8/11 · 40+只股票+8只ETF · Web3 Wallet自托管并行",
+      sub:"新入场者 · 中大型综合CEX · 8/11 KuCoin Alpha集成Ondo代币化股票(40+只股票·8只ETF·SPYon/NVDAon/MUon/SNDKon/CRCLon等) · KuCoin Web3 Wallet自托管路径并行 · 1-7月新增198只永续合约中61.1%为代币化股票或指数永续",
+      promo:[
+        "KuCoin Alpha平台集成Ondo代币化股票：用户通过KuCoin账户资金直接访问40+只代币化美股+8只ETF，无需独立钱包或链上操作",
+        "KuCoin Web3 Wallet自托管路径：与Alpha平台形成'CEX托管+自托管'双轨并行",
+        "Ondo Finance合作：xStocks/Backed发行商路线之外，通过Ondo Official代币化股票切入赛道",
+        "高永续合约代币化渗透率：1-7月新增198只永续合约中61.1%(约121只)为代币化股票或指数永续",
+        "早期也上线了CRCLX、TSLAX等xStocks代币化现货品种"
+      ],
+      activities:[
+        {t:"★ KuCoin Alpha × Ondo代币化股票集成(8/11·PRNewswire)：40+只代币化美股+8只ETF通过KuCoin Alpha开放给合格用户·无需独立钱包·用账户资金直接交易·SPYon/NVDAon/MUon/SNDKon/CRCLon等·KuCoin Web3 Wallet同步提供自托管路径·(PRNewswire·8/11)", src:"https://www.prnewswire.com/news-releases/kucoin-strengthens-its-rwa-ecosystem-with-ondo-tokenized-stocks-on-kucoin-alpha-302847964.html"}
+      ],
+      xsig:"🔒 X信号待抓取",
+      sources:[
+        {label:"PRNewswire·KuCoin Alpha×Ondo(8/11)", url:"https://www.prnewswire.com/news-releases/kucoin-strengthens-its-rwa-ecosystem-with-ondo-tokenized-stocks-on-kucoin-alpha-302847964.html"},
+        {label:"Manila Times·KuCoin Alpha(8/11)", url:"https://www.manilatimes.net/2026/08/11/tmt-newswire/pr-newswire/kucoin-strengthens-its-rwa-ecosystem-with-ondo-tokenized-stocks-on-kucoin-alpha/2402621"}
       ]
     },
   ],
