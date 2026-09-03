@@ -164,10 +164,11 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-20 → 09-03",
-  updated: "2026-09-03 11:00 (北京时间)",
+  updated: "2026-09-03 14:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+    {grp:"main", date:"9/3", tag:"t-up", txt:"⚙️ Bitget UTA API 9/3 17:00 UTC+8升级生效·单账户速率上限300→600 RPS/UID(翻倍)·主账号+子账号聚合上限120,000 RPS·Spot+Futures全接口·子账号流量统一计入主账号总上限·★KCGI 2026赛前(9/9-9/22·$300万·Crypto+TradFi永续+rToken三赛道)窗口提速·高频量化参赛团队并发容量翻倍·与8/20 MT5子账户(5个·独立EA隔离)·8/12机构级CFD FIX API·Trading Builder IB生态协同·机构量化基础设施三层堆栈完整·(Bitget官方API公告·9/3)", src:"https://www.bitget.com/support/articles/12560603890581"},
     {grp:"other", date:"9/3", tag:"t-up", txt:"📊 ★ Deribit 9/9迁移倒计时·已持有Coinbase衍生品总OI的96.6%·$39.26亿/$40.65亿·★9/9 Coinbase INTX全量迁移至Deribit Starbase引擎(~30分钟停机·存量仓位按mark price清算重建·INTX API密钥失效·须提前配置Deribit API)·机构大规模迁移de facto已完成·9/9起Coinbase App期权交易向符合资质用户开放·赛道含义：Deribit接管Coinbase衍生品基础设施+期权入口=Coinbase代币化股票四层生态(B20现货+Deribit永续+期权路由+DeFi生息)9/9实质闭环·(CryptoSlate·CoinLaw·crypto.news·9/1-3)", src:"https://cryptoslate.com/deribit-already-holds-96-6-of-coinbases-derivatives-open-interest-ahead-of-sept-9-migration/"},
     {grp:"other", date:"9/1", tag:"t-new", txt:"⚡ ★★ Hyperliquid×Kraken/Bitnomial 9/1披露·美国合规永续期货层战略洽谈·★Bloomberg 8/31首报·多源9/1跟进：Hyperliquid Labs正与Payward(Kraken母公司)旗下Bitnomial进行高级洽谈·拟结构：Bitnomial(2026/5/1被Payward以最高$5.5亿收购·持有CFTC注册交易所+清算所+经纪商牌照)允许注册美国用户在CFTC合规框架下交易与Hyperliquid链上DEX挂钩的一批永续合约·须身份核验·★战略含义：若落地·Hyperliquid xStocks(8/10 HyperCore已上线NVDA/SPY/QQQ/SKHY/MU)将通过Bitnomial向美国本土合规用户开放·代币化股票永续进入CFTC监管渠道·★时间线：监管变化含托管/订单路由可能需10-12月·双方均拒绝置评·监管批准尚未到位·与OKX×ICE JV(6/22·H2/26待批)·NYSE×Securitize MOU(8/8)并列美国合规衍生品赛道节点·(Bloomberg·CryptoTimes·FinanceFeeds·blockhead.co·9/1)", src:"https://www.cryptotimes.io/2026/09/01/hyperliquid-in-talks-with-kraken-parent-owned-bitnomial-for-u-s-entry/"},
     {grp:"main", date:"9/2", tag:"t-up", txt:"📈 ★★ Binance bStocks 9/2确认超越xStocks成代币化股票第二大发行商(按链上分布价值)·bStocks $610-622M > xStocks $601-609M·Ondo Finance仍居首($842M+)·★时间线：7/28 bStocks首次超越xStocks→短暂失去→8/3起稳定维持领先(bStocks $624M vs xStocks $579M)→9/1-2确认$610-622M vs $601-609M·★注：8/30 RWA.xyz快照数据显示xStocks仍略领先($609.3M vs $599.9M)·最终超越发生在8/30-9/2区间·★意义：bStocks从6/11上线仅80天达成·代币化股票格局确认变为Ondo(#1)·bStocks(#2)·xStocks(#3)三强·(CoinTelegraph·9/1-2)", src:"https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer"},
@@ -378,6 +379,7 @@ const DATA = {
         "★ TokenInsight Q2 2026报告：TradFi永续成最快增长赛道·Bitget全球第二(仅次Binance)·Q2 TradFi永续成交量近$700亿·TradFi占Bitget总衍生品成交量8.61%(第二高渗透率)·月度成交从1月$520亿增至6月$2680亿·股票永续为Q2主要增长驱动力——与Binance二强格局确立·赛道外部权威背书(TokenInsight Q2·BeInCrypto/FinanceMagnates·7月中)"
       ],
       activities:[
+        {t:"★ rToken链上扩展(8/19)·Arbitrum+Morph双链支持·600+只rToken可在兼容Web3钱包直接持有和交易·从CEX封闭环境扩展至DeFi可组合生态·用户可在CEX与链上环境之间自由转移rToken持仓·★与Bitget Wallet(1亿用户)·rToken UTA保证金层·稳定币借贷形成四层自托管+CEX+DeFi+借贷全链路·(Bitget官方·8/19)", src:"https://www.bitget.com/amp/academy/bitget-rtoken-faq"},
         {t:"★ rToken日活用户18倍增长(8/10·GlobeNewswire July Report)：日常交易用户渗透率从上线起18倍增·42.87%首次买入者7日内加仓·7月单日峰值127,691笔·7月MoM成交量+121.95%·rToken AUM $1亿+(累计成交$671M·日均$19.75M·100,000+交易用户·7月数据)·(GlobeNewswire·Invezz·8/10)", src:"https://invezz.com/news/2026/08/10/bitget-reports-18x-growth-in-rtoken-trading-activity-as-tokenized-markets-mature/"},
         {t:"★ rToken 2M笔交易里程碑(8/5·AlexaBlockchain/Cointrust)：rToken累计交易量突破200万笔·7月单日峰值127,691笔·7月MoM成交量+121.95%·7月跨资产(Crypto+rToken)用户MoM+23.54%·rToken AUM $1亿+(6/4 UTA集成后)·★背景：从6/3首发→8/5两个月达2M笔·代币化股票单平台累计交易量新基准·(AlexaBlockchain·Cointrust·8/5)", src:"https://alexablockchain.com/bitget-rtoken-tops-2-million-transactions/"},
         {t:"★ CryptoRank代币化股票执行质量独立评测(7/24)：Bitget大单执行居赛道第一·$50,000订单模拟滑点低于同类最高58%·评测标的：NVDA/MSFT/META/TSLA·赛道代币化股票市值接近$20亿·链上持有人471,000+·与TokenInsight Q2 TradFi永续全球第二并列双维度外部背书·Bitget直联NYSE/Nasdaq流动性为低滑点核心原因(CoinGape·7/24)", src:"https://coingape.com/bitget-tops-cryptorank-study-for-tokenized-stock-trade-execution-as-market-nears-2b/"},
