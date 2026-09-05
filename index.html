@@ -164,10 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-22 → 09-05",
-  updated: "2026-09-05 14:00 (北京时间)",
+  updated: "2026-09-05 15:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+    {grp:"other", date:"近期", tag:"t-new", txt:"🆕 ★ Gate gStocks平台五大功能升级·①质押借贷(gStocks作抵押借USDT·免强制清仓)②Gate Earn灵活生息整合(一键收益)③统一账户(Unified Account)兼容④隔离+全仓杠杆做多/空⑤自动分红分配·同期现货上线SpaceX(SPCXG)+Tesla(TSLAG)代币化现货(spot)·★Gate gStocks从'持有+合约'升级为含借贷/收益/杠杆的完整TradFi资产管理生态·覆盖12,800+只股票/ETF·分数股$1 USDT起·★对比赛道：Binance bStocks已开放Portfolio Margin抵押品+算法交易(8/28)·Bitget rToken有FCN结构化产品(8/18-9/18)·Gate gStocks 五大功能后同具现货代币化+合约(400+只)+期权(9/2·9只)+借贷+生息五层·赛道完整度进一步补全·Gate同期获MiCA合规认证·(Metaverse Post·ChainCatcher·Gate公告)", src:"https://mpost.io/gate-upgrades-gstocks-tokenized-securities-platform-with-lending-yield-and-leverage-functions/"},
+    {grp:"other", date:"9/1前后", tag:"t-new", txt:"⚡ ★★ Payward(Kraken母公司)×Nasdaq战略合作·联合开发代币化股票分发网关(equities transformation gateway)·连接许可/无许可代币化权益市场·预计H1 2027上线·Kraken将成为非美用户代币化股票首要分发合作方·欧洲为主市场·★xStocks同期达成100只美股/ETF代币化里程碑(上线初60只·目标2026年底500+)·历史成交$400亿+(其中链上$35亿+·持有人200,000+·其中链上唯一持有人85,000+·8大前11位唯一持有人标的·68%前25位)·London扩张(9/1 LSE×Payward·英国百大蓝筹)+Nasdaq分发基础设施双轨并行·★与LSE×Payward(9/1·英国百大蓝筹代币化)·SoFi×Kraken美元实时结算(9/3)·Bitnomial CFTC合规永续洽谈(9/1)并列·Kraken正以传统交易所合作+银行结算+合规永续三轨构建全球TradFi基础设施·★注：Nasdaq合作H1 2027落地时间为预期·监管批准仍为前提·(Kraken Blog·LedgerInsights·Kavout·9/1前后)", src:"https://blog.kraken.com/news/payward-partners-with-nasdaq"},
     {grp:"main", date:"9/7(预告)", tag:"t-new", txt:"📅 ★ Binance 9/7 10:00 UTC+8将上线BYD H股(港交所:1211)USDT永续·10:05上线联想集团(港交所:0992)Quanto永续·均最高20x杠杆·★BYD H股=全球最大新能源车制造商·联想=全球最大PC制造商·★继8/19宇树·9/1 SHEIN港股IPO同日响应之后·Binance再度以大陆系港股蓝筹为TradFi永续扩品目标·BYD已有Gate A股永续·MEXC港股期货覆盖·Binance 9/7落地将形成三平台竞争格局·港股蓝筹TradFi永续=继美股/韩股之后又一主流市场覆盖扩张轴·(PANews·9/4)", src:"https://panews.io/articles/01a06ac7-cdad-73d6-a6ec-95cf5d49d841"},
     {grp:"main", date:"9/5(计划)", tag:"t-info", txt:"⚙️ Binance bStocks/股票交易 9/5 18:50–22:00 UTC+8计划停服·Partner brokerage(Alpaca)系统升级·期间无法提交股票交易订单·★此前8/8·8/22也有类似计划维护窗口·为Alpaca经纪商侧定期升级·★KCGI 2026正式开赛(9/9)前4天发生停服·竞争对手观察窗口·(Binance官方·PANews·9/4)", src:"https://panews.io/articles/01a06a5d-21ad-75a0-bf29-6c2fc386be70"},
     {grp:"other", date:"9/4", tag:"t-new", txt:"📊 ★★ 8月NFP实际(9/4 8:30am ET·9/4为9月第一个周五)：+162K(远超共识+53K·约3倍)·失业率4.1%(与预期持平)·3月以来单月最强就业增长·★注：上次更新误写'下一关键节点8月NFP(9/5)'——实际发布日为9/4·★BTC初始反应：从$81K+下跌至~$79,200(-约$2K·强就业数据=加息预期升温)·★后Waller午后鸽派言论抵消：BTC反弹至$81K+·加息概率维持约50%(见Waller独立条目)·★下一关键节点更新为：9/15 CLARITY Act参议院cloture票+9/16 CFTC规则草案·(CNBC·TheStreet·FXStreet·9/4)", src:"https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"},
