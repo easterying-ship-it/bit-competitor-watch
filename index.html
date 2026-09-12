@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-08-29 → 09-12",
-  updated: "2026-09-12 23:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-08-29 → 09-13",
+  updated: "2026-09-13 00:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -215,6 +215,7 @@ const DATA = {
     {grp:"main", date:"9/9", tag:"t-new", txt:"⚡ ★ Bitget 9/9 上线H100USDT+B200USDT GPU算力永续合约(Pre-Market Compute Perpetuals)·追踪NVIDIA H100/B200 GPU每小时租赁价格指数(Silicon Data)·最高10x杠杆·24/7·★业界首家将AI GPU算力租赁成本指数化为可交易零售永续合约·CME Group预计10月上线同类GPU算力期货·Bitget抢先TradFi巨头进场·★战略含义：AI算力供给侧核心成本(GPU租赁价格)首次被加密CEX制作为可做多/做空永续合约·TradFi货架从'股票/ETF/商品永续'首次延伸至'AI基础设施算力价格衍生品'新品类·与KCGI 2026(9/9-9/22·$300万·rToken+TradFi双赛道)同日上线·AI叙事+竞赛引流双轮驱动·(Invezz·CFOTech·SMEStreet·9/8-9)", src:"https://invezz.com/news/2026/09/08/bitget-launches-h100-and-b200-gpu-compute-perpetuals/"},
     {grp:"main", date:"9/9", tag:"t-new", txt:"📊 ★★ Binance Research报告 'Tokenized Stocks: Issuance → Distribution'(9/9)·代币化股票活跃市值$40亿(2026年+314%)·月成交量$237M(1月)→$79亿(8月)·换手率0.23x→2.14x·bStocks+Robinhood 9月MTD追踪发行商交易量占比87.8%(6月仅0.8%·8月82.3%)·DeFi TVL $2.89亿(活跃市值7.2%)·bStocks代币结构多元化：前5代币成交占比98.7%→84.6%·58.5%早期bStocks用户此前已交易永续/直接权益·赛道从发行竞赛转向分发/使用阶段·(Binance Research·9/9)", src:"https://bitcoinethereumnews.com/tech/tokenized-stocks-market-shifts-from-issuance-to-distribution-binance-research-says/"},
     {grp:"main", date:"9/9✅", tag:"t-new", txt:"🆕 ★ Binance bStocks 9/9 20:00 UTC+8 新上线 CRMB(Salesforce·企业云CRM龙头·Nasdaq:CRM) + HIMSB(Hims & Hers Health·远程医疗/处方健康平台·NYSE:HIMS) 两只现货 bStocks Spot Token·BNB Smart Chain发行·即时同步上链提币(21:00 UTC+8开通)·零maker手续费至10/1 07:59 UTC+8·算法交易bot(Spot Algo)同步开放·Smart Position智能持仓bot 24小时内启用·★CRMB=B端SaaS科技赛道新扩品(CRM此前已有Bybit/Gate等平台股票永续覆盖)·HIMSB=首只telehealth/远程医疗bStocks spot token·★bStocks现货货架9月持续扩充至企业SaaS+数字健康赛道·与KCGI 2026开赛同日(9/9)形成Binance+Bitget双轨同日出招·(PANews·Binance官方公告·9/9)", src:"https://finance.yahoo.com/markets/crypto/articles/binance-adds-10-more-tokenized-072709446.html"},
+    {grp:"main", date:"9/9", tag:"t-new", txt:"🏆 ★★ Binance Traders League Season 4(9/9-10/7·$400万USDT奖池)·五赛道：Spot/bStocks/TradFi永续/数字资产期货/Side Tasks·★bStocks First Trade Task：$50万USDC池·首次bStocks成交≥$20·最高$5/人；Referral Task：邀友注册+$100成交→双方各最高$10 USDC·侧任务合计$100万USDC·★TradFi永续赛道：50万USDC·数字资产期货：1,416 BNB·奖励10/22前发放·★与Bitget KCGI 2026($300万·至9/22)同期竞争·Binance以更大奖池(+$100万)·更长周期(9/9-10/7 vs 9/9-9/22)正面应战·★bStocks First Trade专项池$50万=拉新高意向用户进入代币化股票赛道最直接激励·结合9月bStocks持续扩品(CRMB/HIMSB·9/9)·Binance 9月TradFi拉新最大规模战役·(Tribune India·hybiz.tv·aryanage.com·9/8-9/9)", src:"https://www.tribuneindia.com/news/business/binance-traders-league-season-4-trade-crypto-bstocks-futures-to-share-usd-4m-in-rewards"},
     {grp:"main", date:"9/8", tag:"t-new", txt:"📣 ★ CZ 9/8 06:58 UTC X发文'IPOs will move on chain'·Binance创始人在bStocks累计成交$300亿3个月里程碑同窗口公开预言IPO将迁至链上·★核心叙事：链上IPO基础设施'已在运行'(Binance bStocks/Kraken xStocks等已落地)·链上IPO可实现全球零售参与+24/7交易+即时结算+减少传统承销商依赖·bStocks 3个月$300亿成交量为具体背书·★战略含义：Binance创始人级别'链上IPO'叙事为bStocks及整个代币化股票赛道提供最高级别行业背书·与Coinbase CEO Armstrong 8/28'tokenized assets=iPhone级改变'并列2026代币化股票赛道创始人/CEO级双叙事·(CoinGape·Cryptopolitan·BeInCrypto·9/8)", src:"https://cryptopolitan.com/cz-says-ipos-will-move-on-chain/"},
     {grp:"other", date:"9/8", tag:"t-up", txt:"📊 ★★ CoinMarketCap RWA永续8月市场报告(9/7-9发布)·Dec 2025–Aug 2026跨19家平台累计成交$3.16T·★平台份额：Binance $1.59T(50.4%)·Hyperliquid $542.8B(17.2%)·OKX $345.1B(10.9%)·Bitget $238.2B(7.5%)·四平台合计86%·★8月单月成交$7995亿创历史新高·股票类占8月62.3%·★股票类累计首次超越商品类(商品18.8%)·★赛道含义：Binance在累计RWA永续成交中维持50.4%主导地位；Bitget以7.5%份额确认全球第四(较8月月度报告口径一致)；OKX以10.9%位居第三；与Binance 8月月度市占76%(单月口径·The Block 9/1)相比·CMC累计口径(Dec 2025起)反映各平台起量时间线差异及赛道整体集中度·(CoinMarketCap Events·Metaverse Post·PANews·9/7-9)", src:"https://coinmarketcap.com/events/rwa-perpetuals-state-of-the-market-august-2026/"},
     {grp:"main", date:"9/5(计划)", tag:"t-info", txt:"⚙️ Binance bStocks/股票交易 9/5 18:50–22:00 UTC+8计划停服·Partner brokerage(Alpaca)系统升级·期间无法提交股票交易订单·★此前8/8·8/22也有类似计划维护窗口·为Alpaca经纪商侧定期升级·★KCGI 2026正式开赛(9/9)前4天发生停服·竞争对手观察窗口·(Binance官方·PANews·9/4)", src:"https://panews.io/articles/01a06a5d-21ad-75a0-bf29-6c2fc386be70"},
@@ -1437,6 +1438,26 @@ const DATA = {
         {label:"GlobeNewswire·TradFi Zone升级(8/27)", url:"https://www.globenewswire.com/news-release/2026/08/27/3352148/0/en/zoomex-launches-tradfi-zone-upgrade-with-80-fee-discount-early-bird-campaign.html"},
         {label:"Bitcoin.com·Zoomex Stocks(6/17)", url:"https://news.bitcoin.com/as-capital-rotates-from-crypto-to-ai-zoomex-traders-already-have-access-to-both/"},
         {label:"Yellow.com·Zoomex(6/17)", url:"https://yellow.com/press-releases/capital-rotates-crypto-ai-zoomex-trading"}
+      ]
+    },
+    {
+      nm:"Crypto.com", tier:2, color:"#1199fa", ink:"#fff", status:"live", statusTxt:"★新入场者(8/12) · 代币化衍生品 · 1,500只美股/ETF · EEA+全球批准地区 · 零佣金(限时)",
+      sub:"8/12 EEA+全球批准地区上线代币化股票 · 1,500只美股+ETF · Foris Capital CY Ltd(CySEC/MiFID)发行 · Alpaca持牌自清算托管 · $1起 · 24/7",
+      promo:[
+        "产品结构：代币化衍生品(非1:1直接持股)·追踪底层正股价格·不赋予所有权/股东/投票权·区别于xStocks(Backed Finance 1:1托管)和bStocks(Alpaca 1:1托管)",
+        "双层合规：Foris Capital CY Limited(CySEC持牌·MiFID框架)发行·Alpaca Securities(美国持牌自清算经纪商)持有底层资产",
+        "1,500只美股/ETF·$1最低门槛·碎股化·24/7·法币或加密资产购买",
+        "限时零佣金(introductory zero-commission)降低散户门槛",
+        "已有TradingView整合(图表分发渠道)"
+      ],
+      activities:[
+        {t:"★ 新入场者·Crypto.com 8/12 EEA正式上线代币化股票·1,500只美股/ETF·24/7·$1起·Foris Capital CY(CySEC/MiFID)发行·Alpaca持牌托管底层资产·零佣金限时·法币或加密资产直购·EEA+其他批准地区用户·(CoinDesk·TradeInformer·8/12)", src:"https://www.coindesk.com/business/2026/08/12/crypto-com-rolls-out-tokenized-stock-derivatives-as-crypto-exchanges-push-into-equities"}
+      ],
+      xsig:"🔒 X信号待抓取",
+      sources:[
+        {label:"CoinDesk·Crypto.com代币化股票上线(8/12)", url:"https://www.coindesk.com/business/2026/08/12/crypto-com-rolls-out-tokenized-stock-derivatives-as-crypto-exchanges-push-into-equities"},
+        {label:"TradeInformer·Crypto.com EEA上线详情", url:"https://tradeinformer.com/broker-news/crypto-com-launches-tokenized-stocks-eea-users"},
+        {label:"coinfomania·Crypto.com EEA+US详情", url:"https://coinfomania.com/crypto-com-launches-tokenized-stocks-for-u-s-and-eea-users/"}
       ]
     },
     {
