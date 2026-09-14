@@ -164,11 +164,13 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-08-30 → 09-14",
-  updated: "2026-09-14 14:00 (北京时间)",
+  updated: "2026-09-14 19:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
     {grp:"main", date:"9/14", tag:"t-new", txt:"🔄 ★ Binance 9/14 20:00 UTC+8将BNCB(CEA Industries·BNB国库公司·Nasdaq:BNC)新增为Cross Margin/Unified Account Mode/Unified Account Pro合格抵押品·★CEA Industries=BNB国库策略公司(持有44,198 BNB作为抵押·类比MicroStrategy持BTC路线)·BNCB为首只BNB生态系公司代币化股票被Binance纳入保证金体系·★闭环叙事：持BNB→购CEA股→BNCB代币化→抵押借贷→可再购BNB·★与9/9 KuCoin/HTX上线4Stock(BNC4·Four.meme meme版本)并列CEA生态'合规代币化vs meme'两路格局·★同日Binance bStocks WOTD Wave 16 'bStocks'品牌叙事+BNCB抵押权益双叠强化bStocks生态深度·(PANews·Binance官方·9/14)", src:"https://panews.io/articles/01a09f41-66d3-748c-8cd4-16682d1bdf23"},
+    {grp:"other", date:"9/14", tag:"t-new", txt:"🆕 ★ OKX New Money App 9/14全球非EU用户开放70+代币化美股/ETF(NVDA/GOOGL/PLTR/SpaceX/SPY/QQQ等)·24/7 USDT结算·支持限价/市价/止损/TWAP/冰山单多类型+Trading Bot自动化策略·同一OKX账户无需独立KYC·★区别于9/10 OKX Europe 100只xStocks(仅EU)：New Money App为全球入口·70+品种独立品牌化整合至App核心界面·★OKX代币化美股从'交易所功能'升级为'New Money App独立入口品牌'·与Binance @bstocksfinance(8/13)·Kraken xStocks品牌并列'代币化美股品牌独立化'赛道趋势·(coinfomania·cryptonomist·9/14)", src:"https://coinfomania.com/okx-launches-70-tokenized-us-stocks-and-etfs-on-new-money-app/"},
+    {grp:"other", date:"9/14", tag:"t-up", txt:"📊 ★ MEXC 8月数据报告(9/14·GlobeNewswire)·代币化股票交易量环比+31%(8月·主要TradFi Spot增长驱动)·新代币交易用户数环比+21%·TOP代币化股票：CRCL(Circle)/NBIS(Nebius AI)/SPCX(SpaceX)·★9/11补充报告：Stock Futures 8月成交量环比+130%·美韩内存/半导体主线主导(SK海力士ADR/三星半导体/NVDA等)·★两份报告共同印证：MEXC TradFi量在8月宏观加息压力下逆势高速增长·代币化股票和期货双轨同步放量·(GlobeNewswire·Manila Times·9/14)", src:"https://www.globenewswire.com/news-release/2026/09/14/3360878/0/en/mexc-reports-21-mom-growth-in-new-token-traders-and-31-increase-in-tokenized-stock-trading-volume-in-august.html"},
     {grp:"other", date:"9/10-9/11", tag:"t-new", txt:"🆕 ★★ 新入场者·Kalshi(美国CFTC注册指定合约市场·DCM) 9/10获CFTC批准上线黄金+白银永续合约(全球首批非加密CFTC合规美元永续·Pyth预言机·24/7·USDC结算)·9/11同步申报60只股票+ETF永续(TSLA/AAPL/NVDA等$1000亿+市值标的优先·须联合SEC+CFTC双重审批)·★Kalshi BTC永续(5月获批)已累计成交$440亿·本次金银首次突破加密品类·是全球首批CFTC批准非加密永续·★股票永续申报遭Citadel Securities反对：主张应由SEC单独监管·内幕交易风险/跨市场监控空白待解·法律状态仍待定·★与Coinbase Form 1-N(SEC+CFTC双路径·9/1申报)·Hyperliquid×Bitnomial洽谈(9/1)·OKX×ICE JV(H2 2026待批)并列美国本土合规股票永续多条审批路径竞争格局·★赛道含义：美国监管路径首次出现预测市场平台(Kalshi)以CFTC DCM牌照直接切入股票永续·若获批将填补US本土'可做空单股永续'最大监管空白·(Bloomberg·CNBC·Blockonomi·Crowdfund Insider·9/10-11)", src:"https://www.cnbc.com/2026/09/10/kalshi-launches-perps-for-gold-and-silver-following-cftc-approval-expanding-futures-offerings.html"},
     {grp:"main", date:"9/12", tag:"t-new", txt:"📈 ★ Binance bStocks 9/12单日新增78只资产链部署·总在链代币化资产数达8,936(含股票/基金/稳定币多类型)·现有~95只bStocks品种在BNB Chain及多DeFi协议持续扩张部署·(coinfomania·9/12)", src:"https://coinfomania.com/binances-bstocks-add-78-new-asset-chain-deployments/"},
     {grp:"other", date:"9/17(预告)", tag:"t-new", txt:"⚡ ★★ Bybit Perp Options 9/17 20:00 UTC正式上线·业界首创基于股票永续合约的期权产品·首批SPCX(SpaceX)+NVDA·欧式期权·USDT结算·无传统$25K最低门槛/100股手数要求·支持碎股化·组合保证金(永续/期权/现货跨仓位抵消)·首发策略：裸期权/价差/跨式/组合·API+Demo账户+试用资金同步上线·后续：TSLA/QQQ/SOXL/MU·(Bybit Press·FinanceFeeds·9/1宣告→9/17执行)", src:"https://www.bybit.com/en/press/post/bybit-teases-industry-first-perp-options-unlocking-247-us-equity-options-trading-bb3aae7e6c3eb14ba88"},
@@ -564,7 +566,7 @@ const DATA = {
       ]
     },
     {
-      nm:"OKX", color:"#0d0d0d", ink:"#fff", status:"live", statusTxt:"股票永续 + 100+只代币化美股/ETF（7/16上线·8月扩至100+）",
+      nm:"OKX", color:"#0d0d0d", ink:"#fff", status:"live", statusTxt:"New Money App 70+代币化美股(9/14·全球) · EU 100只xStocks(9/10·MiCA) · 股票永续 100+只 · ICE/NYSE JV H2待批",
       sub:"★ ICE/NYSE 50-50 JV 6/22宣布 · Cuomo升任Board Director(7/20·兼OKXICE联席主席) · BD+FCM双牌待批 · H2启动",
       promo:[
         "拉 NYSE 母公司 ICE 背书($25B 估值 + 董事会席位),机构信任叙事",
@@ -576,6 +578,7 @@ const DATA = {
         "OKX Ventures × 韩国 Coinone(5/29 宣布):$5300 万收购 19.6% 股权,韩国 STO/数字资产立法背景下以持牌通道切入亚太最活跃零售市场；与 ICE/NYSE 机构背书并行，全球合规分发网络亚太层落地——有望将三星/SK海力士/现代代币化权益产品通过 Coinone 向韩国本土用户分发"
       ],
       activities:[
+        {t:"★ New Money App 70+代币化美股/ETF全球上线(9/14·coinfomania·cryptonomist)：OKX将代币化美股/ETF整合至'The New Money App'核心界面·70+品种(NVDA/GOOGL/PLTR/SpaceX/SPY/QQQ等)·24/7 USDT结算·限价/市价/止损/TWAP/冰山单+Trading Bot自动化·同一OKX账户无需独立KYC·面向全球合格非美/非EU地区用户·★区别于9/10 OKX Europe 100只xStocks(仅马耳他MFSA持牌EU用户)·New Money App为全球扩展通道·代表OKX代币化美股从交易所功能升级为独立App入口品牌(与Binance @bstocksfinance品牌化策略同步)", src:"https://coinfomania.com/okx-launches-70-tokenized-us-stocks-and-etfs-on-new-money-app/"},
         {t:"★★ 9/10 OKX Europe 向欧洲用户正式开放100只xStocks代币化股票(SpaceX/GOOGL/NVDA/Palantir/SPY/QQQ等·24/7·可抵押X-Perps·支持DCA/网格bot·可提链上)+pre-IPO X-Perps(OpenAI/Anthropic·10x)·马耳他MFSA Investment Services Act持牌·MiCA+MiFID II+ISA三层合规架构完整·从6/9 13只→7/16 40+→9/10 EU 100只三级扩张·(CoinDesk·CryptoBriefing·9/10)", src:"https://www.coindesk.com/markets/2026/09/10/okx-brings-openai-and-anthropic-bets-to-europe-as-pre-ipo-trading-grows"},
         {t:"20+ 股票永续(Mag7,最高 5x),24/7 交易", src:"https://www.theblock.co/post/394776/okx-equity-perpetual-swaps"},
         {t:"联合 Ondo 提供 263 个代币化股票,并入同一账户", src:"https://www.okx.com/en-us/learn/beyond-crypto"},
@@ -869,7 +872,7 @@ const DATA = {
       ]
     },
     {
-      nm:"MEXC", tier:2, color:"#1e4dff", ink:"#fff", status:"live", statusTxt:"6/1 新入场 · ★ RealStocks API 0费量化通道(8/24) · 0808$50万奖池(至8/28·0费) · 8/11首批港股(快手/美团) · Be a Champion 2(5M USDT) · Ondo代币化38只 · ⚠️荷兰11/16停服→Bybit EU(~9/初·MiCA合规压力)",
+      nm:"MEXC", tier:2, color:"#1e4dff", ink:"#fff", status:"live", statusTxt:"★ 8月报告(9/14)·代币化股票+31%·Stock Futures+130% · RealStocks API 0费量化通道(8/24) · Be a Champion 2(5M USDT) · Ondo代币化38只",
       sub:"6/1 · RealStocks 真实美股",
       promo:[
         "与 Binance 同日冲赛道,标语 'Crypto Meets Wall Street'",
@@ -879,6 +882,8 @@ const DATA = {
         "CoinGecko 2026永续报告全球第一(6/4)：Jan/25–Apr/26累计上线 879只新永续合约(约55只/月)，OI市场份额全球第四(11.4%)，现货成交量全球第二(8.2%市占率)——新合约上线速度最快的主要 CEX，扩张战略与 RealStocks 美股入场形成多品类覆盖共振"
       ],
       activities:[
+        {t:"★ MEXC 8月月度数据报告(9/14·GlobeNewswire)：代币化股票交易量环比+31%(8月·TradFi Spot最大增长驱动)·新代币交易用户数+21% MoM·TOP代币化股票：CRCL(Circle)/NBIS(Nebius AI)/SPCX(SpaceX)·整体TradFi Spot量+13% MoM·★代币化股票在宏观加息压力(8月Goldman等转鹰)下逆势高速增长·CRCL/NBIS/SPCX三标的印证AI算力+美国监管套利叙事为8月TradFi成交主线·(GlobeNewswire·Manila Times·9/14)", src:"https://www.globenewswire.com/news-release/2026/09/14/3360878/0/en/mexc-reports-21-mom-growth-in-new-token-traders-and-31-increase-in-tokenized-stock-trading-volume-in-august.html"},
+        {t:"★ MEXC Stock Futures 8月成交量+130% MoM(9/11·GlobeNewswire)：美韩内存/半导体主线主导·SK海力士ADR(SKHY·8月首批港股扩张)/三星/MU/SNDK成交集中·★结合8/24 RealStocks API 0费量化通道：MEXC TradFi品类(真实美股+代币化现货+Stock Futures)三轨8月同步大幅增长·量化+散户双渠道放量·(GlobeNewswire·9/11)", src:"https://www.globenewswire.com/news-release/2026/09/11/3360203/0/en/mexc-stock-futures-trading-volume-rises-130-in-august-as-trading-activity-broadens-across-u-s-and-korean-memory-and-semiconductor-sectors.html"},
         {t:"★ RealStocks API 0佣金正式上线(8/24·GlobeNewswire)·量化交易者专属通道·覆盖7,000+真实美股/ETF·程序化自动下单+自定义策略·★首月120,000+账户·与Bitget Trading Builder IB生态·Binance TradFi API Bot并列TradFi量化API三平台竞争·RealStocks现形成：散户UI(0费)+量化API(0费)+Ondo代币化三层完整产品矩阵·(GlobeNewswire·Cryptopolitan·8/24)", src:"https://www.globenewswire.com/news-release/2026/08/24/3349559/0/en/mexc-launches-realstocks-api-with-0-commissions-for-quantitative-traders.html"},
         {t:"★ BMNR USDT-M永续8/13预告上线·BitMine Immersion Technologies(AI液冷算力·Nasdaq:BMNR)·0手续费促销·MEXC Stock Futures持续扩品", src:"https://www.mexc.com/cs-CZ/support/articles/17827791528832"},
         {t:"★ 8/11首批港股期货·KUAISHOUSDT(快手)/MEITUANUSDT(美团)/CSOPSKHYNIX2LUSDT(CSOP 2x SK海力士港ETF)/CSOPSAMSUNG2LUSDT(CSOP 2x 三星港ETF)·USDT-M永续·0手续费·TradFi市场从美股+韩股延伸至港交所", src:"https://www.mexc.com/announcements/tag/futures-19"},
