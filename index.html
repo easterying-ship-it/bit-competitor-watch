@@ -163,8 +163,8 @@
 // ===== DATA(每次刷新只改这块) =====
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
-  range: "滚动近 2 周 · 2026-09-05 → 09-19",
-  updated: "2026-09-18 00:15 (北京时间)",
+  range: "滚动近 2 周 · 2026-09-05 → 09-18",
+  updated: "2026-09-18 01:15 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -188,6 +188,7 @@ const DATA = {
     {grp:"other", date:"9/16(凌晨)", tag:"t-new", txt:"⚖️ ★★★ CLARITY Act cloture 9/15 2:15pm ET投票失败·市场大幅确认(北京9/16 02:15)·★市场即时反应：BTC盘中跌至~$76,350(-2.6%·24h·从$77,800跌落)·COIN(Coinbase)跌6.7%·CRCL(Circle)跌8%·BLSH(Bullish)跌4.6%·Robinhood跌3.6%·Polymarket从14%骤降·加密股集体抛售确认市场将此定性为法案失败·★失败根因：Lummis在投票前数小时正式拒绝民主党书面对案(counteroffer)·双方谈判归零·三大卡点全未解决(①Trump伦理条款$14亿利益冲突·②§604 DeFi开发者责任·③Section 404 USDC年收益禁令)·共和党48+席估计但缺7+位民主党→未达60票门槛·★后续格局：CLARITY Act 2026立法周期正式终结·Lummis警告下次机会推至2030年·三轨替代路径接力：①SEC Reg Crypto Assets行政规则(8/18提案·持续推进)·②Coinbase Form 1-N永续合约申请(SEC+CFTC双路径·独立推进)·③CFTC主席Selig 9/14承诺通过行政法规推进代币化规则·★赛道影响：bStocks/rToken/xStocks代币化股票均通过SEC No-Action Letters/Reg S独立合规运行·各平台短期不受立法结果影响·★同日叠压：9/16 FOMC 25bp加息(概率~85-90%)将进一步施压BTC和代币化股票AUM·★官方票数：参议院49-50(cloture未过60票门槛·9/15·CryptoTimes)·(CoinDesk Live·CNBC·CryptoTimes·9/15)"},
     {grp:"other", date:"9/16", tag:"t-new", txt:"📈 ★ OKX 9/16集中上线3只韩国股票永续合约：LGELECTRONICS/USDT(05:30 UTC)·NAVER/USDT(05:45 UTC)·HANMI/USDT(06:00 UTC)·USDT保证金·24/7·★延续6月SK Hynix/三星/现代韩国赛道扩张路线·OKX股票永续已从美股延伸至韩国科技/制药·同日另上线MINIMAXUSD X-Perp(09:00 UTC)·★赛道含义：中韩股票权益永续已成OKX TradFi扩品重点·Binance也已上线Naver/LG永续(BigGo Finance报道)·(OKX官方公告·9/16)", src:"https://www.okx.com/en-us/help/okx-to-list-perpetual-futures-for-lgelectronics-naver-and-hanmi-equities"},
     {grp:"other", date:"9/16", tag:"t-new", txt:"📈 OKX 9/16新增xGOOGL(代币化Alphabet·Nasdaq:GOOGL)+xHOOD(代币化Robinhood Markets·NYSE:HOOD)USDC现货交易对·xGOOGL/USDC预开盘17:00-18:00 UTC→现货18:00 UTC开盘·xHOOD/USDC预开盘17:30-18:30 UTC→现货18:30 UTC开盘·与已有USDT对并行·OKX代币化股票USDC结算层持续扩展·(OKX官方公告·9/16)", src:"https://www.okx.com/en-us/help/okx-to-list-usdc-trading-pairs-for-tokenized-stocks-xgoogl-and-xhood"},
+    {grp:"other", date:"9/16", tag:"t-up", txt:"📉 ★ Robinhood Chain Launchpad 9/16单日成交$3.99亿·8/29以来最低·前期日均$6亿+·Launchpad量缩33%·同期9/11日收入-83%至$106万(峰值$400万)·★Gas补贴9/29到期仅12天·预期效应驱动交易者缩减头寸·代币化股票<链总DEX 0.1%·10月将首测真实需求黏性·(CryptoBriefing·9/17)", src:"https://cryptobriefing.com/robinhood-chain-launchpad-volume-drops/"},
     {grp:"other", date:"9/17", tag:"t-new", txt:"📈 OKX 9/17新增xMETA(代币化Meta·Nasdaq:META)/USDC现货交易对·预开盘09:00-10:00 UTC→现货10:00 UTC开盘·继9/16 xGOOGL/USDC+xHOOD/USDC后连续两日扩充xStocks USDC结算层·OKX代币化股票USDC结算覆盖持续加速·(OKX官方公告·9/17)", src:"https://www.okx.com/en-us/help/okx-to-list-usdc-trading-pairs-for-tokenized-stocks-xmeta"},
     {grp:"other", date:"9/17", tag:"t-new", txt:"🔗 ★ OKX X Layer 9/17正式开放代币化股票零Gas 24/7交易·40+只美股/ETF现货(AAPL/NVDA/TSLA/SPY等)·USDT结算·1:1实股托管·X Layer(OKX自有以太坊L2·链网络层无Gas费)·用户全自托管持有·★OKX代币化股票分发三层并行：①CEX层New Money App 70+(9/14·全球非EU) ②OKX Europe xStocks 100+(9/10·EU专属) ③X Layer DEX层40+零Gas(9/17·全球)·OKX单平台已构建CEX账户+链上DEX+L2自有网络三层分发架构·注：DEX界面手续费9/7已调整为Group 2费率(Gas免费但非零手续费)·(coinfomania·X Layer官推·9/17)", src:"https://coinfomania.com/okx-launches-24-7-trade-for-tokenized-stocks-on-x-layer/"},
     {grp:"other", date:"9/15", tag:"t-up", txt:"⚖️ ★ CLARITY Act投票日政治僵局(9/15·2:15pm ET前数小时)·民主党临时发出新对案·共和党宣布己方草案为'最终版'·两党谈判空间归零·★最新赔率：Polymarket~14%·Kalshi~13%·Galaxy Research~10%（此前赔率~30-35%·骤降）·白宫9/13已同意新伦理条款语言·但DeFi开发者责任(§604)·Section 404收益禁令两大核心分歧未解·★若cloture失败→CLARITY Act 2026立法窗口正式关闭·代币化股票不直接受影响(SEC No-Action Letters框架独立运行)·SEC Form 1-N/CFTC行政规则三轨替代路径持续推进·★投票结果(2:15pm ET·北京9/16 02:15)待更新·(crypto.news·TheStreet·CryptoSlate·9/15)", src:"https://crypto.news/clarity-act-senate-vote-september-15-provisions/"},
