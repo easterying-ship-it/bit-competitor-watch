@@ -164,10 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-09-04 → 09-18",
-  updated: "2026-09-18 03:00 (北京时间)",
+  updated: "2026-09-18 05:15 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+    {grp:"other", date:"9/17✅", tag:"t-new", txt:"⚖️ ★★★ SEC 'Innovation Exemption'(Order 34-106402)·9/17 24小时圆桌后正式发布·★五年有限豁免：代币化证券交易所(TSV=Tokenized Securities Venue)无需注册为Exchange Act意义上的'exchange'即可通过许可型AMM+流动性池交易代币化NMS股票·★核心条件：①仅限1:1真实托管NMS股票(非合成/永续·Bybit Perp Options/HTX CFD/Gate CFD均不在此范畴) ②TSV须为美国实体·所有参与者须经许可(permissioned) ③智能合约部署于公开无许可区块链(如Solana/Ethereum·可审计) ④持有者享与传统股票等同权利(股息/投票权/代理) ⑤与主交易所同步交易暂停(Halt协同) ⑥做市商提供流动性享'dealer'豁免 ⑦新品上线须提前30日书面通知发行人(沉默=默许) ⑧品种数量+交易量上限(Limit Up/Down tier校准)·★CLARITY Act 9/15失败48小时后SEC主动填补立法空白·行政路径替代立法路径·★赛道影响：直接利好1:1链上代币化股票平台：xStocks(Kraken/OKX·Backed Finance发行·Solana/EVM·最符合条件)·bStocks(Binance·BNB Chain·Alpaca托管·待确认TSV条件符合度)·rTokens(Bitget Wallet·Reality发行·Arbitrum/Morph·链上层受益)·Ondo Finance(持牌·DTCC Arc绑定)·不利于纯合成平台·★市场背景：代币化股票AUM$32亿·月DEX量$157.5亿·★SEC同日24小时圆桌(NYSE/Nasdaq参与)探讨24/7股票交易路径·(SEC.gov 2026-90·CoinDesk·CNBC·CoinTelegraph·CrowdfundInsider·9/17)", src:"https://www.cnbc.com/2026/09/17/sec-clears-path-for-tokenized-stocks-bringing-24/7-trading-closer.html"},
+    {grp:"other", date:"9/18(04:00)", tag:"t-new", txt:"⚡ ★★ Bybit Perp Options SPCX+NVDA正式上线(9/17 20:00 UTC·北京9/18 04:00确认)·欧式期权·USDT结算·合约乘数1·24/7·Unified Trading Account集成+组合保证金(Portfolio Margin)·支持价差/跨式/备兑看涨/买卖双向组合策略·★注意：标的为Bybit自有SPCXUSDT+NVDAUSDT永续合约(非真实股票·非OCC清算·现金结算)·与SEC创新豁免(仅限1:1真实持股)无关·纯合成三层结构(期权on永续on合成股票价格)·★下一批扩张：Tesla·QQQ ETF·SOXL·Micron·★竞争格局：Binance Stock Options(9/1·1000+只·真实物理交割期权·Alpaca清算)vs Bitget空头期权(~9/2·真实美股期权)vs Bybit Perp Options(9/17·合成永续期权)三路并行·'合成衍生品'vs'真实权益期权'两轨清晰分化·(financefeeds.com·financemagnates.com·blockchainreporter.net·8/28预告→9/17上线)", src:"https://financefeeds.com/bybit-sets-17-september-launch-for-options-on-stock-perpetuals/"},
     {grp:"main", date:"9/16", tag:"t-new", txt:"🏦 ★ Binance Capital Connect 9/16扩至个人VIP 3+用户·首次向持资≥$100万的合格个人投资者开放·此前仅机构/专业团队可用·★平台规模：212个投资组合·77家专业交易团队(vs 5月106个组合/35个团队·不足4个月翻倍)·8大策略类型覆盖市场中性/方向性/网格交易/多空/统计套利/TradFi&RWA联动多策略·投资者端零平台费·★准入：VIP 3+ 或 Binance总资产≥$100万等值 或 外部资产证明$100万·★战略含义：Binance Capital Connect从'机构专属策略发现平台'升级为'百万资产高净值个人私行服务'入口·直面富途/Moomoo/长桥等面向HNW用户的财富管理场景·配合Traders League S4($400万·至10/7)·bStocks Portfolio Margin·FPSL出借三层形成'散户拉新→HNW留存→机构合作'分层完整用户体系·(CNBC·PRNewswire·Tribune India·9/16)", src:"https://www.prnewswire.co.uk/news-releases/binance-capital-connect-expands-to-individual-vip-3-users-as-investors-seek-multi-strategy-cross-asset-allocation-302880385.html"},
     {grp:"main", date:"9/16", tag:"t-new", txt:"📈 Binance bStocks 9/16 20:00 UTC+8新上线GPROB(GoPro·消费电子相机·Nasdaq:GPRO)+RDDTB(Reddit·全球最大社区社交平台·NYSE:RDDT)两只现货 bStocks·GPROB/USDT+RDDTB/USDT Spot+Convert(闪兑)同步开通·Spot Algo Bot/Smart Position Bot 24小时内启用·★bStocks货架~95→~97只·GPRO为消费电子赛道首入bStocks现货层(Gate已于9/3上线GPRO合约)·RDDT为社交媒体赛道首入bStocks·★9月扩品节奏：9/9 CRMB+HIMSB(企业SaaS+远程医疗)→9/16 GPROB+RDDTB(消费电子+社交媒体)·消费赛道持续补全·(PANews·NewsBreak·9/16)", src:"https://www.newsbreak.com/news/4888687953703-binance-adds-gopro-and-reddit-bstocks-on-spot-and-convert"},
     {grp:"main", date:"9/16", tag:"t-new", txt:"📋 Binance 9/16同步新增GPROB(GoPro·Nasdaq:GPRO)+RDDTB(Reddit·NYSE:RDDT)两只bStocks为Cross Margin/Unified Account Mode合格抵押品·仅限VIP 3+用户·与同日Spot+Convert现货上线同步完成'上市即抵押'·继9/14 BNCB(CEA Industries)之后bStocks 9月第二次保证金体系扩容·bStocks货架新品上线当日即纳入保证金=成熟抵押品通道已形成·累计bStocks抵押品品类：BNCB(9/14)+GPROB+RDDTB(9/16)·9月三品种·（U.Today·BitcoinEthereumNews·9/16)"},
@@ -674,7 +676,7 @@ const DATA = {
       ]
     },
     {
-      nm:"Bybit", color:"#f7a600", ink:"#1c1c1c", status:"live", statusTxt:"TradFi 200+(8/14·US/HK/KR+ETF+商品+指数) · xStocks抵押品(7/31·Margin+借款) · Dual Asset 10只(8/7) · IPO Express 6/7",
+      nm:"Bybit", color:"#f7a600", ink:"#1c1c1c", status:"live", statusTxt:"TradFi 200+(8/14·US/HK/KR+ETF+商品+指数) · xStocks抵押品(7/31·Margin+借款) · Dual Asset 10只(8/7) · IPO Express 6/7 · Perp Options SPCX+NVDA(9/17·合成·欧式)",
       sub:"TradFi 永续 + xStocks + IPO Express(首家 CEX 代币化 IPO 认购)",
       promo:[
         "TradFi 全家桶叙事(永续/xStocks/RWA Earn 一体)",
@@ -684,6 +686,7 @@ const DATA = {
         "Coinbase × Bybit 股票代币化战略合作(4/20 CoinDesk 披露):双方探索 US 上市股票及 pre-IPO 标的的代币化、托管与分发;Coinbase 提供 FINRA 持牌合规通道+Tokenize 基础设施,Bybit 覆盖亚太/中东国际分发网络——xStocks/TradFi 货架未来或接入 Coinbase 基础设施层,两家从单纯竞争演变为基础设施合作+前端竞争双轨格局"
       ],
       activities:[
+        {t:"★★ Bybit Perp Options SPCX+NVDA(9/17 20:00 UTC·北京9/18 04:00上线)·行业首创'永续期权(Options on Perpetuals)'·欧式·USDT结算·合约乘数1·24/7·Unified Trading Account+组合保证金·策略：价差/跨式/备兑看涨/买卖双向·★底层为Bybit自有永续合约(合成·非OCC清算·非真实股票)·不受SEC创新豁免约束(豁免仅限1:1真实持股代币)·★下一批：Tesla·QQQ·SOXL·Micron·★与Binance Stock Options(9/1·1000+只·真实Alpaca清算)·Bitget空头期权(~9/2·真实期权)并列·合成期权层首发·(financefeeds·financemagnates·blockchainreporter·8/28预告→9/17上线)", src:"https://financefeeds.com/bybit-sets-17-september-launch-for-options-on-stock-perpetuals/"},
         {t:"★ TradFi Pre-IPO永续新增UNITREEUSDT(Unitree Robotics·10x·中国头部人形机器人·上交所STAR Market IPO中国监管7月已批)·MOONSHOTUSDT(Moonshot AI/Kimi·10x·估值$500亿·香港IPO推进中·与Gate Pre-IPOs Phase 3同标)·均USDT结算·24/7·★Bybit Pre-IPO TradFi永续序列：SPCX(5/21)→Moonshot AI→Unitree Robotics·从已上市标的向AI+机器人一级市场估值全线延伸·(CoinTelegraph·CryptoBriefing·~8/14)", src:"https://cointelegraph.com/news/bybit-launches-unitree-pre-ipo-perpetual-as-crypto-platforms-push-into-private-markets"},
         {t:"★ TradFi Trading Tools Arena(8/13–9/12·$100,000 USDT奖池)：三赛道①幸运抽奖$10K ②个人交易量排行榜 ③团队交易量排行榜$60K(最大单池)·双核工具：TradFi Combo(自动化bot·预置策略一键部署)+Copy TradFi(主交易者/跟单双轨)·精准绑定财报季NVDA(8/26)/Salesforce/CrowdStrike/Snowflake/AMAT/Synopsys/Broadcom等·与Stock Earnings Season $100万奖池(至8/30)并行运转", src:"https://chainwire.org/2026/08/13/bybit-tradfi-trading-tools-arena-new-100000-usdt-prize-pool-amidst-earnings-season/"},
         {t:"★ TradFi永续~8/6新增UBERUSDT·Uber Technologies(NYSE:UBER·25x杠杆·USDT结算·24/7·移动出行/网约车/外卖平台龙头)·继8/1金融板块批次后TradFi消费科技扩品延续·(Bybit官方·~8/6)"},
