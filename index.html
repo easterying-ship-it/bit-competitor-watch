@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-09-06 → 09-20",
-  updated: "2026-09-20 12:00 (北京时间)",
+  updated: "2026-09-20 13:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -337,6 +337,7 @@ const DATA = {
     {grp:"other", date:"9/4", tag:"t-info", txt:"📊 Coinbase B20代币化股票首~10天总DEX成交量$2.277亿·跨Aerodrome/Uniswap/0x/1inch/Euler/Morpho等多DeFi协议分布·Aerodrome单池$7,200万(约32%·见独立条目)·★B20 token为Coinbase自有协议标准(区别于xStocks/Backed Finance或bStocks/BTech)·Coinbase发行+Alpaca持牌托管+Base链基础设施三位一体·8/25首批4只(NVDAc/METAc/AAPLc/GOOGLc)→8/26扩至13只(+AMZNc/MSFTc/MSTRc/SNDKc/SPCXc/TSLAc/COINc/CRCLc/INTCc)·★赛道对比：bStocks BNB Chain累计$150亿(9/2·67只)·Robinhood Chain股票代币$30亿(9/2·190+只)·B20 13只首10天$2.277亿体现Base链高单品流动性密度·★待人工核实：直接信源受远程代理限制·核实后补src"},
     {grp:"other", date:"9/4", tag:"t-new", txt:"⚡ ★ Moonshot(Solana头部Memecoin交易App)9/4正式集成xStocks·用户可在Moonshot界面直接交易NVDAx/COINx/TSLAx等代币化股票·无需切换至独立券商界面·★将xStocks代币化股票引入Memecoin交易者用户群·面向非美用户·★与OKX(100+只xStocks·8月扩品)·Bybit xStocks·Bitget Wallet(130+ xStocks)·Backpack并列xStocks多平台分发格局·差异化：从Memecoin流量入口引流至代币化权益·Solana公链用户首次低门槛接触xStocks·(Odaily·9/4)"},
     {grp:"other", date:"9/4", tag:"t-up", txt:"📊 ★ Grayscale 9/4研究报告：代币化权益周成交量接近$30亿·Robinhood Chain/BNB Chain/Solana三链领跑·仅约5%代币化股票参与链上DeFi·★Grayscale研究主管Zach Pandl：'投资者主要需求为24/7交易+全球准入·DeFi利用率低因市场整合不足'·Solana借贷协议Kamino+Jupiter代币化股票抵押品一年增长约10倍(绝对值仍小)·★赛道含义：$30亿/周验证赛道规模化·5% DeFi利用率揭示链上金融应用层仍有巨大扩张空间·DeFi深度整合是赛道下一关键竞争维度·与9/5 Aerodrome B20杠杆LP/B20 DeFi生态三层深化条目互相印证·(beincrypto·Coinfomania·CryptoBriefing·9/4)", src:"https://beincrypto.com/grayscale-tokenized-stocks-leading-chains/"},
+    {grp:"other", date:"9/15", tag:"t-new", txt:"🔄 BingX 9/15 正式发布 Multi-Asset Trading Platform 定位·'BingX Evolves into a Multi-Asset Trading Platform'·500+ TradFi 永续品种(股票最高25x·外汇/商品最高500x)·全资产类覆盖(股票/股指/商品/外汇/贵金属)·40M+用户基础·AI 交易工具集成·USDT 单账户统一接入·★与 Binance 'Universal Exchange'·OKX 'New Money App' 多资产赛道竞争加剧·BingX 以中型所体量(40M用户·500+ TradFi 品种)正式切入同赛道·(Daily Hodl·CoinEdition·GlobalFintechEdge·9/15)", src:"https://globalfintechedge.com/news/bingx-bridges-traditional-finance-and-crypto-with-full-scale-tradfi-integration/"},
     {grp:"other", date:"9/29(预警)", tag:"t-info", txt:"⚠️ ★ Robinhood Chain Gas补贴门槛已从$5降至$0.50(降幅90%)·正式到期~9/29·★【新】补贴门槛大幅压缩：用户需每笔交易Gas费超$0.50才可获补贴(此前$5门槛)·小额/高频交易实际Gas成本提前显现·Gas到期前真实成本已开始渗入·★7/1主网上线以来90天Robinhood Wallet免Gas期将于~9/29正式结束·当前指标(9/3)：累计DEX成交$346亿·576M笔交易·1230万地址·190+只Stock Token·代币化股票DEX成交$30亿·TVL $7.91亿(DefiLlama)·$27.8亿桥接TVL·$8.68亿稳定币·★分析师(FalconX/Yahoo Finance/CoinCentral)均标注：Gas补贴到期是首次真实需求验证节点·memecoin驱动大部分活动·代币化股票仅占价值小部分·补贴结束后10月数据揭示真实需求黏性·★赛道含义：补贴门槛压缩+9/29到期双重节奏·活跃地址/代币化股票成交是否结构性下降将影响公链DEX层(Robinhood Chain/Hyperliquid/Base) vs CEX层(bStocks/rToken/xStocks)竞争格局评估·(Datawallet·insights4vc·FalconX·CoinCentral·9/1-5)"},
 
 
@@ -1060,7 +1061,7 @@ const DATA = {
       ]
     },
     {
-      nm:"BingX", tier:2, color:"#2366dc", ink:"#fff", status:"live", statusTxt:"8/11 CFD(贵金属/股指/外汇) · Global Capital Gala#5 $200万(8/5-8/31) · 累积股票成交$27亿+",
+      nm:"BingX", tier:2, color:"#2366dc", ink:"#fff", status:"live", statusTxt:"★ 9/15 Multi-Asset Platform 正式定位(500+ TradFi Perps·股票25x·外汇500x) · 40M+用户 · 8/11 CFD推出 · Q2股票成交$27亿+",
       sub:"新入场者 · SpaceX VNTL(4/10) + OpenAI/Anthropic(5/25) · 100+传统资产 · 35代币化股票",
       promo:[
         "pre-IPO 三件套:SpaceX VNTL(4/10，RWA airdrop路线)+OPENAI(5/25，永续)+ANTHROPIC(5/25，永续)——AI 三巨头 pre-IPO 产品线全覆盖；airdrop+永续双路并行，与 Binance/Bitget/OKX 同赛道但以 airdrop 空投做差异化拉新",
@@ -1071,6 +1072,7 @@ const DATA = {
         "零费率 TradFi 期货(4/13–7/31 进行中):平台全补贴 Maker/Taker 手续费,合作方/推广佣金照旧全额发放;覆盖 50+ TradFi 永续品种含股票/商品/外汇/指数——MEXC 0费用路线中型所对标,通过零费用扩大 TradFi 存量并拉新"
       ],
       activities:[
+        {t:"★ 9/15 BingX 正式发布 Multi-Asset Trading Platform 定位·'BingX Evolves into a Multi-Asset Trading Platform'·500+ TradFi 永续全品类(股票/指数/商品/外汇/贵金属)·股票最高25x·外汇/商品最高500x·AI 交易工具集成·USDT 单账户·40M+用户·(Daily Hodl·CoinEdition·GlobalFintechEdge·9/15)", src:"https://globalfintechedge.com/news/bingx-bridges-traditional-finance-and-crypto-with-full-scale-tradfi-integration/"},
         {t:"★ 8/5-8/31 第五届Global Capital Gala $200万USDT多资产活动(加密/美股/指数/外汇/大宗商品)·8/11 CFD正式推出(贵金属/股指/外汇/大宗商品·单账户统一接入)·Q2 TradFi股票成交$27亿+·股票指数$80亿+·单周峰值+700%·Cryptopolitan:'BingX joins Binance and Bitget in push toward multi-asset'(GlobeNewswire·PRNewswire·Cryptopolitan·8/5-11)", src:"https://www.globenewswire.com/news-release/2026/08/05/3339462/0/en/bingx-unveils-2-million-usdt-multi-asset-trading-campaign-around-today-s-most-watched-market-trends.html"},
         {t:"★ 7/27新增9只股票指数永续(13:55–14:00 UTC)·欧洲大陆蓝筹首入USDT永续层：SAP(SAP SE·欧洲最大企业软件·NYSE:SAP·赛道首批欧洲软件蓝筹永续)·SHEL(Shell·英国/荷兰油气)·TTE(TotalEnergies·法国油气)·NEE(NextEra Energy·清洁能源公用事业)·REMX(VanEck稀土/关键金属ETF)·UUUU(Energy Fuels·铀+稀土矿企)·TMF(Direxion Daily 20+Y Treasury Bull 3X·与Binance TMFUSDT 7/27同日同标的跟进)·TBT(ProShares UltraShort 20+Y Treasury·与Binance TBTUSDT同日跟进)·★SAP/SHEL/TTE为赛道首批欧洲大陆蓝筹进入USDT永续层·BingX欧洲蓝筹+能源材料差异化路线延伸"},
         {t:"★ Earnings Season Campaign $100万 USDT(7/9–7/29·第四届Global Capital Gala系列)：$1M USDT奖池·聚焦TSLA/NVDA/NFLX/AMZN等15+Q2财报季公司·每周随财报日更新标的·三赛道：交易任务+首次交易+挑战赛·Stock Trading Carnival(6/15–7/4)收官后无缝接棒——BingX以财报季叙事延续TradFi拉新+用户留存", src:"https://mpost.io/bingx-expands-tradfi-offerings-with-1000000-usdt-earnings-season-campaign/"},
