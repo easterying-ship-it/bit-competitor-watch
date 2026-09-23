@@ -164,7 +164,7 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-09-09 → 09-23",
-  updated: "2026-09-23 22:30 (北京时间)",
+  updated: "2026-09-23 23:30 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -177,6 +177,7 @@ const DATA = {
     {grp:"other", date:"9/23", tag:"t-new", txt:"🆕 ★ Oura Inc. pre-IPO永续多平台同日爆发·Gate OURAUSDT 9/22先发(预市永续·1-10x·USDT结算)·Binance OURAUSDT 9/23 16:30 UTC+8上线(20x·USDT结算·固定资金费0.005%/8h·~3.21亿总股本·上市后转标准合约·摘牌失败则下架)·MEXC OURA Pre-IPO期货同期跟进·Oura=智能戒指/健康穿戴龙头品牌·计划Nasdaq上市(尚未公布具体日期)·★与MOONSHOTUSDT同批多平台pre-IPO产品集中发行·Binance/Gate/MEXC三平台覆盖·(PANews·chaincatcher·Bitbase News·9/22-23)", src:"https://panews.io/articles/01a0cd21-7338-77fb-9391-ca249f22be58"},
     {grp:"other", date:"9/23", tag:"t-new", txt:"🆕 ★ Bybit POLYMARKETUSDT pre-IPO永续9/23 09:00 UTC上线·10x杠杆·USDT结算·追踪Polymarket预测市场平台估值·不赋予股权/投票权/股息·★MEXC已于9/21先发POLYMARKET Pre-IPO期货(20x)·Polymarket最新估值$90亿(2025/10 Series D)·Polymarket为全球最大去中心化预测市场·★pre-IPO永续赛道：Bybit跟进MEXC·多平台覆盖同一未上市平台·(coinfomania·9/23)", src:"https://coinfomania.com/bybit-announces-new-pre-ipo-perpetual-contract-for-polymarket/"},
     {grp:"other", date:"9/23", tag:"t-new", txt:"📋 ★ Bybit Copy Trading 9/23正式支持TradFi永续合约(PRNewswire·9/23)·用户可一键跟单专业交易员的美股/ETF等权益类TradFi永续合约交易·将股票衍生品敞口引入Bybit经典跟单工具·★战略含义：TradFi永续从'专业交易者自营'延伸至'跟单型散户可参与'·社交跟单层新增TradFi敞口·降低美股永续参与门槛·与Bitget Copy Trade对标·扩展TradFi永续分发渠道至社交跟单生态·(PRNewswire·9/23)", src:"https://www.prnewswire.com/news-releases/bybit-copy-trading-now-supports-tradfi-perpetual-contracts-bringing-equities-exposure-to-classic-crypto-trading-tool-302887710.html"},
+    {grp:"other", date:"9/23", tag:"t-new", txt:"🏛️ ★★ 新入场升级·Blockchain.com(44M账户)×NYSE Group 9/23签署MOU·计划通过NYSE数字ATS向Blockchain.com全球用户提供代币化美股/ETF分发·24/7全天候+碎股+链上结算·★ICE Data Services同步计划向机构客户销售Blockchain.com加密市场数据(双向数据合作)·★注：仍为MOU意向书·待监管批准·无具体上线时间表·Blockchain.com已有EU Ondo代币化美股(6/18·MiCA合规)·本次NYSE MOU为美国市场独立路径·★行业意义：NYSE(美国最大传统证券交易所)首次正式与CEX签署代币化股票分发合作·(PRNewswire·9/23)", src:"https://www.prnewswire.com/news-releases/blockchaincom-and-nyse-partner-to-explore-global-247365-trading-of-tokenized-securities-302887041.html"},
     {grp:"other", date:"9/22", tag:"t-new", txt:"⚠️ ★ CoinEx 9年老牌交易所9/22今日非现货服务全面终止·9/29现货交易截止·提款通道开放至12/22·★关停原因：市场下行+交易量持续萎缩+合规成本上升(9/15宣布)·★CoinEx无TradFi/代币化股票产品·★与BitMEX 9/23关停同期：2026年9月连续两家中型老牌CEX同月退出市场·储备率>100%·用户资产全额覆盖·★赛道含义：BitMEX+CoinEx双退场=合规成本压力下中小平台生存空间持续收窄·TradFi代币化股票产品线对中小所拉新贡献有限但合规成本倍增·(CryptoTimes·PANews·9/15宣布·9/22执行)", src:"https://www.cryptotimes.io/2026/09/15/coinex-announces-shutdown-after-9-years-withdrawals-open-until-december-22-2026/"},
     {grp:"other", date:"9/22", tag:"t-new", txt:"🆕 ★ 月之暗面(Moonshot AI·KIMI) pre-IPO永续多平台爆发·Binance MOONSHOTUSDT 9/22 16:30 UTC+8上线(20x·USDT结算·固定资金费0.005%/8h·总股本10亿股·上市后转标准合约)·Gate MOONSHOTUSDT同日18:00 UTC+8上线(预市永续·1-10x·USDT结算·50,000 USDT交易竞赛至10/2 18:00 UTC+8)·Bitget MOONSHOTUSDT pre-IPO永续同期上线·Bybit MOONSHOTUSDT pre-IPO永续已上线·★月之暗面=北京月之暗面科技有限公司(KIMI AI聊天助手·中国AI头部独角兽·尚未上市)·★信号：中国未上市AI独角兽同日被Binance/Gate/Bitget/Bybit四平台同步pre-IPO永续覆盖·代币化pre-IPO赛道从SpaceX/Anthropic美国标的扩展至中国AI独角兽·(PANews·chaincatcher·Bitget Support·9/22)", src:"https://panews.io/articles/01a0c809-5602-760f-9863-bc2e69c9d620"},
     {grp:"other", date:"9/22", tag:"t-new", txt:"🏦 ★ 俄罗斯MOEX(莫斯科交易所) 9/22正式上线BTC/ETH/SOL/XRP/TRX五只加密指数永续合约·合约代码BTCUSDF/ETHUSDF/SOLUSDF/XRPUSDF/TRXUSDF·USD报价·RUB结算·仅合格投资者·一日期限+自动展期机制·★MOEX累计72,000+合格投资者参与加密衍生品·累计成交600亿RUB+·★传统交易所布局加密衍生品序列：NYSE测试Avalanche ATS(9/17)·MOEX加密永续(9/22)·DTCC 2027年Arc绑定·★代币化股票赛道含义：传统证券交易所对加密基础设施接受度持续提升·(crypto.news·KuCoin Flash·CoinEdition·9/17-22)", src:"https://crypto.news/moex-to-launch-5-crypto-perpetual-futures-on-sept-22/"},
@@ -1318,14 +1319,15 @@ const DATA = {
       ]
     },
     {
-      nm:"Blockchain.com", tier:2, color:"#1a1a2e", ink:"#fff", status:"soon", statusTxt:"★新入场者 · EU链上代币化美股 6/18 上线(与Ondo联合·MiCA合规)",
-      sub:"新入场者 · ~3800万注册用户 · Ondo基础设施 · EU MiCA合规 · 430+代币化标的",
+      nm:"Blockchain.com", tier:2, color:"#1a1a2e", ink:"#fff", status:"soon", statusTxt:"★新入场者 · EU链上代币化美股 6/18(Ondo·MiCA) · ★9/23 NYSE MOU签署(待监管)",
+      sub:"新入场者 · 44M+注册账户 · Ondo基础设施(EU) · 9/23 NYSE MOU(美国市场) · 430+代币化标的",
       promo:[
         "与Ondo Finance联合，在欧洲MiCA监管框架下推出链上代币化美股(6/18)，底层用Ondo Global Markets基础设施",
         "约3800万注册用户(主要欧美TradFi-native用户)作为分发入口，Web2 UI降低链上门槛",
         "定位：TradFi-native品牌×DeFi基础设施的EU合规联合体，是继Backed Finance(xStocks/Kraken路线)后另一条MiCA合规代币化股票路径"
       ],
       activities:[
+        {t:"★ Blockchain.com×NYSE Group MOU(9/23)·向44M账户分发美国上市代币化股票/ETF·NYSE数字ATS底层·24/7链上交易·ICE Data Services交叉销售Blockchain.com加密数据·★注：MOU意向非正式合同·待监管批准", src:"https://www.prnewswire.com/news-releases/blockchaincom-and-nyse-partner-to-explore-global-247365-trading-of-tokenized-securities-302887041.html"},
         {t:"Blockchain.com×Ondo EU链上代币化美股(6/18)·430+标的(ETH/Solana/BNB Chain)·MiCA合规·~3800万用户入口", src:"https://www.blockchain.com/blog/posts/blockchaincom-ondo-finance-launch-onchain-tokenized-us-stocks-across-europe"}
       ],
       xsig:"🔒 待本地 X 补充",
