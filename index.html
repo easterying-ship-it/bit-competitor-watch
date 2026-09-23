@@ -164,10 +164,11 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-09-09 → 09-23",
-  updated: "2026-09-23 07:00 (北京时间)",
+  updated: "2026-09-23 08:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+    {grp:"other", date:"9/23", tag:"t-new", txt:"🎁 ★ MEXC VVIP全面升级+1M USDT 48h Mystery Box Flash(9/23·GlobeNewswire)·★VVIP升级要点：引入M-Score动态积分体系·三级会员(Standard/Premier/Elite)·按交易量/账户资产/活跃度/账龄多维度综合评分·动态自动升降·口号'0 Thresholds. 1 M-Score'·业内首创用户成长系统·★配套48h Mystery Box闪速活动(9/23启动)·1,000,000 USDT奖池·零参与门槛·三轮即时奖励·M-Score越高中奖概率越大·★战略双轮：VVIP体系绑定长期活跃用户留存·Mystery Box闪速活动冲刺短期拉新·(GlobeNewswire·9/21宣布·9/23执行)", src:"https://www.globenewswire.com/news-release/2026/09/21/3365309/0/en/mexc-upgrades-vvip-into-industry-first-user-growth-system-with-1m-usdt-mystery-box-event.html"},
     {grp:"other", date:"9/22", tag:"t-new", txt:"⚠️ ★ CoinEx 9年老牌交易所9/22今日非现货服务全面终止·9/29现货交易截止·提款通道开放至12/22·★关停原因：市场下行+交易量持续萎缩+合规成本上升(9/15宣布)·★CoinEx无TradFi/代币化股票产品·★与BitMEX 9/23关停同期：2026年9月连续两家中型老牌CEX同月退出市场·储备率>100%·用户资产全额覆盖·★赛道含义：BitMEX+CoinEx双退场=合规成本压力下中小平台生存空间持续收窄·TradFi代币化股票产品线对中小所拉新贡献有限但合规成本倍增·(CryptoTimes·PANews·9/15宣布·9/22执行)", src:"https://www.cryptotimes.io/2026/09/15/coinex-announces-shutdown-after-9-years-withdrawals-open-until-december-22-2026/"},
     {grp:"other", date:"9/22", tag:"t-new", txt:"🏦 ★ 俄罗斯MOEX(莫斯科交易所) 9/22正式上线BTC/ETH/SOL/XRP/TRX五只加密指数永续合约·合约代码BTCUSDF/ETHUSDF/SOLUSDF/XRPUSDF/TRXUSDF·USD报价·RUB结算·仅合格投资者·一日期限+自动展期机制·★MOEX累计72,000+合格投资者参与加密衍生品·累计成交600亿RUB+·★传统交易所布局加密衍生品序列：NYSE测试Avalanche ATS(9/17)·MOEX加密永续(9/22)·DTCC 2027年Arc绑定·★代币化股票赛道含义：传统证券交易所对加密基础设施接受度持续提升·(crypto.news·KuCoin Flash·CoinEdition·9/17-22)", src:"https://crypto.news/moex-to-launch-5-crypto-perpetual-futures-on-sept-22/"},
     {grp:"other", date:"9/22", tag:"t-up", txt:"📈 ★★ BTC 9/22延续短逼突破$86,000·较9/21收盘高点$84,320再涨+2%+·24h内累计空头清算$648M+(CoinGlass·CryptoBriefing)·★CoinDesk预测标题'Bitcoin could test $90,000 after shorts get squeezed but traders warn leverage is building'·Glassnad预标$83K-$86K为加速区已验证·短逼完成后进入价格发现阶段·★全市场：ETH 24h+5.6%至$2,717·SOL+7.2%至$115·Monero XMR+13%·加密股延续9/21涨势·★BTC 9/17-22五日涨幅：从FOMC后低点~$75,850→$86,000+·累计+13%·★与SEC Innovation Exemption(9/17)·bStocks保证金权限全民开放(9/21·$300亿累计)·CFTC Prerule(9/18)三轨监管共振背景延续·★北京时间下午续涨逼近$87K(Tokocrypto行情·9/22下午)·(CryptoBriefing·The Block·bitcoin.com·CoinDesk·9/22)", src:"https://cryptobriefing.com/bitcoin-surges-85000-shorts-liquidated/"},
@@ -916,7 +917,7 @@ const DATA = {
       ]
     },
     {
-      nm:"MEXC", tier:2, color:"#1e4dff", ink:"#fff", status:"live", statusTxt:"★ Wall Street DNA $1M大赛(9/16-10/16·三轨TradFi) · 8月代币化股票+31%·Stock Futures+130% · RealStocks API 0费量化通道(8/24) · Ondo代币化38只",
+      nm:"MEXC", tier:2, color:"#1e4dff", ink:"#fff", status:"live", statusTxt:"★ VVIP升级+48h Mystery Box 1M USDT(9/23·M-Score体系) · Wall Street DNA $1M大赛(9/16-10/16·三轨TradFi) · 'Real Stocks, Real Friends'邀新(9/10-10/15) · 8月代币化股票+31%·Stock Futures+130%",
       sub:"6/1 · RealStocks 真实美股",
       promo:[
         "与 Binance 同日冲赛道,标语 'Crypto Meets Wall Street'",
@@ -926,6 +927,8 @@ const DATA = {
         "CoinGecko 2026永续报告全球第一(6/4)：Jan/25–Apr/26累计上线 879只新永续合约(约55只/月)，OI市场份额全球第四(11.4%)，现货成交量全球第二(8.2%市占率)——新合约上线速度最快的主要 CEX，扩张战略与 RealStocks 美股入场形成多品类覆盖共振"
       ],
       activities:[
+        {t:"★ VVIP全面升级+1M USDT Mystery Box(9/21宣布·9/23执行·GlobeNewswire)：引入M-Score动态积分体系·三级会员(Standard/Premier/Elite)·按交易量/账户资产/活跃度/账龄综合评分动态升降·'0 Thresholds. 1 M-Score'·配套48h闪速Mystery Box活动(9/23)·1M USDT奖池·零门槛·三轮即时奖励", src:"https://www.globenewswire.com/news-release/2026/09/21/3365309/0/en/mexc-upgrades-vvip-into-industry-first-user-growth-system-with-1m-usdt-mystery-box-event.html"},
+        {t:"★ 'Real Stocks, Real Friends'邀新活动(9/10-10/15·SwaceNews/ChainBits)：邀请好友通过RealStocks进入美股市场获奖励·受邀者完成指定活动获额外奖励·与Wall Street DNA大赛($1M·9/16-10/16)并行·构成MEXC三轨TradFi拉新体系：DNA竞赛+Stock Handbook教育+Real Friends邀友", src:"https://www.swacenews.com/2026/09/22/mexc-launches-real-stocks-real-friends-with-rewards-for-bringing-friends-to-wall-street/"},
         {t:"★ 'Discover Your Wall Street DNA'大赛(9/16-10/16·$100万奖池)·三大赛道：①DNA测试+免费抽奖(完成测试领1次·存款/交易/邀请额外获奖) ②RealStocks+代币化股票+Stock Futures三轨交易竞赛 ③邀请好友瓜分$10万·新用户首存→$100 Stock Futures仓位盲盒·主题'Different Traders. Different Styles. Different Ways to Participate.'·覆盖MEXC全TradFi矩阵：RealStocks 7,000+只真实美股(0费)+代币化股票(Ondo 38只)+Stock Futures(USDT-M·最高200x)·接续已结束的Be a Champion 2(5M USDT·8/9)", src:"https://www.chainbits.com/press-releases/mexc-launches-1m-discover-your-wall-street-dna-campaign-to-help-traders-find-their-market-fit/"},
         {t:"★ MEXC 8月月度数据报告(9/14·GlobeNewswire)：代币化股票交易量环比+31%(8月·TradFi Spot最大增长驱动)·新代币交易用户数+21% MoM·TOP代币化股票：CRCL(Circle)/NBIS(Nebius AI)/SPCX(SpaceX)·整体TradFi Spot量+13% MoM·★代币化股票在宏观加息压力(8月Goldman等转鹰)下逆势高速增长·CRCL/NBIS/SPCX三标的印证AI算力+美国监管套利叙事为8月TradFi成交主线·(GlobeNewswire·Manila Times·9/14)", src:"https://www.globenewswire.com/news-release/2026/09/14/3360878/0/en/mexc-reports-21-mom-growth-in-new-token-traders-and-31-increase-in-tokenized-stock-trading-volume-in-august.html"},
         {t:"★ MEXC Stock Futures 8月成交量+130% MoM(9/11·GlobeNewswire)：美韩内存/半导体主线主导·SK海力士ADR(SKHY·8月首批港股扩张)/三星/MU/SNDK成交集中·★结合8/24 RealStocks API 0费量化通道：MEXC TradFi品类(真实美股+代币化现货+Stock Futures)三轨8月同步大幅增长·量化+散户双渠道放量·(GlobeNewswire·9/11)", src:"https://www.globenewswire.com/news-release/2026/09/11/3360203/0/en/mexc-stock-futures-trading-volume-rises-130-in-august-as-trading-activity-broadens-across-u-s-and-korean-memory-and-semiconductor-sectors.html"},
