@@ -164,10 +164,12 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
   range: "滚动近 2 周 · 2026-09-10 → 09-24",
-  updated: "2026-09-24 15:00 (北京时间)",
+  updated: "2026-09-24 16:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
+    {grp:"main", date:"9/24", tag:"t-new", txt:"📦 ★★ Bitget rToken货架突破2,601只里程碑(9/24)·单次新增462只·新增标的含rGPRO(GoPro·运动相机)·rHSAI(禾赛科技·激光雷达·Nasdaq)·rBRZE(Braze·客户互动平台·Nasdaq)·rALRM(Alarm.com·安防IoT·Nasdaq)·rZLAB(再鼎医药·中国创新药·Nasdaq)·横跨信息技术/医疗/公用事业/消费多板块·★规模对比：xStocks~131只·bStocks~100只·rToken 2,601只·Bitget以数量级优势确立代币化股票品种覆盖全球#1·Reality平台rToken货架从9/16时约1,900只快速扩张至2,601只·★与KCGI 2026赛果(9/24)同日双里程碑·(ChainCatcher·9/24)", src:"https://www.chaincatcher.com/en/article/2291955"},
+    {grp:"other", date:"9/29-30", tag:"t-new", txt:"🎤 ★ Robinhood HOOD Summit '26 'Engines of Creation'(9/29-30·休斯敦)·开幕式:乔治R.布朗会议中心主旨演讲(Vlad Tenev CEO·9/29·17:30 CT)+Space Center Houston晚宴·9/30:全天嘉宾阵容含ARK Invest CEO Cathie Wood·Bankless创始人David Hoffman·CME集团Craig Bewick·★已确认在峰会发布tokenized stocks更新+股息再投资计划(DRIP)详情·★赛道含义：Robinhood Chain+0佣金股票+代币化股票EU(Dinari dShares)三路并行·HOOD Summit为Robinhood年度最大产品发布窗口·市场预期首批SEC TSV申请人之一·可直播:Robinhood App/X/YouTube·(robinhood.com官方·ChainCatcher·MarketScreener·9/24)", src:"https://robinhood.com/us/en/newsroom/robinhood-presents-hood-summit-26-engines-of-creation/"},
     {grp:"main", date:"9/24", tag:"t-new", txt:"💰 ★ Binance STXB(希捷bStocks)第七波股息快照✅今日执行·ex-date 9/24·$0.74/股·payable 10/7·Seagate Technology·STX·Nasdaq·数据存储硬盘·★9月bStocks股息七波高频全月收官：SPYB(9/18)→NVDAB/MSFTB/WDCB(9/21)→TSMB/CRMB(9/21)→AVGOB/QQQB/METAB(9/21)→SOXLB/TQQQB/MUUB(杠杆ETF·9/22)→MUUB正股(9/23·$0.20279/股)→STXB(9/24·$0.74/股)·Binance 9月bStocks股息七波高频全月覆盖：蓝筹正股+大盘ETF+杠杆ETF三类型全覆盖·持有快照时自动USDT/稳定币结算·(Binance官方·PANews·9/18预告)", src:"https://panews.io/articles/01a0b2ff-5f6f-74a6-a4ec-9c5638b90804"},
     {grp:"main", date:"9/23", tag:"t-new", txt:"💰 ★ Binance MUUB(美光科技bStocks)第六波股息完成·ex-date 9/23·每股$0.20279·快照前MUUB持仓自动获追加MUUB代币·MU(Micron Technology·Nasdaq·DRAM/NAND半导体存储)·★9月bStocks股息完整六波：SPYB(9/18)→NVDAB/MSFTB/WDCB(9/21)→TSMB/CRMB(9/21)→AVGOB/QQQB/METAB(9/21)→MUUB(9/23·$0.20279/股)→STXB(ex-date 9/24·$0.74/股·payable 10/7)·Binance 9月股息分配高频化持续验证·(tradersunion·Cryptonomist·9/23)", src:"https://tradersunion.com/news/brokers-news/show/3443764-binance-distributes-micron-bstock-dividends/"},
     {grp:"main", date:"9/24", tag:"t-new", txt:"🏆 ★ Bitget KCGI 2026赛果公布+颁奖典礼·9/23-24公布获奖名单·9/25直播颁奖仪式(含惊喜大礼)·大赛数据：37,148参赛者·1,347支队伍·$300万USDT奖池·首届跨资产(加密期货+TradFi永续+rToken现货)赛制·★战略意义：KCGI首次将美股代币化作为正式竞赛赛道·验证Bitget'单账户跨赛道'UEX定位·(Bitget官方·BitPinas)", src:"https://www.bitget.com/blog/articles/kcgi-2026-live-trading-uex-arena"},
