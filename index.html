@@ -164,8 +164,8 @@
 // promo / activities 每项可为 字符串 或 {t,src};highlights 项可带 src;sources 为卡片底部信源 [{label,url}]。尽量给每条带 src。
 const DATA = {
 
-  range: "滚动近 2 周 · 2026-09-19 → 10-03",
-  updated: "2026-10-03 21:00 (北京时间)",
+  range: "滚动近 2 周 · 2026-09-20 → 10-04",
+  updated: "2026-10-04 05:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -173,6 +173,9 @@ const DATA = {
     {grp:"other", date:"10月", tag:"t-new", txt:"📱 ★ KuCoin 5.0平台重构10月上线·统一账户(VIP先行·无需独立Spot/Margin/Futures分账)·扩展至股票/指数/商品等RWA品类·KCUSD稳定币4% APY日复利·AI助手内嵌·MiCAR EU持牌·SOC2 TypeII+ISO27001双安全认证·★与OKX 5.0重构同期·头部中型CEX向「多资产超级App」竞争深化·KuCoin已有xStocks(AAPLX/HOODX/MSTRX/SPCXX)·TON链·MemeFi等多元布局·5.0为平台级整合·(KuCoin官方博客·~10月)", src:"https://www.kucoin.com/blog/kucoin-5-0"},
     {grp:"other", date:"10/7-8(即将)", tag:"t-new", txt:"🏛️ ★★ Gate CEO Dr. Han TOKEN2049新加坡(10/7)主舞台主题演讲「One Gate, Everything Money」+重大平台升级同步揭晓；F1世界冠军Max Verstappen×Isack Hadjar(红牛赛车)Gate展区签名见面(10/7)；10/8 Gate Gala晚宴&颁奖典礼(Raffles Singapore·17:30)·配套10月活动：DJI大疆无人机实物大奖+830% APR+铜/天然气新衍生品上线·Gate史上最大规模品牌活动·(tradersunion·chaincatcher·mpost·~10/1-3)", src:"https://tradersunion.com/news/brokers-news/show/3552844-gate-io-announces-gala-awards-ceremony/"},
     {grp:"other", date:"10/3", tag:"t-up", txt:"📊 ★★ 代币化股票赛道YoY成交量暴涨10,164%·过去一年累计成交$487亿·当前市值$32亿·Uniswap领跑DEX $171亿·Coinbase Base链MoM DEX成交+830%·累计>$16亿·日峰$9900万·Aave新增将Coinbase Base代币化股票作贷款抵押品·警示：买卖价差仍远高传统市场(流动性质量滞后成交量增速)·(CoinReporter·cryptopolitan·10/2-3)", src:"https://www.coinreporter.io/2026/10/tokenized-stock-trading-surges-10164-but-liquidity-tells-another-story/"},
+    {grp:"other", date:"10/3", tag:"t-new", txt:"📊 ★★ Kraken xStocks累计交易量突破$250亿·不足8个月达成·品种从60只扩至100只·年底目标500只·已向欧洲客户扩张·Backed Finance 1:1发行·Solana+EVM·xStocks Alliance成员：Kraken/Bybit/OKX/Bitget Wallet等·(FinanceMagnates·TradeInformer·~10/3)", src:"https://www.financemagnates.com/cryptocurrency/krakens-xstocks-hits-25-billion-in-tokenized-trades-in-under-eight-months/"},
+    {grp:"other", date:"10/3", tag:"t-new", txt:"📊 ★ Coinbase代币化股票Base链DEX累计成交突破$10亿·月DEX成交MoM+830%·Apple/Nvidia/Meta/Alphabet 1:1托管代币·Aave已接入Coinbase Base代币化股票作贷款抵押品·代币化股票整体市值$32亿·月链上成交$157亿(9/17 SEC Innovation Exemption后加速)·(Yahoo Finance·CoinDesk·~10/3)", src:"https://finance.yahoo.com/markets/crypto/articles/coinbase-tokenized-stocks-just-passed-054953702.html"},
+    {grp:"other", date:"10/3", tag:"t-new", txt:"🆕 ★ 新入场动态：①MEXC RealStocks上线真实美股直购(直连持牌券商·非合成/代币化·超越Tokenized路线) ②Crypto.com代币化美股0手续费(限时)+4% Stocks Earn回报 ③KuCoin 4Stock 9/9已上线·5.0平台10月重构·★中型CEX全面布局：赛道入场者从头部8家扩至MEXC/Crypto.com/Zoomex等·无论代币化还是真实持股均已覆盖·(FinanceMagnates·Crypto.com·~10/3)", src:"https://www.financemagnates.com/cryptocurrency/mexc-launches-real-us-stock-trading-moving-beyond-tokenized-equities/"},
     {grp:"main", date:"10/3(今日)", tag:"t-info", txt:"🔧 Binance美股交易合作券商系统升级 10/3 19:00-22:00 UTC+8·升级期间无法提交股票订单·例行维护·与Stocks Account迁移(9/29起)·bStocks持续扩张同窗口·(PANews·ChainCatcher·10/3)", src:"https://www.chaincatcher.com/en/article/2293705"},
     {grp:"main", date:"10/2", tag:"t-new", txt:"💰 ★ Bitget Alliance Program首批实际分发完成·$1,907,455 USDT已发放给763,543名用户·3天内完成首批(9/28-10/2·周期内提前执行)·★联动已有数据闭环：奖池3日破$190万(见↓)→首批实际分配给76万+用户验证·Alliance Program(9/28-10/26·四周·30%手续费注入奖池→按交易量60%+持仓40%分配)从'建池'到'付款'完整兑现·★与10/2全量恢复同日首批分发=黑客事件后Bitget最密集正面信号窗口·(Hokanews·Chaincatcher·10/2)", src:"https://www.hokanews.com/2026/10/bitget-distributes-19-million-usdt-to.html"},
     {grp:"other", date:"10/3", tag:"t-new", txt:"⚠️ ★ HTX 9/1 PoR链上数据不符·声称在指定地址持有360,949.90 USDS·实际该地址区块25,876,316时余额为0·USDD亦存在~89,772 token差异·分析发现USDS转入实际发生于报告日后(区块25,889,452)·★同类问题：May PoR曾声称STEAK-USDC实际链上为sUSDS·★赛道含义：①Bitget黑客事件后行业PoR严格审计趋势下HTX储备透明度问题再次浮现·②与Bybit Restricted Counterparty List(9/26·HTX被列)叠加=HTX合规形象双线受压·③HTX热钱包/$1.3亿转入'ThirdParty'(历史)·USDD/USDS reserve质疑为长期持续问题·(phemex.com·diariobitcoin·~10/3)", src:"https://phemex.com/news/article/htx-exchange-faces-scrutiny-over-reserve-anomalies-and-risks-47814"},
