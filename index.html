@@ -165,7 +165,7 @@
 const DATA = {
 
   range: "滚动近 2 周 · 2026-09-22 → 10-06",
-  updated: "2026-10-06 09:00 (北京时间)",
+  updated: "2026-10-06 10:00 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -178,6 +178,7 @@ const DATA = {
     {grp:"main", date:"10/5", tag:"t-info", txt:"🏛️ ★ Bitget INSAwards机构方案升级+Alliance Period 1收官→Period 2启动(10/5)·Bitget在INSAwards颁奖评选中凭机构级数字资产管理灵活解决方案获认可·同步升级机构交易框架：智能定价+流动性激励+跨资产执行效率·★Alliance Program Period 1(9/28-10/5 16:00 UTC+8)正式收官·首周奖励(9/28-10/5·763,543名用户·$190万已发放)2个工作日内追加发放·★Period 2(10/5-10/12 16:00 UTC+8)今日同步启动·四期活动持续至10/26·奖池=30%实际净手续费收入·★机构叙事延伸：与Sygnum Bank(9/24·机构离场托管)·rToken流动性报告(10/2·中位价差0.83bp·行业最低)共同强化Bitget机构定位·(TradersUnion·Bitget官方·10/5)", src:"https://www.bitgetapp.com/activity/bitget-alliance"},
     {grp:"main", date:"9/16-10/16(进行中)", tag:"t-new", txt:"💰 ★ Bitget Stock Dual Investment APR boost(9/16-10/16进行中)·首次订阅Stock Dual Investment品种额外得100 USDT奖励(Buy Low+Sell High两种结构均可·每人仅限一次)·累计订阅≥15万USDT得1,000 USDT·≥150万USDT最高10,000 USDT·覆盖20+ US股票/ETF·rNVDA/rTSLA/rAAPL等·APR最高300%+·★与FCN(Fixed Coupon Note)结构化产品线并行·差异化于Binance Dual Investment(加密为主)·Bitget专攻rToken美股结构化产品拉新·(Bitget官方·9/16)", src:"https://www.bitget.com/support/articles/12560603895308"},
     {grp:"main", date:"10/11截止", tag:"t-new", txt:"🔨 ★ BNB Chain×Binance Web3 Wallet 'BNB Hack: Tokenized Stocks Edition'进行中(9/16-10/11提交截止)·$20,000奖池·专项赛道：构建BSC链上代币化股票产品/AI代理/分析工具·奖项：1st $6,000/2nd $4,000/3rd $3,000·评审10/12-23·颁奖10/26周·★生态含义：Binance以$2万开发者激励扩展bStocks链上生态·与TOKEN2049机构叙事(10/7-8)+Binance Intelligence(10/5)三线并行构建Binance bStocks战略纵深·(BNB Chain官博·CryptoBriefing·9/16起)", src:"https://www.bnbchain.org/en/blog/bnb-hack-tokenized-stocks-edition-with-binance-web3-wallet"},
+    {grp:"main", date:"10/11截止(进行中)", tag:"t-new", txt:"🔄 ★ Binance bStocks 1:1免费转换促销(至10/11 23:59 UTC·进行中)·Ondo系四大代币化股票TSLAon/MSTRon/COINon/CRCLon可1:1零手续费转换为对应bStocks(TSLAB/MSTRB/COINB/CRCLB)·覆盖Ethereum/BNB Chain/Solana三链版本·存入Spot账户→选'Convert Now'即可·每日上限+单用户每日上限·★战略含义：Binance以免费转换主动吸纳Ondo代币化股票生态用户进入BNB Chain bStocks体系·TOKEN2049(10/7-8)前夕实质性跨平台迁移激励·目标Ondo/第三方代币化股票持有者迁移至bStocks存量·★4款为最热门代币化股票品种(TSLA/MSTR/COIN/CRCL)·原计划8/13上线至9/8·9/9延期至10/11·(TokenPost·CryptoBriefing·~9/9-10/11)", src:"https://www.tokenpost.com/news/business/26891"},
     {grp:"main", date:"9/30", tag:"t-new", txt:"📊 ★ Binance bStocks 7只代币化股票新增交叉/组合保证金抵押品资格(9/30 12:00 UTC)·品种：PDD Holdings/Forward Industries/SharonAI/Wendy's/Adobe/惠普企业(HPE)/Zoom·★权限下放：Regular+VIP 0-2均可质押(原仅VIP 3+)·★机制限制：可质押不可借入(暂不支持做空bStocks)·入场须完成适当性问卷·触发阈值后暂停自动补仓+限制新仓·★赛道含义：bStocks从'现货持仓工具'延伸至'杠杆抵押层'=Binance将代币化股票嵌入保证金体系·差异化于Bitget rToken(现货为主)·(CryptoBriefing·CryptoDaily·cryptodaily.co.uk·9/30)", src:"https://cryptodaily.co.uk/2026/10/binance-seven-bstocks-margin-collateral"},
     {grp:"other", date:"10/5", tag:"t-new", txt:"🏛️ ★★★ OKXICE LLC 10/5正式向SEC提交TSV(代币化证券交易场所)申请·初始63只NYSE挂牌公司代币化股票·完整股东权利(股息+投票权)·区别于OKX X-Perps(合成合约·无股东权利)·★SEC Innovation Exemption(9/17)框架下：发行方30天内可行使否决权·TSV须为美国实体+OFAC制裁合规+运营前30天公告·★OKXICE=OKX 50%+ICE(NYSE母公司)50%·联席主席Cuomo(OKX)+Trabue Bland(ICE)·★这是ICE入股OKX(9/30·$2亿)→OKXICE JV成立(6/22)后第三级落地：资本注入→JV成立→SEC申请提交·★对比：Binance bStocks/Bitget rToken/Kraken xStocks均为离岸结构·OKXICE TSV申请首次为头部CEX+NYSE合资机构向SEC申请美国本土合规代币化股票交易场所·★30天公告期后若无发行方否决可开始上线·预期最早2026年Q4末至2027年Q1实际运营·★赛道含义：代币化股票'离岸合成'vs'美国本土合规'路线分化在OKXICE身上同时存在·★技术架构补充(CryptoBriefing·10/5)：OKXICE计划采用XLayer(OKX自有L2链)上部署许可式(Permissioned)Uniswap v4 Hooks作为TSV底层AMM流动性层·与SEC Innovation Exemption(9/17)对AMM dealer 5年豁免路径精确对齐·许可式Hooks机制允许TSV在流动性层实施OFAC合规过滤·★ICE NYSE监管资产+XLayer自建L2+Uniswap v4许可AMM三层架构合一·(Bloomberg·CryptoBriefing·PANews·bloomingbit·10/5)", src:"https://www.bloomberg.com/news/articles/2026-10-05/okx-files-with-sec-to-launch-tokenized-us-stock-trading-platform"},
     {grp:"other", date:"10/5", tag:"t-new", txt:"🏦 ★ Payward(Kraken母公司)×Singapore Gulf Bank 10/5正式发布24/7机构即时结算·接入SGB Net实时多币种清算网络·首批USD即时结算面向特定机构客户·计划扩展至更多客户和货币·SGB Net月处理法币$200亿+·SGB同步将Kraken Prime纳入数字资产流动性来源·★Payward机构基础设施系列：BNY战略洽谈(10/2)·Nasdaq $1亿战略注资(9/10)·xStocks $250亿成交(10/3)·★赛道含义：24/7即时法币结算层接入=Kraken/xStocks平台机构资金进出效率提升·与传统金融T+2结算差距拉大·(PRNewswire·Manila Times·CoinGape·10/5)", src:"https://www.manilatimes.net/2026/10/05/tmt-newswire/pr-newswire/payward-and-singapore-gulf-bank-partner-to-bring-24-7-settlement-to-institutional-digital-asset-markets/2438687"},
@@ -1471,13 +1472,14 @@ const DATA = {
       ]
     },
     {
-      nm:"Tokocrypto", tier:2, color:"#0071bd", ink:"#fff", status:"live", statusTxt:"★新入场者 · 6/21代币化股票 · 印尼 · Binance关联",
+      nm:"Tokocrypto", tier:2, color:"#0071bd", ink:"#fff", status:"live", statusTxt:"★新入场者 · 6/21代币化股票 · 印尼 · Binance关联 · ★10月扩品：Seagate/HIMS/Salesforce等+6只",
       sub:"新入场者 · 印尼 · Binance关联所 · TSLA/NVDA/SpaceX · UAE合规 · 1:1托管",
       promo:[
         "Binance关联所，印尼200万+活跃用户基础，借助Binance生态触达东南亚",
         "UAE合规+1:1托管+24/7+股息倍增机制——对标中东+亚太合规用户"
       ],
       activities:[
+        {t:"★ 10月扩品+6只代币化股票：Seagate(STXB)·Hims&Hers(HIMSB)·Salesforce(CRMB)等新板块覆盖·持续补货增宽品类", src:"https://momsmoney.kontan.co.id/news/ada-6-tokenized-stocks-baru-dari-tokocrypto-cek-yuk"},
         {t:"代币化股票上线(6/21–23)：TSLA/NVDA/SpaceX等；UAE合规 + 1:1托管 + 24/7 + 股息倍增机制", src:"https://tradersunion.com/news/brokers-news/show/2462056-tokocrypto-launches-tokenized-stock-trading/"},
         {t:"代币化股票知识Quiz互动营销(6/21–23)：测验教育+拉新", src:"https://tradersunion.com/news/brokers-news/show/2461155-tokocrypto-launches-tokenized-stocks-quiz/"}
       ],
