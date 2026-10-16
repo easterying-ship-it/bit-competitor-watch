@@ -165,7 +165,7 @@
 const DATA = {
 
   range: "滚动近 2 周 · 2026-10-02 → 10-16",
-  updated: "2026-10-16 18:00 (北京时间)",
+  updated: "2026-10-16 20:08 (北京时间)",
   next: "每小时整点(远程定时)",
   // grp: 'main'(主要竞争者 Bitget/Binance,多抓) | 'other'(其他/行业,精简);date=推出/发生时间
   highlights: [
@@ -176,6 +176,7 @@ const DATA = {
     {grp:"main", date:"10/14", tag:"t-new", txt:"🆕 ★ Binance 4只bStocks今日(10/14 20:00 UTC)新增保证金抵押品资格·MDBB(MongoDB)·BBB(BlackBerry)·PENGB(Penguin Solutions)·UVXYB(ProShares Ultra VIX Short-Term Futures ETF)·同步开放全仓/统一账户抵押功能·★bStocks保证金扩品节奏：9/30 7只→10/8 4只→10/14 4只·Binance系统化将代币化股票嵌入杠杆抵押体系，月均扩品约15只·(ChainCatcher·10/14)", src:"https://www.chaincatcher.com/en/article/2296115"},
     {grp:"main", date:"10/14✅快照", tag:"t-info", txt:"✅ Binance MUB(Micron Technology)股息快照✅已执行(10/14 08:00 UTC+8)·10/12官方公告·07:30 UTC+8起暂停MUB 1:1转换/存提款/即时兑换(Spot交易MUB/USDT不受影响)·净股息扣除预扣税/费后以追加MUB份额(multiplier rebasing)结算·★继10/9 MRVLB+ORCLB双快照后·MUB为10月第三批bStocks股息窗口·bStocks企业行权节奏加速·(PANews·TechFlow·TokenPost·10/12)", src:"https://panews.io/articles/01a12dac-1f26-74ac-b2d8-cfb6efc1f839"},
     {grp:"main", date:"10/14", tag:"t-new", txt:"🆕 Binance bStocks 4只新现货对上线(10/14 20:00 UTC)·BBB/USDT(BlackBerry)·MDBB/USDT(MongoDB Inc.)·PENGB/USDT(Penguin Solutions)·UVXYB/USDT(ProShares Ultra VIX ETF)·同步纳入全仓保证金/统一账户/统一账户专业版抵押品资格·开放Spot Algo Bot+Smart Position Bot服务·★继10/7 JPMB/LLYB/SECZB/USDEB四只后本月第二批新bStocks标的·(TechFlowPost·ChainCatcher·10/14)", src:"https://www.chaincatcher.com/en/article/2296108"},
+    {grp:"other", date:"10月", tag:"t-info", txt:"🏛️ ★ DTCC代币化证券服务正式落地(10月目标·CFOtech/ThreatCluster核实)·服务范围：Russell 1000成分股+主要指数ETF+美国国债·参与机构50+家（BlackRock·Goldman Sachs·JPMorgan·Circle等）·基于SEC no-action letter(2025年12月获批)三年期豁免框架·DTC Participants可选将合规证券转为链上代币化记账·★行业意义：传统金融基础设施机构(非加密原生交易所)首次以正式服务形式参与代币化证券·与OKXICE TSV(10/5 SEC申请)·Perpetuals.com(10/14 SEC申报)并列形成TradFi+SEC监管层同步推进代币化股票的完整图谱·★交易所侧含义：官方托管链进入实质阶段→代币化股票合规成本曲线可能下移→有利于后进监管辖区的平台扩张·(CFOtech·ThreatCluster·待官方确认具体上线日期)", src:"https://cfotech.news/story/dtcc-tokenisation-launch-puts-post-trade-systems-on-alert"},
     {grp:"other", date:"10/15", tag:"t-new", txt:"🌏 PINTU(印尼OJK持牌加密平台)新增10只代币化股票·品种：台积电TSM·Grab(东南亚超级App)·甲骨文Oracle·三星存储SK Hynix·Sandisk·IBM·诺基亚Nokia·BlackRock·波音Boeing·诺和诺德Novo Nordisk·1:1真实股票托管·24/7交易·USDT结算·最低Rp11,000起·PINTU现共上架48+代币化资产·★赛道信号：代币化股票分发从头部CEX向东南亚区域持牌平台加速下沉·Grab作为东南亚最大超级App首次被区域平台代币化·(TradersUnion·~10/15)", src:"https://tradersunion.com/news/brokers-news/show/3817712-pintu-adds-ten-tokenized-global/"},
     {grp:"other", date:"10/15", tag:"t-new", txt:"⚡ ★ OKX ExchangeOS链上现货+永续Beta正式开放(10/15·CryptoBriefing)·用户以XP积分(模拟余额·非真实资金)参与链上即期现货+永续交易·250,000 USDT奖池激励测试期参与·★标志OKX将链上DEX交易能力原生嵌入CEX产品矩阵·与OKXICE TSV SEC申请(10/5)·OKX Unified Tokenized Stocks(10/12)共同构成OKX代币化股票+链上交易全栈布局·(CryptoBriefing·10/15)", src:"https://cryptobriefing.com/okx-onchain-spot-perps-beta-reward-pool/"},
     {grp:"other", date:"10/14", tag:"t-new", txt:"🏗️ ★ Metric DEX在BNB Chain正式上线(10/14)·首个专为代币化股票/RWA打造的链上DEX·支持bStocks交易+LP流动性供给·propAMM架构+Chainlink Data Streams实时定价锚定·合约同时部署于Ethereum+Robinhood Chain·隐身阶段已积累$100亿+累计成交(自报)·★BNB Chain代币化股票DeFi生态从'Binance原生'向第三方专业DEX扩展·bStocks链上流动性层添加独立撮合基础设施·与Binance bStocks主导BNB Chain 70%+链上份额共振·(CryptoBriefing·10/14)", src:"https://cryptobriefing.com/bnb-chain-bstocks-metric-dex/"},
